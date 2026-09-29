@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Arco Multipitch — UI mockup review</title>
+<style>
+  body { font-family: -apple-system, system-ui, sans-serif; background:#eee; margin:0; padding:24px; }
+  h1 { font-size: 20px; margin: 0 0 4px; }
+  p.sub { color:#666; margin: 0 0 24px; font-size:14px; }
+  .grid { display:flex; gap:20px; flex-wrap:wrap; }
+  .col { text-align:center; }
+  .col h2 { font-size:15px; margin:0 0 4px; }
+  .col p { font-size:12px; color:#777; margin:0 0 10px; max-width:340px; }
+  iframe { width: 375px; height: 720px; border: 8px solid #222; border-radius: 28px; background:#fff; }
+  a.open { display:inline-block; margin-top:8px; font-size:13px; }
+</style>
+</head>
+<body>
+  <h1>Arco Multipitch — 3 UI proposals</h1>
+  <p class="sub">Map pinned to top ~30%, list below, tap a route → detail replaces the list (map stays visible). Tap a map pin → opens the same detail. All use real route data/photos from the live site.</p>
+  <div class="grid">
+    <div class="col">
+      <h2>A — Outdoor Dark</h2>
+      <p>Tailwind, custom dark rugged theme, orange accent (closest to today's app, refined).</p>
+      <iframe src="a-outdoor-dark.html"></iframe><br/>
+      <a class="open" href="a-outdoor-dark.html" target="_blank">Open full-size ↗</a>
+    </div>
+    <div class="col">
+      <h2>B — Clean Light</h2>
+      <p>Tailwind, light "map app" look (Google Maps / AllTrails style), blue accent.</p>
+      <iframe src="b-clean-light.html"></iframe><br/>
+      <a class="open" href="b-clean-light.html" target="_blank">Open full-size ↗</a>
+    </div>
+    <div class="col">
+      <h2>C — Native iOS</h2>
+      <p>iOS system look (large-title search, segmented control, grouped list, sheet transition) — in the real app this would be built with Konsta UI.</p>
+      <iframe src="c-native-ios.html"></iframe><br/>
+      <a class="open" href="c-native-ios.html" target="_blank">Open full-size ↗</a>
+    </div>
+  </div>
+</body>
+</html>

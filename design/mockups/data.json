@@ -1,0 +1,772 @@
+[
+  {
+    "slug": "luna-85",
+    "title": "Luna 85",
+    "crag": "Placche Zebrate",
+    "zone": "Monte Brento › Placche Zebrate",
+    "grade": "6c",
+    "gradeRaw": "6c",
+    "pitches": 13,
+    "length": 420,
+    "photos": [
+      "https://lt-mayonesa.github.io/arco-multipitch/photos/luna-85/01.webp",
+      "https://lt-mayonesa.github.io/arco-multipitch/photos/luna-85/02.webp",
+      "https://lt-mayonesa.github.io/arco-multipitch/photos/luna-85/03.webp",
+      "https://lt-mayonesa.github.io/arco-multipitch/photos/luna-85/04.webp"
+    ],
+    "lat": 45.9998747,
+    "lon": 10.9184491,
+    "sun": "mixed-mentioned",
+    "intro": "It's shaping up to be a not-very-sunny but fairly warm Sunday. Looking for something long and good training ahead of the summer season — not so far off now — we eye a line on the Zebra-Striped Slabs wall that, despite the countless routes w",
+    "pitchList": [
+      {
+        "n": 1,
+        "len": 30,
+        "grade": "6a"
+      },
+      {
+        "n": 2,
+        "len": 35,
+        "grade": "5c"
+      },
+      {
+        "n": 3,
+        "len": 35,
+        "grade": "5c"
+      },
+      {
+        "n": 4,
+        "len": 30,
+        "grade": "5b"
+      },
+      {
+        "n": 5,
+        "len": 40,
+        "grade": "5c"
+      },
+      {
+        "n": 6,
+        "len": 30,
+        "grade": "6a"
+      },
+      {
+        "n": 7,
+        "len": 35,
+        "grade": "5c"
+      },
+      {
+        "n": 8,
+        "len": 35,
+        "grade": "6a"
+      },
+      {
+        "n": 9,
+        "len": 20,
+        "grade": "6c"
+      },
+      {
+        "n": 10,
+        "len": 35,
+        "grade": "5c"
+      },
+      {
+        "n": 11,
+        "len": 20,
+        "grade": "6a"
+      },
+      {
+        "n": 12,
+        "len": 30,
+        "grade": "5b"
+      },
+      {
+        "n": 13,
+        "len": 45,
+        "grade": "5a"
+      }
+    ],
+    "source": "https://howtoreachthesky.com/2025/04/30/luna-85/"
+  },
+  {
+    "slug": "il-profondo-risetto-dellindria",
+    "title": "Il profondo rispetto dell’Indria",
+    "crag": "Anglone Nord",
+    "zone": "Coste dell'Anglone › Anglone Nord",
+    "grade": "6b",
+    "gradeRaw": "VI+",
+    "pitches": 13,
+    "length": 390,
+    "photos": [
+      "https://lt-mayonesa.github.io/arco-multipitch/photos/il-profondo-risetto-dellindria/01.webp",
+      "https://lt-mayonesa.github.io/arco-multipitch/photos/il-profondo-risetto-dellindria/02.webp",
+      "https://lt-mayonesa.github.io/arco-multipitch/photos/il-profondo-risetto-dellindria/03.webp",
+      "https://lt-mayonesa.github.io/arco-multipitch/photos/il-profondo-risetto-dellindria/04.webp"
+    ],
+    "lat": 45.9594472,
+    "lon": 10.8973975,
+    "sun": null,
+    "intro": "About two weeks earlier we'd gone down to Dro to tackle \"Le Scalette dell'Indria\", a mediocre route with a few pros but many cons. Disappointed by the overall climb, we still wanted to give Indria another chance, so this weekend we headed b",
+    "pitchList": [
+      {
+        "n": 1,
+        "len": 40,
+        "grade": "4c"
+      },
+      {
+        "n": 2,
+        "len": 30,
+        "grade": "5c"
+      },
+      {
+        "n": 3,
+        "len": 30,
+        "grade": "5c"
+      },
+      {
+        "n": 4,
+        "len": 25,
+        "grade": "5c"
+      },
+      {
+        "n": 5,
+        "len": 30,
+        "grade": "6a+"
+      },
+      {
+        "n": 6,
+        "len": 25,
+        "grade": "4b"
+      },
+      {
+        "n": 7,
+        "len": 25,
+        "grade": "5c"
+      },
+      {
+        "n": 8,
+        "len": 35,
+        "grade": "6a+"
+      },
+      {
+        "n": 9,
+        "len": 30,
+        "grade": "5c"
+      },
+      {
+        "n": 10,
+        "len": 20,
+        "grade": "1"
+      },
+      {
+        "n": 11,
+        "len": 25,
+        "grade": "4c"
+      },
+      {
+        "n": 12,
+        "len": 35,
+        "grade": "6b"
+      },
+      {
+        "n": 13,
+        "len": 40,
+        "grade": "5c"
+      }
+    ],
+    "source": "https://howtoreachthesky.com/2021/11/03/il-profondo-risetto-dellindria/"
+  },
+  {
+    "slug": "la-piccola-piramide",
+    "title": "La Piccola Piramide",
+    "crag": "Anglone Nord",
+    "zone": "Coste dell'Anglone › Anglone Nord",
+    "grade": "6a+",
+    "gradeRaw": "VI",
+    "pitches": 11,
+    "length": 301,
+    "photos": [
+      "https://lt-mayonesa.github.io/arco-multipitch/photos/la-piccola-piramide/01.webp",
+      "https://lt-mayonesa.github.io/arco-multipitch/photos/la-piccola-piramide/02.webp",
+      "https://lt-mayonesa.github.io/arco-multipitch/photos/la-piccola-piramide/03.webp",
+      "https://lt-mayonesa.github.io/arco-multipitch/photos/la-piccola-piramide/04.webp"
+    ],
+    "lat": 45.9594472,
+    "lon": 10.8973975,
+    "sun": null,
+    "intro": "With the days finally starting to get longer, the range of routes you can climb in the valley in a single day is expanding too. We head to the busy Dro area, determined to climb the route \"Archai\", which unfortunately is already taken, so w",
+    "pitchList": [
+      {
+        "n": 1,
+        "len": 35,
+        "grade": "5b"
+      },
+      {
+        "n": 2,
+        "len": 25,
+        "grade": "5c"
+      },
+      {
+        "n": 3,
+        "len": 30,
+        "grade": "5c"
+      },
+      {
+        "n": 4,
+        "len": 20,
+        "grade": "1"
+      },
+      {
+        "n": 5,
+        "len": 30,
+        "grade": "5c"
+      },
+      {
+        "n": 6,
+        "len": 35,
+        "grade": "6a"
+      },
+      {
+        "n": 7,
+        "len": 25,
+        "grade": "5c"
+      },
+      {
+        "n": 8,
+        "len": 18,
+        "grade": "2"
+      },
+      {
+        "n": 9,
+        "len": 28,
+        "grade": "6a+"
+      },
+      {
+        "n": 10,
+        "len": 40,
+        "grade": "6a+"
+      },
+      {
+        "n": 11,
+        "len": 15,
+        "grade": "5c"
+      }
+    ],
+    "source": "https://howtoreachthesky.com/2022/06/18/la-piccola-piramide/"
+  },
+  {
+    "slug": "archai",
+    "title": "Archai",
+    "crag": "Anglone Nord",
+    "zone": "Coste dell'Anglone › Anglone Nord",
+    "grade": "6b",
+    "gradeRaw": "VI+",
+    "pitches": 9,
+    "length": 235,
+    "photos": [
+      "https://lt-mayonesa.github.io/arco-multipitch/photos/archai/01.webp",
+      "https://lt-mayonesa.github.io/arco-multipitch/photos/archai/02.webp",
+      "https://lt-mayonesa.github.io/arco-multipitch/photos/archai/03.webp",
+      "https://lt-mayonesa.github.io/arco-multipitch/photos/archai/04.webp"
+    ],
+    "lat": 45.9594472,
+    "lon": 10.8973975,
+    "sun": "sunny-mentioned",
+    "intro": "A day that, according to the forecast, was supposed to be beautiful and sunny but turned out overcast and cold, not helped by an annoying little breeze. We're already down in the valley now, so all that's left is to suffer quietly and make ",
+    "pitchList": [
+      {
+        "n": 1,
+        "len": 25,
+        "grade": "5c"
+      },
+      {
+        "n": 2,
+        "len": 25,
+        "grade": "6a+"
+      },
+      {
+        "n": 3,
+        "len": 25,
+        "grade": "6b"
+      },
+      {
+        "n": 4,
+        "len": 30,
+        "grade": "6a+"
+      },
+      {
+        "n": 5,
+        "len": 20,
+        "grade": "5b"
+      },
+      {
+        "n": 6,
+        "len": 23,
+        "grade": "6a+"
+      },
+      {
+        "n": 7,
+        "len": 30,
+        "grade": "6a+"
+      },
+      {
+        "n": 8,
+        "len": 25,
+        "grade": "6a+"
+      },
+      {
+        "n": 9,
+        "len": 32,
+        "grade": "6a+"
+      }
+    ],
+    "source": "https://howtoreachthesky.com/2025/03/27/archai/"
+  },
+  {
+    "slug": "sulle-pance-del-pezol",
+    "title": "Sulle pance del Pezol",
+    "crag": "Parete di Pezol",
+    "zone": "Valle del Sarca › Monte Velo › Parete di Pezol",
+    "grade": "6c",
+    "gradeRaw": "VII",
+    "pitches": 12,
+    "length": 322,
+    "photos": [
+      "https://lt-mayonesa.github.io/arco-multipitch/photos/sulle-pance-del-pezol/01.webp",
+      "https://lt-mayonesa.github.io/arco-multipitch/photos/sulle-pance-del-pezol/02.webp",
+      "https://lt-mayonesa.github.io/arco-multipitch/photos/sulle-pance-del-pezol/03.webp",
+      "https://lt-mayonesa.github.io/arco-multipitch/photos/sulle-pance-del-pezol/04.webp"
+    ],
+    "lat": 45.924515,
+    "lon": 10.913872,
+    "sun": "sunny-mentioned",
+    "intro": "On the Saturday of the long Halloween weekend we head down to Arco despite scorching temperatures for the season — 27°C highs in late October is genuinely starting to feel worrying! Either way we head to the Pezol wall early in the morning,",
+    "pitchList": [
+      {
+        "n": 1,
+        "len": 27,
+        "grade": "5b"
+      },
+      {
+        "n": 2,
+        "len": 30,
+        "grade": "6a+"
+      },
+      {
+        "n": 3,
+        "len": 30,
+        "grade": "5b"
+      },
+      {
+        "n": 4,
+        "len": 23,
+        "grade": "5c"
+      },
+      {
+        "n": 5,
+        "len": 30,
+        "grade": "4b"
+      },
+      {
+        "n": 6,
+        "len": 20,
+        "grade": "6b"
+      },
+      {
+        "n": 7,
+        "len": 27,
+        "grade": "5a"
+      },
+      {
+        "n": 8,
+        "len": 25,
+        "grade": "6a+"
+      },
+      {
+        "n": 9,
+        "len": 12,
+        "grade": "6a+"
+      },
+      {
+        "n": 10,
+        "len": 28,
+        "grade": "6c"
+      },
+      {
+        "n": 11,
+        "len": 40,
+        "grade": "6a+"
+      },
+      {
+        "n": 12,
+        "len": 30,
+        "grade": "5c"
+      }
+    ],
+    "source": "https://howtoreachthesky.com/2022/12/09/sulle-pance-del-pezol/"
+  },
+  {
+    "slug": "cuore-doro",
+    "title": "Cuore d’Oro",
+    "crag": "Anglone Sud",
+    "zone": "Coste dell'Anglone › Anglone Sud",
+    "grade": "6b",
+    "gradeRaw": "VI+",
+    "pitches": 11,
+    "length": 320,
+    "photos": [
+      "https://lt-mayonesa.github.io/arco-multipitch/photos/cuore-doro/01.webp",
+      "https://lt-mayonesa.github.io/arco-multipitch/photos/cuore-doro/02.webp",
+      "https://lt-mayonesa.github.io/arco-multipitch/photos/cuore-doro/03.webp",
+      "https://lt-mayonesa.github.io/arco-multipitch/photos/cuore-doro/04.webp"
+    ],
+    "lat": 45.9594472,
+    "lon": 10.8973975,
+    "sun": "sunny-mentioned",
+    "intro": "A slightly cloudy day in Valle del Sarca, with a thin haze that still doesn't let the sun's rays through as it timidly peeks over Monte Bondone. All things considered, better this way, since the temperature is already high early in the morn",
+    "pitchList": [
+      {
+        "n": 1,
+        "len": 20,
+        "grade": "5c"
+      },
+      {
+        "n": 2,
+        "len": 38,
+        "grade": "4c"
+      },
+      {
+        "n": 3,
+        "len": 20,
+        "grade": "6a"
+      },
+      {
+        "n": 4,
+        "len": 25,
+        "grade": "6a+"
+      },
+      {
+        "n": 5,
+        "len": 30,
+        "grade": "6b"
+      },
+      {
+        "n": 6,
+        "len": 32,
+        "grade": "5c"
+      },
+      {
+        "n": 7,
+        "len": 35,
+        "grade": "6a"
+      },
+      {
+        "n": 8,
+        "len": 30,
+        "grade": "5a"
+      },
+      {
+        "n": 9,
+        "len": 25,
+        "grade": "5a"
+      },
+      {
+        "n": 10,
+        "len": 25,
+        "grade": "6a+"
+      },
+      {
+        "n": 11,
+        "len": 40,
+        "grade": "5c"
+      }
+    ],
+    "source": "https://howtoreachthesky.com/2022/11/23/cuore-doro/"
+  },
+  {
+    "slug": "via-del-dottore",
+    "title": "Via del Dottore",
+    "crag": "Piramide Lakshmi",
+    "zone": "Coste dell'Anglone › Piramide Lakshmi",
+    "grade": "6a+",
+    "gradeRaw": "VI",
+    "pitches": 11,
+    "length": 375,
+    "photos": [
+      "https://lt-mayonesa.github.io/arco-multipitch/photos/via-del-dottore/01.webp",
+      "https://lt-mayonesa.github.io/arco-multipitch/photos/via-del-dottore/02.webp",
+      "https://lt-mayonesa.github.io/arco-multipitch/photos/via-del-dottore/03.webp",
+      "https://lt-mayonesa.github.io/arco-multipitch/photos/via-del-dottore/04.webp"
+    ],
+    "lat": 45.9594472,
+    "lon": 10.8973975,
+    "sun": "shaded-mentioned",
+    "intro": "We head down into Valle del Sarca toward Dro, intending to tackle a route at Coste dell'Anglone early in the morning. Early-September days are still warm but not stifling, and the system of corners making up this rock band often lets you cl",
+    "pitchList": [
+      {
+        "n": 1,
+        "len": 40,
+        "grade": "3b"
+      },
+      {
+        "n": 2,
+        "len": 45,
+        "grade": "4c"
+      },
+      {
+        "n": 3,
+        "len": 25,
+        "grade": "4c"
+      },
+      {
+        "n": 4,
+        "len": 40,
+        "grade": "5b"
+      },
+      {
+        "n": 5,
+        "len": 20,
+        "grade": "5c"
+      },
+      {
+        "n": 6,
+        "len": 25,
+        "grade": "6a+"
+      },
+      {
+        "n": 7,
+        "len": 40,
+        "grade": "5b"
+      },
+      {
+        "n": 8,
+        "len": 40,
+        "grade": "3b"
+      },
+      {
+        "n": 9,
+        "len": 35,
+        "grade": "5c"
+      },
+      {
+        "n": 10,
+        "len": 45,
+        "grade": "4c"
+      },
+      {
+        "n": 11,
+        "len": 20,
+        "grade": "4b"
+      }
+    ],
+    "source": "https://howtoreachthesky.com/2022/10/21/via-del-dottore/"
+  },
+  {
+    "slug": "apollo",
+    "title": "Apollo",
+    "crag": "Parete di Padaro",
+    "zone": "Parete di Padaro",
+    "grade": "7a",
+    "gradeRaw": "VII+",
+    "pitches": 9,
+    "length": 235,
+    "photos": [
+      "https://lt-mayonesa.github.io/arco-multipitch/photos/apollo/01.webp",
+      "https://lt-mayonesa.github.io/arco-multipitch/photos/apollo/02.webp",
+      "https://lt-mayonesa.github.io/arco-multipitch/photos/apollo/03.webp",
+      "https://lt-mayonesa.github.io/arco-multipitch/photos/apollo/04.webp"
+    ],
+    "lat": 45.93731,
+    "lon": 10.86861,
+    "sun": null,
+    "intro": "Last weekend we approached the Padaro wall for the first time, and we have to admit we liked it — whether for the view, the peace and quiet of the area, the relatively few parties on the wall, or the fact that the routes are never given awa",
+    "pitchList": [
+      {
+        "n": 1,
+        "len": 25,
+        "grade": "5c"
+      },
+      {
+        "n": 2,
+        "len": 20,
+        "grade": "6a+"
+      },
+      {
+        "n": 3,
+        "len": 30,
+        "grade": "4c"
+      },
+      {
+        "n": 4,
+        "len": 30,
+        "grade": "6a"
+      },
+      {
+        "n": 5,
+        "len": 30,
+        "grade": "6b"
+      },
+      {
+        "n": 6,
+        "len": 25,
+        "grade": "6a"
+      },
+      {
+        "n": 7,
+        "len": 30,
+        "grade": "7a"
+      },
+      {
+        "n": 8,
+        "len": 25,
+        "grade": "6a"
+      },
+      {
+        "n": 9,
+        "len": 20,
+        "grade": "6a"
+      }
+    ],
+    "source": "https://howtoreachthesky.com/2021/12/19/apollo/"
+  },
+  {
+    "slug": "le-scalette-dellindria",
+    "title": "Le Scalette dell’Indria",
+    "crag": "Anglone Nord",
+    "zone": "Coste dell'Anglone › Anglone Nord",
+    "grade": "6a+",
+    "gradeRaw": "VI",
+    "pitches": 9,
+    "length": 260,
+    "photos": [
+      "https://lt-mayonesa.github.io/arco-multipitch/photos/le-scalette-dellindria/01.webp",
+      "https://lt-mayonesa.github.io/arco-multipitch/photos/le-scalette-dellindria/02.webp",
+      "https://lt-mayonesa.github.io/arco-multipitch/photos/le-scalette-dellindria/03.webp",
+      "https://lt-mayonesa.github.io/arco-multipitch/photos/le-scalette-dellindria/04.webp"
+    ],
+    "lat": 45.9594472,
+    "lon": 10.8973975,
+    "sun": null,
+    "intro": "The northern part of Coste dell'Anglone hosts the longest lines on the whole rock band, on average. One of these, perhaps the easiest on the wall, is \"Le Scalette dell'Indria\" (\"Indria's Little Stairs\"), which alternates nice slabs clear of",
+    "pitchList": [
+      {
+        "n": 1,
+        "len": 30,
+        "grade": "4b"
+      },
+      {
+        "n": 2,
+        "len": 20,
+        "grade": "4b"
+      },
+      {
+        "n": 3,
+        "len": 20,
+        "grade": "6a+"
+      },
+      {
+        "n": 4,
+        "len": 45,
+        "grade": "6a+"
+      },
+      {
+        "n": 5,
+        "len": 15,
+        "grade": "3b"
+      },
+      {
+        "n": 6,
+        "len": 30,
+        "grade": "5c"
+      },
+      {
+        "n": 7,
+        "len": 30,
+        "grade": "4c"
+      },
+      {
+        "n": 8,
+        "len": 20,
+        "grade": "5b"
+      },
+      {
+        "n": 9,
+        "len": 50,
+        "grade": "5c"
+      }
+    ],
+    "source": "https://howtoreachthesky.com/2021/10/19/le-scalette-dellindria/"
+  },
+  {
+    "slug": "claudia-22",
+    "title": "Claudia ’22",
+    "crag": "Parete di Pezol",
+    "zone": "Valle del Sarca › Monte Velo › Parete di Pezol",
+    "grade": "5c",
+    "gradeRaw": "V+",
+    "pitches": 10,
+    "length": 231,
+    "photos": [
+      "https://lt-mayonesa.github.io/arco-multipitch/photos/claudia-22/01.webp",
+      "https://lt-mayonesa.github.io/arco-multipitch/photos/claudia-22/02.webp",
+      "https://lt-mayonesa.github.io/arco-multipitch/photos/claudia-22/03.webp",
+      "https://lt-mayonesa.github.io/arco-multipitch/photos/claudia-22/04.webp"
+    ],
+    "lat": 45.924515,
+    "lon": 10.913872,
+    "sun": "sunny-mentioned",
+    "intro": "Today is January 2nd, 2023, and it's warm. We reach Arco with the thermometer reading 8°C at 8am. Lucky that the sky is overcast and the forecast has no sun for the day, otherwise it'd almost be short-sleeves weather. The goal is to start m",
+    "pitchList": [
+      {
+        "n": 1,
+        "len": 15,
+        "grade": "3c"
+      },
+      {
+        "n": 2,
+        "len": 27,
+        "grade": "5c"
+      },
+      {
+        "n": 3,
+        "len": 20,
+        "grade": "5c"
+      },
+      {
+        "n": 4,
+        "len": 28,
+        "grade": "5a"
+      },
+      {
+        "n": 5,
+        "len": 30,
+        "grade": "5b"
+      },
+      {
+        "n": 6,
+        "len": 22,
+        "grade": "4b"
+      },
+      {
+        "n": 7,
+        "len": 22,
+        "grade": "4b"
+      },
+      {
+        "n": 8,
+        "len": 24,
+        "grade": "5b"
+      },
+      {
+        "n": 9,
+        "len": 18,
+        "grade": "2"
+      },
+      {
+        "n": 10,
+        "len": 25,
+        "grade": "5b"
+      }
+    ],
+    "source": "https://howtoreachthesky.com/2023/04/19/claudia-22/"
+  }
+]

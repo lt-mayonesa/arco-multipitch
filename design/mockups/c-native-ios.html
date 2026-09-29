@@ -1,0 +1,953 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+<title>Mockup C · Native iOS (Konsta UI style)</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<style>
+  :root { --ios-blue:#007aff; }
+  html,body{ height:100%; overscroll-behavior:none; }
+  body{ font-family:-apple-system,BlinkMacSystemFont,'SF Pro Text',system-ui,sans-serif; background:#f2f2f7; color:#000; }
+  #app{ height:100dvh; display:flex; flex-direction:column; max-width:520px; margin:0 auto; position:relative; background:#fff; box-shadow:0 0 40px rgba(0,0,0,.2); }
+  #map{ height:100%; width:100%; }
+  .marker-pin{ width:26px; height:26px; border-radius:50% 50% 50% 0; background:var(--ios-blue); transform:rotate(-45deg); box-shadow:0 1px 4px rgba(0,0,0,.35); border:2px solid white; }
+  .marker-pin.active{ background:#ff3b30; transform:rotate(-45deg) scale(1.3); z-index:999 !important; }
+  .grade-chip{ display:inline-flex; align-items:center; justify-content:center; background:rgba(0,122,255,.12); color:var(--ios-blue); font-weight:700; border-radius:7px; padding:2px 9px; font-size:.8rem; }
+  .ios-list-item{ background:#fff; }
+  .ios-list-item:active{ background:#e9e9eb; }
+  .ios-sep{ border-bottom:1px solid #e5e5ea; margin-left:76px; }
+  .scrollbar-none::-webkit-scrollbar{ display:none; }
+  #detail{ position:absolute; inset:0; top:30dvh; background:#f2f2f7; display:none; flex-direction:column; z-index:20; }
+  #detail.open{ display:flex; animation: slideUp .28s cubic-bezier(.32,.72,0,1); }
+  @keyframes slideUp{ from{ transform:translateY(16px); opacity:.4 } to{ transform:translateY(0); opacity:1 } }
+  .navbar{ backdrop-filter: blur(20px); background:rgba(255,255,255,.85); }
+  .segmented{ background:#e9e9ec; border-radius:9px; padding:2px; display:inline-flex; }
+  .segmented button{ padding:5px 12px; border-radius:7px; font-size:13px; font-weight:600; color:#8a8a8e; }
+  .segmented button.active{ background:#fff; color:#000; box-shadow:0 1px 2px rgba(0,0,0,.15); }
+  .fav-star{ color:#c7c7cc; }
+  .fav-star.active{ color:#ff9500; }
+  .sheet-handle{ width:36px; height:5px; background:#d1d1d6; border-radius:99px; margin:8px auto; }
+  .chevron::after{ content:'›'; color:#c7c7cc; font-size:20px; margin-left:6px; }
+</style>
+</head>
+<body class="flex justify-center bg-gray-400">
+<div id="app">
+
+  <!-- MAP: pinned top 30% -->
+  <div style="height:30dvh; flex-shrink:0; position:relative;">
+    <div id="map"></div>
+    <div class="absolute top-0 left-0 right-0 pt-2 px-3 flex items-center justify-between pointer-events-none">
+      <div class="pointer-events-auto bg-white/85 backdrop-blur rounded-full px-3 py-1 shadow">
+        <h1 class="font-bold text-[15px]">Arco Multipitch</h1>
+      </div>
+      <button class="pointer-events-auto bg-white/85 backdrop-blur text-[15px] px-3 py-1 rounded-full shadow" style="color:var(--ios-blue)">★ Trip</button>
+    </div>
+  </div>
+
+  <!-- SEARCH + SEGMENTED FILTER (iOS large-title-search pattern) -->
+  <div class="flex-shrink-0 bg-white px-3 pt-2 pb-2 border-b border-gray-200">
+    <div class="flex items-center gap-2 bg-[#e9e9ec] rounded-lg px-3 py-1.5 mb-2">
+      <span class="text-gray-400 text-sm">⌕</span>
+      <input placeholder="Search" class="flex-1 bg-transparent text-[15px] placeholder-gray-400 outline-none" />
+    </div>
+    <div class="flex items-center justify-between">
+      <div class="segmented">
+        <button class="active">All</button>
+        <button>5a–6a</button>
+        <button>6a–7a</button>
+      </div>
+      <button class="text-[15px] font-medium" style="color:var(--ios-blue)" onclick="document.getElementById('more-filters').classList.toggle('hidden')">Filters</button>
+    </div>
+    <div id="more-filters" class="hidden flex flex-wrap gap-2 mt-2 text-[13px]">
+      <span class="px-2.5 py-1 rounded-full bg-[#e9e9ec]">☀️ Sunny only</span>
+      <span class="px-2.5 py-1 rounded-full bg-[#e9e9ec]">≤ 9 pitches</span>
+      <span class="px-2.5 py-1 rounded-full bg-[#e9e9ec]">★ Trip list</span>
+    </div>
+  </div>
+
+  <!-- LIST: iOS grouped table style -->
+  <div id="list" class="flex-1 overflow-y-auto scrollbar-none bg-[#f2f2f7]"></div>
+
+  <!-- DETAIL: sheet-like, replaces list below map -->
+  <div id="detail">
+    <div class="sheet-handle"></div>
+    <div class="navbar flex items-center gap-1 px-2 pb-2 flex-shrink-0 sticky top-0 z-10">
+      <button onclick="closeDetail()" class="flex items-center text-[17px] px-1" style="color:var(--ios-blue)">‹ Back</button>
+      <h2 id="d-title" class="font-semibold text-[17px] flex-1 text-center truncate pr-12"></h2>
+    </div>
+    <div class="flex-1 overflow-y-auto scrollbar-none">
+      <div id="d-photo" class="w-full h-48 bg-cover bg-center"></div>
+      <div class="px-4 py-3 flex items-center justify-between bg-white border-b border-gray-200">
+        <div id="d-zone" class="text-[13px] text-gray-500"></div>
+        <button id="d-fav" onclick="toggleFav()" class="fav-star text-2xl">☆</button>
+      </div>
+      <div class="flex bg-white border-b border-gray-200 divide-x divide-gray-200">
+        <div class="flex-1 text-center py-2.5"><div class="text-[11px] text-gray-400 mb-0.5">GRADE</div><span id="d-grade" class="grade-chip"></span></div>
+        <div class="flex-1 text-center py-2.5"><div class="text-[11px] text-gray-400 mb-0.5">PITCHES</div><div id="d-pitches" class="font-semibold text-[15px]"></div></div>
+        <div class="flex-1 text-center py-2.5"><div class="text-[11px] text-gray-400 mb-0.5">LENGTH</div><div id="d-length" class="font-semibold text-[15px]"></div></div>
+      </div>
+
+      <div class="mt-6 px-4 text-[13px] uppercase text-gray-500 font-medium">Pitches</div>
+      <div class="bg-white mt-1.5 mb-6 border-y border-gray-200">
+        <table class="w-full text-[15px]">
+          <tbody id="d-pitchtable"></tbody>
+        </table>
+      </div>
+
+      <div class="px-4 text-[13px] uppercase text-gray-500 font-medium">Trip notes</div>
+      <div class="bg-white mt-1.5 mb-6 border-y border-gray-200 px-4 py-3">
+        <p id="d-intro" class="text-[15px] leading-relaxed text-gray-700"></p>
+      </div>
+
+      <a id="d-source" href="#" target="_blank" class="block text-center text-[15px] pb-10" style="color:var(--ios-blue)">Source: howtoreachthesky.com ↗</a>
+    </div>
+  </div>
+
+</div>
+
+<script id="route-data" type="application/json">[
+  {
+    "slug": "luna-85",
+    "title": "Luna 85",
+    "crag": "Placche Zebrate",
+    "zone": "Monte Brento › Placche Zebrate",
+    "grade": "6c",
+    "gradeRaw": "6c",
+    "pitches": 13,
+    "length": 420,
+    "photos": [
+      "https://lt-mayonesa.github.io/arco-multipitch/photos/luna-85/01.webp",
+      "https://lt-mayonesa.github.io/arco-multipitch/photos/luna-85/02.webp",
+      "https://lt-mayonesa.github.io/arco-multipitch/photos/luna-85/03.webp",
+      "https://lt-mayonesa.github.io/arco-multipitch/photos/luna-85/04.webp"
+    ],
+    "lat": 45.9998747,
+    "lon": 10.9184491,
+    "sun": "mixed-mentioned",
+    "intro": "It's shaping up to be a not-very-sunny but fairly warm Sunday. Looking for something long and good training ahead of the summer season — not so far off now — we eye a line on the Zebra-Striped Slabs wall that, despite the countless routes w",
+    "pitchList": [
+      {
+        "n": 1,
+        "len": 30,
+        "grade": "6a"
+      },
+      {
+        "n": 2,
+        "len": 35,
+        "grade": "5c"
+      },
+      {
+        "n": 3,
+        "len": 35,
+        "grade": "5c"
+      },
+      {
+        "n": 4,
+        "len": 30,
+        "grade": "5b"
+      },
+      {
+        "n": 5,
+        "len": 40,
+        "grade": "5c"
+      },
+      {
+        "n": 6,
+        "len": 30,
+        "grade": "6a"
+      },
+      {
+        "n": 7,
+        "len": 35,
+        "grade": "5c"
+      },
+      {
+        "n": 8,
+        "len": 35,
+        "grade": "6a"
+      },
+      {
+        "n": 9,
+        "len": 20,
+        "grade": "6c"
+      },
+      {
+        "n": 10,
+        "len": 35,
+        "grade": "5c"
+      },
+      {
+        "n": 11,
+        "len": 20,
+        "grade": "6a"
+      },
+      {
+        "n": 12,
+        "len": 30,
+        "grade": "5b"
+      },
+      {
+        "n": 13,
+        "len": 45,
+        "grade": "5a"
+      }
+    ],
+    "source": "https://howtoreachthesky.com/2025/04/30/luna-85/"
+  },
+  {
+    "slug": "il-profondo-risetto-dellindria",
+    "title": "Il profondo rispetto dell’Indria",
+    "crag": "Anglone Nord",
+    "zone": "Coste dell'Anglone › Anglone Nord",
+    "grade": "6b",
+    "gradeRaw": "VI+",
+    "pitches": 13,
+    "length": 390,
+    "photos": [
+      "https://lt-mayonesa.github.io/arco-multipitch/photos/il-profondo-risetto-dellindria/01.webp",
+      "https://lt-mayonesa.github.io/arco-multipitch/photos/il-profondo-risetto-dellindria/02.webp",
+      "https://lt-mayonesa.github.io/arco-multipitch/photos/il-profondo-risetto-dellindria/03.webp",
+      "https://lt-mayonesa.github.io/arco-multipitch/photos/il-profondo-risetto-dellindria/04.webp"
+    ],
+    "lat": 45.9594472,
+    "lon": 10.8973975,
+    "sun": null,
+    "intro": "About two weeks earlier we'd gone down to Dro to tackle \"Le Scalette dell'Indria\", a mediocre route with a few pros but many cons. Disappointed by the overall climb, we still wanted to give Indria another chance, so this weekend we headed b",
+    "pitchList": [
+      {
+        "n": 1,
+        "len": 40,
+        "grade": "4c"
+      },
+      {
+        "n": 2,
+        "len": 30,
+        "grade": "5c"
+      },
+      {
+        "n": 3,
+        "len": 30,
+        "grade": "5c"
+      },
+      {
+        "n": 4,
+        "len": 25,
+        "grade": "5c"
+      },
+      {
+        "n": 5,
+        "len": 30,
+        "grade": "6a+"
+      },
+      {
+        "n": 6,
+        "len": 25,
+        "grade": "4b"
+      },
+      {
+        "n": 7,
+        "len": 25,
+        "grade": "5c"
+      },
+      {
+        "n": 8,
+        "len": 35,
+        "grade": "6a+"
+      },
+      {
+        "n": 9,
+        "len": 30,
+        "grade": "5c"
+      },
+      {
+        "n": 10,
+        "len": 20,
+        "grade": "1"
+      },
+      {
+        "n": 11,
+        "len": 25,
+        "grade": "4c"
+      },
+      {
+        "n": 12,
+        "len": 35,
+        "grade": "6b"
+      },
+      {
+        "n": 13,
+        "len": 40,
+        "grade": "5c"
+      }
+    ],
+    "source": "https://howtoreachthesky.com/2021/11/03/il-profondo-risetto-dellindria/"
+  },
+  {
+    "slug": "la-piccola-piramide",
+    "title": "La Piccola Piramide",
+    "crag": "Anglone Nord",
+    "zone": "Coste dell'Anglone › Anglone Nord",
+    "grade": "6a+",
+    "gradeRaw": "VI",
+    "pitches": 11,
+    "length": 301,
+    "photos": [
+      "https://lt-mayonesa.github.io/arco-multipitch/photos/la-piccola-piramide/01.webp",
+      "https://lt-mayonesa.github.io/arco-multipitch/photos/la-piccola-piramide/02.webp",
+      "https://lt-mayonesa.github.io/arco-multipitch/photos/la-piccola-piramide/03.webp",
+      "https://lt-mayonesa.github.io/arco-multipitch/photos/la-piccola-piramide/04.webp"
+    ],
+    "lat": 45.9594472,
+    "lon": 10.8973975,
+    "sun": null,
+    "intro": "With the days finally starting to get longer, the range of routes you can climb in the valley in a single day is expanding too. We head to the busy Dro area, determined to climb the route \"Archai\", which unfortunately is already taken, so w",
+    "pitchList": [
+      {
+        "n": 1,
+        "len": 35,
+        "grade": "5b"
+      },
+      {
+        "n": 2,
+        "len": 25,
+        "grade": "5c"
+      },
+      {
+        "n": 3,
+        "len": 30,
+        "grade": "5c"
+      },
+      {
+        "n": 4,
+        "len": 20,
+        "grade": "1"
+      },
+      {
+        "n": 5,
+        "len": 30,
+        "grade": "5c"
+      },
+      {
+        "n": 6,
+        "len": 35,
+        "grade": "6a"
+      },
+      {
+        "n": 7,
+        "len": 25,
+        "grade": "5c"
+      },
+      {
+        "n": 8,
+        "len": 18,
+        "grade": "2"
+      },
+      {
+        "n": 9,
+        "len": 28,
+        "grade": "6a+"
+      },
+      {
+        "n": 10,
+        "len": 40,
+        "grade": "6a+"
+      },
+      {
+        "n": 11,
+        "len": 15,
+        "grade": "5c"
+      }
+    ],
+    "source": "https://howtoreachthesky.com/2022/06/18/la-piccola-piramide/"
+  },
+  {
+    "slug": "archai",
+    "title": "Archai",
+    "crag": "Anglone Nord",
+    "zone": "Coste dell'Anglone › Anglone Nord",
+    "grade": "6b",
+    "gradeRaw": "VI+",
+    "pitches": 9,
+    "length": 235,
+    "photos": [
+      "https://lt-mayonesa.github.io/arco-multipitch/photos/archai/01.webp",
+      "https://lt-mayonesa.github.io/arco-multipitch/photos/archai/02.webp",
+      "https://lt-mayonesa.github.io/arco-multipitch/photos/archai/03.webp",
+      "https://lt-mayonesa.github.io/arco-multipitch/photos/archai/04.webp"
+    ],
+    "lat": 45.9594472,
+    "lon": 10.8973975,
+    "sun": "sunny-mentioned",
+    "intro": "A day that, according to the forecast, was supposed to be beautiful and sunny but turned out overcast and cold, not helped by an annoying little breeze. We're already down in the valley now, so all that's left is to suffer quietly and make ",
+    "pitchList": [
+      {
+        "n": 1,
+        "len": 25,
+        "grade": "5c"
+      },
+      {
+        "n": 2,
+        "len": 25,
+        "grade": "6a+"
+      },
+      {
+        "n": 3,
+        "len": 25,
+        "grade": "6b"
+      },
+      {
+        "n": 4,
+        "len": 30,
+        "grade": "6a+"
+      },
+      {
+        "n": 5,
+        "len": 20,
+        "grade": "5b"
+      },
+      {
+        "n": 6,
+        "len": 23,
+        "grade": "6a+"
+      },
+      {
+        "n": 7,
+        "len": 30,
+        "grade": "6a+"
+      },
+      {
+        "n": 8,
+        "len": 25,
+        "grade": "6a+"
+      },
+      {
+        "n": 9,
+        "len": 32,
+        "grade": "6a+"
+      }
+    ],
+    "source": "https://howtoreachthesky.com/2025/03/27/archai/"
+  },
+  {
+    "slug": "sulle-pance-del-pezol",
+    "title": "Sulle pance del Pezol",
+    "crag": "Parete di Pezol",
+    "zone": "Valle del Sarca › Monte Velo › Parete di Pezol",
+    "grade": "6c",
+    "gradeRaw": "VII",
+    "pitches": 12,
+    "length": 322,
+    "photos": [
+      "https://lt-mayonesa.github.io/arco-multipitch/photos/sulle-pance-del-pezol/01.webp",
+      "https://lt-mayonesa.github.io/arco-multipitch/photos/sulle-pance-del-pezol/02.webp",
+      "https://lt-mayonesa.github.io/arco-multipitch/photos/sulle-pance-del-pezol/03.webp",
+      "https://lt-mayonesa.github.io/arco-multipitch/photos/sulle-pance-del-pezol/04.webp"
+    ],
+    "lat": 45.924515,
+    "lon": 10.913872,
+    "sun": "sunny-mentioned",
+    "intro": "On the Saturday of the long Halloween weekend we head down to Arco despite scorching temperatures for the season — 27°C highs in late October is genuinely starting to feel worrying! Either way we head to the Pezol wall early in the morning,",
+    "pitchList": [
+      {
+        "n": 1,
+        "len": 27,
+        "grade": "5b"
+      },
+      {
+        "n": 2,
+        "len": 30,
+        "grade": "6a+"
+      },
+      {
+        "n": 3,
+        "len": 30,
+        "grade": "5b"
+      },
+      {
+        "n": 4,
+        "len": 23,
+        "grade": "5c"
+      },
+      {
+        "n": 5,
+        "len": 30,
+        "grade": "4b"
+      },
+      {
+        "n": 6,
+        "len": 20,
+        "grade": "6b"
+      },
+      {
+        "n": 7,
+        "len": 27,
+        "grade": "5a"
+      },
+      {
+        "n": 8,
+        "len": 25,
+        "grade": "6a+"
+      },
+      {
+        "n": 9,
+        "len": 12,
+        "grade": "6a+"
+      },
+      {
+        "n": 10,
+        "len": 28,
+        "grade": "6c"
+      },
+      {
+        "n": 11,
+        "len": 40,
+        "grade": "6a+"
+      },
+      {
+        "n": 12,
+        "len": 30,
+        "grade": "5c"
+      }
+    ],
+    "source": "https://howtoreachthesky.com/2022/12/09/sulle-pance-del-pezol/"
+  },
+  {
+    "slug": "cuore-doro",
+    "title": "Cuore d’Oro",
+    "crag": "Anglone Sud",
+    "zone": "Coste dell'Anglone › Anglone Sud",
+    "grade": "6b",
+    "gradeRaw": "VI+",
+    "pitches": 11,
+    "length": 320,
+    "photos": [
+      "https://lt-mayonesa.github.io/arco-multipitch/photos/cuore-doro/01.webp",
+      "https://lt-mayonesa.github.io/arco-multipitch/photos/cuore-doro/02.webp",
+      "https://lt-mayonesa.github.io/arco-multipitch/photos/cuore-doro/03.webp",
+      "https://lt-mayonesa.github.io/arco-multipitch/photos/cuore-doro/04.webp"
+    ],
+    "lat": 45.9594472,
+    "lon": 10.8973975,
+    "sun": "sunny-mentioned",
+    "intro": "A slightly cloudy day in Valle del Sarca, with a thin haze that still doesn't let the sun's rays through as it timidly peeks over Monte Bondone. All things considered, better this way, since the temperature is already high early in the morn",
+    "pitchList": [
+      {
+        "n": 1,
+        "len": 20,
+        "grade": "5c"
+      },
+      {
+        "n": 2,
+        "len": 38,
+        "grade": "4c"
+      },
+      {
+        "n": 3,
+        "len": 20,
+        "grade": "6a"
+      },
+      {
+        "n": 4,
+        "len": 25,
+        "grade": "6a+"
+      },
+      {
+        "n": 5,
+        "len": 30,
+        "grade": "6b"
+      },
+      {
+        "n": 6,
+        "len": 32,
+        "grade": "5c"
+      },
+      {
+        "n": 7,
+        "len": 35,
+        "grade": "6a"
+      },
+      {
+        "n": 8,
+        "len": 30,
+        "grade": "5a"
+      },
+      {
+        "n": 9,
+        "len": 25,
+        "grade": "5a"
+      },
+      {
+        "n": 10,
+        "len": 25,
+        "grade": "6a+"
+      },
+      {
+        "n": 11,
+        "len": 40,
+        "grade": "5c"
+      }
+    ],
+    "source": "https://howtoreachthesky.com/2022/11/23/cuore-doro/"
+  },
+  {
+    "slug": "via-del-dottore",
+    "title": "Via del Dottore",
+    "crag": "Piramide Lakshmi",
+    "zone": "Coste dell'Anglone › Piramide Lakshmi",
+    "grade": "6a+",
+    "gradeRaw": "VI",
+    "pitches": 11,
+    "length": 375,
+    "photos": [
+      "https://lt-mayonesa.github.io/arco-multipitch/photos/via-del-dottore/01.webp",
+      "https://lt-mayonesa.github.io/arco-multipitch/photos/via-del-dottore/02.webp",
+      "https://lt-mayonesa.github.io/arco-multipitch/photos/via-del-dottore/03.webp",
+      "https://lt-mayonesa.github.io/arco-multipitch/photos/via-del-dottore/04.webp"
+    ],
+    "lat": 45.9594472,
+    "lon": 10.8973975,
+    "sun": "shaded-mentioned",
+    "intro": "We head down into Valle del Sarca toward Dro, intending to tackle a route at Coste dell'Anglone early in the morning. Early-September days are still warm but not stifling, and the system of corners making up this rock band often lets you cl",
+    "pitchList": [
+      {
+        "n": 1,
+        "len": 40,
+        "grade": "3b"
+      },
+      {
+        "n": 2,
+        "len": 45,
+        "grade": "4c"
+      },
+      {
+        "n": 3,
+        "len": 25,
+        "grade": "4c"
+      },
+      {
+        "n": 4,
+        "len": 40,
+        "grade": "5b"
+      },
+      {
+        "n": 5,
+        "len": 20,
+        "grade": "5c"
+      },
+      {
+        "n": 6,
+        "len": 25,
+        "grade": "6a+"
+      },
+      {
+        "n": 7,
+        "len": 40,
+        "grade": "5b"
+      },
+      {
+        "n": 8,
+        "len": 40,
+        "grade": "3b"
+      },
+      {
+        "n": 9,
+        "len": 35,
+        "grade": "5c"
+      },
+      {
+        "n": 10,
+        "len": 45,
+        "grade": "4c"
+      },
+      {
+        "n": 11,
+        "len": 20,
+        "grade": "4b"
+      }
+    ],
+    "source": "https://howtoreachthesky.com/2022/10/21/via-del-dottore/"
+  },
+  {
+    "slug": "apollo",
+    "title": "Apollo",
+    "crag": "Parete di Padaro",
+    "zone": "Parete di Padaro",
+    "grade": "7a",
+    "gradeRaw": "VII+",
+    "pitches": 9,
+    "length": 235,
+    "photos": [
+      "https://lt-mayonesa.github.io/arco-multipitch/photos/apollo/01.webp",
+      "https://lt-mayonesa.github.io/arco-multipitch/photos/apollo/02.webp",
+      "https://lt-mayonesa.github.io/arco-multipitch/photos/apollo/03.webp",
+      "https://lt-mayonesa.github.io/arco-multipitch/photos/apollo/04.webp"
+    ],
+    "lat": 45.93731,
+    "lon": 10.86861,
+    "sun": null,
+    "intro": "Last weekend we approached the Padaro wall for the first time, and we have to admit we liked it — whether for the view, the peace and quiet of the area, the relatively few parties on the wall, or the fact that the routes are never given awa",
+    "pitchList": [
+      {
+        "n": 1,
+        "len": 25,
+        "grade": "5c"
+      },
+      {
+        "n": 2,
+        "len": 20,
+        "grade": "6a+"
+      },
+      {
+        "n": 3,
+        "len": 30,
+        "grade": "4c"
+      },
+      {
+        "n": 4,
+        "len": 30,
+        "grade": "6a"
+      },
+      {
+        "n": 5,
+        "len": 30,
+        "grade": "6b"
+      },
+      {
+        "n": 6,
+        "len": 25,
+        "grade": "6a"
+      },
+      {
+        "n": 7,
+        "len": 30,
+        "grade": "7a"
+      },
+      {
+        "n": 8,
+        "len": 25,
+        "grade": "6a"
+      },
+      {
+        "n": 9,
+        "len": 20,
+        "grade": "6a"
+      }
+    ],
+    "source": "https://howtoreachthesky.com/2021/12/19/apollo/"
+  },
+  {
+    "slug": "le-scalette-dellindria",
+    "title": "Le Scalette dell’Indria",
+    "crag": "Anglone Nord",
+    "zone": "Coste dell'Anglone › Anglone Nord",
+    "grade": "6a+",
+    "gradeRaw": "VI",
+    "pitches": 9,
+    "length": 260,
+    "photos": [
+      "https://lt-mayonesa.github.io/arco-multipitch/photos/le-scalette-dellindria/01.webp",
+      "https://lt-mayonesa.github.io/arco-multipitch/photos/le-scalette-dellindria/02.webp",
+      "https://lt-mayonesa.github.io/arco-multipitch/photos/le-scalette-dellindria/03.webp",
+      "https://lt-mayonesa.github.io/arco-multipitch/photos/le-scalette-dellindria/04.webp"
+    ],
+    "lat": 45.9594472,
+    "lon": 10.8973975,
+    "sun": null,
+    "intro": "The northern part of Coste dell'Anglone hosts the longest lines on the whole rock band, on average. One of these, perhaps the easiest on the wall, is \"Le Scalette dell'Indria\" (\"Indria's Little Stairs\"), which alternates nice slabs clear of",
+    "pitchList": [
+      {
+        "n": 1,
+        "len": 30,
+        "grade": "4b"
+      },
+      {
+        "n": 2,
+        "len": 20,
+        "grade": "4b"
+      },
+      {
+        "n": 3,
+        "len": 20,
+        "grade": "6a+"
+      },
+      {
+        "n": 4,
+        "len": 45,
+        "grade": "6a+"
+      },
+      {
+        "n": 5,
+        "len": 15,
+        "grade": "3b"
+      },
+      {
+        "n": 6,
+        "len": 30,
+        "grade": "5c"
+      },
+      {
+        "n": 7,
+        "len": 30,
+        "grade": "4c"
+      },
+      {
+        "n": 8,
+        "len": 20,
+        "grade": "5b"
+      },
+      {
+        "n": 9,
+        "len": 50,
+        "grade": "5c"
+      }
+    ],
+    "source": "https://howtoreachthesky.com/2021/10/19/le-scalette-dellindria/"
+  },
+  {
+    "slug": "claudia-22",
+    "title": "Claudia ’22",
+    "crag": "Parete di Pezol",
+    "zone": "Valle del Sarca › Monte Velo › Parete di Pezol",
+    "grade": "5c",
+    "gradeRaw": "V+",
+    "pitches": 10,
+    "length": 231,
+    "photos": [
+      "https://lt-mayonesa.github.io/arco-multipitch/photos/claudia-22/01.webp",
+      "https://lt-mayonesa.github.io/arco-multipitch/photos/claudia-22/02.webp",
+      "https://lt-mayonesa.github.io/arco-multipitch/photos/claudia-22/03.webp",
+      "https://lt-mayonesa.github.io/arco-multipitch/photos/claudia-22/04.webp"
+    ],
+    "lat": 45.924515,
+    "lon": 10.913872,
+    "sun": "sunny-mentioned",
+    "intro": "Today is January 2nd, 2023, and it's warm. We reach Arco with the thermometer reading 8°C at 8am. Lucky that the sky is overcast and the forecast has no sun for the day, otherwise it'd almost be short-sleeves weather. The goal is to start m",
+    "pitchList": [
+      {
+        "n": 1,
+        "len": 15,
+        "grade": "3c"
+      },
+      {
+        "n": 2,
+        "len": 27,
+        "grade": "5c"
+      },
+      {
+        "n": 3,
+        "len": 20,
+        "grade": "5c"
+      },
+      {
+        "n": 4,
+        "len": 28,
+        "grade": "5a"
+      },
+      {
+        "n": 5,
+        "len": 30,
+        "grade": "5b"
+      },
+      {
+        "n": 6,
+        "len": 22,
+        "grade": "4b"
+      },
+      {
+        "n": 7,
+        "len": 22,
+        "grade": "4b"
+      },
+      {
+        "n": 8,
+        "len": 24,
+        "grade": "5b"
+      },
+      {
+        "n": 9,
+        "len": 18,
+        "grade": "2"
+      },
+      {
+        "n": 10,
+        "len": 25,
+        "grade": "5b"
+      }
+    ],
+    "source": "https://howtoreachthesky.com/2023/04/19/claudia-22/"
+  }
+]</script>
+<script>
+const ROUTES = JSON.parse(document.getElementById('route-data').textContent);
+const favs = new Set();
+
+const map = L.map('map', { zoomControl:false, attributionControl:false }).setView([45.945, 10.91], 12);
+L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(map);
+
+const markers = {};
+function pinIcon(active){
+  return L.divIcon({ className:'', html:`<div class="marker-pin ${active?'active':''}"></div>`, iconSize:[26,26], iconAnchor:[13,26] });
+}
+ROUTES.forEach(r => {
+  const m = L.marker([r.lat, r.lon], { icon: pinIcon(false) }).addTo(map);
+  m.bindPopup(`<div style="min-width:150px"><strong>${r.title}</strong><br><span style="color:#666">${r.crag}</span><br><button onclick="openDetail('${r.slug}')" style="margin-top:6px;background:#007aff;color:#fff;border:none;padding:4px 10px;border-radius:6px;font-weight:600;font-size:12px">View details</button></div>`);
+  markers[r.slug] = m;
+});
+
+function renderList(){
+  const list = document.getElementById('list');
+  list.innerHTML = `<div class="mt-3"></div>` + ROUTES.map((r,i) => `
+    <div>
+      <div class="ios-list-item flex gap-3 px-3 py-2.5 cursor-pointer chevron-row" onclick="openDetail('${r.slug}')">
+        <img src="${r.photos[0]}" class="w-14 h-14 rounded-lg object-cover flex-shrink-0 bg-gray-100" loading="lazy" />
+        <div class="flex-1 min-w-0 flex items-center">
+          <div class="flex-1 min-w-0">
+            <div class="flex items-center gap-1.5">
+              <h3 class="font-medium text-[16px] truncate">${r.title}</h3>
+              ${r.sun ? '<span class="text-xs">☀️</span>' : ''}
+            </div>
+            <div class="text-[13px] text-gray-500 truncate">${r.crag} · ${r.pitches}p · ${r.length}m</div>
+          </div>
+          <span class="grade-chip mr-1">${r.grade}</span>
+          <span class="chevron"></span>
+        </div>
+      </div>
+      ${i < ROUTES.length-1 ? '<div class="ios-sep"></div>' : ''}
+    </div>`).join('');
+}
+renderList();
+
+function openDetail(slug){
+  const r = ROUTES.find(x => x.slug === slug);
+  document.getElementById('d-title').textContent = r.title;
+  document.getElementById('d-photo').style.backgroundImage = `url(${r.photos[0]})`;
+  document.getElementById('d-zone').textContent = r.zone;
+  document.getElementById('d-grade').textContent = r.grade;
+  document.getElementById('d-pitches').textContent = r.pitches;
+  document.getElementById('d-length').textContent = r.length + 'm';
+  document.getElementById('d-intro').textContent = r.intro;
+  document.getElementById('d-source').href = r.source;
+  document.getElementById('d-fav').textContent = favs.has(slug) ? '★' : '☆';
+  document.getElementById('d-fav').classList.toggle('active', favs.has(slug));
+  document.getElementById('d-fav').dataset.slug = slug;
+  document.getElementById('d-pitchtable').innerHTML = r.pitchList.map((p,i) => `<tr class="${i>0?'border-t border-gray-100':''}"><td class="py-2 pl-4 text-gray-500 w-8">${p.n}</td><td class="py-2 text-gray-700">${p.len ?? '—'}m</td><td class="py-2 pr-4 text-right"><span class="grade-chip">${p.grade}</span></td></tr>`).join('');
+  document.getElementById('detail').classList.add('open');
+
+  Object.entries(markers).forEach(([s,m]) => m.setIcon(pinIcon(s===slug)));
+  map.flyTo([r.lat, r.lon], 14, { duration: 0.6 });
+}
+function closeDetail(){
+  document.getElementById('detail').classList.remove('open');
+}
+function toggleFav(){
+  const slug = document.getElementById('d-fav').dataset.slug;
+  if (favs.has(slug)) favs.delete(slug); else favs.add(slug);
+  document.getElementById('d-fav').textContent = favs.has(slug) ? '★' : '☆';
+  document.getElementById('d-fav').classList.toggle('active', favs.has(slug));
+}
+</script>
+</body>
+</html>
