@@ -1,6 +1,24 @@
 import { useMemo, useState } from "react";
 import type { Route } from "../types";
-import { FRENCH_GRADE_SCALE, gradeIndex } from "./grades";
+import { FRENCH_GRADE_SCALE, frenchGradeToScore, gradeIndex } from "./grades";
+
+export type SortField = "grade" | "length" | "pitches";
+export type SortDir = "asc" | "desc";
+export interface SortOption {
+  field: SortField;
+  dir: SortDir;
+}
+
+export const SORT_OPTIONS: { key: string; label: string; option: SortOption }[] = [
+  { key: "grade-asc", label: "Grade: easiest first", option: { field: "grade", dir: "asc" } },
+  { key: "grade-desc", label: "Grade: hardest first", option: { field: "grade", dir: "desc" } },
+  { key: "length-asc", label: "Length: shortest first", option: { field: "length", dir: "asc" } },
+  { key: "length-desc", label: "Length: longest first", option: { field: "length", dir: "desc" } },
+  { key: "pitches-asc", label: "Pitches: fewest first", option: { field: "pitches", dir: "asc" } },
+  { key: "pitches-desc", label: "Pitches: most first", option: { field: "pitches", dir: "desc" } },
+];
+
+export const DEFAULT_SORT_KEY = "grade-asc";
 
 export interface Filters {
   search: string;
@@ -10,6 +28,7 @@ export interface Filters {
   maxPitches: number | null;
   favoritesOnly: boolean;
   sun: "any" | "sunny" | "shaded";
+  sortKey: string;
 }
 
 export const DEFAULT_FILTERS: Filters = {
@@ -20,6 +39,7 @@ export const DEFAULT_FILTERS: Filters = {
   maxPitches: null,
   favoritesOnly: false,
   sun: "any",
+  sortKey: DEFAULT_SORT_KEY,
 };
 
 export function useFilters() {
@@ -41,13 +61,38 @@ export function useFilters() {
   return { filters, set, toggleCrag, reset };
 }
 
+function sortRoutes(routes: Route[], sortKey: string): Route[] {
+  const found = SORT_OPTIONS.find((s) => s.key === sortKey);
+  if (!found) return routes;
+  const { field, dir } = found.option;
+  const mult = dir === "asc" ? 1 : -1;
+
+  const valueOf = (r: Route): number => {
+    if (field === "grade") return gradeIndex(r.overallGradeFrench);
+    if (field === "length") return r.totalLengthM;
+    return r.numPitches;
+  };
+
+  return [...routes].sort((a, b) => {
+    const va = valueOf(a);
+    const vb = valueOf(b);
+    // Routes with unknown grade always sort last, regardless of direction.
+    if (field === "grade") {
+      if (va < 0 && vb < 0) return 0;
+      if (va < 0) return 1;
+      if (vb < 0) return -1;
+    }
+    return (va - vb) * mult;
+  });
+}
+
 export function applyFilters(
   routes: Route[],
   filters: Filters,
   isFavorite: (slug: string) => boolean,
 ): Route[] {
   const search = filters.search.trim().toLowerCase();
-  return routes.filter((r) => {
+  const filtered = routes.filter((r) => {
     if (filters.favoritesOnly && !isFavorite(r.slug)) return false;
     if (filters.crags.size > 0 && !filters.crags.has(r.crag)) return false;
     if (filters.maxPitches != null && r.numPitches > filters.maxPitches) return false;
@@ -67,6 +112,8 @@ export function applyFilters(
 
     return true;
   });
+
+  return sortRoutes(filtered, filters.sortKey);
 }
 
 export function useFilteredRoutes(
@@ -76,3 +123,6 @@ export function useFilteredRoutes(
 ) {
   return useMemo(() => applyFilters(routes, filters, isFavorite), [routes, filters, isFavorite]);
 }
+
+// re-exported for components that only need score comparisons elsewhere
+export { frenchGradeToScore };

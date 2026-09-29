@@ -2,6 +2,7 @@ import { useState } from "react";
 import { allCrags } from "../data/routes";
 import { FRENCH_GRADE_SCALE } from "../lib/grades";
 import type { Filters } from "../lib/useFilters";
+import { SortMenu } from "./SortMenu";
 
 interface Props {
   filters: Filters;
@@ -30,6 +31,7 @@ export function FilterBar({ filters, set, toggleCrag, reset, resultCount }: Prop
           value={filters.search}
           onChange={(e) => set("search", e.target.value)}
         />
+        <SortMenu sortKey={filters.sortKey} onChange={(key) => set("sortKey", key)} />
         <button className="filter-bar__toggle" onClick={() => setOpen((o) => !o)}>
           Filters{activeCount > 0 ? ` (${activeCount})` : ""}
         </button>

@@ -4,11 +4,16 @@ A small offline-capable PWA crib sheet for multipitch climbing routes around
 Arco / Valle del Sarca (and a few further-flung Trentino/Veneto zones), built
 from trip reports on **[howtoreachthesky.com](https://howtoreachthesky.com/)**.
 
-Every route card shows: overall + per-pitch grades (converted to the French
-scale, original grade kept alongside), length, pitch count, crag/zone, an
-interactive map, a short English trip-notes summary, photos, and a link back
-to the original write-up. Mark routes you want to do with ★ — that list works
-fully offline once the app has been opened once.
+The map is pinned to the top of the screen at all times (drag the handle
+below it to resize, Google-Maps-Android style: peek / half / full-list), with
+a sortable, filterable, searchable list below. Tapping a route replaces the
+list with details — the map stays visible and pans to the route's pin. Every
+route shows overall + per-pitch grades (converted to the French scale,
+original grade kept alongside), length, pitch count, crag/zone, a short
+English trip-notes summary, and photos grouped by approximate pitch (tap any
+photo for a full-size swipe/zoom viewer), plus a link back to the original
+write-up. Mark routes you want to do with ★ — that list works fully offline
+once the app has been opened once.
 
 **All route text/photos are © howtoreachthesky.com** — this app is a personal
 trip-planning aid for a small group, not a redistribution product. Every route
