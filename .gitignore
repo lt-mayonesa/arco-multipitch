@@ -18,7 +18,6 @@ data/routes.parsed.json
 data/routes.geo.json
 data/routes.translated.json
 data/geocode-cache.json
-data/translate-cache.json
 data/mymap.kml
 data/mymap-pins.json
 data/descendant_ids.json

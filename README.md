@@ -61,9 +61,19 @@ the pipeline in `scripts/`, run in order:
    own [Google My Maps](https://www.google.com/maps/d/viewer?mid=1GiPSPBfJ3fAEv9aDSrHRLjdJZsBSdjT3)
    KML export (matched by source URL), then OpenStreetMap Nominatim by
    crag/zone name, with a few manual overrides for crags Nominatim doesn't know.
-4. `04-translate.mjs` — translate the short Italian intro/outro blurbs to
-   English via the free MyMemory API.
-5. `05-download-photos.mjs` — download, reorient, resize (1280px) and
+4. `04-export-for-translation.mjs` — dump every route's Italian intro/outro
+   blurb into `data/translation-source.md`, keyed by `<slug>::intro` /
+   `<slug>::outro`.
+5. Translate `data/translation-source.md` into `data/translation-en.md`
+   (same keys) — done directly by hand/LLM, **not** via a free translation API.
+   An earlier version of this pipeline used the free MyMemory API and silently
+   cached its "daily quota exceeded" warning message as if it were a real
+   translation once the quota ran out (~50 routes ended up with garbage
+   English text) — worth knowing if you ever reach for a free translation API
+   here again. Don't.
+6. `04b-merge-translations.mjs` — merge `translation-en.md` back into the
+   dataset, with a sanity check that no quota-warning-style garbage slipped in.
+7. `05-download-photos.mjs` — download, reorient, resize (1280px) and
    re-encode (WebP) every route photo into `public/photos/<slug>/`, and write
    the final `data/routes.json`.
 
@@ -71,7 +81,9 @@ the pipeline in `scripts/`, run in order:
 node scripts/01-fetch-posts.mjs
 node scripts/02-parse-routes.mjs
 node scripts/03-geocode.mjs
-node scripts/04-translate.mjs
+node scripts/04-export-for-translation.mjs
+# translate data/translation-source.md -> data/translation-en.md here
+node scripts/04b-merge-translations.mjs
 node scripts/05-download-photos.mjs
 cp data/routes.json src/data/routes.json
 ```
