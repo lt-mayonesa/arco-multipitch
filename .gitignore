@@ -1,0 +1,24 @@
+node_modules
+dist
+dist-ssr
+*.local
+
+# Editor
+.vscode/*
+!.vscode/extensions.json
+.idea
+
+# OS
+.DS_Store
+
+# Scraper intermediate artifacts (kept locally for re-running the pipeline;
+# only the final data/routes.json + src/data/routes.json copy are committed).
+data/raw-posts.json
+data/routes.parsed.json
+data/routes.geo.json
+data/routes.translated.json
+data/geocode-cache.json
+data/translate-cache.json
+data/mymap.kml
+data/mymap-pins.json
+data/descendant_ids.json
