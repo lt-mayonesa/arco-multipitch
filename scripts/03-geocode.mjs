@@ -62,11 +62,12 @@ const MANUAL_COORDS = {
   "Pian dela Paia": { lat: 46.01111, lon: 10.9301 },
   "Parete Due Laghi": { lat: 46.026, lon: 10.916 }, // Santa Massenza hydro plant
   "Lo Scudo": { lat: 45.979656, lon: 10.913951 },
-  "Spalti dell'Orsa": { lat: 45.62, lon: 10.83 }, // Spalti di Capitel d'Orsa, Brentino Belluno (VR)
+  "Spalti dell'Orsa": { lat: 45.65282, lon: 10.86266 }, // OSM cliff "Parete Capitel D'Orsa", Brentino Belluno (VR)
   "monte baone": { lat: 45.925, lon: 10.878 }, // Monte Baone above Arco (not the Colli Euganei one)
-  "Parete Rigata": { lat: 45.604, lon: 10.845 }, // Tessari, Brentino/Val d'Adige (VR)
-  "Ca' di Sopra": { lat: 45.604077, lon: 10.844842 },
-  "Parete di Tessari": { lat: 45.604, lon: 10.845 },
+  "Parete Rigata": { lat: 45.60294, lon: 10.84111 }, // OSM cliff, Tessari (VR); thetopo.com agrees
+  "Ca' di Sopra": { lat: 45.604077, lon: 10.844842 }, // outdooractive.com; matches OSM cliff
+  // Both posts under this category are at Roda del Canal (OSM cliff "Roda de Canal").
+  "Parete di Tessari": { lat: 45.59449, lon: 10.8363 },
 };
 function inBbox(lat, lon, bbox) {
   return lat >= bbox.minLat && lat <= bbox.maxLat && lon >= bbox.minLon && lon <= bbox.maxLon;
