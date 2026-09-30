@@ -69,9 +69,13 @@ and both must pass. Don't add new lint warnings (a few pre-existing ones in
 - Sheet gestures: mark scrollable regions inside the sheet with
   `data-sheet-scroll`; they only scroll at the `full` snap. Map controls must
   live at the top (bottom corners sit under the sheet).
-- Photo → pitch grouping in `photoGroups.ts` is a positional guess, not real
-  data. See `design/photo-pitch-mapping.noqa.md` before touching it.
-- ~9 routes have `approximateData: true` (unparseable pitch data); UI must keep
+- Each photo carries `section`/`pitch`/captions, recovered at scrape time by
+  `scripts/lib/photoContext.mjs` (pitch paragraph it follows, cross-checked
+  with its caption + grade). Photo order must stay stable: files are named
+  `NN.webp` by index and captions are keyed `<slug>::photo-NN`. Changing pitch
+  parsing shifts pitch numbers — re-check captions naming a pitch
+  (`design/photo-pitch-mapping.noqa.md`).
+- ~7 routes have `approximateData: true` (unparseable pitch data); UI must keep
   showing the warning + source link.
 - Grade conversion (UIAA → French) is approximate; logic duplicated in
   `scripts/lib/gradeConvert.mjs` and `src/lib/grades.ts` — keep them in sync.

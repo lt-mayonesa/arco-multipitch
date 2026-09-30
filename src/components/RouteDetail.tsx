@@ -1,9 +1,9 @@
-import { useState } from "react";
+import { useMemo, useState } from "react";
 import { createPortal } from "react-dom";
 import type { Route } from "../types";
 import { GradeBadge } from "./GradeBadge";
 import { PhotoModal } from "./PhotoModal";
-import { groupPhotosByPitch } from "../lib/photoGroups";
+import { groupPhotosByPitch, photoCaption } from "../lib/photoGroups";
 
 interface Props {
   route: Route;
@@ -22,8 +22,24 @@ export function RouteDetail({ route, isFavorite, onToggleFavorite, onClose }: Pr
   const mapsUrl = route.location
     ? `https://www.google.com/maps?q=${route.location.lat},${route.location.lon}`
     : null;
-  const photoGroups = groupPhotosByPitch(route.photos, route.pitches);
+  const photoGroups = useMemo(() => groupPhotosByPitch(route), [route]);
+  // Viewer swipes through photos in group order, labelled with their group.
+  const viewerItems = useMemo(
+    () => photoGroups.flatMap((g) => g.photos.map((photo) => ({ photo, label: g.label }))),
+    [photoGroups],
+  );
+  // Viewer index of each group's first photo.
+  const groupStart = useMemo(() => {
+    const m = new Map<string, number>();
+    let i = 0;
+    for (const g of photoGroups) {
+      m.set(g.key, i);
+      i += g.photos.length;
+    }
+    return m;
+  }, [photoGroups]);
   const [modalIndex, setModalIndex] = useState<number | null>(null);
+  const cover = route.photos[0];
 
   return (
     <div className="route-detail">
@@ -42,12 +58,12 @@ export function RouteDetail({ route, isFavorite, onToggleFavorite, onClose }: Pr
       </div>
 
       <div className="route-detail__scroll" data-sheet-scroll>
-        {route.photos[0] && (
+        {cover && (
           <img
             className="route-detail__cover"
-            src={`${import.meta.env.BASE_URL}${route.photos[0]}`}
-            alt=""
-            onClick={() => setModalIndex(0)}
+            src={`${import.meta.env.BASE_URL}${cover.src}`}
+            alt={photoCaption(cover) ?? ""}
+            onClick={() => setModalIndex(viewerItems.findIndex((i) => i.photo === cover))}
           />
         )}
 
@@ -91,18 +107,33 @@ export function RouteDetail({ route, isFavorite, onToggleFavorite, onClose }: Pr
                   <th>P</th>
                   <th>Length</th>
                   <th>Grade</th>
+                  <th aria-label="Photos" />
                 </tr>
               </thead>
               <tbody>
-                {route.pitches.map((p) => (
-                  <tr key={p.pitch}>
-                    <td>{p.pitch}</td>
-                    <td>{p.lengthM != null ? `${p.lengthM}m` : "—"}</td>
-                    <td>
-                      <GradeBadge french={p.gradeFrench} raw={p.gradeRaw} size="sm" />
-                    </td>
-                  </tr>
-                ))}
+                {route.pitches.map((p) => {
+                  const photoIndex = groupStart.get(`pitch-${p.pitch}`);
+                  return (
+                    <tr key={p.pitch}>
+                      <td>{p.pitch}</td>
+                      <td>{p.lengthM != null ? `${p.lengthM}m` : "—"}</td>
+                      <td>
+                        <GradeBadge french={p.gradeFrench} raw={p.gradeRaw} size="sm" />
+                      </td>
+                      <td className="pitch-table__photo">
+                        {photoIndex != null && (
+                          <button
+                            className="pitch-table__photo-btn"
+                            onClick={() => setModalIndex(photoIndex)}
+                            aria-label={`Photos of pitch ${p.pitch}`}
+                          >
+                            📷
+                          </button>
+                        )}
+                      </td>
+                    </tr>
+                  );
+                })}
               </tbody>
             </table>
           )}
@@ -123,24 +154,23 @@ export function RouteDetail({ route, isFavorite, onToggleFavorite, onClose }: Pr
           {photoGroups.length > 0 && (
             <div className="route-detail__photo-groups">
               <h4>Photos</h4>
-              <p className="route-detail__photo-note">
-                Grouped in the order they appear in the original report (approximate pitch match).
-              </p>
               {photoGroups.map((group) => (
-                <div key={group.label} className="photo-group">
+                <div key={group.key} className="photo-group">
                   <div className="photo-group__label">{group.label}</div>
                   <div className="photo-group__row">
-                    {group.photos.map((p) => {
-                      const flatIndex = route.photos.indexOf(p);
+                    {group.photos.map((p, j) => {
+                      const caption = photoCaption(p);
+                      const viewerIndex = groupStart.get(group.key)! + j;
                       return (
-                        <img
-                          key={p}
-                          src={`${import.meta.env.BASE_URL}${p}`}
-                          alt=""
-                          loading="lazy"
-                          className="photo-group__thumb"
-                          onClick={() => setModalIndex(flatIndex)}
-                        />
+                        <figure key={p.src} className="photo-group__item" onClick={() => setModalIndex(viewerIndex)}>
+                          <img
+                            src={`${import.meta.env.BASE_URL}${p.src}`}
+                            alt={caption ?? ""}
+                            loading="lazy"
+                            className="photo-group__thumb"
+                          />
+                          {caption && <figcaption className="photo-group__caption">{caption}</figcaption>}
+                        </figure>
                       );
                     })}
                   </div>
@@ -159,7 +189,7 @@ export function RouteDetail({ route, isFavorite, onToggleFavorite, onClose }: Pr
       {modalIndex != null &&
         createPortal(
           <PhotoModal
-            photos={route.photos}
+            items={viewerItems}
             index={modalIndex}
             onClose={() => setModalIndex(null)}
             onIndexChange={setModalIndex}

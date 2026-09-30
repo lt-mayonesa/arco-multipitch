@@ -120,3 +120,34 @@ Missing / discarded during scraping:
 This file only documents the problem and the current (approximate,
 disclaimer-flagged) workaround. It intentionally does not prescribe a fix
 approach — that's left for whoever picks this up.
+
+---
+
+## Resolution
+
+Fixed at scrape time; `groupPhotosByPitch()` no longer guesses.
+
+- `scripts/lib/photoContext.mjs` walks the post's top-level blocks in order and,
+  per image, records its caption (`figcaption`, or the centred `<p>` right
+  after the image block) and its section: `approach` (before the first pitch
+  paragraph), `pitch` N (after pitch paragraph N), `summary` (after the outro
+  starts), or `unknown` (routes with no real pitch paragraphs).
+- The caption cross-checks position: if it names a pitch ("terzo tiro",
+  "settima lunghezza", "7° tiro", "S7", "ultimo tiro", "penultimo tiro") and
+  disagrees with position, the caption wins unless its trailing grade
+  ("…, 6b.") doesn't match that pitch's grade. Needed because the author
+  sometimes miscounts or numbers pitches of the original line while climbing
+  a variant (e.g. `di-tutto-un-po`, `diedro-rosso`).
+- Using captions as an oracle exposed ~30 pitch paragraphs the pitch regex
+  missed (`40m IV+.`, `20m, 6b?/A0.`, `35m, 6b o A0.`, `(6b, 4a)` …), which
+  shifted every later pitch number. `PITCH_RE` / `PITCH_PARENS_RE` in
+  `02-parse-routes.mjs` now accept those; 24 routes gained pitches (and fixed
+  totals/overall grades). Caption paragraphs are also excluded from the
+  intro/outro blurbs.
+- Captions are translated like the blurbs (`<slug>::photo-NN` keys in
+  `data/translation-en.md`) and shipped as `Photo.captionIt/captionEn`.
+- Result over 453 photos: ~375 position and caption agree, ~45 position only
+  (no pitch named), ~15 position kept by grade, ~10 caption override, 9
+  approach/summary/unknown. Known leftovers: `apollo` (a pitch paragraph with
+  no length/grade), `lungo-il-fiume-e-sullacqua` (free-form post, 1 parsed
+  pitch), `sguarauunda` ("nono tiro – quello sbagliato").

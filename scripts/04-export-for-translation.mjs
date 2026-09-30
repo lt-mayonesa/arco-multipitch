@@ -1,4 +1,5 @@
-// Step 4a: dump every route's Italian intro/outro blurb into a plain markdown file,
+// Step 4a: dump every route's Italian intro/outro blurb and photo captions into a
+// plain markdown file,
 // keyed and delimited, for direct human/LLM translation (no flaky free translation
 // APIs — see scripts/04b-merge-translations.mjs for how the result gets merged back).
 import fs from "node:fs/promises";
@@ -21,7 +22,15 @@ for (const r of routes) {
   lines.push(`## ${r.slug}::outro`);
   lines.push(r.outroIt || "*(empty)*");
   lines.push("");
+  // NN matches the photo filename (public/photos/<slug>/NN.webp).
+  for (const [i, img] of r.images.entries()) {
+    if (!img.captionIt) continue;
+    lines.push(`## ${r.slug}::photo-${String(i + 1).padStart(2, "0")}`);
+    lines.push(img.captionIt);
+    lines.push("");
+  }
 }
 
 await fs.writeFile(OUT, lines.join("\n"));
-console.log(`Wrote ${OUT.pathname} (${routes.length} routes, ${routes.length * 2} blurbs)`);
+const captions = routes.reduce((n, r) => n + r.images.filter((i) => i.captionIt).length, 0);
+console.log(`Wrote ${OUT.pathname} (${routes.length} routes, ${routes.length * 2} blurbs, ${captions} captions)`);

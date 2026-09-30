@@ -1,5 +1,5 @@
 // Step 4b: merge hand-translated (or LLM-translated) English text from
-// data/translation-en.md back into the route dataset. Replaces the old
+// data/translation-en.md (intro/outro blurbs + photo captions) back into the route dataset. Replaces the old
 // MyMemory-API-based 04-translate.mjs, which silently cached the API's quota-exceeded
 // warning message as if it were a real translation once the free daily quota ran out.
 import fs from "node:fs/promises";
@@ -30,10 +30,17 @@ const out = routes.map((r) => {
   const outroKey = `${r.slug}::outro`;
   if (!translations.has(introKey)) missing.push(introKey);
   if (!translations.has(outroKey)) missing.push(outroKey);
+  const images = r.images.map((img, i) => {
+    if (!img.captionIt) return { ...img, captionEn: null };
+    const key = `${r.slug}::photo-${String(i + 1).padStart(2, "0")}`;
+    if (!translations.has(key)) missing.push(key);
+    return { ...img, captionEn: translations.get(key) || null };
+  });
   return {
     ...r,
     introEn: translations.get(introKey) ?? "",
     outroEn: translations.get(outroKey) ?? "",
+    images,
   };
 });
 
@@ -43,7 +50,10 @@ if (missing.length) {
 
 // Sanity check: make sure no leftover garbage from the old API bug survives.
 const stillBroken = out.filter(
-  (r) => /MYMEMORY WARNING/i.test(r.introEn) || /MYMEMORY WARNING/i.test(r.outroEn),
+  (r) =>
+    /MYMEMORY WARNING/i.test(r.introEn) ||
+    /MYMEMORY WARNING/i.test(r.outroEn) ||
+    r.images.some((img) => /MYMEMORY WARNING/i.test(img.captionEn ?? "")),
 );
 if (stillBroken.length) {
   throw new Error(

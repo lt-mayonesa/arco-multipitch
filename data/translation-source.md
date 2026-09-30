@@ -7,11 +7,50 @@ Giornata di fine novembre abbastanza velata ma le temperature non sono così bas
 ## cercando-la-trincea::outro
 Itinerario semplice e bello. La continuità della salita è spesso spezzata da cenge e terrazzini dove sono presenti le soste. Lungo i tiri, invece, l’arrampicata è più lineare. L’itinerario è ben protetto ed è facilmente integrabile qualora si ritenesse che le protezioni in loco non siano sufficienti.
 
+## cercando-la-trincea::photo-01
+Monica al termine del primo tiro, IV+.
+
+## cercando-la-trincea::photo-02
+La fine della seconda lunghezza, IV+.
+
+## cercando-la-trincea::photo-03
+Il bel diedro del terzo tiro, V+.
+
+## cercando-la-trincea::photo-04
+Monica impegnata sulla quarta lunghezza, V.
+
+## cercando-la-trincea::photo-05
+I primi metri del quinto tiro, V.
+
+## cercando-la-trincea::photo-06
+Gli ultimi metri della via, VI.
+
 ## ciao-rita::intro
 Metà novembre sta registrando temperature gelide in Trentino, soprattutto durante la notte. Se il tempo è soleggiato però in parete, e senza vento, si sta bene e si riesce ad arrampicare senza patire troppo il freddo. Per non rischiare ci dirigiamo verso la parete del Pezol che prende il sole tutto il giorno e, nonostante i -3° al parcheggio, siamo stati abbastanza bene. La via del giorno è “Ciao Rita”.
 
 ## ciao-rita::outro
 Via che nonostante l’evidente discontinuità trova comunque il suo perchè grazie alla qualità della roccia ottima ed alle piacevoli sezioni in placca. Rimane comunque una linea molto semplice ed estremamente ben protetta con un’esposizione ottima per i mesi invernali.
+
+## ciao-rita::photo-01
+Monica alle prese con il primo tiro, VI.
+
+## ciao-rita::photo-02
+Simone al termine della seconda lunghezza, V.
+
+## ciao-rita::photo-03
+Il breve terzo tiro, V-.
+
+## ciao-rita::photo-04
+Il traverso della quarta lunghezza, IV.
+
+## ciao-rita::photo-05
+Il bel muretto del quinto tiro, VI.
+
+## ciao-rita::photo-06
+Le placche appoggiate della sesta lunghezza, IV.
+
+## ciao-rita::photo-07
+Gli ultimi metri della via, IV.
 
 ## attraversate::intro
 Seconda uscita di fila al Covolo di Butistone alla ricerca del refrigerio mattutino in questo primo maggio caratterizzato da tanto sole e soprattutto tanto caldo. Oggi siamo i primi ad arrivare e abbiamo dunque ampia scelta sul cosa salire. Ci tenta la linea “Attraversate”, nome che fa ben capire la tipologia dell’itinerario.
@@ -19,11 +58,56 @@ Seconda uscita di fila al Covolo di Butistone alla ricerca del refrigerio mattut
 ## attraversate::outro
 Via bella ed interessante che serpeggia sulla parete cercando i punti più deboli dove salire. L’arrampicata è prevalentemente tecnica e la chiodatura buona anche se a tratti distanziata. Particolarmente meritevoli sono le traversate lungo i tiri centrali che si svolgono lungo roccia sempre solida e compatta.
 
+## attraversate::photo-01
+Enrico sul primo tiro, 5c.
+
+## attraversate::photo-02
+La partenza della seconda lunghezza, 4b.
+
+## attraversate::photo-03
+La discesina finale del terzo tiro, 6a.
+
+## attraversate::photo-04
+L’inizio della quarta lunghezza, 6a+.
+
+## attraversate::photo-05
+La linea del quinto tiro, 5c.
+
+## attraversate::photo-06
+Enrico sul passo chiave della sesta lunghezza, 6a+.
+
+## attraversate::photo-07
+La linea del settimo tiro, 5b.
+
+## attraversate::photo-08
+L’inizio dell’ultima lunghezza, 6a.
+
 ## eliseo::intro
 La bella giornata di sole ci spinge verso le pareti della Valsugana dopo aver tentato, senza troppo successo, una linea al terzo pilastro di Martincelli il weekend precedente. Questa volta ci dirigiamo più a sud e più precisamente al Covolo di Butistone intenti a salire la via “Eliseo”.
 
 ## eliseo::outro
 L’ultima lunghezza allo stato attuale non è percorribile. La vegetazione ha purtroppo inglobato tutta la parte superiore della parete e la linea non è più visibile. E’ possibile in ogni caso uscire seguendo verso destra la cengia oltre la sosta fino a che non si raggiunge la radura sommitale zig-zagando dove il percorso lo consente. Via sicuramente da ripulire ma nel complesso offre spunti di arrampicata interessanti. Belli sono soprattutto i tiri centrali che si svolgono lungo roccia sempre solida alla ricerca dei punti più deboli della parete. La chiodatura è un po’ datata ma buona, a tratti però distanziata e discutibilmente posizionata. Buona soluzione per una mezza giornata se si è in zona.
+
+## eliseo::photo-01
+Il diedro/camino del primo tiro, 5c+.
+
+## eliseo::photo-02
+Enrico impegnato lungo il diedro fessurato della seconda lunghezza, 5c+.
+
+## eliseo::photo-03
+Il caratteristico traverso del terzo tiro, 6a.
+
+## eliseo::photo-04
+Il muretto della quarta lunghezza, 5c.
+
+## eliseo::photo-05
+La linea del quinto tiro, 5c+
+
+## eliseo::photo-06
+Enrico sul tetto della sesta lunghezza, 6a+.
+
+## eliseo::photo-07
+Giardinaggio per raggiungere la vetta.
 
 ## sofia::intro
 La giornata promette tempo stabile solamente la mattina e optiamo quindi per qualcosa di corto giusto per mettere le mani sulla roccia senza dover aspettare un’altra settimana. Ci dirigiamo quindi alle Coste dell’Anglone nel settore della Piramide Lakshmi per affrontare una linea decisamente poco battuta: Sofia.
@@ -31,11 +115,50 @@ La giornata promette tempo stabile solamente la mattina e optiamo quindi per qua
 ## sofia::outro
 Via che risente particolarmente delle poche ripetizioni. Nel complesso molto discontinua e forzata, solo un paio di tiri sono davvero meritevoli di essere saliti. Le protezioni ci sono ma è necessario integrare in molti punti per una progressione sicura. Rimane una linea alpinistica ed esplorativa, buon allenamento per vie più impegnative.
 
+## sofia::photo-01
+Simone lungo il primo tiro, IV+.
+
+## sofia::photo-02
+Monica alle prese con il diedro del secondo tiro, V+.
+
+## sofia::photo-03
+La bella placchetta del terzo tiro, V+.
+
+## sofia::photo-04
+Il traverso della quarta lunghezza, V.
+
+## sofia::photo-05
+La partenza del quinto tiro, VI.
+
+## sofia::photo-06
+Monica in uscita dalla sesta lunghezza, V+.
+
+## sofia::photo-07
+Gli ultimi metri della via, II.
+
 ## davide-pinamonti::intro
 La giornata è splendida in tutta la regione e la temperatura alquanto gradevole, a tratti pure calda. Si sente che la primavera sta piano piano arrivando nonostante le cime siano ancora belle bianche. Purtroppo però il tempo a nostra disposizione non è molto quest’oggi ma una toccata e fuga in zona Arco la facciamo lo stesso. Ai pilastri di Mandrea ci aspetta la linea “Davide Pinamonti”.
 
 ## davide-pinamonti::outro
-La sesta ed ultima lunghezza è la più impegnativa dell’itinerario e supera una placca fessurata sino alla larga cengia dove la linea termina. Dalla sosta si traversa qualche metro verso destra per guadagnare la verticale dei chiodi a parete. Si procede verticali sino al raggiungimento di un evidente naso staccato dalla parete dove la linea piega verso destra. La severa placconata priva di prese si supera in artificiale raggiungendo così la base della fessura che accompagnerà la salita sino al termine. L’arrampicata qui non è semplice e si lavora spesso in dulfer con i piedi sulla rampetta obliqua ai piedi della fessura. Le protezioni sono ora assenti ed è necessario proteggersi a friend che è sempre possibile posizionare anche se a volte un po’ faticosamente. Il tratto non è lunghissimo ma non è per nulla banale. Le ultime roccette conducono infine alla cengia sommitale e quindi alla sosta su albero. 32m, VI+ e A0. Via allo stato attuale molto tralasciata con la vegetazione che spesso ostruisce il passaggio e nasconde le protezioni. E’ davvero un peccato perchè qualche tiro è interessante: il primo, il secondo e l’ultimo tra gli altri. Chiodatura buona ma che necessita di integrazioni lungo le fessure, soprattutto quella dell’ultimo tiro che impegna non poco dopo il tratto in A0. Vista la brevità è una possibile soluzione per giornate incerte oppure da integrare con qualcosa nelle vicinanze visto il rapido rientro.
+Via allo stato attuale molto tralasciata con la vegetazione che spesso ostruisce il passaggio e nasconde le protezioni. E’ davvero un peccato perchè qualche tiro è interessante: il primo, il secondo e l’ultimo tra gli altri. Chiodatura buona ma che necessita di integrazioni lungo le fessure, soprattutto quella dell’ultimo tiro che impegna non poco dopo il tratto in A0. Vista la brevità è una possibile soluzione per giornate incerte oppure da integrare con qualcosa nelle vicinanze visto il rapido rientro.
+
+## davide-pinamonti::photo-01
+Enrico al termine del primo tiro, VI.
+
+## davide-pinamonti::photo-02
+Enrico in partenza della seconda lunghezza, VI.
+
+## davide-pinamonti::photo-03
+Il corto diedro del terzo tiro, V+.
+
+## davide-pinamonti::photo-04
+Simone al termine della quarta lunghezza, V+.
+
+## davide-pinamonti::photo-05
+Gli ultimi metri del quinto tiro, V+.
+
+## davide-pinamonti::photo-06
+Enrico impegnato sull’ultima lunghezza, VI+ e A0.
 
 ## luna-85::intro
 Si prospetta una domenica poco soleggiata ma piuttosto calda. Alla ricerca di qualcosa di lungo ed allenante in vista della stagione estiva, poi non così lontana, addocchiamo una linea alle Placche Zebrata parete che, nonostante le innumerevoli vie salite in valle, non abbiamo ancora toccato. Ci dirigiamo all’attacco di “Luna 85”, classica della parete.
@@ -43,11 +166,83 @@ Si prospetta una domenica poco soleggiata ma piuttosto calda. Alla ricerca di qu
 ## luna-85::outro
 Via da non sottovalutare. Nonostante i gradi sulla carta siano contenuti, la chiodatura distanziata e la tipologia di arrampicata richiedono assoluta padronanza del grado e dello stile in placca pura. Nel complesso è una linea che offre bellissimi passaggi in aderenza dove fidarsi bene dei piedi è spesso l’unica alternativa. L’impegno e l’ingaggio sono elevati e la soddisfazione, una volta in cima, è tanta, così come la fatica, la stanchezza ed il dolore ai piedi!
 
+## luna-85::photo-01
+Enrico sul traverso del primo tiro, 6a.
+
+## luna-85::photo-02
+La linea della prima metà della seconda lunghezza, 5c.
+
+## luna-85::photo-03
+La fine del terzo tiro, 5c.
+
+## luna-85::photo-04
+Enrico all’inizio della quarta lunghezza, 5b.
+
+## luna-85::photo-05
+Simone in partenza al quinto tiro, 5c.
+
+## luna-85::photo-06
+Al termine della sesta lunghezza, 6a.
+
+## luna-85::photo-07
+Enrico sulle belle pance del settimo tiro, 5c.
+
+## luna-85::photo-08
+La spietata placconata dell’ottava lunghezza, 6a.
+
+## luna-85::photo-09
+Simone sul tratto chiave della via, 6c.
+
+## luna-85::photo-10
+Enrico sulla decima lunghezza, 5c.
+
+## luna-85::photo-11
+L’inizio dell’undicesimo tiro, 6a.
+
+## luna-85::photo-12
+La linea del dodicesimo tiro, 5b.
+
+## luna-85::photo-13
+Le facili roccette terminali, 5a.
+
 ## archai::intro
 Giornata che stando alle previsioni metereologiche doveva essere bella e soleggiata ma che invece si è rivelata coperta e fredda, complice anche un fastidioso venticello. Oramai siamo scesi in valle e non ci resta che soffrire in silenzio e sfruttare la mattinata. Ci dirigiamo alle Coste dell’Anglone intenti a salire “Archai”.
 
 ## archai::outro
 Via meritevole, continua nelle difficoltà e ben ripulita dalla vegetazione. La linea serpeggia alla ricerca del percorso che offre meno opposizione e vince elegantemente le difficoltà che incontra. Le protezioni ci sono ma è spesso necessario integrare e, laddove questo non è possibile, è necesario sapersi muovere bene attraverso arrampicata ponderata ma decisa. I passaggi più difficili possono essere azzerati, come specificato nelle relazioni, anche se possono essere tranquillamente superati in libera. Peccato solo che in alcuni punti gli appoggi risultano essere leggermente consumati dal tempo.
+
+## archai::photo-01
+Simone lungo il primo tiro, V+.
+
+## archai::photo-02
+La delicata placca all’inizio della seconda lunghezza, VI.
+
+## archai::photo-03
+Simone prima del passo chiave del terzo tiro, VI+.
+
+## archai::photo-04
+L’inizio della quarta lunghezza, VI.
+
+## archai::photo-05
+Enrico al termine del quinto tiro, VII/VII+ o VI e A0.
+
+## archai::photo-06
+Simone sul passo chiave della sesta lunghezza, VII o VI e A0.
+
+## archai::photo-07
+Il traverso iniziale, corretto, del settimo tiro, V.
+
+## archai::photo-08
+Simone al termine del diedro rosso dell’ottava lunghezza, VI.
+
+## archai::photo-09
+La lama finale del nono tiro, VI.
+
+## archai::photo-10
+Enrico impegnato sulla placca della decima lunghezza, VI.
+
+## archai::photo-11
+La linea dell’ultimo tiro, VI.
 
 ## poison-ivy::intro
 In una fredda e ventosa giornata di inizio novembre ci dirigiamo in val d’Adige alla ricerca di quel tepore che rimane illusorio. La mattinata non invoglia a mettere le mani sulla roccia ma ormai il viaggio lo abbiamo fatto e gli zaini sono già in spalla. Ci rechiamo alla parete in zona “Cà di Sopra” per salire la via “Poison Ivy”.
@@ -55,11 +250,41 @@ In una fredda e ventosa giornata di inizio novembre ci dirigiamo in val d’Adig
 ## poison-ivy::outro
 Via breve con solo le due lunghezze centrali veramente interessanti. Lo stile tendente all’alpinistico necessita di saper integrare le protezioni presenti laddove necessario ma nel complesso la progressione risulta essere sicura. Buona soluzione per giungere alle pareti superiori e concatenare con qualcos’altro.
 
+## poison-ivy::photo-01
+Martina al termine del primo tiro, III.
+
+## poison-ivy::photo-02
+La linea della seconda lunghezza, V+.
+
+## poison-ivy::photo-03
+Martina al termine del terzo tiro, V.
+
+## poison-ivy::photo-04
+L’inizio dell’ultima lunghezza, IV+.
+
 ## castagnarte::intro
 Il weekend con temperature da inizio primaversa ci spinge in valle per godere a pieno del sole che scalda le pareti. Ci dirigiamo verso la sempre affollata parete di Pezol certi comunque che la via che abbiamo scelto fosse libera per via delle difficoltà poco consuete rispetto alle altre linee della parete e per il fatto che si trovino poche informazioni al riguardo. Siamo alla base di “Castagnarte”.
 
 ## castagnarte::outro
 Via dalle 3 facce: belli e meritevoli i primi 2 tiri anche se allo stato attuale un po’ sporchi. I 3 tiri successivi fino alla larga cengia perdono interesse mano a mano che si procede mentre gli ultimi 2 tiri per raggiungere la vetta sono troppo forzati e non aggiungono nulla alla salita. Rimane comunque un buon allenamento con una notevole vista sul lago di Garda che salva la giornata.
+
+## castagnarte::photo-01
+Simone sul passo chiave del primo tiro, 6b+.
+
+## castagnarte::photo-02
+Enrico sulla bella placca della seconda lunghezza, 6c.
+
+## castagnarte::photo-03
+Il muretto del terzo tiro, 6b.
+
+## castagnarte::photo-04
+La linea della quarta lunghezza, 6a+.
+
+## castagnarte::photo-05
+Simone sul quinto tiro, 5a.
+
+## castagnarte::photo-06
+L’impegnativo strapiombo del sesto tiro, 7a e A0 o A1
 
 ## lombra-e-lapparizione-del-mondo::intro
 Altro weekend di gennaio all’insegna del bel tempo, almeno a sentire le previsioni. Il cielo però rimane velato ed il sole promesso è solo un miraggio al di là delle nubi. Poco male, ci si scalderà arrampicando. Scendiamo in valle del Sarca e parcheggiamo in centro a Dro. Direzione Coste dell’Anglone, Anglone Nord, via “L’ombra e l’apparizione del mondo”.
@@ -67,11 +292,44 @@ Altro weekend di gennaio all’insegna del bel tempo, almeno a sentire le previs
 ## lombra-e-lapparizione-del-mondo::outro
 Linea bella che offre vari spunti lungo l’itinerario. Molto particolare e caratteristico è lo stretto camino del terzo tiro dove è necessario avere una certa esperienza con lo stile di arrampicata nonostante le difficoltà dichiarate siano limitate. La chiodatura solo sufficiente richiede spesso di integrare. Consigliata!
 
+## lombra-e-lapparizione-del-mondo::photo-01
+Gli ultimi metri del primo tiro, VI.
+
+## lombra-e-lapparizione-del-mondo::photo-02
+Enrico impegnato sulla seconda lunghezza, VII.
+
+## lombra-e-lapparizione-del-mondo::photo-03
+La partenza del terzo tiro prima del camino, V.
+
+## lombra-e-lapparizione-del-mondo::photo-04
+Simone impegnato all’inizio della quarta lunghezza, VII.
+
+## lombra-e-lapparizione-del-mondo::photo-05
+La placconata del quinto tiro, VI.
+
+## lombra-e-lapparizione-del-mondo::photo-06
+Enrico impegnato sulla sesta lunghezza, VI+.
+
+## lombra-e-lapparizione-del-mondo::photo-07
+L’inizio dell’ultimo tiro, VI-.
+
 ## ernia::intro
 Usciti dalla via “Favola Ledrense” oltrepassiamo il boschetto oltre l’ultima sosta per ritrovarci al settore C della falesia “Regina del Lago” dove parte l’omonimo multipitch. Questo al nostro arrivo è risultato occupato, così come altre delle linee presenti. Decidiamo così, per non disturbare nessuno, di proseguire lungo l’unica via libera: “Ernia”.
 
 ## ernia::outro
 Via tutto sommato carina, senza troppe pretese ma con alcuni passi godibili. Vista la bravità della linea è bene concatenarla con qualcun’altra della parete superiore per godersi a pieno la giornata. Bello l’ambiente con costante vista verso il lago di Garda.
+
+## ernia::photo-01
+Martina al termine del primo tiro, 5b.
+
+## ernia::photo-02
+Martina sulla seconda lunghezza, 6b+.
+
+## ernia::photo-03
+L’inizio del terzo tiro, 5a.
+
+## ernia::photo-04
+La linea dell’ultima lunghezza, 5c.
 
 ## favola-ledrense::intro
 La giornata di Sabato, limpida e senza nuvole, ci permette di sfruttare una delle ultime giornate lunghe prima del cambio dell’ora. L’idea è quella di concatenare 3 linee che ci permettono di giungere poco sotto a cima Capi partendo dalla strada del Ponale. La prima via che attacchiamo sulla fascia inferiore è “Favola Ledrense” sportiva ma da non sottovalutare.
@@ -79,11 +337,38 @@ La giornata di Sabato, limpida e senza nuvole, ci permette di sfruttare una dell
 ## favola-ledrense::outro
 Corta linea che offre però arrampicata sempre piacevole con alcuni passaggi da non sottovalutare. L’esposizione è minima visto che il percorso è spesso spezzato da terrazzini e vegetazione. La qualità della roccia è però ottima e la chiodatura tendenzialmente sicura anche se in alcuni punti va guadagnata.
 
+## favola-ledrense::photo-01
+Martina al termine del primo tiro, 6a.
+
+## favola-ledrense::photo-02
+L’inizio della seconda lunghezza, 6a+.
+
+## favola-ledrense::photo-03
+L’inizio del terzo tiro, 6b.
+
+## favola-ledrense::photo-04
+Il muretto dell’ultimo tiro, 5c.
+
 ## jean-jean::intro
 Le festività sono sempre un momento impegnativo a livello fisico, quale scusa migliore per digerire un po’ arrampicando? La giornata è gradevole ma dobbiamo rivedere un po’ lo stato di forma quindi si fa qualcosa di corto. L’antiscudo è perfetto, è vero c’è un po’ di giardinaggio da fare, ma almeno alla base non c’è coda. Decidiamo di salire la via “Jean Jean”.
 
 ## jean-jean::outro
 Linea difficile da valutare oggettivamente per via dello stato in cui vige. I tiri inferiori sono spesso viziati da terra, erba e piccoli arbusti che occupano le prese chiave per la salita. Il quarto tiro è un po’ forzato e stona con il resto della via ma risulta comunque piacevole se si padroneggia il grado. Nel complesso non è una salita da buttare ma andrebbe un po’ ripresa in mano.
+
+## jean-jean::photo-01
+Enrico sul passo chiave del primo tiro, 6a.
+
+## jean-jean::photo-02
+La linea della seconda lunghezza, 5c.
+
+## jean-jean::photo-03
+Enrico impegnato sul terzo tiro, 6a.
+
+## jean-jean::photo-04
+La placca della quarta lunghezza, 6c+ o A0.
+
+## jean-jean::photo-05
+L’inizio dell’ultimo tiro, 5b.
 
 ## luce-e-colori::intro
 21 Dicembre, la giornata più corta dell’anno. Il sole brilla alto nel cielo e le poche ore di luce vanno sfruttate al massimo. Anche le temperature sono buone, poco al di sotto dello zero all’ombra ma appena batte il sole sembra che la stagione cambi improvvisamente. E’ anche questa una delle magie della Valle del Sarca. Oggi ci dirigiamo verso le Coste dell’Anglone per salire “Luce e Colori”.
@@ -91,11 +376,62 @@ Linea difficile da valutare oggettivamente per via dello stato in cui vige. I ti
 ## luce-e-colori::outro
 Linea bella e meritevole, continua nelle difficoltà e di stampo alpinistico con protezioni spesso lontane che richiedono integrazione costante. Dopo i tiri inferiori un po’ fisici quelli superiori si vincono con movimenti delicati e di equilibrio. Molto bello è il muro centrale, colorato e composto da solidi conglomerati. Attenzione solo che in qualche punto la roccia non è delle migliori.
 
+## luce-e-colori::photo-01
+Enrico impegnato sul primo tiro, VII.
+
+## luce-e-colori::photo-02
+Simone sulla seconda lunghezza, VI+.
+
+## luce-e-colori::photo-03
+L’inizio del terzo tiro, VII.
+
+## luce-e-colori::photo-04
+Enrico lungo la quarta lunghezza, V+.
+
+## luce-e-colori::photo-05
+Il termine del quinto tiro, VI+.
+
+## luce-e-colori::photo-06
+Simone all’inizio della sesta lunghezza, VI+.
+
+## luce-e-colori::photo-07
+Enrico poco prima del passo chiave del settimo tiro, VI e A0 oppure VIII/VIII+.
+
+## luce-e-colori::photo-08
+Il termine della via, VI.
+
 ## esculapio::intro
 Altra bella giornata, altra bella salita. Con il meteo favorevole ci dirigiamo anche questa volta in valle del Sarca a goderci il tepore del sole di metà dicembre. La sveglia è suonata presto questa mattina perchè la direzione è quella di Padaro, la prima fascia rocciosa a ricevere il buongiorno del sole in quel di Arco. La via? Esculapio.
 
 ## esculapio::outro
 Linea piacevole anche se a tratti discontinua soprattutto lungo i tiri superiori. Lo stampo è alpinistico ed è quindi necessario proteggersi laddove serve. Nel complesso le protezioni a parete sono solo sufficienti e, nonostante le difficoltà non estreme, non è una via da sottovalutare.
+
+## esculapio::photo-01
+Simone impegnato sulla prima lunghezza, V+.
+
+## esculapio::photo-02
+Enrico sul camino del secondo tiro, VI.
+
+## esculapio::photo-03
+I primi metri del terzo tiro, VI-.
+
+## esculapio::photo-04
+La bella fessura della quarta lunghezza, VI+.
+
+## esculapio::photo-05
+Il quinto tiro, VI.
+
+## esculapio::photo-06
+Le placche iniziali del sesto tiro, V.
+
+## esculapio::photo-07
+In uscita dal settimo tiro, V-.
+
+## esculapio::photo-08
+Il corridoio nel bosco dell’ottava lunghezza, I.
+
+## esculapio::photo-09
+Enrico all’inizio dell’ultima lunghezza, VI.
 
 ## spigolo-del-vento::intro
 Dopo un sabato intenso è giusto tirare un po’ il fiato e cercare qualcosa di breve e tranquillo per occupare la mattinata prima di tornare alla base. Questa volta la nostra attenzione si sposta sulla parete dei “Due Laghi”, sopra l’abitato di Santa Massenza, ed in particolare sulla via “Spigolo del vento”.
@@ -103,17 +439,59 @@ Dopo un sabato intenso è giusto tirare un po’ il fiato e cercare qualcosa di 
 ## spigolo-del-vento::outro
 Via corta e semplice che si svolge lungo spigolo appoggiato ma dove la distanza delle protezioni in loco necessita una buona padronevolezza del grado e di sapersi proteggere dove necessario. Il primo tiro è spesso sporco visto che inizia nel canale dove si accumulano tutto il terriccio e le foglie che cadono dal bosco soprastante. Il resto dei tiri è pulito e godibile.
 
+## spigolo-del-vento::photo-01
+Martina all’inizio del primo tiro, V+.
+
+## spigolo-del-vento::photo-02
+Lo spigolo della seconda lunghezza, IV+.
+
+## spigolo-del-vento::photo-03
+Martina alla fine del terzo tiro, V+.
+
+## spigolo-del-vento::photo-04
+Gli ultimi metri nel bosco, IV.
+
 ## ne-vale-la-pena::intro
 Secondo giorno in quel di Tessari, pronti per nuove salite. Il giorno successivo mettono brutto e dobbiamo sfruttare a pieno il sole odierno per salire un paio di linee prima di tornare verso casa. Con qualche nuvola ad accompagnare i nostri passi ci dirigiamo verso la parete di “Ca’ di Sopra” con l’obiettivo di salire la via “Ne vale la pena”, sulla carta mezza alpinistica e mezza sportiva.
 
 ## ne-vale-la-pena::outro
-Martina all’inizio dell’ultimo tiro, V. Via carina senza lode ne infamia. I primi 2 tiri si svolgono lungo sezioni caratterizzate da roccia un po’ instabile dove è necessario prestare particolare attenzione. Le lunghezze superiori sono invece più continue e la roccia è sana. La chiodatura è alpinistica o assente lungo i tiri facili mentre lungo quelli più impegnativi sono presenti fix a protezione dei passaggi più duri. Nel complesso una via interessante se concatenata con un’altra delle fasce superiori.
+Via carina senza lode ne infamia. I primi 2 tiri si svolgono lungo sezioni caratterizzate da roccia un po’ instabile dove è necessario prestare particolare attenzione. Le lunghezze superiori sono invece più continue e la roccia è sana. La chiodatura è alpinistica o assente lungo i tiri facili mentre lungo quelli più impegnativi sono presenti fix a protezione dei passaggi più duri. Nel complesso una via interessante se concatenata con un’altra delle fasce superiori.
+
+## ne-vale-la-pena::photo-01
+Martina lungo il primo tiro, III.
+
+## ne-vale-la-pena::photo-02
+L’inizio della seconda lunghezza, V.
+
+## ne-vale-la-pena::photo-03
+Martina impegnata sul terzo tiro, IV.
+
+## ne-vale-la-pena::photo-04
+Martina impegnata sul traverso finale della quarta lunghezza, V+.
+
+## ne-vale-la-pena::photo-05
+Martina all’inizio dell’ultimo tiro, V.
 
 ## bella-gioia::intro
 Usciti dalla via “Aquarius” alla “Ca’ di Sopra” abbiamo l’imbarazzo della scelta su quale linea salire in seguito. Non essendo pratici della zona dcidiamo di inoltrarci nel bosco in direzione delle pareti vicini con l’intento di salire la prima linea che avremmo trovato. Dopo una decina di minuti di camminata ci troviamo alla base della “Parete Rigata” con la scritta rossa “Bella Gioia” a darci il benvenuto.
 
 ## bella-gioia::outro
-Simone lungo l’ultimo tiro, V-. Linea facile e piacevole, ben protetta ed eventualmente integrabile. A parte qualche sasso mobile lungo il primo tiro la roccia è molto buona e solida lungo tutto l’itinerario. Nel complesso una divertente salita plaisir.
+Linea facile e piacevole, ben protetta ed eventualmente integrabile. A parte qualche sasso mobile lungo il primo tiro la roccia è molto buona e solida lungo tutto l’itinerario. Nel complesso una divertente salita plaisir.
+
+## bella-gioia::photo-01
+Simone lungo il primo tiro, V-.
+
+## bella-gioia::photo-02
+Martina impegnata sulla seconda lunghezza, IV+.
+
+## bella-gioia::photo-03
+Martina al termine del terzo tiro, V-.
+
+## bella-gioia::photo-04
+Martina lungo la quarta lunghezza, V-.
+
+## bella-gioia::photo-05
+Simone lungo l’ultimo tiro, V-.
 
 ## aquarius::intro
 Un altro bel weekend ci aspetta in val d’Adige ed abbiamo già pernottato 3 giorni a Tessari come campo base. L’idea è quella di esplorare una zona a noi ancora poco conosciuta cercando il divertimento in vie facili e plaisir. Il primo giorno ci dirigiamo verso la parete in località “Ca’ di Sopra” dove si sviluppano vie brevi concatenabili poi con quelle presenti nelle fasce rocciose soprastanti. La nostra scelta ricade sulla via “Aquarius”, abbastanza recente.
@@ -121,71 +499,308 @@ Un altro bel weekend ci aspetta in val d’Adige ed abbiamo già pernottato 3 gi
 ## aquarius::outro
 Bella vietta in stile alpinistico con chiodatura tradizionale a chiodi e cordoni, integrabile alla bisogna. La progressione risulta essere sempre sicura e piacevole e la roccia, escludendo la quarta lunghezza, è bella e solida. Ottima linea per chi muove i primi passi o per chi vuole raggiungere le pareti sommitali arrampicando.
 
+## aquarius::photo-01
+Simone lungo il primo tiro, IV+.
+
+## aquarius::photo-02
+Il diedro della seconda lunghezza, V+.
+
+## aquarius::photo-03
+Martina al termine del terzo tiro, V.
+
+## aquarius::photo-04
+Il muretto iniziale della quarta lunghezza, III+.
+
 ## pirata-samu::intro
 Dopo la coppia di vie semplici e corte del giorno precedente ci spostiamo una manciata di chilometri a Nord per affrontare qualcosa di un po’ più lungo ed impegnativo. Ci dirigiamo quindi nei pressi di Brentino-Belluno Veronese e ci incamminiamo verso la parete degli Spalti di Capitel d’Orsa che si affaccia lateralmente al “Santuario Madonna della Corona”. La via di oggi? Pirata Samu.
 
 ## pirata-samu::outro
-Martina al termine della via, 6a+. Via che meriterebbe sicuramente un restyle ed una approfondita pulizia. Dove la parete è sgombra dalla vegetazione la roccia è molto bella ed arrampicare è davvero piacevole. Da dimenticare sono i primi 2 tiri ed alcune sezioni di quelli successivi dove si toccano più alberi e terra che roccia. Prestare particolare attenzione alla chiodatura a volte un po’ azzardata che, in più punti, non permette una progressione tranquilla rendendo i passi pericolosi. La seconda metà della linea risulta essere più arrampicabile ed ospita passi veramente interessanti. Nel complesso, al netto di una bella pulizia, “Pirata Samu” è un bell’itinerario in una zona tranquilla e silenziosa, messa al Santuario permettendo!
+Via che meriterebbe sicuramente un restyle ed una approfondita pulizia. Dove la parete è sgombra dalla vegetazione la roccia è molto bella ed arrampicare è davvero piacevole. Da dimenticare sono i primi 2 tiri ed alcune sezioni di quelli successivi dove si toccano più alberi e terra che roccia. Prestare particolare attenzione alla chiodatura a volte un po’ azzardata che, in più punti, non permette una progressione tranquilla rendendo i passi pericolosi. La seconda metà della linea risulta essere più arrampicabile ed ospita passi veramente interessanti. Nel complesso, al netto di una bella pulizia, “Pirata Samu” è un bell’itinerario in una zona tranquilla e silenziosa, messa al Santuario permettendo!
+
+## pirata-samu::photo-01
+Steve al termine della seconda lunghezza, 5b.
+
+## pirata-samu::photo-02
+La linea del terzo tiro, 6a.
+
+## pirata-samu::photo-03
+Martina in arrivo alla quarta sosta, 6a.
+
+## pirata-samu::photo-04
+Steve al termine della sesta lunghezza, 6a+.
+
+## pirata-samu::photo-06
+Simone ed Umberto lungo il settimo tiro, 6b+
+
+## pirata-samu::photo-07
+Martina al termine della via, 6a+.
 
 ## datti-una-mossa::intro
 Dopo la simpatica nevicata di metà aprile scendiamo in val d’Adige alla ricerca di climi più miti e temperature primaverili. Ad accoglierci c’è un bel rovescio inatteso che fortunatamente dura poco e la notte passa tranquilla. Siamo a Tessari con l’intento di divertirci alla Roda del Canal dove salgono linee brevi e di grado contenuto. La prima che approcciamo l’indomani è la via “Datti una mossa” che attacca poco lontano dal parcheggio.
 
 ## datti-una-mossa::outro
-Simone sull’ultimo tiro, 5a. Via molto simpatica nonostante sia breve. Ad esclusione del terzo tiro tutti gli altri sono meritevoli di essere saliti. L’arrampicata è varia ma si svolge prevalentemente lungo placca con passi di movimento e qualcuno in aderenza. Belli anche i movimenti sul tiro chiave che donano un po’ di brio ad una salita plaisir.
+Via molto simpatica nonostante sia breve. Ad esclusione del terzo tiro tutti gli altri sono meritevoli di essere saliti. L’arrampicata è varia ma si svolge prevalentemente lungo placca con passi di movimento e qualcuno in aderenza. Belli anche i movimenti sul tiro chiave che donano un po’ di brio ad una salita plaisir.
+
+## datti-una-mossa::photo-01
+Martina lungo il primo tiro, 5c.
+
+## datti-una-mossa::photo-02
+Simone all’inizio della seconda lunghezza, 6a+.
+
+## datti-una-mossa::photo-03
+Simone sull’ultimo tiro, 5a.
 
 ## guide-alpine::intro
 Questi primi giorni del 2023 ci stanno regalando giornate piuttosto miti dal punto di vista delle temperature. Anche oggi il cielo è coperto ma niente ci ferma dal scendere in valle per affrontare qualche ascesa. Ci è giunta voce che di recente è stata aperta qualche semplice linea sul Monte Baone, quale occasione migliore er farci un salto? La via che abbiamo scelto si chiama “Guide Alpine” ed inizia con 4 tiri lungo placca appoggiata per poi verticalizzarsi solamente nel finale.
 
 ## guide-alpine::outro
-Simone lungo l’ultimo tiro, VI-. Via molto didattica e consigliata a chi muove i primi passi per fare le prime esperienze. La roccia è da buona ad ottima lungo tutto l’itinerario e le protezioni sono abbondanti ed abbastanza ravvicinate. Molto belli sono i 2 tiri finali dove la via guadagna finalmente verticalità lungo roccia ruvida e grumosa. Anche il panorama, che spazia dal castello di Arco al lago di Garda, merita una visita!
+Via molto didattica e consigliata a chi muove i primi passi per fare le prime esperienze. La roccia è da buona ad ottima lungo tutto l’itinerario e le protezioni sono abbondanti ed abbastanza ravvicinate. Molto belli sono i 2 tiri finali dove la via guadagna finalmente verticalità lungo roccia ruvida e grumosa. Anche il panorama, che spazia dal castello di Arco al lago di Garda, merita una visita!
+
+## guide-alpine::photo-01
+Martina lungo il primo tiro, IV.
+
+## guide-alpine::photo-02
+La placca appoggiata della seconda lunghezza, IV.
+
+## guide-alpine::photo-03
+Il corridoio tra gli alberi del terzo tiro, IV.
+
+## guide-alpine::photo-04
+Martina impegnata sulla rampa della quarta lunghezza, IV+.
+
+## guide-alpine::photo-05
+Il bel traverso del quinto tiro, V+.
+
+## guide-alpine::photo-06
+Simone lungo l’ultimo tiro, VI-.
 
 ## claudia-22::intro
 Oggi è il 2 gennaio 2023 ed è caldo. Raggiungiamo Arco con il termometro che segna gli 8°C alle 8:00 di mattina. Fortuna che il cielo è coperto e le previsioni non mettono sole per la giornata altrimenti sarebbe quasi da stare in maniche corte. L’obiettivo è quello di riniziare a muovere i primi pasi dopo le festività, quindi qualcosa di tranquillo. Ci dirigiamo verso la Parete di Pezol per salire una delle ultime realizzazioni: Claudia ’22.
 
 ## claudia-22::outro
-Simone lungo l’ultimo tiro, V. Via semplice e particolarmente didattica. Adatta a chi muove i primi passi sulle vie a più tiri. Le protezioni sono abbondanti lungo tutto l’itinerario, solo nel secondo tiro può essere utile inserire qualche friend. La roccia è buona anche se in alcuni tratti necessita di una controllata considerando anche che la via è recente e bisogna aspettare ancora qualche salita per il consolidamento.
+Via semplice e particolarmente didattica. Adatta a chi muove i primi passi sulle vie a più tiri. Le protezioni sono abbondanti lungo tutto l’itinerario, solo nel secondo tiro può essere utile inserire qualche friend. La roccia è buona anche se in alcuni tratti necessita di una controllata considerando anche che la via è recente e bisogna aspettare ancora qualche salita per il consolidamento.
+
+## claudia-22::photo-01
+Martina lungo il primo tiro, III+.
+
+## claudia-22::photo-02
+I primi metri della seconda lunghezza, V+.
+
+## claudia-22::photo-03
+La linea del terzo tiro, V+.
+
+## claudia-22::photo-04
+Martina la termine della quarta lunghezza, V-.
+
+## claudia-22::photo-05
+La bella placca del quinto tiro, V.
+
+## claudia-22::photo-06
+Martina sulla sesta lunghezza, IV.
+
+## claudia-22::photo-07
+L’inizio del settimo tiro, IV.
+
+## claudia-22::photo-08
+Il diedro dell’ottava lunghezza, V.
+
+## claudia-22::photo-09
+Gli ultimi metri del nono tiro, II.
+
+## claudia-22::photo-10
+Simone lungo l’ultimo tiro, V.
 
 ## premiata-forneria-pfitscher::intro
 L’antiscudo è una fascia rocciosa decisamente poco frequentata, lo abbiamo scoperto a nostre spese circa un anno fa quando abbiamo salito la linea “Cane Cico” trovandola particolarmente erbosa ed abbandonata. Il che è un peccato perchè le placconate che compongono la fascia rocciosa ispirano parecchio. Tant’è che anche alla fine del 2022, per terminare l’annata in bellezza, torniamo a farci un salto per salire un’altra via, “Premiata Forneria Pfitscher”, nella speranza di trovarla in buone condizioni.
 
 ## premiata-forneria-pfitscher::outro
-La linea dell’ultima lunghezza, 5b. Via che allo stato attuale delle cose è poco raccomandabile: troppo sporca e vegetativa. Un vero peccato perchè la prima lunghezza è davvero bella ed anche quelle successive, in condizioni diverse, sicuramente avrebbero da dire la loro. Ci vorrebbe un bel lavoro di pulizia ed una frequentazione più assidua un po’ di tutta la parete. Rimandata.
+Via che allo stato attuale delle cose è poco raccomandabile: troppo sporca e vegetativa. Un vero peccato perchè la prima lunghezza è davvero bella ed anche quelle successive, in condizioni diverse, sicuramente avrebbero da dire la loro. Ci vorrebbe un bel lavoro di pulizia ed una frequentazione più assidua un po’ di tutta la parete. Rimandata.
+
+## premiata-forneria-pfitscher::photo-01
+Simone lungo i primi metri della via, 6b.
+
+## premiata-forneria-pfitscher::photo-02
+Jacopo impegnato sul passo chiave della seconda lunghezza, 6a.
+
+## premiata-forneria-pfitscher::photo-03
+Martina lungo il terzo tiro, 5c.
+
+## premiata-forneria-pfitscher::photo-04
+La linea dell’ultima lunghezza, 5b.
 
 ## la-piccola-verticalita::intro
 In una bella temperata giornata di fine novembre ci dirigiamo verso le Coste dell’Anglone per salire “La Piccola Verticalità”, una linea adocchiata da tempo ma che non avevamo ancora avuto modo di arrampicare. Le giornate sono corte e per non rischiare alle 8:30 siamo già a parete pronti ad affrontare le sfide della giornata.
 
 ## la-piccola-verticalita::outro
-Martina sull’ultima lunghezza, V. Linea bella e divertente che serpeggia alla ricerca del percorso che presenta meno ostacoli. La prima parte si svolge principalmente lungo placconate e muretti verticali mentre la seconda ospita passaggi più fisici ed atletici. La linea è ben protetta lungo i tiri chiave, è invece necessario integrare con dadi e friends lungo il resto della via. Nel complesso una bella avventura, raccomandabile.
+Linea bella e divertente che serpeggia alla ricerca del percorso che presenta meno ostacoli. La prima parte si svolge principalmente lungo placconate e muretti verticali mentre la seconda ospita passaggi più fisici ed atletici. La linea è ben protetta lungo i tiri chiave, è invece necessario integrare con dadi e friends lungo il resto della via. Nel complesso una bella avventura, raccomandabile.
+
+## la-piccola-verticalita::photo-01
+Martina lungo il primo tiro, IV+.
+
+## la-piccola-verticalita::photo-02
+Simone lungo il traverso iniziale della seconda lunghezza, VI.
+
+## la-piccola-verticalita::photo-03
+Jacopo al termine del terzo tiro, VI-.
+
+## la-piccola-verticalita::photo-04
+Martina impegnata sulla quarta lunghezza, IV.
+
+## la-piccola-verticalita::photo-05
+La linea del quinto tiro, VI.
+
+## la-piccola-verticalita::photo-06
+Simone all’inizio dei tetti della sesta lunghezza, VI.
+
+## la-piccola-verticalita::photo-07
+Cordata Steve e Jacopo superato il passo chiave del settimo tiro, VII+ o VI- e A0.
+
+## la-piccola-verticalita::photo-08
+Steve sul passo chiave dell’ottava lunghezza, VII o VI e A0.
+
+## la-piccola-verticalita::photo-09
+Martina sull’ultima lunghezza, V.
 
 ## bella-e-cattiva::intro
 Usciti dalla via “Sol Minore” il sole è ancora alto nel cielo, segnale che c’è ancora tempo per approcciare una seconda linea. Le vie della prima fascia sono tutte occupate, facciamo quindi qualche passo in più e ci dirigiamo in fondo alla parete. Qui c’è meno gente e tra le linee libere decidiamo di salire “Bella e Cattiva”, con bello scorcio sul lago di Garda.
 
 ## bella-e-cattiva::outro
-Le roccette finali dell’ultimo tiro, IV-. Bella via, da non sottovalutare nonostante le difficoltà non siano mai eccessive. Ospita passaggi interessanti anche se la qualità della roccia in alcuni punti della parte centrale e superiore non è eccelsa. Nel complesso una salita meritevole da concatenare con qualcosa nelle vicinanze.
+Bella via, da non sottovalutare nonostante le difficoltà non siano mai eccessive. Ospita passaggi interessanti anche se la qualità della roccia in alcuni punti della parte centrale e superiore non è eccelsa. Nel complesso una salita meritevole da concatenare con qualcosa nelle vicinanze.
+
+## bella-e-cattiva::photo-01
+Martina lungo la rampa della prima lunghezza, 6b.
+
+## bella-e-cattiva::photo-02
+Martina impegnata sul traverso della seconda lunghezza, 6a.
+
+## bella-e-cattiva::photo-03
+Martina si gode il panorama al termine del terzo tiro, 6a.
+
+## bella-e-cattiva::photo-04
+Le roccette finali dell’ultimo tiro, IV-.
 
 ## sol-minore::intro
 Dopo una via piuttosto impegnativa il giorno precedente ci dirigiamo verso le pareti che sovrastano la vecchia strada del Ponale per salire qualcosa di più tranquillo. In questo lungo ponte di Halloween le parete è letteralmente presa d’assalto ed alla base di ogni via c’è almeno una coppia di cordate a fare la fila. Nonostante questo affollamento selvaggio la via “Sol Minore” sembra essere libera e così senza pensarci due volte ci prepariamo e la attacchiamo.
 
 ## sol-minore::outro
-Martina alle prese con l’ultimo tiro, 5b. Via molto corta e didattica, adatta per chi muove i primi passi sui multipitch. L’arrampicata è sempre piacevole grazie alle fessure che caratterizzano la fascia rocciosa ed alle protezioni che sono sempre abbondanti. Il tiro più impegnativo è quello centrale che insegna a fidarsi bene dei piedi lavorando lungo placca appoggiata. Molto bello anche il panorama laterale sul lago di Garda.
+Via molto corta e didattica, adatta per chi muove i primi passi sui multipitch. L’arrampicata è sempre piacevole grazie alle fessure che caratterizzano la fascia rocciosa ed alle protezioni che sono sempre abbondanti. Il tiro più impegnativo è quello centrale che insegna a fidarsi bene dei piedi lavorando lungo placca appoggiata. Molto bello anche il panorama laterale sul lago di Garda.
+
+## sol-minore::photo-01
+Martina lungo la prima lunghezza, 5b.
+
+## sol-minore::photo-02
+Martina lungo la bella placca fessurata della seconda lunghezza, 6a.
+
+## sol-minore::photo-03
+Martina alle prese con l’ultimo tiro, 5b.
 
 ## sulle-pance-del-pezol::intro
 Il sabato del lungo weekend di Halloween scendiamo verso Arco nonostante le temperature siano torride per il periodo. 27° di massima a fine ottobre inzia veramente ad essere preoccupante! Ci dirigiamo comunque alla Parete del Pezol di buona mattina arrivando alla base della fascia rocciosa con il sole che inizia già a scaldare la parete. La via? “Sulle pance del Pezol”.
 
 ## sulle-pance-del-pezol::outro
-Steve lungo gli ultimi metri della via, V+. Via molto bella che offre molteplici spunti interessanti lungo placche, diedri e brevi strapiombetti. Le protezioni a parete sono abbondanti e posizionate intelligentemente nei punti giusti anche se ogni tanto è bene integrare la progressione per una maggiore sicurezza soprattutto del secondo di cordata. La linea è piuttosto storta ma divertente, assolutamente da non perdere!
+Via molto bella che offre molteplici spunti interessanti lungo placche, diedri e brevi strapiombetti. Le protezioni a parete sono abbondanti e posizionate intelligentemente nei punti giusti anche se ogni tanto è bene integrare la progressione per una maggiore sicurezza soprattutto del secondo di cordata. La linea è piuttosto storta ma divertente, assolutamente da non perdere!
+
+## sulle-pance-del-pezol::photo-01
+Simone all’inizio della via, V.
+
+## sulle-pance-del-pezol::photo-02
+Steve al termine della seconda lunghezza, VI.
+
+## sulle-pance-del-pezol::photo-03
+La bella roccia a gocce a termine della quarta lunghezza, V+.
+
+## sulle-pance-del-pezol::photo-04
+Il traverso discendente del quinto tiro, IV.
+
+## sulle-pance-del-pezol::photo-05
+Jacopo lungo il passo chiave della sesta lunghezza, VI+.
+
+## sulle-pance-del-pezol::photo-06
+La facile rampa del settimo tiro, V-.
+
+## sulle-pance-del-pezol::photo-07
+La placchetta iniziale dell’ottava lunghezza, VI.
+
+## sulle-pance-del-pezol::photo-08
+Steve alle prese con la delicata placchetta del nono tiro, VI.
+
+## sulle-pance-del-pezol::photo-09
+Simone lungo il traverso prima del passo chiave della via, VII.
+
+## sulle-pance-del-pezol::photo-10
+La bella placconata del penultimo tiro, V+.
+
+## sulle-pance-del-pezol::photo-11
+Steve lungo gli ultimi metri della via, V+.
 
 ## cuore-doro::intro
 Giornata un po’ nuvolosa in valle del Sarca caratterizzata da nebbiolina non molto fitta ma che non lascia comunque passare i raggi del sole che timidamente fa capolino dal Bondone. Tutto sommato meglio così visto che la temperatura, già di prima mattina, è elevata e se ci fosse anche il sole a picchiare si suderebbe abbastanza. E’ da tanto che volevamo andare a ripetere la via “Cuore d’Oro” alle Coste dell’Anglone ma per un motivo o per l’altro abbiamo sempre desistito. Oggi invece è la volta buona, motivati anche dall’innesto di un simpatico terzo elemento di cordata.
 
 ## cuore-doro::outro
-Martina sulla placca finale della via, V+. Linea molto piacevole soprattutto lungo la prima metà dove si aggirano una serie di tettini tramite bei traversi esposti. La parte superiorie è più discontinua ed attraversa corridoi rocciosi tra la vegetazione e torna verticale lungo gli ultimi due tiri, anche questi molto belli. Nel complesso una bella salita divertente dove solo qualche singolo passo impegna veramente. Le protezioni a parete sono sufficienti, portare nell’eventualità qualche friend medio/piccolo per integrare di tanto in tanto.
+Linea molto piacevole soprattutto lungo la prima metà dove si aggirano una serie di tettini tramite bei traversi esposti. La parte superiorie è più discontinua ed attraversa corridoi rocciosi tra la vegetazione e torna verticale lungo gli ultimi due tiri, anche questi molto belli. Nel complesso una bella salita divertente dove solo qualche singolo passo impegna veramente. Le protezioni a parete sono sufficienti, portare nell’eventualità qualche friend medio/piccolo per integrare di tanto in tanto.
+
+## cuore-doro::photo-01
+Martina lungo il primo tiro, V+.
+
+## cuore-doro::photo-02
+Il muretto del secondo tiro, IV+.
+
+## cuore-doro::photo-03
+Il bel traverso del terzo tiro, VI-.
+
+## cuore-doro::photo-04
+Il traverso iniziale della quarta lunghezza, VI.
+
+## cuore-doro::photo-05
+L’esposto traverso del quinto tiro, VI+.
+
+## cuore-doro::photo-06
+Jacopo in arrivo alla sesta sosta, V+.
+
+## cuore-doro::photo-07
+Il muretto del settimo tiro, VI-.
+
+## cuore-doro::photo-08
+Martina al termine dell’ottava lunghezza, V-.
+
+## cuore-doro::photo-09
+Gli ultimi metri del nono tiro, V-.
+
+## cuore-doro::photo-10
+Il bel diedro della decima lunghezza, VI.
+
+## cuore-doro::photo-11
+Martina sulla placca finale della via, V+.
 
 ## rampa-centrale::intro
 In una bella giornata soleggiata di inizio ottobre ci dirigiamo verso la Parete dei Due Laghi, sopra l’abitato di Santa Massenza, per tentare di salire la via “Rampa Centrale”. La fascia rocciosa inizia ad essere conosciuta tanto che al nostro arrivo c’è già qualche cordata che approccia la parete e durante la giornata, nel complesso, ne contiamo una dozzina in tutto. Fortunatamente la via scelta è libera, ci prepariamo ed iniziamo la salita.
 
 ## rampa-centrale::outro
-Le roccette finali della via, IV. Via sostenuta e di soddisfazione con passaggi molto interessanti. Nel complesso una salita completa e varia, dai gradi onesti ed ingaggiante al punto giusto. Le protezioni in loco non sono mai sufficienti a garantire una progressione sicura ed è spesso necessario integrare con dadi e friend. I movimenti, che sulla carta sono i più duri, sono in qualche modo azzerabili ma nel complesso non è una salita da sottovalutare, insidie di vario tipo sono un po’ ovunque.
+Via sostenuta e di soddisfazione con passaggi molto interessanti. Nel complesso una salita completa e varia, dai gradi onesti ed ingaggiante al punto giusto. Le protezioni in loco non sono mai sufficienti a garantire una progressione sicura ed è spesso necessario integrare con dadi e friend. I movimenti, che sulla carta sono i più duri, sono in qualche modo azzerabili ma nel complesso non è una salita da sottovalutare, insidie di vario tipo sono un po’ ovunque.
+
+## rampa-centrale::photo-01
+Simone lungo la rampa fessurata del primo tiro, VI-.
+
+## rampa-centrale::photo-02
+Martina alla fine della seconda lunghezza, V.
+
+## rampa-centrale::photo-03
+L’inizio della terza lunghezza, V+.
+
+## rampa-centrale::photo-04
+Simone nella parte finale della quarta lunghezza, VI-.
+
+## rampa-centrale::photo-05
+Martina al termine del tiro chiave, VII-.
+
+## rampa-centrale::photo-06
+La placca finale della sesta lunghezza, VI+.
+
+## rampa-centrale::photo-07
+Martina incastrata nel camino del settimo tiro, V+.
+
+## rampa-centrale::photo-08
+Le roccette finali della via, IV.
 
 ## fruit-vegetables::intro
 Temperature quasi estive a metà maggio nonostante negli ultimi weekend le giornate piovose primaverili non hanno permesso al sole di irraggiare la valle. Nonostante sia prevista calura diffusa, lo sguazzo della nottata precedente ci fa sperare in un clima più mite, almeno nella prima mattinata. Ci dirigiamo al Transatlantico intenti ad affrontare una salita che, sulla carta, osserviamo da tempo: la “Fruit & Vegetable”.
@@ -193,143 +808,671 @@ Temperature quasi estive a metà maggio nonostante negli ultimi weekend le giorn
 ## fruit-vegetables::outro
 Bella via su roccia sicuramente solida e bella. La spittatura è un po’ datata e va sempre valutata, soprattutto sulle soste. Noi sinceramente abbiamo trovato difficoltà nella lettura dei passaggi e di conseguenza abbiamo trovato la via più ingaggiante di quanto dichiarato. In ogni caso una salita carina e nel complesso da non sottovalutare.
 
+## fruit-vegetables::photo-01
+Umberto lungo la prima lunghezza, 6c+.
+
+## fruit-vegetables::photo-02
+L’inizio del secondo tiro, 6b.
+
+## fruit-vegetables::photo-03
+La linea del quarto tiro, 7a.
+
+## fruit-vegetables::photo-04
+In uscita dal quinto tiro, 6c.
+
 ## babilonia::intro
 Usciti dalla via “Plaisir” riscendiamo il sentierino che in breve riporta alla base della parete. Sono le quattro e mezza di pomeriggio, c’è ancora tempo di salire un’altra via corta prima di tornare verso Trento. La scelta ricade sulla vicina “Babilonia”, quattro lunghezze che promettono arrampicata divertente ed un terzo tiro emozionante su spigolo esposto vista lago di Garda.
 
 ## babilonia::outro
-Le roccette dell’ultima lunghezza, 5b. Via corta ma interessante, sicuramente da affrontare in concatenazione con una delle tante linee adiacenti. L’arrampicata si svolge principalmente in aderenza lungo solide placconate grige mentre la progressione risulta sempre sicura grazie alle numerose protezioni a parete. Le difficoltà contenute rendono l’itinerario plaisir e il panorama sul lago di Garda fa da contorno ad una piacevole salita spensierata.
+Via corta ma interessante, sicuramente da affrontare in concatenazione con una delle tante linee adiacenti. L’arrampicata si svolge principalmente in aderenza lungo solide placconate grige mentre la progressione risulta sempre sicura grazie alle numerose protezioni a parete. Le difficoltà contenute rendono l’itinerario plaisir e il panorama sul lago di Garda fa da contorno ad una piacevole salita spensierata.
+
+## babilonia::photo-01
+Simone lungo il traverso della prima lunghezza, 6a.
+
+## babilonia::photo-02
+Le belle placche della seconda lunghezza, 5b.
+
+## babilonia::photo-03
+Simone lungo il terzo tiro, 6a.
+
+## babilonia::photo-04
+Le roccette dell’ultima lunghezza, 5b.
 
 ## via-del-dottore::intro
 Scendiamo in valle del Sarca in direzione di Dro intenti ad affrontare una via alle Coste dell’Anglone di primo mattino. Le giornate di inizio settembre sono ancora calde ma non soffocanti ed il sistema di diedri di cui è composta la fascia rocciosa permette spesso di arrampicare in ombra. Anche la vegetazione presente aiuta a non soffrire troppo. L’intento è quello di salire la linea “Te lo do io il Colorado” ma sbagliando da subito il primo tiro ci ritroviamo alla prima sosta della via accanto, la “Via del Dottore”, che decidiamo di terminare.
 
 ## via-del-dottore::outro
-In arrivo in cima alla parete, IV. Via piuttosto discontinua con molti terrazzamenti che si alternano a numerose paretine rocciose le quali offrono però punti di arrampicata interessanti. Le difficoltà sono piuttosto omogenee lungo tutto l’itinerario e solo alcuni sassi isolati impegnano più della media. Questi risultano comunque ben protetti ed azzerabili se necessario. La guida di Arco le assegna una sola stella su cinque ma a nostro parare è una valutazione che non rende giustizia agli apritori. Risulta essere nel complesso una salita plaisir interessante per passare una bella giornata in parete.
+Via piuttosto discontinua con molti terrazzamenti che si alternano a numerose paretine rocciose le quali offrono però punti di arrampicata interessanti. Le difficoltà sono piuttosto omogenee lungo tutto l’itinerario e solo alcuni sassi isolati impegnano più della media. Questi risultano comunque ben protetti ed azzerabili se necessario. La guida di Arco le assegna una sola stella su cinque ma a nostro parare è una valutazione che non rende giustizia agli apritori. Risulta essere nel complesso una salita plaisir interessante per passare una bella giornata in parete.
+
+## via-del-dottore::photo-01
+Martina in arrivo alla prima sosta, III.
+
+## via-del-dottore::photo-02
+Gli ultimi metri del secondo tiro, IV+.
+
+## via-del-dottore::photo-03
+Simone all’inizio della terza lunghezza, IV+.
+
+## via-del-dottore::photo-04
+Il bel diedro finale della quarta lunghezza, V.
+
+## via-del-dottore::photo-05
+L’inizio del quinto tiro, V+.
+
+## via-del-dottore::photo-06
+La partenza della sesta lunghezza, VI.
+
+## via-del-dottore::photo-07
+Martina in arrivo alla settima sosta, V.
+
+## via-del-dottore::photo-08
+La placca appoggiata dell’ottava lunghezza, III.
+
+## via-del-dottore::photo-09
+L’inizio del nono tiro, V+.
+
+## via-del-dottore::photo-10
+Le roccette all’inizio della decima lunghezza, IV+
+
+## via-del-dottore::photo-11
+In arrivo in cima alla parete, IV.
 
 ## giubileo::intro
 Dopo qualche weekend di tempo incerto torniamo in valle del Sarca per rimettere le mani sulla roccia. Di buon mattino ci dirigiamo verso la parete dei “Due Laghi”, sopra l’abitato di Santa Massenza, dove la primavera scorsa avevamo salito la via “Gran Diedro” apprezzandola particolarmente. Sicuri che nemmeno stavolta saremmo tornati a casa delusi ci dirigiamo verso l’attacco della via “Giubileo” che sale la placconata all’estrema destra della parete.
 
 ## giubileo::outro
-Martina al termine della via, VI. Via molto interessante dallo stile vario e su difficoltà costanti. La parte inferiore si svolge lungo solide placconate incise da fessure dove è fondamentale sapersi proteggere bene a dadi e friend. La parte superiore invece si destreggia attraverso una serie di diedri fino in vetta. Nel complesso una linea divertente e piacevole, molto consigliata!
+Via molto interessante dallo stile vario e su difficoltà costanti. La parte inferiore si svolge lungo solide placconate incise da fessure dove è fondamentale sapersi proteggere bene a dadi e friend. La parte superiore invece si destreggia attraverso una serie di diedri fino in vetta. Nel complesso una linea divertente e piacevole, molto consigliata!
+
+## giubileo::photo-01
+Simone lungo la prima lunghezza, VI.
+
+## giubileo::photo-02
+La placca della seconda lunghezza, V+.
+
+## giubileo::photo-03
+L’impegnativa fessura del terzo tiro, VI.
+
+## giubileo::photo-04
+Simone sulla quarta lunghezza, VI.
+
+## giubileo::photo-05
+Martina al termine del quinto tiro, V.
+
+## giubileo::photo-06
+Il muretto finale della sesta lunghezza, V+.
+
+## giubileo::photo-07
+Il traverso finale del settimo tiro, VI e A0.
+
+## giubileo::photo-08
+Martina al termine della via, VI.
 
 ## plaisir::intro
 Ritornati qualche giorno prima del previsto da un’intensa vacanza sul Gran Sasso ci rimane qualche giorno libero prima di tornare alla monotonia quotidiana. Decidiamo di sfruttare il pomeriggio del venerdì per esplorare una parete che ancora non abbiamo avuto il piacere di toccare con mano nonostante abbiamo spesso arrampicato sulla falesia subito sopra. Si tratta della parete che sovrasta la strada del Ponale su cui abbiamo adocchiato una coppia di linee che ci occuperanno il pomeriggio. La prima di queste è la via “Plaisir”, un nome una garanzia anche se qualche passaggio presenta chiodatura distanziata che richiede particolare attenzione.
 
 ## plaisir::outro
-La bella placca dell’ultimo tiro, 5c+. Via corta ma molto carina,soprattutto per chi muove i primi passi sulle vie a più tiri. La roccia è ottima e le fonde fessure donano sempre un piacevole senso di sicurezza. La chiodatura è buona anche se lunga in alcuni punti dove è consigliato integrare con protezioni rapide. Una bella linea con passaggi interessanti che consigliamo, vista la brevità, di concatenare con qualcun’altra sulla stessa parete. Noi ad esempio abbiamo optato per la vicina “Babilonia”.
+Via corta ma molto carina,soprattutto per chi muove i primi passi sulle vie a più tiri. La roccia è ottima e le fonde fessure donano sempre un piacevole senso di sicurezza. La chiodatura è buona anche se lunga in alcuni punti dove è consigliato integrare con protezioni rapide. Una bella linea con passaggi interessanti che consigliamo, vista la brevità, di concatenare con qualcun’altra sulla stessa parete. Noi ad esempio abbiamo optato per la vicina “Babilonia”.
+
+## plaisir::photo-01
+Martina impegnata sul primo tiro, 5b.
+
+## plaisir::photo-02
+In arrivo alla seconda sosta, 5c.
+
+## plaisir::photo-03
+La bella placca dell’ultimo tiro, 5c+.
 
 ## il-gran-diedro::intro
 Un caldo torrido accomagna la nostra discesa in Valle del Sarca già nelle prime ore della mattina. E giusto che i temporali dell sera precedente qualcosa hanno rinfrescato! Questa volta la meta è Santa Massenza, la parete è quella dei “Due Laghi” e la via è “Il Gran Diedro”. Il sole, bello alto nel cielo, ci ha fatto sudare durante il breve avvicinamento ma alla base della parete soffia una leggera brezza rinsaviente che ci fa ben sperare ma che si rivelerà illusoria. Oramai siamo qui, si sale!
 
 ## il-gran-diedro::outro
-Simone verso il termine della via, IV+. Via che offre spunti interessanti ma che alla lunga può risultare monotona visto che il lungo diedro che si segue è lineare e non ospita molta varietà nei passaggi. Solo dalla metà in su la via cambia un po’ aria grazie alle placche che conducono in cima alla parete. La chiodatura a tratti distanziata, e non sempre integrabile, da’ quel pepe in più a questa via di stampo alpinistico. Nel complesso non da sottovalutare visto anche che difficilmente è possibile calarsi oltre la metà.
+Via che offre spunti interessanti ma che alla lunga può risultare monotona visto che il lungo diedro che si segue è lineare e non ospita molta varietà nei passaggi. Solo dalla metà in su la via cambia un po’ aria grazie alle placche che conducono in cima alla parete. La chiodatura a tratti distanziata, e non sempre integrabile, da’ quel pepe in più a questa via di stampo alpinistico. Nel complesso non da sottovalutare visto anche che difficilmente è possibile calarsi oltre la metà.
+
+## il-gran-diedro::photo-01
+Simone lungo il primo tiro, VI-.
+
+## il-gran-diedro::photo-02
+L’inizio della seconda lunghezza, VI-.
+
+## il-gran-diedro::photo-03
+Martina al termine del terzo tiro, VI-.
+
+## il-gran-diedro::photo-04
+Martina verso il termine della quarta lunghezza, V+.
+
+## il-gran-diedro::photo-05
+Martina sfoggia la sua elasticità lungo il diedro del quinto tiro, V+.
+
+## il-gran-diedro::photo-06
+La placchetta della sesta lunghezza, IV.
+
+## il-gran-diedro::photo-07
+Lo spigoletto del settimo tiro, V-.
+
+## il-gran-diedro::photo-08
+Martina in arrivo all’ottava sosta, V.
+
+## il-gran-diedro::photo-09
+Simone verso il termine della via, IV+.
 
 ## la-piccola-piramide::intro
 Con le giornate che iniziano finalmente ad allungarsi si ampia anche la palette di itinerari da poter salire in valle ed in giornata. Ci dirigiamo verso l’affollato Dro e ci incamminiamo decisi a salire la via “Archai” che purtroppo era già presa ripiegando così sulla limitrofa “La Piccola Piramide” che le corre subito a destra. La tranquillità di essere i primi della giornata nonchè il sogno di rimanere gli unici si infrangono al frastuono delle comitive marcianti verso la parete. E’ ora di salire.
 
 ## la-piccola-piramide::outro
-Martina al termine dell’undicesimo tiro, V+. L’ultima lunghezza ospita i passaggi più duri di tutta la linea. Inizia aggirando verso sinistra la nicchia di sosta lungo muretto strapiombante e continuo. L’arrampicata è sostenuta su prese non ottime e spesso distanti dove sono richiesti solidi bloccaggi ed allunghi per raggiungerle. Superati i primi cordoni si raggiunge un anello alla cui sinistra, poco più in basso, è presente una larga cavità rovescia dove riposare prima dell’ultimo passo: accoppiando la presa anche con la mano destra, togliendo ed inserendo qualche dito alla volta, si alzano bene i piedi sugli appigli più alti disponibili caricando bene e lanciando verso le evidenti lame soprastanti, decisamente comode. Si continua quindi in verticale ancora per qualche metro fino a che la vegetazione sommitale chiude il pasaggio ed inizia un traverso verso destra lungo facili roccette compatte. Queste, senza particolari difficoltà, conducono ad una rampetta appoggiata che, adagiandosi, raggiunge il culmine della fascia rocciosa dove si sosta su solido arbusto. Tiro bello sostenuto che richiede resistenza e buona esplosività, decisamente più del VI dichiarato. 30m, VI/VI+. Martina sguli ultimi passi della via, VI/VI+. Nel complesso una bella salita, non troppo difficile ma che ospita passaggi e movimenti interessanti. La qualità della roccia è buona lungo tutto il percorso e la chiodatura abbondante anche se c’è ancora spazio per inserire protezioni rapide dove serve. La varietà di stili accontenta tutti: placche, diedri, camini e piccoli strapiombi si alternano per una salita divertente e completa. Occhio soltanto al traffico in parete, evitare i weekend se possibile.
+Nel complesso una bella salita, non troppo difficile ma che ospita passaggi e movimenti interessanti. La qualità della roccia è buona lungo tutto il percorso e la chiodatura abbondante anche se c’è ancora spazio per inserire protezioni rapide dove serve. La varietà di stili accontenta tutti: placche, diedri, camini e piccoli strapiombi si alternano per una salita divertente e completa. Occhio soltanto al traffico in parete, evitare i weekend se possibile.
+
+## la-piccola-piramide::photo-01
+Simone lungo il primo tiro, V.
+
+## la-piccola-piramide::photo-02
+L’inizio della seconda lunchezza, prima del traverso verso sinistra, V+.
+
+## la-piccola-piramide::photo-03
+Martina lungo la delicata placca al termine della seconda lunghezza, V+.
+
+## la-piccola-piramide::photo-04
+Il marcato sentiero della quarta lunghezza, I.
+
+## la-piccola-piramide::photo-05
+Martina sulla bella placca del quinto tiro, V+.
+
+## la-piccola-piramide::photo-06
+Il bel diedro protagonista della sesta lunghezza, VI-.
+
+## la-piccola-piramide::photo-07
+Simone oltrepassata la strettoia del settimo tiro, V+.
+
+## la-piccola-piramide::photo-08
+Al termine dell’ottava lughezza, II.
+
+## la-piccola-piramide::photo-09
+Simone sul passo ostico del nono tiro, VI.
+
+## la-piccola-piramide::photo-10
+Il lungo traverso della decima lunghezza, VI.
+
+## la-piccola-piramide::photo-11
+Martina al termine dell’undicesimo tiro, V+.
+
+## la-piccola-piramide::photo-12
+Martina sguli ultimi passi della via, VI/VI+.
 
 ## il-cammino-dellarco::intro
 Alla ricerca di tranquillità ci dirigiamo verso posti meno conosciuti e recensiti. Le pareti del Monte Velo le conosciamo abbastanza bene ma fino ad oggi abbiamo messo le mani solo sulle pareti che si affacciano subito sopra Bolognano. Questa volta decidiamo di avventurarci più in quota per vedere cosa offre la parete denominata “Due Sassi”. Tra le vie della fascia rocciosa scegliamo “Il cammino dell’arco”, 7 tiri sulla carta tranquilli e divertenti.
 
 ## il-cammino-dellarco::outro
-La bella roccia compatta dell’ultimo tiro, 5c. Via che nel complesso non regala grandi emozioni. A parte il primo tiro e qualche tratto nella parte superiore l’arrampicata si svolge lungo roccia frastagliata, sporca e pericolante. Probabilmente le ascensioni future miglioreranno e ripuliranno questo itinerario che tutto sommato offre qualche passo interessante qua e la. Al momento non ci sentiamo comunque di consigliarlo se non ad arrampicatori con una certa esperienza e in cerca di avventura.
+Via che nel complesso non regala grandi emozioni. A parte il primo tiro e qualche tratto nella parte superiore l’arrampicata si svolge lungo roccia frastagliata, sporca e pericolante. Probabilmente le ascensioni future miglioreranno e ripuliranno questo itinerario che tutto sommato offre qualche passo interessante qua e la. Al momento non ci sentiamo comunque di consigliarlo se non ad arrampicatori con una certa esperienza e in cerca di avventura.
+
+## il-cammino-dellarco::photo-01
+Simone lungo il primo tiro, 6a+.
+
+## il-cammino-dellarco::photo-02
+Martina lungo le rocce frastagliate al termine della seconda lunghezza, 6b.
+
+## il-cammino-dellarco::photo-03
+Il termine del terzo tiro, 5a.
+
+## il-cammino-dellarco::photo-04
+L’inizio della quarta lunghezza, 5b.
+
+## il-cammino-dellarco::photo-05
+Martina al termine del quinto tiro, 6a+.
+
+## il-cammino-dellarco::photo-06
+Martina in uscita dalla sesta lunghezza, 5a.
+
+## il-cammino-dellarco::photo-07
+La bella roccia compatta dell’ultimo tiro, 5c.
 
 ## linquisitore::intro
 Usciti dalla via “Ghiro in tondo” il sole è ancora alto nel cielo. Ci dirigiamo quindi verso la parete dell’Ir superiore per concludere la giornata con un’altra vietta breve. Scegliamo la prima disponibile vista l’alta frequentazione della zona: “L’inquisitore”, 3 tiri solamente ma d’ingaggio elevato.
 
 ## linquisitore::outro
-L’inizio dell’ultimo tiro, VI+. Via breve ma continua dove i gradi sono tutt’altro che regalati. Ad oggi risulta essere ancora sporca in alcuni punti, viste anche le poche ripetizioni che conta. I tratti difficili sono ben protetti ma il resto della via richiede l’utilizzo di protezioni rapide non sempre facilmente inseribili. E’ sicuramente un buon itinerario se concatenato con una delle vie della parete inferiore, da solo invece lascia il tempo che trova.
+Via breve ma continua dove i gradi sono tutt’altro che regalati. Ad oggi risulta essere ancora sporca in alcuni punti, viste anche le poche ripetizioni che conta. I tratti difficili sono ben protetti ma il resto della via richiede l’utilizzo di protezioni rapide non sempre facilmente inseribili. E’ sicuramente un buon itinerario se concatenato con una delle vie della parete inferiore, da solo invece lascia il tempo che trova.
+
+## linquisitore::photo-01
+Simone lungo il traverso del primo tiro, VI.
+
+## linquisitore::photo-02
+Lo sviluppo della seconda lunghezza, VI+.
+
+## linquisitore::photo-03
+L’inizio dell’ultimo tiro, VI+.
 
 ## ghiro-in-tondo::intro
 Si preannuncia una giornata molto ventosa con forti raffiche previste da Nord. Consci di ciò cerchiamo comunque di sfruttare a pieno il sole, che splende in un cielo limpido e sgombro da nuvole, dirigendoci verso la parete dell’Ir la cui esposizione dovrebbe riparare parzialmente dal vento. Come via scegliamo di salire “Ghiro in Tondo” all’estrema sinistra della parete e di concatenarla in seguito con una di quelle presenti sulla parete dell’Ir superiore.
 
 ## ghiro-in-tondo::outro
-Prima del tetto dell’ultima lunghezza, VI+. Nonostante qualche tratto sporco e qualche parte poco arrampicabile, nel complesso la via è divertente. Molto belli sono i traversi delle sezioni centrali che regalano emozioni attraverso un’arrampicata prevalentemente di movimento. I gradi sono onesti e, a dire il vero, li abbiamo trovati abbastanza generosi. Le protezioni sono buone e giuste, sono rari i casi in cui abbiamo sentito la necessità di integrare. Come per tutte le vie della parete il panorama è davvero bello e fa da sfondo ad una salita altrettando meritevole.
+Nonostante qualche tratto sporco e qualche parte poco arrampicabile, nel complesso la via è divertente. Molto belli sono i traversi delle sezioni centrali che regalano emozioni attraverso un’arrampicata prevalentemente di movimento. I gradi sono onesti e, a dire il vero, li abbiamo trovati abbastanza generosi. Le protezioni sono buone e giuste, sono rari i casi in cui abbiamo sentito la necessità di integrare. Come per tutte le vie della parete il panorama è davvero bello e fa da sfondo ad una salita altrettando meritevole.
+
+## ghiro-in-tondo::photo-01
+Martina lungo il diedrino finale della prima lunghezza, V.
+
+## ghiro-in-tondo::photo-02
+Il breve traverso iniziale del secondo tiro, V.
+
+## ghiro-in-tondo::photo-03
+Simone lungo il traverso del terzo tiro, V+.
+
+## ghiro-in-tondo::photo-04
+Il bel traverso della quarta lunghezza, VI.
+
+## ghiro-in-tondo::photo-05
+Prima del tetto dell’ultima lunghezza, VI+.
 
 ## via-dellincontro-superiore::intro
 Usciti dalla “via dell’Incontro” il sole è ancora alto nel cielo e la giornata si prospetta ancora lunga. Ne approfittiamo per concatenare una seconda via. Circa un anno dopo la realizzazione della “via dell’Incontro” è stata aperta, alla parete dell’Ir superiore, la “via dell’Incontro Superiore” che, sebbene non sia una continuazione logica della via sottostante per via del distacco marcato tra le due pareti, ne condivide il nome ed in parte lo stile.
 
 ## via-dellincontro-superiore::outro
-La linea dell’ultima lunghezza, VI. Via corta e senza difficoltà rilevanti. Molto bello il secondo tiro mentre gli altri alternano sezioni meritevoli a tratti più anonimi. La chiodatura è sufficiente nei tratti più facili e molto buona dove serve sui tratti più difficili. Nel complesso la salita guadagna maggior senso se concatenata con una delle vie della parete inferiore, altrimenti rimane un’alternativa valida per il post lavoro grazie all’esposizione favorevole e all’avvicinamento breve.
+Via corta e senza difficoltà rilevanti. Molto bello il secondo tiro mentre gli altri alternano sezioni meritevoli a tratti più anonimi. La chiodatura è sufficiente nei tratti più facili e molto buona dove serve sui tratti più difficili. Nel complesso la salita guadagna maggior senso se concatenata con una delle vie della parete inferiore, altrimenti rimane un’alternativa valida per il post lavoro grazie all’esposizione favorevole e all’avvicinamento breve.
+
+## via-dellincontro-superiore::photo-01
+Simone lungo il primo tiro della via, IV+.
+
+## via-dellincontro-superiore::photo-02
+Il bel traverso esposto della seconda lunghezza, VI.
+
+## via-dellincontro-superiore::photo-03
+Simone verso il termine del terzo tiro, IV+.
+
+## via-dellincontro-superiore::photo-04
+La linea dell’ultima lunghezza, VI.
 
 ## via-dellincontro::intro
 Grazie alla recente apertura di nuovi itinerari la parete dell’Ir sta guadagnando nuovamente interesse attirando ogni weekend molteplici arrampicatori. La giornata che ci aspetta è molto soleggiata ed anche noi ci dirigiamo alla base della fascia rocciosa per affrontare la “Via dell’Incontro” che si preannuncia essere interessante e di marcato stampo alpinistico.
 
 ## via-dellincontro::outro
-Martina lungo gli ultimi metri della via, VI-. Bella via dallo stampo decisamente alpinistico dove è necessario sapersi muovere bene tra le protezioni, spesso distanti, ed integrare all’occasione. La roccia è piuttosto solida lungo tutto il percorso anche se in alcuni tratti è meglio fermarsi a verificare. Usciti dalla via è possibile continuare lungo la “Via dell’Incontro Superiore” alla parete dell’Ir Superiore.
+Bella via dallo stampo decisamente alpinistico dove è necessario sapersi muovere bene tra le protezioni, spesso distanti, ed integrare all’occasione. La roccia è piuttosto solida lungo tutto il percorso anche se in alcuni tratti è meglio fermarsi a verificare. Usciti dalla via è possibile continuare lungo la “Via dell’Incontro Superiore” alla parete dell’Ir Superiore.
+
+## via-dellincontro::photo-01
+Martina al termine del primo tiro, VI.
+
+## via-dellincontro::photo-02
+Lo sviluppo della bella placconata che caratterizza la seconda lunghezza, VI.
+
+## via-dellincontro::photo-03
+L’inizio del terzo tiro, VI-.
+
+## via-dellincontro::photo-04
+Simone subito prima del passo chiave della via, VI+.
+
+## via-dellincontro::photo-05
+Martina lungo gli ultimi metri della via, VI-.
 
 ## via-dante-dassati::intro
 Sulla parete del Pezol, alle pendici del Monte Velo, nel versante Arcense, le prime vie sono state tracciate agli inizi degli anni ’80. La scarsa frequentazione ed il tempo hanno gettato nel dimenticatoio questi itinerari, riscoperti solo di recente e rivalorizzati con interventi di ammodernamento. Un esempio è la via “Dante Dassati” che siamo andati a ripercorrere una cupa mattinata di inizio febbraio.
 
 ## via-dante-dassati::outro
-Le roccette finali, IV+. Via modesta che alterna roccia molto solida a tratti più scabrosi. L’arrampicata è comunque divertente e continua, mai interrotta da arbusti e zone boschive, ed il bel panorama sul lago di Garda regala uno sfondo magico che ci si ferma ad ammirare ad ogni sosta. L’esposizione fa sì che il sole baci la parete per molte ore, la chiodatura è buona e solo in pochi punti è necessario integrare. Ingredienti ideali per un inevitabile affollamento.
+Via modesta che alterna roccia molto solida a tratti più scabrosi. L’arrampicata è comunque divertente e continua, mai interrotta da arbusti e zone boschive, ed il bel panorama sul lago di Garda regala uno sfondo magico che ci si ferma ad ammirare ad ogni sosta. L’esposizione fa sì che il sole baci la parete per molte ore, la chiodatura è buona e solo in pochi punti è necessario integrare. Ingredienti ideali per un inevitabile affollamento.
+
+## via-dante-dassati::photo-01
+Simone all’inizio del primo tiro, V.
+
+## via-dante-dassati::photo-02
+La bella placchetta della seconda lunghezza, VI.
+
+## via-dante-dassati::photo-03
+Martina al termine del terzo tiro, V+.
+
+## via-dante-dassati::photo-04
+Il camino del quarto tiro, V-.
+
+## via-dante-dassati::photo-05
+Simone sulla quinta lunghezza, VI-.
+
+## via-dante-dassati::photo-06
+La placca finale del sesto tiro, VI+.
+
+## via-dante-dassati::photo-07
+Le roccette finali, IV+.
 
 ## vecchi-disonesti-e-insoddisfatti::intro
 Con ancora qualche sporadica chiazza di neve permasta dalla nevicata di inizio dicembre ci dirigiamo verso Mandrea per godere del caldo sole mattutino che illumina per bene tutta la parete. Con l’intenzione di effettuare una toccata e fuga senza particolare voglia di impegno eccessivo la scelta ricade sulla via “Vecchi, disonesti e insoddisfatti” alla parete Fabio Giacomelli.
 
 ## vecchi-disonesti-e-insoddisfatti::outro
-La linea dell’ultimo tiro, 5b. Via dai gradi contenuti ma molto bella e ben protetta, davvero meritevole. Tutte le lunghezze sono divertenti ed offrono diversi stili di arrampicata. Peccato solo per la lunghezza limitata.
+Via dai gradi contenuti ma molto bella e ben protetta, davvero meritevole. Tutte le lunghezze sono divertenti ed offrono diversi stili di arrampicata. Peccato solo per la lunghezza limitata.
+
+## vecchi-disonesti-e-insoddisfatti::photo-01
+Simone in partenza, 5c.
+
+## vecchi-disonesti-e-insoddisfatti::photo-02
+Martina al termine della seconda lunghezza, 6b.
+
+## vecchi-disonesti-e-insoddisfatti::photo-03
+Simone sulla bella placca del terzo tiro, 5c.
+
+## vecchi-disonesti-e-insoddisfatti::photo-04
+La linea dell’ultimo tiro, 5b.
 
 ## apollo::intro
 Lo scorso weekend abbiamo approcciato per la prima volta la parete di Padaro e dobbiamo ammetere che ci è piaciuta, vuoi per il panorama, vuoi per la tranquillità della zona, vuoi per le relativamente poche cordate a parete e anche per il fatto che le vie non sono mai regalate. A prova di ciò la via di oggi, “Apollo”, ospita qualche tiro veramente ingaggiante tra i tanti meritevoli. Recentemente un restyling ha donato alla linea un nuovo attacco ed una bella variante d’uscita che abbiamo percorso ed apprezzato.
 
 ## apollo::outro
-Umberto sull’ultimo tiro, VI-. Via molto bella con alcuni tiri veramente meritevoli ed ingaggianti. Le protezioni sono sufficienti nei tratti dove non è possibile proteggersi altrimenti mentre diedri e fessure sono lasciate volutamente immacolate. Molto bello il panorama su lago di Garda che fa da contorno ad una linea che ci sentiamo vivamente di consigliare ad un pubblico navigato.
+Via molto bella con alcuni tiri veramente meritevoli ed ingaggianti. Le protezioni sono sufficienti nei tratti dove non è possibile proteggersi altrimenti mentre diedri e fessure sono lasciate volutamente immacolate. Molto bello il panorama su lago di Garda che fa da contorno ad una linea che ci sentiamo vivamente di consigliare ad un pubblico navigato.
+
+## apollo::photo-01
+Umberto sulla placca del primo tiro, V+.
+
+## apollo::photo-02
+Martina al termine della seconda lunghezza, VI.
+
+## apollo::photo-03
+Martina sulle belle gocce al termine del terzo tiro, IV+.
+
+## apollo::photo-04
+Umberto sul traverso della quarta lunghezza, VI-.
+
+## apollo::photo-05
+Umberto all’inizio del quinto tiro, VI.
+
+## apollo::photo-06
+Umberto sulla prima parte del diedro fessurato della sesta lunghezza, VI+.
+
+## apollo::photo-07
+Simone sulla seconda parte del diedro fessurato della sesta lunghezza, VI+.
+
+## apollo::photo-08
+Umberto sul settimo tiro, VI-.
+
+## apollo::photo-09
+Simone al termine del settimo tiro, VI-.
+
+## apollo::photo-10
+La parte bassa del nono tiro, VI-.
+
+## apollo::photo-11
+Umberto sull’ultimo tiro, VI-.
 
 ## molla-tutto::intro
-Per l’ultimo weekend prima del cambio dell’ora e dell’arrivo delle giornate corte ci dirigiamo verso la parete di Mandrea per approcciare la via “Molla Tutto”, ingolositi dalle difficoltà contenute e dalle generose 4 stelle su 5 in bella mostra sulla relazione a nostra disposizione. Purtroppo però, allo stato attuale delle cose, la via, almeno per quanto riguarda la parte alta, è ingombra di vegetazione che disturba veramente tanto la progressione. Anche il primo dei due tiri d’uscita, aggiunti in seguito all’apertura della via, ospita roccia molto scadente e non avvalora, assieme al tiro successivo, una salita che, a parte i due tiri iniziali, non offre soddisfazioni particolari. Il primo tiro risale il muretto oltre l’attacco della via, con passo iniziale fisico, che in breve permette di raggiungere una rampa che obliqua verso destra. Si procede su di questa mantenendo i piedi in aderenza e le mani sulle poche prese disponibili quà e là sulla parete di sinistra che costeggia la rampa. Circa a metà è presente il passo chiave del tiro: abbandonando la parete di sinistra si punta ai terrazzini lisci presenti su quella di destra con movimento in aderenza dove è abbastanza evidente, dal colore della roccia, che nel mezzo qualcosa di fondamentale si sia staccato durante una ripetizione precedente. Per passare è ora necessario tenere e spallare uno scomodo bidito giallo, all’interno della fessura che separa la rampa dalla parete principale, con passo particolarmente intenso. Si entra quindi nel tratto finale della rampa che qui sale più verticale usufruendo anche del diedro di sinistra. Ci si incastra al suo interno per guadagnare i primi centimetri e si esce appena possibile per sfruttare, in spaccata, entrambe le pareti. Senza ulteriori difficoltà si giunge alla prima sosta su piccola cengia. 30m, 6a+ dichiarato, probabile 6b+. Martina al termine del primo tiro, 6a+.
+Per l’ultimo weekend prima del cambio dell’ora e dell’arrivo delle giornate corte ci dirigiamo verso la parete di Mandrea per approcciare la via “Molla Tutto”, ingolositi dalle difficoltà contenute e dalle generose 4 stelle su 5 in bella mostra sulla relazione a nostra disposizione. Purtroppo però, allo stato attuale delle cose, la via, almeno per quanto riguarda la parte alta, è ingombra di vegetazione che disturba veramente tanto la progressione. Anche il primo dei due tiri d’uscita, aggiunti in seguito all’apertura della via, ospita roccia molto scadente e non avvalora, assieme al tiro successivo, una salita che, a parte i due tiri iniziali, non offre soddisfazioni particolari.
 
 ## molla-tutto::outro
-Martina in uscita dalla via (finalmente), 6b. Rimaniamo con il beneficio del dubbio che al momento dell’apertura la via vigeva in condizioni migliori. Allo stato attuale non è sicuramente da 4 stelle e probabilmente non si avvicina nemmeno alle 3. Ci sarebbe da fare un grande lavoro di pulizia in generale, soprattutto sui tiri oltre il terzo, dove la natura si sta piano piano riappropriando dei propri spazi. La chiodatura quasi sempre ravvicinata permette comunque una salita piuttosto sicura ed i passaggi difficili possono essere azzerati. Via non bocciata ma rimandata.
+Rimaniamo con il beneficio del dubbio che al momento dell’apertura la via vigeva in condizioni migliori. Allo stato attuale non è sicuramente da 4 stelle e probabilmente non si avvicina nemmeno alle 3. Ci sarebbe da fare un grande lavoro di pulizia in generale, soprattutto sui tiri oltre il terzo, dove la natura si sta piano piano riappropriando dei propri spazi. La chiodatura quasi sempre ravvicinata permette comunque una salita piuttosto sicura ed i passaggi difficili possono essere azzerati. Via non bocciata ma rimandata.
+
+## molla-tutto::photo-01
+Martina al termine del primo tiro, 6a+.
+
+## molla-tutto::photo-02
+Martina rassegnata sul traverso della terza lunghezza, A0.
+
+## molla-tutto::photo-03
+Lo sporco inizio della quarta lunghezza, 6a.
+
+## molla-tutto::photo-04
+Simone sul quinto tiro, 6a+.
+
+## molla-tutto::photo-05
+Simone tra le fresche frasche della sesta lunghezza, 6a.
+
+## molla-tutto::photo-06
+La roccia a blocchi del settimo tiro, 6a+.
+
+## molla-tutto::photo-07
+Martina in uscita dalla via (finalmente), 6b.
 
 ## via-della-rampa-2::intro
 Prima uscita multipitch sulla parete di Padaro che domina l’omonimo abitato dove, oltre alle rinomate falesie, negli ultimi anni hanno iniziato a farsi spazio alcune vie a più tiri. L’arrampicata è simile a quella che si può apprezzare a San Paolo o alle Coste dell’Anglone per intendersi: muretti compatti intervallati da zone boschive. Le linee sono però tendenzialmente più esclusive, adatte a chi ha già maturato un po’ di esperienza alpinistica. Anche la “via della rampa”, una delle più facili della parete e probabile entry level per la zona, non fa eccezione e, nonostante i gradi siano contenuti, è necessario sapersi muovere bene tra le protezioni.
 
 ## via-della-rampa-2::outro
-Le ultime fatiche della giornata, II. Una via tutto sommato piacevole ma non da sottovalutare. L’arrampicata è quasi sempre verticale e le poche zone boschive lungo il percorso non disturbano più di tanto. Prestare attenzione alla roccia che in alcuni tratti è decisamente scadente.
+Una via tutto sommato piacevole ma non da sottovalutare. L’arrampicata è quasi sempre verticale e le poche zone boschive lungo il percorso non disturbano più di tanto. Prestare attenzione alla roccia che in alcuni tratti è decisamente scadente.
+
+## via-della-rampa-2::photo-01
+Simone sul primo tiro, VI-.
+
+## via-della-rampa-2::photo-02
+L’inizio della seconda lunghezza, VI-.
+
+## via-della-rampa-2::photo-03
+Martina al termine del terzo tiro, V+.
+
+## via-della-rampa-2::photo-04
+Martina al termine della bella placca a buchi della quarta lunghezza, V.
+
+## via-della-rampa-2::photo-05
+Martina alla sosta panoramica prima del facile traverso di L5, II.
+
+## via-della-rampa-2::photo-06
+Simone sulla sesta lunghezza, VI-.
+
+## via-della-rampa-2::photo-07
+Smorfie di disapprovazione prima di affrontare il traverso marcio di L7, IV.
+
+## via-della-rampa-2::photo-08
+La placca appoggiata dell’ottavo tiro, V.
+
+## via-della-rampa-2::photo-09
+Martina sulle roccette rotte al termine del nono tiro, V+.
+
+## via-della-rampa-2::photo-10
+Le ultime fatiche della giornata, II.
 
 ## di-tutto-un-po::intro
 La Ca’ del Liscio è quella fascia rocciosa che si trova a metà delle Coste dell’Anglone, caratterizzata da un’evidente placconata appoggiata dove salgono una manciata di vie medio/facili. Una di queste è “Di tutto un po’” che corre all’estrema sinistra della parete e prosegue, una volta terminata la placconata, zigzagando tra i muretti soprastanti.
 
 ## di-tutto-un-po::outro
-Simone in uscita dalla via, 6b. Bella via che alterna tiri interessanti a tratti più “di collegamento”. Non entusiasmante in generale ma consigliata per chi ricerca qualcosa di non troppo impegnativo.
+Bella via che alterna tiri interessanti a tratti più “di collegamento”. Non entusiasmante in generale ma consigliata per chi ricerca qualcosa di non troppo impegnativo.
+
+## di-tutto-un-po::photo-01
+Simone al termine della prima lunghezza, 4a.
+
+## di-tutto-un-po::photo-02
+Martina sul passo chiave del secondo tiro, 6a/6a+.
+
+## di-tutto-un-po::photo-03
+Simone sul terzo tiro, 6a.
+
+## di-tutto-un-po::photo-04
+La variante (sbagliata), 5c.
+
+## di-tutto-un-po::photo-05
+Martina sul passo chiave del sesto tiro, 6b.
+
+## di-tutto-un-po::photo-06
+Martina al termine della settima lunghezza, 6a.
+
+## di-tutto-un-po::photo-07
+Simone affronta l’albero dell’ottavo tiro, 4a.
+
+## di-tutto-un-po::photo-08
+Martina alle prese con la ribaltata finale del nono tiro, 5c.
+
+## di-tutto-un-po::photo-09
+Il bel traverso esposto della decima lunghezza, 6a+.
+
+## di-tutto-un-po::photo-10
+Simone in uscita dalla via, 6b.
 
 ## il-profondo-risetto-dellindria::intro
 Circa due settimane prima eravamo scesi a Dro per affrontare “Le scalette dell’Indria”, via mediocre con qualche pro ma con molti contro. Delusi dall’ascesa complessiva volevamo comunque dare un’altra possibilità all’Indria e questo weekend quindi siamo scesi nuovamente in valle per salire “Il profondo rispetto dell’Indria” che corre immediatamente alla destra delle scalette. “Immediatamente” forse è un po’ sproporzionato ma l’idea la si intuisce.
 
 ## il-profondo-risetto-dellindria::outro
-La linea dell’ultimo tiro, V+. Bella via con alcuni tiri davvero meritevoli ed altri ingaggianti più mentalmente che fisicamente. Nel complesso, sebbene i gradi non sono mai elevati, non è una via da sottovalutare: è infatti spesso necessario sapersi muovere bene tra protezioni distanti ed integrare dove necessario. Particolarmente consigliata a chi ha almeno un po’ di esperienza alpinistica.
+Bella via con alcuni tiri davvero meritevoli ed altri ingaggianti più mentalmente che fisicamente. Nel complesso, sebbene i gradi non sono mai elevati, non è una via da sottovalutare: è infatti spesso necessario sapersi muovere bene tra protezioni distanti ed integrare dove necessario. Particolarmente consigliata a chi ha almeno un po’ di esperienza alpinistica.
+
+## il-profondo-risetto-dellindria::photo-01
+Martina al termine del primo tiro, IV+.
+
+## il-profondo-risetto-dellindria::photo-02
+Simone sul traverso del secondo tiro, V+.
+
+## il-profondo-risetto-dellindria::photo-03
+Martina si gode il panorama all’arrivo della terza lunghezza, V+.
+
+## il-profondo-risetto-dellindria::photo-04
+Martina incastrata nel diedro del quarto tiro, V+.
+
+## il-profondo-risetto-dellindria::photo-05
+Il pilastro finale della quinta lunghezza, VI.
+
+## il-profondo-risetto-dellindria::photo-06
+Il poco entusiasmante sesto tiro, IV.
+
+## il-profondo-risetto-dellindria::photo-07
+Martina sul pilastrino che conduce a S7, V+.
+
+## il-profondo-risetto-dellindria::photo-08
+Simone sulla fessura della settima lunghezza, VI.
+
+## il-profondo-risetto-dellindria::photo-09
+Simone all’inizio del bel traverso del nono tiro, V+.
+
+## il-profondo-risetto-dellindria::photo-10
+La bella rampa dell’undicesima lunghezza, IV+.
+
+## il-profondo-risetto-dellindria::photo-12
+Simone sulla dodicesima lunghezza, VI+.
+
+## il-profondo-risetto-dellindria::photo-13
+La linea dell’ultimo tiro, V+.
 
 ## esclusivamente-per-tutti::intro
-Di vie propedeutiche per l’approccio al multipitch sportivo, in Valle del Sarca, ce ne sono relativamente poche in confronto all’ampio panorama di proposte presenti. “Esclusivamente per tutti” è una di queste, non tanto per le difficoltà limitate (perchè qualche passo ostico qua e la è comunque presente) ma più per la chiodatura estremamente sicura e ravvicinata che consente di superare in artificiale i tratti più impegnativi, nell’eventualità. Anche la varietà di stili è ampia: placche, fessure e diedri si intervallano a sezioni più sporche e boschive, terreni su cui è comunque sempre necessario fare esperienza. Il primo tiro inizia risalendo la placca di un corto muretto il cui primo passo, forse perchè a freddo, non è così semplice come si potrebbe pensare leggendo la relazione. Dopo questo strappetto l’arrampicata si fa più tranquilla, accompagnata da buone prese fino all’uscita del muro dove, sotto ad un albero, è presente un ostico passaggio in aderenza per uscire sulla cengia sommitale. Il passaggio in libera a nostro parere si aggira attorno al 6a ma è possibile usufruire dell’arbusto per una progressione più semplice. La cengia si sviluppa per pochi metri fino ad incontrare l’opposizione di alcune rocce rotte che, una volta risalite senza difficoltà, portano ad un altro pilastrino placcoso. La parte bassa è ben manigliata mentre il passo in uscita è di pura aderenza ed equilibrio, ed anche questo non è di immediata lettura. Oltre le difficoltà sono presenti 2 fix su cui poter attrezzare la sosta. 50m, 5c/6a. La partenza della via, 5c/6a.
+Di vie propedeutiche per l’approccio al multipitch sportivo, in Valle del Sarca, ce ne sono relativamente poche in confronto all’ampio panorama di proposte presenti. “Esclusivamente per tutti” è una di queste, non tanto per le difficoltà limitate (perchè qualche passo ostico qua e la è comunque presente) ma più per la chiodatura estremamente sicura e ravvicinata che consente di superare in artificiale i tratti più impegnativi, nell’eventualità. Anche la varietà di stili è ampia: placche, fessure e diedri si intervallano a sezioni più sporche e boschive, terreni su cui è comunque sempre necessario fare esperienza.
 
 ## esclusivamente-per-tutti::outro
 Via un po’ discontinua ma carina nel complesso, non adatta a gente già “navigata” ma consigliata piuttosto come primo approccio al multipitch quando più che la prestazione e l’estetica si cerca tranquillità e sicurezza.
+
+## esclusivamente-per-tutti::photo-01
+La partenza della via, 5c/6a.
+
+## esclusivamente-per-tutti::photo-02
+Simone sul pilastro del secondo tiro, 6a.
+
+## esclusivamente-per-tutti::photo-03
+La terrazza di collegamento, I.
+
+## esclusivamente-per-tutti::photo-04
+Martina alla fine del quarto tiro, 5a.
+
+## esclusivamente-per-tutti::photo-05
+La seconda lunghezza di congiungimento, I.
+
+## esclusivamente-per-tutti::photo-06
+Martina sulla sesta lunghezza, 5b.
+
+## esclusivamente-per-tutti::photo-07
+Simone sulla bella placca del settimo tiro, 5b.
+
+## esclusivamente-per-tutti::photo-08
+Martina si accinge a terminare il traverso boschivo del nono tiro, II.
+
+## esclusivamente-per-tutti::photo-09
+Simone lungo il bellissimo diedro fessurato del decimo tiro, 6b.
 
 ## anche-le-donne-vogliono-arrampicare::intro
 Alla ricerca di una linea dalle medie difficoltà e lunga abbastanza da poterci passare almeno la mattinata ci dirigiamo verso Ceniga intenti a salire “Anche le donne vogliono arrampicare” al Sass dela Vecia. La via è generalmente ben protetta anche se distanziata in alcuni punti dove è comunque possibile integrare con protezioni rapide che raccomandiamo di portare. Nel complesso, per lo stile di arrampicata sempre alla ricerca dei punti più deboli della parete, si può considerare una via alpinistica con molti tratti sportivi.
 
 ## anche-le-donne-vogliono-arrampicare::outro
-Il traverso iniziale dell’ultima lunghezza, V+. Via nel complesso piacevole, non eccelsa ma sicuramente non da cestinare. Nello scegliere l’itinerario ci siamo imbattuti in un simpatico commento di una collega che si domandava cosa avessero fatto di male le donne al signor Grill… Beh, dopo aver percorso la via, anche la parte femminile della nostra cordata se lo sta chiedendo!
+Via nel complesso piacevole, non eccelsa ma sicuramente non da cestinare. Nello scegliere l’itinerario ci siamo imbattuti in un simpatico commento di una collega che si domandava cosa avessero fatto di male le donne al signor Grill… Beh, dopo aver percorso la via, anche la parte femminile della nostra cordata se lo sta chiedendo!
+
+## anche-le-donne-vogliono-arrampicare::photo-01
+Martina sul primo tiro, IV.
+
+## anche-le-donne-vogliono-arrampicare::photo-02
+Martina alle prese con il passo difficile della seconda lunghezza, VI.
+
+## anche-le-donne-vogliono-arrampicare::photo-03
+Simone sul traverso fisico del terzo tiro, VI+.
+
+## anche-le-donne-vogliono-arrampicare::photo-04
+Martina in arrivo alla paretina prima della sosta, VI+.
+
+## anche-le-donne-vogliono-arrampicare::photo-05
+Martina supera agevolmente l’iconico passo chiave della via, VII.
+
+## anche-le-donne-vogliono-arrampicare::photo-06
+Martina in arrivo a S7, V.
+
+## anche-le-donne-vogliono-arrampicare::photo-07
+Simone all’inizio del settimo tiro, VI+.
+
+## anche-le-donne-vogliono-arrampicare::photo-08
+Il traverso iniziale dell’ultima lunghezza, V+.
 
 ## le-scalette-dellindria::intro
 La parte Nord delle Coste dell’Anglone ospita le linee mediamente più lunghe di tutta la fascia rocciosa. Una di queste, forse la più facile della parete, è la via “Le scalette dell’Indria” che intervalla belle placchette libere da vegetazione a tratti in diedri più sporchi.
 
 ## le-scalette-dellindria::outro
-Simone sui primi metri dell’ultimo tiro, V+. Nel complesso una via senza infamia ne gloria, con pochi tiri veramente belli, molti sporchi, alcuni di trasferimento e qualcuno forse troppo usurato. Non è sicuramente una bocciatura ma nelle vicinanze c’è di meglio. Rimane comunque un buon allenamento per via della numerosa varietà di passaggi diversi.
+Nel complesso una via senza infamia ne gloria, con pochi tiri veramente belli, molti sporchi, alcuni di trasferimento e qualcuno forse troppo usurato. Non è sicuramente una bocciatura ma nelle vicinanze c’è di meglio. Rimane comunque un buon allenamento per via della numerosa varietà di passaggi diversi.
+
+## le-scalette-dellindria::photo-01
+Simone sul primo tiro, IV.
+
+## le-scalette-dellindria::photo-02
+Martina all’inizio della seconda lunghezza, IV.
+
+## le-scalette-dellindria::photo-03
+Simone a metà della lama del terzo tiro, VI.
+
+## le-scalette-dellindria::photo-04
+Martina sulle rocce stondate della quarta lunghezza, V+/VI-.
+
+## le-scalette-dellindria::photo-05
+Il traverso iniziale del quinto tiro, VI.
+
+## le-scalette-dellindria::photo-06
+Martina sul sesto tiro, III.
+
+## le-scalette-dellindria::photo-07
+L’inizio della settima lunghezza, V+.
+
+## le-scalette-dellindria::photo-08
+Le frasche dell’ottava lunghezza, IV+.
+
+## le-scalette-dellindria::photo-09
+Martina sulla placchetta per arrivare al diedro del nono tiro, V.
+
+## le-scalette-dellindria::photo-10
+In arrivo sul diedro finale, V+/VI-.
+
+## le-scalette-dellindria::photo-11
+Simone sui primi metri dell’ultimo tiro, V+.
 
 ## via-della-rondine::intro
 Romagnano è una falesia storica della città di Trento. Recentemente risistemata a nuovo ospita sia monotiri che brevi multipitch che venivano utilizzati come allenamento alle salite Dolomitiche. Uno di questi è la “via della Rondine” che sale sulla parete che si affaccia alla cascata dell’acquedotto. Sebbene risenta dell’usura del tempo conserva a pieno il suo fascino: una breve classica da non perdere.
 
 ## via-della-rondine::outro
-Simone in uscita dalla via, 5a. Bella via storica veramente piacevole da riscoprire. Sebbene la maggior parte dei passaggi, soprattutto lungo il primo tiro, risultino usurati, l’arrampicata scorre spensierata dall’inizio alla fine. La recente riattrezzatura dell’itinerario rende inutile portarsi a presso ulteriori sistemi di protezione rapida al netto di qualche cordino sempre utile. Un bel tuffo nel passato che ci sentiamo vivamente di consigliare per un post-lavoro non impegnativo.
+Bella via storica veramente piacevole da riscoprire. Sebbene la maggior parte dei passaggi, soprattutto lungo il primo tiro, risultino usurati, l’arrampicata scorre spensierata dall’inizio alla fine. La recente riattrezzatura dell’itinerario rende inutile portarsi a presso ulteriori sistemi di protezione rapida al netto di qualche cordino sempre utile. Un bel tuffo nel passato che ci sentiamo vivamente di consigliare per un post-lavoro non impegnativo.
+
+## via-della-rondine::photo-01
+Simone sul diedro della prima lunghezza, 5c.
+
+## via-della-rondine::photo-02
+Il facile traverso del secondo tiro, 4c.
+
+## via-della-rondine::photo-03
+Il bel diedro del terzo tiro da due punti di vista, 5b.
+
+## via-della-rondine::photo-04
+Il bel diedro del terzo tiro da due punti di vista, 5b.
+
+## via-della-rondine::photo-05
+Simone in uscita dalla via, 5a.
 
 ## diedro-rosso::intro
 Con gli europei di ciclismo a Trento aggiriamo il traffico cittadino accentuato dall’evento e ci dirigiamo verso Dro. Visto il caldo ancora pressante, per essere la seconda settimana di settembre, decidiamo di provare qualcosa di corto e tranquillo. L’occhio cade sul “Diedro Rosso” alla Piramide Lakshmi che dovrebbe offrire qualche tratto alpinistico misto a sezioni sportive sui tiri più duri.
 
 ## diedro-rosso::outro
-Gli ultimi balzi rocciosi al termine della via, III. Nel complesso una via che guadagna un senso solo grazie ai 2 tiri centrali e parzialmente per il traverso del primo tiro. Per il resto l’arrampicata si svolge lungo rocce sporche intervallate da numerosi terrazzini. Nonostante questo ci sentiamo di consigliarla almeno a chi è alla ricerca di qualcosa di particolare e che ha già fatto quasi tutto in valle.
+Nel complesso una via che guadagna un senso solo grazie ai 2 tiri centrali e parzialmente per il traverso del primo tiro. Per il resto l’arrampicata si svolge lungo rocce sporche intervallate da numerosi terrazzini. Nonostante questo ci sentiamo di consigliarla almeno a chi è alla ricerca di qualcosa di particolare e che ha già fatto quasi tutto in valle.
+
+## diedro-rosso::photo-01
+Simone al termine del traverso del primo tiro, V+.
+
+## diedro-rosso::photo-02
+Martina sul traverso finale della seconda lunghezza, V.
+
+## diedro-rosso::photo-03
+Martina impegnata sul bel diedro della quarta lunghezza, VI.
+
+## diedro-rosso::photo-04
+Simone sulla placca iniziale del quinto tiro, VI+.
+
+## diedro-rosso::photo-05
+Il facile traverso del settimo tiro, III.
+
+## diedro-rosso::photo-06
+Simone all’inizio dell’ottava lunghezza, V.
+
+## diedro-rosso::photo-07
+Gli ultimi balzi rocciosi al termine della via, III.
 
 ## passi-falsi::intro
 Il meteo incerto ultimamente è una costante: non ti consente di programmare grandi salite e ti costringe a decidere la giornata stessa cosa fare. Sebbene sia molto nuvolo almeno non dovrebbe piovere e ci dirigiamo verso Arco confidando nel fatto che, nonostante sia piena estate, qualche sguazzo qua e la la sera prima abbia rinfrescato la mattinata. Partiti da Trento con nuvole minacciose arriviamo ad Arco che splende il sole: un classico. Ma ormai siamo qui, qualcosa facciamo: Monte Colodri, Rupe Secca, via Primi Passi. All’attacco incontriamo una cordata che si sta calando dalla linea a fianco che ci guarda e ci dice: “oggi non ci sono proprio le condizioni giuste”. Nella nostra testa sapevamo perfettamente che avevano ragione ma attaccammo comunque la via nella speranza che il cielo si chiudesse e arrivasse un po’ di fresco.
@@ -337,41 +1480,152 @@ Il meteo incerto ultimamente è una costante: non ti consente di programmare gra
 ## passi-falsi::outro
 Tralasciando il primo tiro, che è più da considerare parte del avvicinamento che non della via propria, dalla seconda lunghezza in poi la linea per noi è spettacolare. Le placconate sono un continuo susseguirsi di amore e sofferenza e ogni sosta che si raggiunge è un urlo di soddisfazione. Bellissima.
 
+## passi-falsi::photo-01
+Il secondo tiro di roccia, 6b+.
+
+## passi-falsi::photo-02
+Sul finale della terza lunghezza, 6c+.
+
+## passi-falsi::photo-03
+La bella linea del quarto tiro, 6b.
+
+## passi-falsi::photo-04
+Sugli ultimi metri del quinto tiro, 6c+.
+
+## passi-falsi::photo-05
+La sosta aerea del sesto tiro, 7a.
+
 ## karlovacko::intro
-Tra il Pilastro Tibet ed il pilastro Poero, a Mandrea, si estende la parete Fabio Giacomelli: una breve fascia rocciosa, non molto alta, che ospita interessanti itinerari, soprattutto per le mezze giornate con tempo incerto. Karlovacko è uno di questi, capace di offrire un’arrampicata divertente e a tratti impegnativa, come la partenza del primo tiro e l’uscita dalla via. La chiodatura risulta essere ottima e ravvicinata e le difficoltà possono essere dunque livellate in qualsiasi momento. Il primo tiro parte subito con un tratto di difficile lettura, su placca gialla costituita da buchetti e da piccoli conglomerati. Sebbene la linea degli spit si sussegue verso sinistra, almeno per i primi metri la progressione si svolge a destra rispetto quest’ultima, alla ricerca delle prese migliori. Inizio molto intenso ed impegnativo, soprattutto se affrontato a freddo. La chiodatura è comunque ottima e ravvicinata e permette un’eventuale azzeramento. Superato il terzo rinvio ci si riporta verso sinistra per proseguire su lama grigia che termina su di un piccolo terrazzino con alberello. Qui le difficoltà terminano e la linea continua pochi metri lungo un solido diedro, leggermente appoggiato verso destra, fino alla sosta ottimamente attrezzata. Forse perchè non ci siamo scaldati bene ma la placchetta iniziale ci è sembrata più severa del 6b dichiarato. 20m, 6b?/A0. Il duro tratto subito in partenza alla via, 6b?/A0
+Tra il Pilastro Tibet ed il pilastro Poero, a Mandrea, si estende la parete Fabio Giacomelli: una breve fascia rocciosa, non molto alta, che ospita interessanti itinerari, soprattutto per le mezze giornate con tempo incerto. Karlovacko è uno di questi, capace di offrire un’arrampicata divertente e a tratti impegnativa, come la partenza del primo tiro e l’uscita dalla via. La chiodatura risulta essere ottima e ravvicinata e le difficoltà possono essere dunque livellate in qualsiasi momento.
 
 ## karlovacko::outro
-Simone sulla terza lunghezza, 6a. La quarta ed ultima lunghezza si sposta verso il diedro, posizionato leggermente a destra rispetto alla sosta, senza mai entrarci veramente, se non per un brevissimo tratto al suo ingresso, ma sfruttando piuttosto la bella e compatta placconata che ci corre affianco. I primi metri del tiro consentono infatti di raggiungere, tramite facile arrampicata, la base di questo bel muro. Nella parte inferiore di esso si usufruisce del diedro per una manciata di metri, fino a raggiungere una fessura che corre verticale sulla destra. Sfruttando quest’ultima si sale in aderenza la placca con passaggi a volte non semplici ma di grande soddisfazione fino a raggiungere un piccolo terrazzino. Qui la fessura termina e rimane da scalare un tratto severo in pura placca, con prese per le mani molto esigue e per i piedi quasi assenti. E’ possibile azzerare quest’ultimo tratto ma, viste anche le protezioni ravvicinate, almeno un tentativo in libera è d’obbligo! La difficoltà proposta qui è 6b+ ma è, con molta probabilità, sottostimata di qualche grado. Si esce su rampa terrosa e alberata che in breve porta alla comoda cengia soprastante dove si sosta. 30m, 6b+/A0. Martina alle prese con la compatta placca dell’ultimo tiro, 6b+?/A0. Karlovacko è una via breve ma interessante, peccato che in alcuni tratti, molto probabilmente a causa delle poche ripetizioni, la roccia risulta essere un po’ polverosa. Noi ci siamo divertiti nel salirla e ci sentiamo di consigliarla. Seppur breve è in grado di regalare una piacevole mezza giornata e se non bastasse è sempre possibile avventurarsi sulle altre linee della parete.
+Karlovacko è una via breve ma interessante, peccato che in alcuni tratti, molto probabilmente a causa delle poche ripetizioni, la roccia risulta essere un po’ polverosa. Noi ci siamo divertiti nel salirla e ci sentiamo di consigliarla. Seppur breve è in grado di regalare una piacevole mezza giornata e se non bastasse è sempre possibile avventurarsi sulle altre linee della parete.
+
+## karlovacko::photo-01
+Il duro tratto subito in partenza alla via, 6b?/A0
+
+## karlovacko::photo-02
+La partenza e l’uscita del secondo tiro, 6a.
+
+## karlovacko::photo-03
+La partenza e l’uscita del secondo tiro, 6a.
+
+## karlovacko::photo-04
+Simone sulla terza lunghezza, 6a.
+
+## karlovacko::photo-05
+Martina alle prese con la compatta placca dell’ultimo tiro, 6b+?/A0.
 
 ## nonni-sprint::intro
 Con la riapertura dei confini comunali siamo finalmente riusciti a spostarci in valle del Sarca per effettuare la prima salita stagionale. La meta è Dro, la parete è quella della Piramide Lakshmi. Nonni Sprint è una di quelle vie che da tempo era segnata nel taccuino dei possibili itinerari da salire come ripiego nel caso quelli limitrofi, e più interessanti, fossero presi d’assalto. Questa volta però è toccato proprio a questa alternativa visto che sulla prima scelta della giornata erano gia presenti alcune cordate. La guida la valuta 3 stelle su 5, almeno un pò di fascino dovrebbe averlo no?
 
 ## nonni-sprint::outro
-Martina in uscita dalla via su placche di dubbia bellezza, III. La via nel complesso non ci è piaciuta e non ci sentiamo di consigliarla. Allo stato attuale necessita un gran lavoro di pulizia, sia delle zone rocciose, sia di quelle boschive. Sebbene il primo ed il terzo tiro tutto sommato siano arrampicabili e a tratti divertenti, questi due da soli, secondo il nostro parere, non bastano a giustificare l’intera salita.
+La via nel complesso non ci è piaciuta e non ci sentiamo di consigliarla. Allo stato attuale necessita un gran lavoro di pulizia, sia delle zone rocciose, sia di quelle boschive. Sebbene il primo ed il terzo tiro tutto sommato siano arrampicabili e a tratti divertenti, questi due da soli, secondo il nostro parere, non bastano a giustificare l’intera salita.
+
+## nonni-sprint::photo-01
+L’inizio della prima lunghezza, VI.
+
+## nonni-sprint::photo-02
+Simone in partenza e Martina in uscita al secondo tiro, III.
+
+## nonni-sprint::photo-03
+Simone in partenza e Martina in uscita al secondo tiro, III.
+
+## nonni-sprint::photo-04
+La placchetta d’uscita della terza lunghezza, VI.
+
+## nonni-sprint::photo-05
+Nella scivolosa zona boschiva prima di S3.
+
+## nonni-sprint::photo-06
+Il diedro/canale del quinto tiro, IV/V+.
+
+## nonni-sprint::photo-07
+Martina in uscita dalla via su placche di dubbia bellezza, III.
 
 ## via-del-missile::intro
-Il monte Casale gode di molteplici itinerari, di diversa difficoltà, sviluppati in vari periodi alpinistici. Uno di questi, nonchè uno dei più famosi della parete, è la “via del missile”, aperta da Giuliano Stenghel e Alessandro Baldessarini ormai nel lontano 1981. Si tratta di una linea molto logica, mai banale, caratterizzata da diedri, fessure, placche e traversi, il tutto concentrato in sole 9 lunghezze. La parete con l’evidente sagoma del missile in arancio sulla destra.
+Il monte Casale gode di molteplici itinerari, di diversa difficoltà, sviluppati in vari periodi alpinistici. Uno di questi, nonchè uno dei più famosi della parete, è la “via del missile”, aperta da Giuliano Stenghel e Alessandro Baldessarini ormai nel lontano 1981. Si tratta di una linea molto logica, mai banale, caratterizzata da diedri, fessure, placche e traversi, il tutto concentrato in sole 9 lunghezze.
 
 ## via-del-missile::outro
 La salita è una perla di rara bellezza. I pochissimi chiodi presenti la rendono senza ombra di dubbio una via dallo stampo puramente alpinistico. Diedri, fessure, lame, traversi e qualche passo in strampiombo rendono la linea completa di ogni stile di arrampicata. Richiede sicuramente un bel sforzo sia dal punto di vista fisico che mentale, ma una volta in cima ne vale veramente la pena.
+
+## via-del-missile::photo-01
+La parete con l’evidente sagoma del missile in arancio sulla destra.
+
+## via-del-missile::photo-02
+Il caratteristico traverso del terzo tiro, VI+.
+
+## via-del-missile::photo-03
+Il diedro della quarta lunghezza, V+.
+
+## via-del-missile::photo-04
+Umberto sul sesto tiro, VI+.
+
+## via-del-missile::photo-05
+Stefano su uno dei tiri finali.
 
 ## cane-cico::intro
 Cima alle Coste, in valle del Sarca, offre numerosi itinerari di diversa lunghezza e difficoltà. L’antiscudo, nello specifico, si presta bene a linee corte per tempo incerto o per le brevi giornate invernali. Cane Cico, che sale più o meno a metà parete, è una di queste. Recensita come S1, e con i gradi relativamente bassi sembra perfetta come plaisir di fine stagione. Ormai a fine novembre e con il termometro che segna -1°C al parcheggio ci avviamo verso l’attacco.
 
 ## cane-cico::outro
-Il canale erboso dove passa l’ultimo tiro, 5b. In generale, a nostro personale parere, la via non merita una ripetizione. La linea, anche se a tratti scalabile, è molto forzata e la qualità della roccia, almeno nella parte superiore, non è delle migliori. In ogni caso non lasciatevi trarre in inganno dall’S1 proposto: le protezioni partono numerose per poi diradarsi sempre più. Per concludere anche il grado proposto, a nostro avviso, è un pò stretto.
+In generale, a nostro personale parere, la via non merita una ripetizione. La linea, anche se a tratti scalabile, è molto forzata e la qualità della roccia, almeno nella parte superiore, non è delle migliori. In ogni caso non lasciatevi trarre in inganno dall’S1 proposto: le protezioni partono numerose per poi diradarsi sempre più. Per concludere anche il grado proposto, a nostro avviso, è un pò stretto.
+
+## cane-cico::photo-01
+Simone sul primo tiro, 6a.
+
+## cane-cico::photo-02
+Sul dente all’inizio del secondo tiro, 5b.
+
+## cane-cico::photo-03
+Martina persa nella giungla della terza lunghezza, 6a+.
+
+## cane-cico::photo-04
+Il canale erboso dove passa l’ultimo tiro, 5b.
 
 ## diedro-baldessarini::intro
 Ci sono giornate in cui ti svegli carico per salire qualche bella via suggestiva ed impegnativa, una di quelle che hanno fatto la storia e invece il tuo partner te ne propone una che solitamente non prenderesti nemmeno in considerazione perchè non la ritieni abbastanza fascinosa per i tuoi gusti e quindi, un po’ ingiustamente, la snobbi. Alla fine accetti la proposta, anche se un po’ di malavoglia, prepari il materiale e parti all’avventura. Una cosa pero’ è certa: le cose inaspettate sono sempre poi in realtà le più belle. La via in questione, “Diedro Baldessarini”, ha subito notevoli mutamenti nel corso del tempo, con l’apertura di svariate varianti che hanno reso la salita più continua e su roccia più solida, rendendola nel complesso molto più godibile.
 
 ## diedro-baldessarini::outro
-Stefano sul traverso per uscire dalla via, VI. La via originale a metà del traverso salirebbe in verticale su rocce rotte. Evitate. La via nel complesso presenta roccia buona, ottima a tratti, con ormai le parti meno solide ripulite dalle numerose ripetizioni. Non presenta ancora usura nei passaggi chiave. Anche se all’apparenza può sembrare una via che sale prevalentemente in diedro, con arrampicata monotona, presenta invece passaggi in placca, in fessura ed in generale mai banali ne ripetitivi. Le protezioni lungo la via sono presenti in quantità sufficiente ma alcuni tratti necessitano di essere integrati. A nostro avviso una bella via che merita sicuramente di essere ripetuta con entusiasmo.
+La via originale a metà del traverso salirebbe in verticale su rocce rotte. Evitate. La via nel complesso presenta roccia buona, ottima a tratti, con ormai le parti meno solide ripulite dalle numerose ripetizioni. Non presenta ancora usura nei passaggi chiave. Anche se all’apparenza può sembrare una via che sale prevalentemente in diedro, con arrampicata monotona, presenta invece passaggi in placca, in fessura ed in generale mai banali ne ripetitivi. Le protezioni lungo la via sono presenti in quantità sufficiente ma alcuni tratti necessitano di essere integrati. A nostro avviso una bella via che merita sicuramente di essere ripetuta con entusiasmo.
+
+## diedro-baldessarini::photo-01
+Stefano sul primo tiro, V-.
+
+## diedro-baldessarini::photo-02
+In uscita dalla seconda lunghezza, VI.
+
+## diedro-baldessarini::photo-03
+Il diedro rosso della terza lunghezza, VI.
+
+## diedro-baldessarini::photo-04
+L’inizio del quinto tiro, VI.
+
+## diedro-baldessarini::photo-05
+La sesta lunghezza vista dall’alto, VI+.
+
+## diedro-baldessarini::photo-06
+Stefano sul traverso per uscire dalla via, VI.
 
 ## lungo-il-fiume-e-sullacqua::intro
-La pareti attorno all’abitato di Tessari ospitano sicuramente molte alternative per facili e brevi salite. Non solo la facilità degli itinerari ma gli avvicinamenti ed i rientri altrettanto comodi e di breve durata offrono molte possibilità anche ai più pigri. Queste pareti, negli ultimi anni, sono infatti state prese d’assiedo in tutti i sensi: sia dal punto di vista della frequentazione che dal continuo aumentare di nuove proposte da scalare che colorano la base della parete di scritte rosse ogni 2 metri. La via che andiamo a recensire non è però di recente apertura. In compenso, recentemente, dovrebbe essere stata riattrezzata per quanto riguarda le protezioni e proposta come S1 sulle moderne recensioni cartacee. Alla base della parete dove sale la via dovrebbe essere presente il nome completo, ma l’unica cosa che si può individuare è un rettangolo bianco. Sopra di esso, come se fosse stata incisa con le unghie, sembra di scorgere qualche riferimento alla scritta “FIUME” ma solamente le ultime 3 lettere si possono cogliere distintamente. Dalla partenza si riescono a scorgere giusto i primi 2 spit, all’altezza circa di 8/9 metri da terra. Qui ci sale qualche dubbio se siamo sulla linea corretta ma l’immagine con il tracciato della via, che riporta il tettino subito sopra la partenza da aggirare sulla destra, non ci fa esitare più di tanto e partiamo decisi verso questa nuova avventura. Passiamo alla destra di un albero per poi rientrare al di sopra del tetto dove passiamo un paio di spit abbastanza ravvicinati tra loro. Nonostante sopra il tetto la roccia sia della migliore qualità la linea sembra suggerirci di spostarsi verso rocce più frastagliate, costringendoci a lottare tra gli alberelli e le piante presenti. Qui gli spit spariscono completamente e compare solo una timida clessidra che, portandoci ad attraversare il fogliame, ci porta ad una sosta su 2 spit da congiungere. Il grado proposto dalle recensioni è un 4a di 30 metri ma a nostro parere è almeno qualche grado in più, diciamo 5a. Contiamo le protezioni passate, 4 spit e 1 clessidra su 30 metri di tiro ci sembrano pochini per una spittatura dichiarata essere S1. Sebbene le difficoltà siano contenute, è un fattore da tenere quantomeno in considerazione se si affronta il tiro con l’intenzione di farlo provare ad aprire a persone con poca esperienza. Il primo tiro visto dal basso, 5a.
+La pareti attorno all’abitato di Tessari ospitano sicuramente molte alternative per facili e brevi salite. Non solo la facilità degli itinerari ma gli avvicinamenti ed i rientri altrettanto comodi e di breve durata offrono molte possibilità anche ai più pigri. Queste pareti, negli ultimi anni, sono infatti state prese d’assiedo in tutti i sensi: sia dal punto di vista della frequentazione che dal continuo aumentare di nuove proposte da scalare che colorano la base della parete di scritte rosse ogni 2 metri. La via che andiamo a recensire non è però di recente apertura. In compenso, recentemente, dovrebbe essere stata riattrezzata per quanto riguarda le protezioni e proposta come S1 sulle moderne recensioni cartacee. Alla base della parete dove sale la via dovrebbe essere presente il nome completo, ma l’unica cosa che si può individuare è un rettangolo bianco. Sopra di esso, come se fosse stata incisa con le unghie, sembra di scorgere qualche riferimento alla scritta “FIUME” ma solamente le ultime 3 lettere si possono cogliere distintamente. Dalla partenza si riescono a scorgere giusto i primi 2 spit, all’altezza circa di 8/9 metri da terra. Qui ci sale qualche dubbio se siamo sulla linea corretta ma l’immagine con il tracciato della via, che riporta il tettino subito sopra la partenza da aggirare sulla destra, non ci fa esitare più di tanto e partiamo decisi verso questa nuova avventura. Passiamo alla destra di un albero per poi rientrare al di sopra del tetto dove passiamo un paio di spit abbastanza ravvicinati tra loro. Nonostante sopra il tetto la roccia sia della migliore qualità la linea sembra suggerirci di spostarsi verso rocce più frastagliate, costringendoci a lottare tra gli alberelli e le piante presenti. Qui gli spit spariscono completamente e compare solo una timida clessidra che, portandoci ad attraversare il fogliame, ci porta ad una sosta su 2 spit da congiungere. Il grado proposto dalle recensioni è un 4a di 30 metri ma a nostro parere è almeno qualche grado in più, diciamo 5a. Contiamo le protezioni passate, 4 spit e 1 clessidra su 30 metri di tiro ci sembrano pochini per una spittatura dichiarata essere S1. Sebbene le difficoltà siano contenute, è un fattore da tenere quantomeno in considerazione se si affronta il tiro con l’intenzione di farlo provare ad aprire a persone con poca esperienza.
 
 ## lungo-il-fiume-e-sullacqua::outro
-Marta impegnata sulla placca della seconda lunghezza, 5b. Il terzo tiro sale obliquando di molto verso destra per le prossime 2 protezioni, leggermente distanziate tra loro. Superati i 2 alberi sopra di noi si palesa davanti a noi una bellissima placca verticale. Tanto bella quanto sprotetta. Osserviamo bene la parete ma non troviamo nessun chiodo, spit o cordone che ci indica che la direzione da prendere è quella. Girando lo sguardo verso sinistra notiamo invece, quasi per sbaglio tra gli alberi, uno spit e la successiva sosta. Peccato perchè la placca sembrava veramente bella e non troppo difficile. La via ci costringe invece ad entrare in una conca lottando ancora una volta con la vegetazione. Il nostro spirito green placa altri tipi di spiriti. Anche qui la relazione grada questo tiro 3c e 20 metri di lunghezza ma più realisticamente sarà un 4c da 15 metri. L’alberata uscita dal terzo tiro, 4c. La quarta e quinta lunghezza, se lunghezze si possono chiamare, offrono poche soddisfazioni: solo una placchetta appoggiata in partenza del quarto tiro. La linea poi si immerge nel boschetto dove passano alcune tracce e un sentiero che punta alla parete di fronte. Spostandosi sulla sinistra, ed entrando tra alcuni alberi, si possono notare anche una scritta in rosso di un’altra via oppure della variante “Pensieri”. 3c , 20m ,2a 20m. La paretina prima della grande cengia boschiva, 3c. La parete che si trova di fronte presenta una bellissima roccia lavorata e scavata, molto ben appigliata e rugosa, che offre passaggi facili ma comunque divertenti. La prima protezione anche qui si trova all’incirca a 10 metri di altezza, quella dopo ad altri 7 metri e l’ultima ancora a 7 metri dalla precedente. All’uscita della via è presente uno spit con anello. Il grado corretto per questo tiro si aggira attorno al 5a, anche se la guida lo da come 3a. 30 metri. In uscita dalla via con la bella roccia dell’ultimo tratto, 3a. La via nel complesso è carina, senza troppe pretese. Qualche scelta di percorso è certamente opinabile ma di certo non capiamo come possa essere stata recensita come S1 come proteggibilità ed avere cosi tanti errori di valutazione per quanto riguarda le difficoltà. Soprattutto per vie così facili un maggiore riguardo nel compilare le recensioni è d’obbligo. Persone che si avvicinano per la prima volta a queste discipline, ingolosite dalla facilità della via e dalle protezioni ravvicinate, potrebbero infatti trovarsi in situazioni spiacevoli lungo la salita. In generale non ne consigliamo la ripetizione se non agli amanti dell’avventura.
+Il terzo tiro sale obliquando di molto verso destra per le prossime 2 protezioni, leggermente distanziate tra loro. Superati i 2 alberi sopra di noi si palesa davanti a noi una bellissima placca verticale. Tanto bella quanto sprotetta. Osserviamo bene la parete ma non troviamo nessun chiodo, spit o cordone che ci indica che la direzione da prendere è quella. Girando lo sguardo verso sinistra notiamo invece, quasi per sbaglio tra gli alberi, uno spit e la successiva sosta. Peccato perchè la placca sembrava veramente bella e non troppo difficile. La via ci costringe invece ad entrare in una conca lottando ancora una volta con la vegetazione. Il nostro spirito green placa altri tipi di spiriti. Anche qui la relazione grada questo tiro 3c e 20 metri di lunghezza ma più realisticamente sarà un 4c da 15 metri. La quarta e quinta lunghezza, se lunghezze si possono chiamare, offrono poche soddisfazioni: solo una placchetta appoggiata in partenza del quarto tiro. La linea poi si immerge nel boschetto dove passano alcune tracce e un sentiero che punta alla parete di fronte. Spostandosi sulla sinistra, ed entrando tra alcuni alberi, si possono notare anche una scritta in rosso di un’altra via oppure della variante “Pensieri”. 3c , 20m ,2a 20m. La parete che si trova di fronte presenta una bellissima roccia lavorata e scavata, molto ben appigliata e rugosa, che offre passaggi facili ma comunque divertenti. La prima protezione anche qui si trova all’incirca a 10 metri di altezza, quella dopo ad altri 7 metri e l’ultima ancora a 7 metri dalla precedente. All’uscita della via è presente uno spit con anello. Il grado corretto per questo tiro si aggira attorno al 5a, anche se la guida lo da come 3a. 30 metri. La via nel complesso è carina, senza troppe pretese. Qualche scelta di percorso è certamente opinabile ma di certo non capiamo come possa essere stata recensita come S1 come proteggibilità ed avere cosi tanti errori di valutazione per quanto riguarda le difficoltà. Soprattutto per vie così facili un maggiore riguardo nel compilare le recensioni è d’obbligo. Persone che si avvicinano per la prima volta a queste discipline, ingolosite dalla facilità della via e dalle protezioni ravvicinate, potrebbero infatti trovarsi in situazioni spiacevoli lungo la salita. In generale non ne consigliamo la ripetizione se non agli amanti dell’avventura.
+
+## lungo-il-fiume-e-sullacqua::photo-01
+Il primo tiro visto dal basso, 5a.
+
+## lungo-il-fiume-e-sullacqua::photo-02
+Marta impegnata sulla placca della seconda lunghezza, 5b.
+
+## lungo-il-fiume-e-sullacqua::photo-03
+L’alberata uscita dal terzo tiro, 4c.
+
+## lungo-il-fiume-e-sullacqua::photo-04
+La paretina prima della grande cengia boschiva, 3c.
+
+## lungo-il-fiume-e-sullacqua::photo-05
+In uscita dalla via con la bella roccia dell’ultimo tratto, 3a.
 
 ## sguarauunda::intro
 Con il caldo fuori stagione a fare da cornice ad una splendida giornata di metà Febbraio, decidiamo di andare a fare una via in valle. Dopo un’attenta analisi delle vie papabili, considerando difficoltà intorno al 6c e lunghezza conforme alla durata della luce nelle giornate invernali, la scelta ricade su Sguarauunda, 300 metri, alla Cà del Liscio sulle Coste dell’Anglone. Di buona mattina partiamo per Dro arrivando alla base della parete giusti in tempo perchè il sole faccia capolino da dietro il monte. Si parte.
@@ -379,17 +1633,62 @@ Con il caldo fuori stagione a fare da cornice ad una splendida giornata di metà
 ## sguarauunda::outro
 Nel complesso la via è stata varia e molto divertente. La prima metà è senza dubbio per gli amanti dell’aderenza, mentre la seconda, più fisica e verticale, trova daccordo chi vuole avere piedi un pò più saldi e lavorare un pò più di braccia. Consigliata.
 
+## sguarauunda::photo-01
+Umberto sulla seconda lunghezza (5c)
+
+## sguarauunda::photo-02
+Simone prima del diedro finale della seconda lunghezza (5c)
+
+## sguarauunda::photo-03
+Simone sul passo chiave della terza lunghezza (6b)
+
+## sguarauunda::photo-04
+Umberto verso la fine del quarto tiro (6a)
+
+## sguarauunda::photo-05
+Simone all’inizio del quarto tiro (6a)
+
+## sguarauunda::photo-06
+Umberto sul quinto tiro (5c)
+
+## sguarauunda::photo-07
+Umberto sulla rampa del settimo tiro (3a)
+
+## sguarauunda::photo-08
+Simone sul nono tiro – quello sbagliato (?)
+
+## sguarauunda::photo-09
+Simone sul nono tiro – quello corretto (6a)
+
 ## minuetto-a-ceniga::intro
 *(empty)*
 
 ## minuetto-a-ceniga::outro
 Gli ultimi tiri non presentano particolari difficoltà, se non quella di aggirare la vegetazione varia che anticipa il raggiungimento della vetta. (max. 5a)
 
+## minuetto-a-ceniga::photo-02
+Umberto sul passaggio chiave del terzo tiro (6a+)
+
+## minuetto-a-ceniga::photo-03
+Sul passaggio chiave del sesto tiro (6b+)
+
+## minuetto-a-ceniga::photo-04
+Al termine della settima lunghezza (6b)
+
 ## fiaba-nel-bosco::intro
 Bell’itinerario sportivo che si snoda alla sinistra del sentiero dell’Anglone su roccia molto solida per i primi 7 tiri, e un po’ meno per i rimanenti 3. Il tratto boschivo di circa 70 metri nell’intermezzo ostacola decisamente la continuità della via, ma non la sua bellezza.
 
 ## fiaba-nel-bosco::outro
-Il decimo tiro è veramente tanto forzato, si addentra in un camino molto friabile per uscire dalla parete nel bosco soprastante. Con un po’ di accorgimenti probabilmente sarebbe possibile tracciare un’uscita alternativa continuando sulla verticale del tiro precedente, peccato. Solo i 5 metri dell’ultimo muretto giustificano questa scelta, per il resto, l’unico tiro anonimo dell’intera via. (3a, 5b) Nel complesso la via presenta un’ arrampicata gradevole, senza troppe difficoltà, con chiodatura ravvicinata e soste veramente ben attrezzate. Una via plaisir che sovrasta il centro sportivo di Dro.
+Nel complesso la via presenta un’ arrampicata gradevole, senza troppe difficoltà, con chiodatura ravvicinata e soste veramente ben attrezzate. Una via plaisir che sovrasta il centro sportivo di Dro.
+
+## fiaba-nel-bosco::photo-01
+La fessura del primo tiro.
+
+## fiaba-nel-bosco::photo-02
+Partenza del terzo tiro
+
+## fiaba-nel-bosco::photo-04
+Sulla sosta dell’ottavo tiro
 
 ## ego-trip-mandrea::intro
 Giornata grandiosa sulla fantastica parete di Mandrea. Star indiscussa la via Ego Trip, 300 metri adrenalinici di arrampicata mai banale, tra placche compattissime e qualche breve tratto strapiombante. Stupende sono le due lunghezze di 6b+ intermedie ed il penultimo tiro della via con panorama di tutto rispetto.
@@ -397,14 +1696,41 @@ Giornata grandiosa sulla fantastica parete di Mandrea. Star indiscussa la via Eg
 ## ego-trip-mandrea::outro
 La via nel complesso è molto divertente e vale la pena salirla almeno una volta, soprattutto per coloro a cui piacciono le soste volanti. Il sesto, il settimo ed il nono tiro sono quello che ogni arrampicatore cerca.
 
+## ego-trip-mandrea::photo-01
+Spoiler: Umberto all’uscita della via.
+
+## ego-trip-mandrea::photo-02
+Simone superata l’asperità del 7° tiro.
+
+## ego-trip-mandrea::photo-03
+Simone sul 9° tiro.
+
 ## porci-con-le-ali::intro
-Oggi prima esperienza in cordata con Umberto. Al momento di scegliere la via eravamo molto indecisi sulle mille opportunità che la valle del Sarca offre, ma un pò per le difficoltà abbastanza contenute, la lunghezza e sopratutto per il nome, decidiamo per “Porci con le ali” sulla parete di San Paolo. Ci troviamo alle 8:45 a Trento, così da essere in parete verso le 10:00-10:30. La mattinata è molto fredda, bruma ovunque e una fatica bestia a sbrinare i vetri delle auto, ma si parte comunque, porci ma tosti. Arrivati alla base della parete della lunghissima parete di San Paolo, ci mettiamo un pò a trovare l’attacco della via, nascosto in fondo ad un canalone non troppo visibile dal sentiero che costeggia la parete. Il sole, finalmente, fa capolino, e ad attenderci un monito d’avvertimento: La via ha due partenze distinte. La prima, quella originale, segue una facile rampa arborea di IV grado. La seconda, decisamente più impegnativa e appagante, sale diritta su roccia rossa non sempre solida per due tiri fino a collegarsi con l’originale, con difficoltà rispettivamente di 6b e 6a. Decidiamo di optare per quest’ultima soluzione per rendere la salita più interessante. Il prmo tiro parte subito tosto su roccia friabile e leggermente strapiombante nel tratto iniziale, per poi uscire da un dietro su facile e gradonato traverso verso destra, poco protetto. Il sole ha appena accarezzato la parete dopo una fredda nottata, e la roccia è gelida. I polpastrelli, già poco sensibili dalle basse temperture invernali, perdono ancora più senibilità a contatto con la parete, e questo decisamente non aiuta visto che le prese su questo tratto non sono belle scavate, ma appena accennate. Parto convinto, con l’idea di raggiungere il sole e il caldo qualche metro più in alto, e molto prudentemente appoggio il peso su gli appigli che a tastoni sembrano più solidi, ma nessuno di essi mi da realmente una sensazione di sicurezza, ed ogni tanto quanlche sasso vola di sotto. La partenza è molto particolare, sormonto un sasso alla base e rinvio. Salgo sulla destra per poi traversare atleticamente verso sinistra su minuti appigli e sormontare la prima difficoltà. Qui si può subito recuperare le prime fatiche con un buon resting prima di ripartire su un marcato diedro abbastanza appigliato. In poco tempo sormonto anche quest’ultimo e una serie di gradoni mi accompagna al primo punto di sosta. (6b, 4a) Il secondo tiro è un traverso obliquo sotto un tetto. Qui la roccia diventa più solida e compatta e il sole crea una temperatura più ideale con cui scalare. Sormontati i due gradoni iniziali si traversa verso destra fino ad uno spit posto sotto una visibile clessidra. Qui la linea suggerisce un approccio diretto all’uscita a lato del tetto, ma gli appigli scarseggiano e le difficoltà aumentano decisamente. Le tracce di magnesio di precendenti cordate mostrano la corretta via. si traversa obliquamente a sinistra su comodi appigli fino alla base del del tetto. Da qui si traversa verso destra per raggiungere l’uscita. Fondamentale in questo tratto è la lettura della via più facile senza farsi condizionare da quella più corta. Fantastico esempio di cosa significhi leggere la parete. La via prosegue con un traverso esposto su placca grigia con i piedi in aderenza. Particolarità di questo traverso è il suo sviluppo leggermente indirizzato verso il basso, fino alla seconda sosta. (6a, 5c il traverso).
+Oggi prima esperienza in cordata con Umberto. Al momento di scegliere la via eravamo molto indecisi sulle mille opportunità che la valle del Sarca offre, ma un pò per le difficoltà abbastanza contenute, la lunghezza e sopratutto per il nome, decidiamo per “Porci con le ali” sulla parete di San Paolo. Ci troviamo alle 8:45 a Trento, così da essere in parete verso le 10:00-10:30. La mattinata è molto fredda, bruma ovunque e una fatica bestia a sbrinare i vetri delle auto, ma si parte comunque, porci ma tosti. Arrivati alla base della parete della lunghissima parete di San Paolo, ci mettiamo un pò a trovare l’attacco della via, nascosto in fondo ad un canalone non troppo visibile dal sentiero che costeggia la parete. Il sole, finalmente, fa capolino, e ad attenderci un monito d’avvertimento: La via ha due partenze distinte. La prima, quella originale, segue una facile rampa arborea di IV grado. La seconda, decisamente più impegnativa e appagante, sale diritta su roccia rossa non sempre solida per due tiri fino a collegarsi con l’originale, con difficoltà rispettivamente di 6b e 6a. Decidiamo di optare per quest’ultima soluzione per rendere la salita più interessante.
 
 ## porci-con-le-ali::outro
-La sesta e ultima fatica della via è su placca stupenda e super compatta. Il tetto non è troppo alto ed è veramente ben appigliato anche se i piedi oscillano nel vuoto. Per superarlo è necessario un atletico balzo. Superato questo, 10 metri di facile placca conducono rapidamente e senza troppe difficoltà alla fine della via. (5c, 5b) In complesso la salita è stata appagante, con dei bei spunti di arrampicata, su roccia molto varia, dalle frastagliate ed instabili rocce rosse ai placconi solidi e aderenti grigi. Anche le tecniche variano molto su questa via, si passa dalla verticalità all’orizzontalità con i traversi, dai movimenti esplosivi dei tetti, alla delicatezza della placca. “I porci c’erano, le ali per fortuna non sono servite”.
+In complesso la salita è stata appagante, con dei bei spunti di arrampicata, su roccia molto varia, dalle frastagliate ed instabili rocce rosse ai placconi solidi e aderenti grigi. Anche le tecniche variano molto su questa via, si passa dalla verticalità all’orizzontalità con i traversi, dai movimenti esplosivi dei tetti, alla delicatezza della placca. “I porci c’erano, le ali per fortuna non sono servite”.
+
+## porci-con-le-ali::photo-01
+Un avvertimento: La roccia sarà friabile sul primo tratto
+
+## porci-con-le-ali::photo-02
+Simone sul tratto di 6b del primo tiro
+
+## porci-con-le-ali::photo-03
+Umberto sul secondo tiro
+
+## porci-con-le-ali::photo-04
+Umberto in uscita del terzo tiro
+
+## porci-con-le-ali::photo-05
+Umberto sul quinto tiro
+
+## porci-con-le-ali::photo-06
+Simone sull’ultima lunghezza
 
 ## la-cengia-rossa::intro
-Dopo un lungo periodo di pausa dovuto al tempo non proprio clemente, finalmente venerdì sera ci siamo trovati per decidere l’itinerario della domenica. Tra i tanti nomi papabili è spiccato su tutti “La cengia rossa” sulla parete di San Paolo ai piedi del monte Colt, una via di 7 lunghezze tra il 5a e il 6a. La domenica il ritrovo è alle 13:15 pronti per il breve viaggio fino ad Arco che è durato 45 minuti, tranquillo e senza traffico eccessivo. Il sole ci ha accompagnati lungo tutto il tragitto di andata, stimolando le nostre aspettative di una bella giornata. Arrivati a destinazione parcheggiamo appena dopo del sentiero che sale zigzagando verso la falesia di San Paolo, e ci incamminiamo verso l’inizio della via. Purtroppo il sole ci sta già abbandonando in quanto la parete è completamente esposta ad ovest, ma non ci facciamo scoraggiare, caschetto, imbrago, moschettoni, fetucce e si parte. La via parte senza troppe pretese su gradini per 20 metri circa su roccia solida e aderente, per prendere un pò di confidenza con la via. La monotonia della scaletta viene interrotta a fine tiro da un pilastrino che esce prepotente dalla parete. La logica della via suggerisce il modo migliore per superarlo: rimontarlo centralmente per poi traversare verso destra per raggiungere l’anello di sosta. Per guadagnare quota al fine di raggiungere il comodo svaso posto in alto a destra del blocco, su un lato del pilastro, nascosta, c’è una buona lama per la mano sinistra. Qui il lavoro di spalla è esseziale, si alzano i piedi, si blocca e ci si allunga con la mano destra. Una volta giunti a prese più comode, un elegante traverso ci accompagna fino alla sosta. (4c, passo di 6a)
+Dopo un lungo periodo di pausa dovuto al tempo non proprio clemente, finalmente venerdì sera ci siamo trovati per decidere l’itinerario della domenica. Tra i tanti nomi papabili è spiccato su tutti “La cengia rossa” sulla parete di San Paolo ai piedi del monte Colt, una via di 7 lunghezze tra il 5a e il 6a. La domenica il ritrovo è alle 13:15 pronti per il breve viaggio fino ad Arco che è durato 45 minuti, tranquillo e senza traffico eccessivo. Il sole ci ha accompagnati lungo tutto il tragitto di andata, stimolando le nostre aspettative di una bella giornata. Arrivati a destinazione parcheggiamo appena dopo del sentiero che sale zigzagando verso la falesia di San Paolo, e ci incamminiamo verso l’inizio della via. Purtroppo il sole ci sta già abbandonando in quanto la parete è completamente esposta ad ovest, ma non ci facciamo scoraggiare, caschetto, imbrago, moschettoni, fetucce e si parte.
 
 ## la-cengia-rossa::outro
 La vetta della via offre un magnifico panorama sulla valle del Sarca e sul castello di Arco. Considerazioni

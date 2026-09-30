@@ -13,8 +13,8 @@ shows where you are, and the phone's back button collapses the sheet / closes
 details before leaving the app. Every
 route shows overall + per-pitch grades (converted to the French scale,
 original grade kept alongside), length, pitch count, crag/zone, a short
-English trip-notes summary, and photos grouped by approximate pitch (tap any
-photo for a full-size swipe/zoom viewer), plus a link back to the original
+English trip-notes summary, and photos grouped by pitch with their captions
+(tap any photo, or 📷 in the pitch table, for a full-size swipe/zoom viewer), plus a link back to the original
 write-up. Mark routes you want to do with ★ — that list works fully offline
 once the app has been opened once.
 
@@ -63,15 +63,16 @@ the pipeline in `scripts/`, run in order:
 1. `01-fetch-posts.mjs` — crawl the WordPress REST API for every post under the
    "Multipitch" category tree (and all nested crag/sector sub-categories).
 2. `02-parse-routes.mjs` — parse each post's HTML into structured pitches
-   (length + grade), overall grade, crag/zone breadcrumb, photo URLs, and a
-   best-effort sun/shade hint.
+   (length + grade), overall grade, crag/zone breadcrumb, photos with their
+   caption and the section they belong to (approach / pitch N / after the
+   climb — see `scripts/lib/photoContext.mjs`), and a best-effort sun/shade hint.
 3. `03-geocode.mjs` — resolve coordinates per route: first from the author's
    own [Google My Maps](https://www.google.com/maps/d/viewer?mid=1GiPSPBfJ3fAEv9aDSrHRLjdJZsBSdjT3)
    KML export (matched by source URL), then OpenStreetMap Nominatim by
    crag/zone name, with a few manual overrides for crags Nominatim doesn't know.
 4. `04-export-for-translation.mjs` — dump every route's Italian intro/outro
-   blurb into `data/translation-source.md`, keyed by `<slug>::intro` /
-   `<slug>::outro`.
+   blurb and photo caption into `data/translation-source.md`, keyed by
+   `<slug>::intro` / `<slug>::outro` / `<slug>::photo-NN` (NN = photo file).
 5. Translate `data/translation-source.md` into `data/translation-en.md`
    (same keys) — done directly by hand/LLM, **not** via a free translation API.
    An earlier version of this pipeline used the free MyMemory API and silently
@@ -101,7 +102,7 @@ grades using an approximate published equivalence table
 (`scripts/lib/gradeConvert.mjs` / `src/lib/grades.ts`) — treat borderline
 conversions as indicative, not exact.
 
-A handful of older posts (~9/69) don't follow the site's usual
+A handful of older posts (~7/69) don't follow the site's usual
 "NNm, GRADE." per-pitch sentence pattern; those are flagged with
 `approximateData: true` and shown with a warning in the app, with a link back
 to the original post for the real beta.

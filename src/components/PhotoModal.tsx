@@ -1,7 +1,15 @@
 import { useEffect, useRef, useState } from "react";
+import type { Photo } from "../types";
+import { photoCaption } from "../lib/photoGroups";
+
+export interface PhotoViewerItem {
+  photo: Photo;
+  /** Group the photo belongs to, e.g. "Pitch 3 · 6a". */
+  label: string;
+}
 
 interface Props {
-  photos: string[];
+  items: PhotoViewerItem[];
   index: number;
   onClose: () => void;
   onIndexChange: (index: number) => void;
@@ -9,7 +17,7 @@ interface Props {
 
 const BASE = import.meta.env.BASE_URL;
 
-export function PhotoModal({ photos, index, onClose, onIndexChange }: Props) {
+export function PhotoModal({ items, index, onClose, onIndexChange }: Props) {
   const [scale, setScale] = useState(1);
   const [translate, setTranslate] = useState({ x: 0, y: 0 });
   const gesture = useRef<{
@@ -48,11 +56,11 @@ export function PhotoModal({ photos, index, onClose, onIndexChange }: Props) {
     window.addEventListener("keydown", onKey);
     return () => window.removeEventListener("keydown", onKey);
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [index, photos.length]);
+  }, [index, items.length]);
 
   const go = (delta: number) => {
     const next = index + delta;
-    if (next >= 0 && next < photos.length) onIndexChange(next);
+    if (next >= 0 && next < items.length) onIndexChange(next);
   };
 
   const dist = (touches: React.TouchList) => {
@@ -109,14 +117,16 @@ export function PhotoModal({ photos, index, onClose, onIndexChange }: Props) {
     gesture.current.mode = "none";
   };
 
-  const src = photos[index]?.startsWith("http") ? photos[index] : `${BASE}${photos[index]}`;
+  const item = items[index];
+  const src = item ? `${BASE}${item.photo.src}` : "";
+  const caption = item ? photoCaption(item.photo) : null;
 
   return (
     <div className="photo-modal" onClick={onClose}>
       <button className="photo-modal__close" onClick={onClose} aria-label="Close">
         ✕
       </button>
-      {photos.length > 1 && (
+      {items.length > 1 && (
         <>
           <button
             className="photo-modal__nav photo-modal__nav--prev"
@@ -135,7 +145,7 @@ export function PhotoModal({ photos, index, onClose, onIndexChange }: Props) {
               e.stopPropagation();
               go(1);
             }}
-            disabled={index === photos.length - 1}
+            disabled={index === items.length - 1}
             aria-label="Next photo"
           >
             ›
@@ -144,7 +154,7 @@ export function PhotoModal({ photos, index, onClose, onIndexChange }: Props) {
       )}
       <img
         src={src}
-        alt=""
+        alt={caption ?? ""}
         className="photo-modal__img"
         style={{ transform: `translate(${translate.x}px, ${translate.y}px) scale(${scale})` }}
         onClick={(e) => e.stopPropagation()}
@@ -156,9 +166,17 @@ export function PhotoModal({ photos, index, onClose, onIndexChange }: Props) {
           scale > 1 ? resetZoom() : setScale(2.5);
         }}
       />
-      {photos.length > 1 && (
-        <div className="photo-modal__counter">
-          {index + 1} / {photos.length}
+      {item && (
+        <div className="photo-modal__info" onClick={(e) => e.stopPropagation()}>
+          <div className="photo-modal__label">
+            {item.label}
+            {items.length > 1 && (
+              <span className="photo-modal__counter">
+                {index + 1} / {items.length}
+              </span>
+            )}
+          </div>
+          {caption && <div className="photo-modal__caption">{caption}</div>}
         </div>
       )}
     </div>

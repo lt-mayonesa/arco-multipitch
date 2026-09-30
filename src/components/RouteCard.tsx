@@ -15,7 +15,7 @@ export function RouteCard({ route, isFavorite, onToggleFavorite, onOpen }: Props
       {cover ? (
         <img
           className="route-card__thumb"
-          src={`${import.meta.env.BASE_URL}${cover}`}
+          src={`${import.meta.env.BASE_URL}${cover.src}`}
           alt=""
           loading="lazy"
         />

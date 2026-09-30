@@ -47,11 +47,19 @@ for (const [i, route] of routes.entries()) {
   const dir = new URL(`${route.slug}/`, PHOTOS_DIR);
   await fs.mkdir(dir, { recursive: true });
   const localPhotos = [];
-  for (const [j, imgUrl] of route.images.entries()) {
+  for (const [j, img] of route.images.entries()) {
     const filename = `${String(j + 1).padStart(2, "0")}.webp`;
     const destPath = path.join(dir.pathname, filename);
-    const ok = await downloadAndResize(imgUrl, destPath);
-    if (ok) localPhotos.push(`photos/${route.slug}/${filename}`);
+    const ok = await downloadAndResize(img.url, destPath);
+    if (ok) {
+      localPhotos.push({
+        src: `photos/${route.slug}/${filename}`,
+        section: img.section,
+        pitch: img.pitch,
+        captionIt: img.captionIt,
+        captionEn: img.captionEn,
+      });
+    }
   }
   const { images, ...rest } = route;
   out.push({ ...rest, photos: localPhotos });

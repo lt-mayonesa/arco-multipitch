@@ -5,6 +5,7 @@ import * as cheerio from "cheerio";
 import he from "he";
 const { decode } = he;
 import { toFrenchGrade, frenchGradeToScore, originalGradeSystem } from "./lib/gradeConvert.mjs";
+import { extractImagesWithContext } from "./lib/photoContext.mjs";
 
 const IN = new URL("../data/raw-posts.json", import.meta.url);
 const OUT = new URL("../data/routes.parsed.json", import.meta.url);
@@ -12,14 +13,25 @@ const OUT = new URL("../data/routes.parsed.json", import.meta.url);
 const { posts, categoryIndex } = JSON.parse(await fs.readFile(IN, "utf8"));
 
 // Matches a trailing "NNm, GRADE." / "NN metri, GRADE." pitch-summary sentence.
-// Examples seen on the site: "35m, IV+.", "45 metri, 5c.", "22m, VI-.", "50m, 6a+."
-const PITCH_RE = /(\d{1,3})\s*(?:m|metri)\b,\s*([IVXivx]+[+-]?|[3-9][abc]?[+-]?)\.?\s*$/i;
+// Examples seen on the site: "35m, IV+.", "45 metri, 5c.", "22m, VI-.", "50m, 6a+.",
+// plus alternatives after the first grade: "40m IV+." (no comma), "20m, 6b?/A0.",
+// "35m, 6b o A0.", "25m, 6a/6a+.", "35m, VII/VII+ oppure VI e A0.",
+// "30m, 6a+ dichiarato, probabile 6b+.", "25m, A0.". Only the first
+// grade is kept as gradeRaw. Missing one of these shifts every later pitch number
+// (and the photo -> pitch mapping with it), so captions naming a pitch ("sesto tiro")
+// are a good regression check — see scripts/lib/photoContext.mjs.
+const GRADE_TOKEN = "(?:[IVXivx]+[+-]?|[3-9][abc]?[+-]?)";
+const PITCH_RE = new RegExp(
+  `(\\d{1,3})\\s*(?:m|metri)\\b,?\\s*(${GRADE_TOKEN}|A[0-3])(?!\\w)[^.]{0,40}\\.?\\s*$`,
+);
 // Fallback for the older post style: grade given parenthetically at the end of the
-// pitch paragraph with no explicit length, e.g. "...alla comoda sosta. (6a)"
-const PITCH_PARENS_RE = /\(([IVXivx]+[+-]?|[3-9][abc]?[+-]?)\)\s*$/;
+// pitch paragraph with no explicit length, e.g. "...alla comoda sosta. (6a)",
+// "(6b oppure A0).", "(6b, 4a)", "(4c, passo di 6a)". First grade is kept.
+const PITCH_PARENS_RE = new RegExp(`\\((${GRADE_TOKEN})(?!\\w)[^()]{0,40}\\)\\s*\\.?\\s*$`);
 // Any grade-looking token, used as a last-resort scan across the whole post.
 const ANY_GRADE_RE = /\b([3-9][abc][+-]?|VI{0,3}[+-]?|IX[+-]?|IV[+-]?|I{1,3}[+-]?|X[+-]?)\b/g;
 const LENGTH_ANYWHERE_RE = /(\d{2,4})\s*(?:m|metri)\b/i;
+const TOTAL_LENGTH_RE = /\b(\d{3,4})\s*(?:m|metri)\b/i;
 
 // Best-effort sun/shade + cardinal-orientation hint. The site rarely states this
 // explicitly and structured extraction elsewhere is unreliable, so this is intentionally
@@ -36,22 +48,6 @@ function extractSunHint(fullText) {
   if (shaded && !sunny) return { orientation: null, note: "shaded-mentioned" };
   if (sunny && shaded) return { orientation: null, note: "mixed-mentioned" };
   return { orientation: null, note: null };
-}
-
-function extractImages($) {
-  const urls = new Set();
-  $("img").each((_, el) => {
-    const src =
-      $(el).attr("data-orig-file") ||
-      $(el).attr("data-large-file") ||
-      $(el).attr("src");
-    if (!src) return;
-    const clean = src.split("?")[0];
-    if (/\/wp-content\/uploads\//.test(clean) && /\.(jpe?g|png|webp)$/i.test(clean)) {
-      urls.add(clean);
-    }
-  });
-  return [...urls];
 }
 
 function parsePost(post) {
@@ -125,15 +121,30 @@ function parsePost(post) {
   const firstPitchIdx = pitchIdxs[0] ?? paragraphs.length;
   const lastPitchIdx = pitchIdxs[pitchIdxs.length - 1] ?? -1;
 
-  const introIt = usedFallback && pitchIdxs.length === 0
-    ? paragraphs[0] ?? ""
-    : paragraphs.slice(0, firstPitchIdx).join(" ");
-  const outroIt = usedFallback && pitchIdxs.length === 0
-    ? paragraphs[paragraphs.length - 1] ?? ""
-    : paragraphs.slice(lastPitchIdx + 1).join(" ");
+  // [{ url, captionIt, section: "approach"|"pitch"|"summary"|"unknown", pitch, basis }]
+  // in document order. Order must stay stable: 05-download-photos names files by index.
+  const images = extractImagesWithContext($, {
+    pitchParagraphOrder: pitchIdxs.map((i) => paragraphs[i]),
+    pitches,
+    realPitchParagraphs: pitchIdxs.length > 0,
+  });
 
-  const totalLengthM =
-    syntheticTotalLengthM ?? pitches.reduce((s, p) => s + (p.lengthM ?? 0), 0);
+  // Photo captions are shown with their photo, so keep them out of the prose blurbs.
+  const captionTexts = new Set(images.map((i) => i.captionIt).filter(Boolean));
+  const prose = (ps) => ps.filter((t) => !captionTexts.has(t));
+
+  const introIt = usedFallback && pitchIdxs.length === 0
+    ? prose(paragraphs)[0] ?? ""
+    : prose(paragraphs.slice(0, firstPitchIdx)).join(" ");
+  const outroIt = usedFallback && pitchIdxs.length === 0
+    ? prose(paragraphs).at(-1) ?? ""
+    : prose(paragraphs.slice(lastPitchIdx + 1)).join(" ");
+
+  const pitchLengthSum = pitches.reduce((s, p) => s + (p.lengthM ?? 0), 0);
+  // Parenthesised-grade posts give no per-pitch lengths; a "300 metri" style
+  // mention (>= 100m, so not a pitch segment) is then the route's total.
+  const statedTotalM = Number(TOTAL_LENGTH_RE.exec(paragraphs.join(" "))?.[1]) || 0;
+  const totalLengthM = syntheticTotalLengthM ?? (pitchLengthSum || statedTotalM);
 
   const sunHint = extractSunHint(paragraphs.join(" "));
   const scored = pitches
@@ -165,7 +176,7 @@ function parsePost(post) {
     totalLengthM,
     overallGradeFrench: hardest?.gradeFrench ?? null,
     overallGradeRaw: hardest?.gradeRaw ?? null,
-    images: extractImages($),
+    images,
     approximateData: usedFallback,
     sunHint,
   };
