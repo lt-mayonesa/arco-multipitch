@@ -2,23 +2,33 @@
   "anche-le-donne-vogliono-arrampicare": {
     "name": "Sass dela Vecia",
     "wall": {
-      "lat": 45.9594472,
-      "lon": 10.8973975,
-      "precision": "guess",
-      "source": "nominatim: Coste dell'Anglone (parent zone!)"
+      "lat": 45.9537136,
+      "lon": 10.8932133,
+      "precision": "exact",
+      "source": "climbing.place anche-le-donne-vogliono-arrampicare-coste-dell-anglone-114801: climb start"
     },
-    "parking": null,
-    "note": ""
+    "parking": {
+      "lat": 45.9534,
+      "lon": 10.8976,
+      "precision": "exact",
+      "source": "climbing.place anche-le-donne-vogliono-arrampicare-coste-dell-anglone-114801: parking"
+    },
+    "note": "OSM route_bottom node agrees."
   },
   "apollo": {
     "name": "Parete di Padaro",
     "wall": {
-      "lat": 45.93731,
-      "lon": 10.86861,
-      "precision": "guess",
-      "source": "old manual table: Parete di Padaro"
+      "lat": 45.9378,
+      "lon": 10.869477,
+      "precision": "approx",
+      "source": "thetopo.com: 'Padaro Multipitch'"
     },
-    "parking": null,
+    "parking": {
+      "lat": 45.93685,
+      "lon": 10.87096,
+      "precision": "exact",
+      "source": "climbing.place: Padaro"
+    },
     "note": ""
   },
   "aquarius": {
@@ -26,175 +36,255 @@
     "wall": {
       "lat": 45.604077,
       "lon": 10.844842,
-      "precision": "guess",
-      "source": "old manual table: Ca' di Sopra"
+      "precision": "approx",
+      "source": "outdooractive.com: Cà di Sopra sector (OSM cliff and thetopo.com agree)"
     },
-    "parking": null,
+    "parking": {
+      "lat": 45.59767,
+      "lon": 10.83917,
+      "precision": "approx",
+      "source": "thetopo.com: start of the Tessari approach paths (dirt parking after the canal bridge)"
+    },
     "note": ""
   },
   "archai": {
     "name": "Anglone Nord",
     "wall": {
-      "lat": 45.9594472,
-      "lon": 10.8973975,
-      "precision": "guess",
-      "source": "nominatim: Coste dell'Anglone (parent zone!)"
+      "lat": 45.9623748,
+      "lon": 10.9023093,
+      "precision": "exact",
+      "source": "climbing.place via-archai-coste-dell-anglone-115392: climb start"
     },
-    "parking": null,
+    "parking": {
+      "lat": 45.9684,
+      "lon": 10.9132,
+      "precision": "exact",
+      "source": "climbing.place via-archai-coste-dell-anglone-115392: parking"
+    },
     "note": ""
   },
   "attraversate": {
     "name": "Covolo di Butistone",
     "wall": {
-      "lat": 45.949119,
-      "lon": 11.7256405,
-      "precision": "guess",
-      "source": "nominatim: Covolo di Butistone, Valsugana, Italy"
+      "lat": 45.94912,
+      "lon": 11.72564,
+      "precision": "approx",
+      "source": "OSM: Covolo di Butistone (routes start just above the old road)"
     },
-    "parking": null,
+    "parking": {
+      "lat": 45.94841,
+      "lon": 11.72781,
+      "precision": "approx",
+      "source": "OSM: locality 'Il Covolo' on the old road below the wall (approach ~3 min)"
+    },
     "note": ""
   },
   "babilonia": {
-    "name": "Cima Capi",
+    "name": "Regina del Lago",
     "wall": {
-      "lat": 45.8695438,
-      "lon": 10.8286087,
-      "precision": "guess",
-      "source": "nominatim: Cima Capi"
+      "lat": 45.8634168,
+      "lon": 10.8268417,
+      "precision": "exact",
+      "source": "climbing.place babilonia-val-di-ledro-114944: climb start"
     },
-    "parking": null,
+    "parking": {
+      "lat": 45.8651354,
+      "lon": 10.8208051,
+      "precision": "exact",
+      "source": "climbing.place babilonia-val-di-ledro-114944: parking"
+    },
     "note": ""
   },
   "bella-e-cattiva": {
-    "name": "Cima Capi",
+    "name": "Regina del Lago",
     "wall": {
-      "lat": 45.8695438,
-      "lon": 10.8286087,
-      "precision": "guess",
-      "source": "nominatim: Cima Capi"
+      "lat": 45.8631946,
+      "lon": 10.829326,
+      "precision": "exact",
+      "source": "climbing.place bella-e-cattiva-val-di-ledro-114948: climb start"
     },
-    "parking": null,
+    "parking": {
+      "lat": 45.8651354,
+      "lon": 10.8208051,
+      "precision": "exact",
+      "source": "climbing.place bella-e-cattiva-val-di-ledro-114948: parking"
+    },
     "note": ""
   },
   "bella-gioia": {
     "name": "Parete Rigata",
     "wall": {
-      "lat": 45.60294,
-      "lon": 10.84111,
-      "precision": "guess",
-      "source": "old manual table: Parete Rigata"
+      "lat": 45.6027009,
+      "lon": 10.8409705,
+      "precision": "exact",
+      "source": "climbing.place bella-gioia-tessari-115280: climb start"
     },
-    "parking": null,
-    "note": ""
+    "parking": {
+      "lat": 45.59767,
+      "lon": 10.83917,
+      "precision": "approx",
+      "source": "thetopo.com: start of the Tessari approach paths (dirt parking after the canal bridge)"
+    },
+    "note": "OSM cliff 'Parete Rigata' agrees."
   },
   "cane-cico": {
     "name": "Antiscudo",
     "wall": {
-      "lat": 45.9594472,
-      "lon": 10.8973975,
-      "precision": "guess",
-      "source": "nominatim: Coste dell'Anglone (parent zone!)"
+      "lat": 45.981174,
+      "lon": 10.915711,
+      "precision": "approx",
+      "source": "thetopo.com: Antiscudo sector"
     },
-    "parking": null,
+    "parking": {
+      "lat": 45.98086,
+      "lon": 10.91874,
+      "precision": "approx",
+      "source": "thetopo.com: start of 'Approach to Antiscudo'"
+    },
     "note": ""
   },
   "castagnarte": {
     "name": "Parete di Pezol",
     "wall": {
-      "lat": 45.924515,
-      "lon": 10.913872,
-      "precision": "guess",
-      "source": "nominatim: Parete di Pezol"
+      "lat": 45.924162,
+      "lon": 10.91423,
+      "precision": "approx",
+      "source": "thetopo.com: Pezol sector"
     },
-    "parking": null,
+    "parking": {
+      "lat": 45.91665,
+      "lon": 10.92275,
+      "precision": "exact",
+      "source": "climbing.place / thetopo.com: Ir-Pezol parking"
+    },
     "note": ""
   },
   "cercando-la-trincea": {
     "name": "Parete di Pezol",
     "wall": {
-      "lat": 45.924515,
-      "lon": 10.913872,
-      "precision": "guess",
-      "source": "nominatim: Parete di Pezol"
+      "lat": 45.9239908,
+      "lon": 10.9143298,
+      "precision": "exact",
+      "source": "climbing.place via-cercando-la-trincea-parete-pezol-114981: climb start"
     },
-    "parking": null,
+    "parking": {
+      "lat": 45.9166476,
+      "lon": 10.9227526,
+      "precision": "exact",
+      "source": "climbing.place via-cercando-la-trincea-parete-pezol-114981: parking"
+    },
     "note": ""
   },
   "ciao-rita": {
     "name": "Parete di Pezol",
     "wall": {
-      "lat": 45.924515,
-      "lon": 10.913872,
-      "precision": "guess",
-      "source": "nominatim: Parete di Pezol"
+      "lat": 45.923756,
+      "lon": 10.9157479,
+      "precision": "exact",
+      "source": "climbing.place ciao-rita-parete-pezol-115072: climb start"
     },
-    "parking": null,
+    "parking": {
+      "lat": 45.9166476,
+      "lon": 10.9227526,
+      "precision": "exact",
+      "source": "climbing.place ciao-rita-parete-pezol-115072: parking"
+    },
     "note": ""
   },
   "cima-alle-coste-parete-di-sherwood-via-little-john": {
-    "name": "Multipitch",
+    "name": "Parete di Sherwood",
     "wall": {
-      "lat": 45.9793393,
-      "lon": 10.9129,
-      "precision": "guess",
-      "source": "mymaps"
+      "lat": 45.97629,
+      "lon": 10.91538,
+      "precision": "exact",
+      "source": "OSM route_bottom 'Little John' (climbing.place agrees)"
     },
-    "parking": null,
-    "note": ""
+    "parking": {
+      "lat": 45.9679936,
+      "lon": 10.9140041,
+      "precision": "exact",
+      "source": "climbing.place parete-di-sherwood-115394: parking"
+    },
+    "note": "Post: park at the sports field in loc. Oltra."
   },
   "claudia-22": {
     "name": "Parete di Pezol",
     "wall": {
-      "lat": 45.924515,
-      "lon": 10.913872,
-      "precision": "guess",
-      "source": "nominatim: Parete di Pezol"
+      "lat": 45.9238192,
+      "lon": 10.9146337,
+      "precision": "exact",
+      "source": "climbing.place claudia-22-parete-pezol-115091: climb start"
     },
-    "parking": null,
+    "parking": {
+      "lat": 45.9166622,
+      "lon": 10.9228131,
+      "precision": "exact",
+      "source": "climbing.place claudia-22-parete-pezol-115091: parking"
+    },
     "note": ""
   },
   "cuore-doro": {
     "name": "Anglone Sud",
     "wall": {
-      "lat": 45.9594472,
-      "lon": 10.8973975,
-      "precision": "guess",
-      "source": "nominatim: Anglone Sud"
+      "lat": 45.9561151,
+      "lon": 10.8946308,
+      "precision": "exact",
+      "source": "climbing.place il-cuore-d-oro-coste-dell-anglone-115364: climb start"
     },
-    "parking": null,
-    "note": ""
+    "parking": {
+      "lat": 45.9534,
+      "lon": 10.8976,
+      "precision": "exact",
+      "source": "climbing.place il-cuore-d-oro-coste-dell-anglone-115364: parking"
+    },
+    "note": "arrampicata-arco.com: 100 m above the start of the Sentiero degli Scaloni."
   },
   "datti-una-mossa": {
-    "name": "Parete di Tessari",
+    "name": "Roda del Canal",
     "wall": {
-      "lat": 45.59449,
-      "lon": 10.8363,
-      "precision": "guess",
-      "source": "old manual table: Parete di Tessari"
+      "lat": 45.595142,
+      "lon": 10.83694,
+      "precision": "approx",
+      "source": "thetopo.com: Roda del canal sector"
     },
-    "parking": null,
-    "note": ""
+    "parking": {
+      "lat": 45.59767,
+      "lon": 10.83917,
+      "precision": "approx",
+      "source": "thetopo.com: start of the Tessari approach paths (dirt parking after the canal bridge)"
+    },
+    "note": "Post: starts close to the parking."
   },
   "davide-pinamonti": {
-    "name": "Mandrea",
+    "name": "Parete Fabio Giacomelli",
     "wall": {
-      "lat": 45.9479279,
-      "lon": 10.8864469,
-      "precision": "guess",
-      "source": "nominatim: Mandrea"
+      "lat": 45.9396,
+      "lon": 10.87733,
+      "precision": "approx",
+      "source": "author's My Maps pin for Karlovacko (Parete Fabio Giacomelli)"
     },
-    "parking": null,
+    "parking": {
+      "lat": 45.93823,
+      "lon": 10.88082,
+      "precision": "approx",
+      "source": "OSM: 'Cave di Laghel (Fontane)' (gulliver: parking with the fountain)"
+    },
     "note": ""
   },
   "di-tutto-un-po": {
     "name": "Cà del Liscio",
     "wall": {
-      "lat": 45.9594472,
-      "lon": 10.8973975,
-      "precision": "guess",
-      "source": "nominatim: Coste dell'Anglone (parent zone!)"
+      "lat": 45.9676739,
+      "lon": 10.9076527,
+      "precision": "exact",
+      "source": "climbing.place di-tutto-un-po-coste-dell-anglone-115278: climb start"
     },
-    "parking": null,
+    "parking": {
+      "lat": 45.9686384,
+      "lon": 10.9127401,
+      "precision": "exact",
+      "source": "climbing.place di-tutto-un-po-coste-dell-anglone-115278: parking"
+    },
     "note": ""
   },
   "diedro-baldessarini": {
@@ -202,10 +292,15 @@
     "wall": {
       "lat": 45.9595074,
       "lon": 10.8950632,
-      "precision": "guess",
-      "source": "mymaps"
+      "precision": "approx",
+      "source": "author's My Maps pin"
     },
-    "parking": null,
+    "parking": {
+      "lat": 45.9534,
+      "lon": 10.8976,
+      "precision": "exact",
+      "source": "climbing.place: Ceniga, by the Roman bridge"
+    },
     "note": ""
   },
   "diedro-rosso": {
@@ -213,10 +308,15 @@
     "wall": {
       "lat": 45.9744619,
       "lon": 10.915002,
-      "precision": "guess",
-      "source": "mymaps"
+      "precision": "approx",
+      "source": "author's My Maps pin"
     },
-    "parking": null,
+    "parking": {
+      "lat": 45.96864,
+      "lon": 10.91274,
+      "precision": "exact",
+      "source": "climbing.place: Dro sports field (loc. Oltra)"
+    },
     "note": ""
   },
   "ego-trip-mandrea": {
@@ -224,32 +324,47 @@
     "wall": {
       "lat": 45.9413919,
       "lon": 10.880456,
-      "precision": "guess",
-      "source": "mymaps"
+      "precision": "approx",
+      "source": "author's My Maps pin"
     },
-    "parking": null,
+    "parking": {
+      "lat": 45.93823,
+      "lon": 10.88082,
+      "precision": "approx",
+      "source": "OSM: 'Cave di Laghel (Fontane)' (gulliver: parking with the fountain)"
+    },
     "note": ""
   },
   "eliseo": {
     "name": "Covolo di Butistone",
     "wall": {
-      "lat": 45.949119,
-      "lon": 11.7256405,
-      "precision": "guess",
-      "source": "nominatim: Covolo di Butistone, Valsugana, Italy"
+      "lat": 45.94912,
+      "lon": 11.72564,
+      "precision": "approx",
+      "source": "OSM: Covolo di Butistone (routes start just above the old road)"
     },
-    "parking": null,
+    "parking": {
+      "lat": 45.94841,
+      "lon": 11.72781,
+      "precision": "approx",
+      "source": "OSM: locality 'Il Covolo' on the old road below the wall (approach ~3 min)"
+    },
     "note": ""
   },
   "ernia": {
-    "name": "Cima Capi",
+    "name": "Regina del Lago, sector C",
     "wall": {
-      "lat": 45.8695438,
-      "lon": 10.8286087,
-      "precision": "guess",
-      "source": "nominatim: Cima Capi"
+      "lat": 45.8639307,
+      "lon": 10.8281058,
+      "precision": "exact",
+      "source": "climbing.place via-ernia-val-di-ledro-115100: climb start"
     },
-    "parking": null,
+    "parking": {
+      "lat": 45.864321,
+      "lon": 10.8126518,
+      "precision": "exact",
+      "source": "climbing.place via-ernia-val-di-ledro-115100: parking"
+    },
     "note": ""
   },
   "esclusivamente-per-tutti": {
@@ -257,32 +372,47 @@
     "wall": {
       "lat": 45.979656,
       "lon": 10.913951,
-      "precision": "guess",
-      "source": "old manual table: Lo Scudo"
+      "precision": "approx",
+      "source": "thetopo.com: Lo Scudo sector"
     },
-    "parking": null,
+    "parking": {
+      "lat": 45.97768,
+      "lon": 10.91804,
+      "precision": "approx",
+      "source": "thetopo.com: start of 'Approach to Scudo and Parete Sud'"
+    },
     "note": ""
   },
   "esculapio": {
     "name": "Parete di Padaro",
     "wall": {
-      "lat": 45.93731,
-      "lon": 10.86861,
-      "precision": "guess",
-      "source": "old manual table: Parete di Padaro"
+      "lat": 45.9362307,
+      "lon": 10.8684065,
+      "precision": "exact",
+      "source": "climbing.place via-esculapio-padaro-115388: climb start"
     },
-    "parking": null,
+    "parking": {
+      "lat": 45.9368467,
+      "lon": 10.8709597,
+      "precision": "exact",
+      "source": "climbing.place via-esculapio-padaro-115388: parking"
+    },
     "note": ""
   },
   "favola-ledrense": {
-    "name": "Cima Capi",
+    "name": "Regina del Lago",
     "wall": {
-      "lat": 45.8695438,
-      "lon": 10.8286087,
-      "precision": "guess",
-      "source": "nominatim: Cima Capi"
+      "lat": 45.8632672,
+      "lon": 10.8283397,
+      "precision": "exact",
+      "source": "climbing.place via-favola-ledrense-val-di-ledro-114952: climb start"
     },
-    "parking": null,
+    "parking": {
+      "lat": 45.8652917,
+      "lon": 10.8203076,
+      "precision": "exact",
+      "source": "climbing.place via-favola-ledrense-val-di-ledro-114952: parking"
+    },
     "note": ""
   },
   "fiaba-nel-bosco": {
@@ -290,230 +420,335 @@
     "wall": {
       "lat": 45.9698026,
       "lon": 10.9099066,
-      "precision": "guess",
-      "source": "mymaps"
+      "precision": "approx",
+      "source": "author's My Maps pin"
     },
-    "parking": null,
+    "parking": {
+      "lat": 45.96864,
+      "lon": 10.91274,
+      "precision": "exact",
+      "source": "climbing.place: Dro sports field (loc. Oltra)"
+    },
     "note": ""
   },
   "fruit-vegetables": {
     "name": "Il Transatlantico",
     "wall": {
-      "lat": 46.01111,
-      "lon": 10.9301,
-      "precision": "guess",
-      "source": "old manual table: Il Transatlantico"
+      "lat": 46.013906,
+      "lon": 10.930137,
+      "precision": "approx",
+      "source": "thetopo.com: Transatlantico sector"
     },
-    "parking": null,
+    "parking": {
+      "lat": 46.01877,
+      "lon": 10.94081,
+      "precision": "approx",
+      "source": "thetopo.com: start of 'Approach to Transatlantico'"
+    },
     "note": ""
   },
   "ghiro-in-tondo": {
     "name": "Parete dell'Ir Inferiore",
     "wall": {
-      "lat": 45.9183768,
-      "lon": 10.9148437,
-      "precision": "guess",
-      "source": "nominatim: Parete dell'Ir Inferiore"
+      "lat": 45.918369,
+      "lon": 10.916333,
+      "precision": "approx",
+      "source": "thetopo.com: Ir inferiore sector"
     },
-    "parking": null,
+    "parking": {
+      "lat": 45.91665,
+      "lon": 10.92275,
+      "precision": "exact",
+      "source": "climbing.place / thetopo.com: Ir-Pezol parking"
+    },
     "note": ""
   },
   "giubileo": {
     "name": "Parete Due Laghi",
     "wall": {
-      "lat": 46.026,
-      "lon": 10.916,
-      "precision": "guess",
-      "source": "old manual table: Parete Due Laghi"
+      "lat": 46.0686737,
+      "lon": 10.9784337,
+      "precision": "exact",
+      "source": "climbing.place via-giubileo-due-laghi-115122: climb start"
     },
-    "parking": null,
-    "note": ""
+    "parking": {
+      "lat": 46.0656,
+      "lon": 10.9804,
+      "precision": "exact",
+      "source": "climbing.place via-giubileo-due-laghi-115122: parking"
+    },
+    "note": "OSM route_bottom 'Giubileo' agrees."
   },
   "guide-alpine": {
-    "name": "monte baone",
+    "name": "Monte Baone, Parete di Lomego",
     "wall": {
-      "lat": 45.925,
-      "lon": 10.878,
-      "precision": "guess",
-      "source": "old manual table: monte baone"
+      "lat": 45.9262114,
+      "lon": 10.87847,
+      "precision": "exact",
+      "source": "climbing.place guide-alpine-monte-baone-arco-115008: climb start"
     },
-    "parking": null,
+    "parking": {
+      "lat": 45.92416,
+      "lon": 10.88574,
+      "precision": "exact",
+      "source": "climbing.place guide-alpine-monte-baone-arco-115008: parking"
+    },
     "note": ""
   },
   "il-cammino-dellarco": {
     "name": "Parete dei Due Sassi",
     "wall": {
-      "lat": 45.9808253,
-      "lon": 10.9249164,
-      "precision": "guess",
-      "source": "nominatim: Valle del Sarca (parent zone!)"
+      "lat": 45.922321,
+      "lon": 10.924341,
+      "precision": "approx",
+      "source": "thetopo.com: Monte Velo '2 Sassi' sector"
     },
-    "parking": null,
-    "note": ""
+    "parking": {
+      "lat": 45.91665,
+      "lon": 10.92275,
+      "precision": "approx",
+      "source": "climbing.place / thetopo.com: Ir-Pezol parking"
+    },
+    "note": "Parking assumed shared with Ir/Pezol; post only says the wall is higher up above Bolognano."
   },
   "il-gran-diedro": {
     "name": "Parete Due Laghi",
     "wall": {
-      "lat": 46.026,
-      "lon": 10.916,
-      "precision": "guess",
-      "source": "old manual table: Parete Due Laghi"
+      "lat": 46.068175,
+      "lon": 10.978262,
+      "precision": "approx",
+      "source": "thetopo.com: Due Laghi sector (Santa Massenza)"
     },
-    "parking": null,
+    "parking": {
+      "lat": 46.0656,
+      "lon": 10.9804,
+      "precision": "exact",
+      "source": "climbing.place: Santa Massenza"
+    },
     "note": ""
   },
   "il-profondo-risetto-dellindria": {
     "name": "Anglone Nord",
     "wall": {
-      "lat": 45.9594472,
-      "lon": 10.8973975,
-      "precision": "guess",
-      "source": "nominatim: Coste dell'Anglone (parent zone!)"
+      "lat": 45.9633,
+      "lon": 10.9038,
+      "precision": "approx",
+      "source": "gulliver: 'immediately right of the Scalette'"
     },
-    "parking": null,
+    "parking": {
+      "lat": 45.96418,
+      "lon": 10.9075,
+      "precision": "approx",
+      "source": "OSM parking near the Dro bridge (gulliver: 'leave the car near the Dro bridge')"
+    },
     "note": ""
   },
   "jean-jean": {
     "name": "Antiscudo",
     "wall": {
-      "lat": 45.9594472,
-      "lon": 10.8973975,
-      "precision": "guess",
-      "source": "nominatim: Coste dell'Anglone (parent zone!)"
+      "lat": 45.981174,
+      "lon": 10.915711,
+      "precision": "approx",
+      "source": "thetopo.com: Antiscudo sector"
     },
-    "parking": null,
+    "parking": {
+      "lat": 45.98086,
+      "lon": 10.91874,
+      "precision": "approx",
+      "source": "thetopo.com: start of 'Approach to Antiscudo'"
+    },
     "note": ""
   },
   "karlovacko": {
-    "name": "I Pilastri",
+    "name": "Parete Fabio Giacomelli",
     "wall": {
-      "lat": 45.9396011,
-      "lon": 10.8773284,
-      "precision": "guess",
-      "source": "mymaps"
+      "lat": 45.9396,
+      "lon": 10.87733,
+      "precision": "approx",
+      "source": "author's My Maps pin for Karlovacko (Parete Fabio Giacomelli)"
     },
-    "parking": null,
+    "parking": {
+      "lat": 45.93823,
+      "lon": 10.88082,
+      "precision": "approx",
+      "source": "OSM: 'Cave di Laghel (Fontane)' (gulliver: parking with the fountain)"
+    },
     "note": ""
   },
   "la-cengia-rossa": {
-    "name": "Multipitch",
+    "name": "Parete San Paolo",
     "wall": {
-      "lat": 45.9353334,
-      "lon": 10.8919573,
-      "precision": "guess",
-      "source": "mymaps"
+      "lat": 45.93877,
+      "lon": 10.89689,
+      "precision": "exact",
+      "source": "climbing.place via-la-cengia-rossa-arco-114014: climb start"
     },
-    "parking": null,
+    "parking": {
+      "lat": 45.9383,
+      "lon": 10.8961,
+      "precision": "exact",
+      "source": "climbing.place via-la-cengia-rossa-arco-114014: parking"
+    },
     "note": ""
   },
   "la-piccola-piramide": {
     "name": "Anglone Nord",
     "wall": {
-      "lat": 45.9594472,
-      "lon": 10.8973975,
-      "precision": "guess",
-      "source": "nominatim: Coste dell'Anglone (parent zone!)"
+      "lat": 45.9632,
+      "lon": 10.9035,
+      "precision": "approx",
+      "source": "Anglone Nord sector (next to Le scalette dell'Indria, arrampicata-arco.com)"
     },
-    "parking": null,
+    "parking": {
+      "lat": 45.96864,
+      "lon": 10.91274,
+      "precision": "exact",
+      "source": "climbing.place: Dro sports field (loc. Oltra)"
+    },
     "note": ""
   },
   "la-piccola-verticalita": {
     "name": "Anglone Sud",
     "wall": {
-      "lat": 45.9594472,
-      "lon": 10.8973975,
-      "precision": "guess",
-      "source": "nominatim: Anglone Sud"
+      "lat": 45.9594002,
+      "lon": 10.898749,
+      "precision": "exact",
+      "source": "climbing.place la-piccola-verticalita-coste-dell-anglone-115389: climb start"
     },
-    "parking": null,
+    "parking": {
+      "lat": 45.9534,
+      "lon": 10.8976,
+      "precision": "exact",
+      "source": "climbing.place la-piccola-verticalita-coste-dell-anglone-115389: parking"
+    },
     "note": ""
   },
   "le-scalette-dellindria": {
     "name": "Anglone Nord",
     "wall": {
-      "lat": 45.9594472,
-      "lon": 10.8973975,
-      "precision": "guess",
-      "source": "nominatim: Coste dell'Anglone (parent zone!)"
+      "lat": 45.9632,
+      "lon": 10.9035,
+      "precision": "exact",
+      "source": "climbing.place le-scalette-dell-indria-anglone-114351: climb start"
     },
-    "parking": null,
-    "note": ""
+    "parking": {
+      "lat": 45.9688,
+      "lon": 10.913,
+      "precision": "exact",
+      "source": "climbing.place le-scalette-dell-indria-anglone-114351: parking"
+    },
+    "note": "Matches the outdooractive.com track."
   },
   "linquisitore": {
     "name": "Parete dell'Ir Superiore",
     "wall": {
-      "lat": 45.9186104,
-      "lon": 10.9188874,
-      "precision": "guess",
-      "source": "nominatim: Parete dell'Ir Superiore"
+      "lat": 45.918719,
+      "lon": 10.918582,
+      "precision": "approx",
+      "source": "thetopo.com: Ir superiore sector"
     },
-    "parking": null,
+    "parking": {
+      "lat": 45.91665,
+      "lon": 10.92275,
+      "precision": "exact",
+      "source": "climbing.place / thetopo.com: Ir-Pezol parking"
+    },
     "note": ""
   },
   "lombra-e-lapparizione-del-mondo": {
     "name": "Anglone Nord",
     "wall": {
-      "lat": 45.9594472,
-      "lon": 10.8973975,
-      "precision": "guess",
-      "source": "nominatim: Coste dell'Anglone (parent zone!)"
+      "lat": 45.96079,
+      "lon": 10.90125,
+      "precision": "approx",
+      "source": "gulliver itinerary point; traverse passes Luce e colori first"
     },
-    "parking": null,
+    "parking": {
+      "lat": 45.9534,
+      "lon": 10.8976,
+      "precision": "exact",
+      "source": "climbing.place: Ceniga, by the Roman bridge"
+    },
     "note": ""
   },
   "luce-e-colori": {
     "name": "Anglone Sud",
     "wall": {
-      "lat": 45.9594472,
-      "lon": 10.8973975,
-      "precision": "guess",
-      "source": "nominatim: Anglone Sud"
+      "lat": 45.96,
+      "lon": 10.8995,
+      "precision": "approx",
+      "source": "gulliver approach order: just north of La piccola verticalità"
     },
-    "parking": null,
+    "parking": {
+      "lat": 45.9534,
+      "lon": 10.8976,
+      "precision": "exact",
+      "source": "climbing.place: Ceniga, by the Roman bridge"
+    },
     "note": ""
   },
   "luna-85": {
     "name": "Placche Zebrate",
     "wall": {
-      "lat": 45.9998747,
-      "lon": 10.9184491,
-      "precision": "guess",
-      "source": "nominatim: Placche Zebrate"
+      "lat": 45.99989,
+      "lon": 10.919556,
+      "precision": "approx",
+      "source": "thetopo.com: Placche zebrate sector"
     },
-    "parking": null,
+    "parking": {
+      "lat": 45.99561,
+      "lon": 10.92617,
+      "precision": "approx",
+      "source": "thetopo.com: start of 'Approach to Placche Zebrate'"
+    },
     "note": ""
   },
   "lungo-il-fiume-e-sullacqua": {
-    "name": "Parete di Tessari",
+    "name": "Roda del Canal",
     "wall": {
-      "lat": 45.59449,
-      "lon": 10.8363,
-      "precision": "guess",
-      "source": "old manual table: Parete di Tessari"
+      "lat": 45.595142,
+      "lon": 10.83694,
+      "precision": "approx",
+      "source": "thetopo.com: Roda del canal sector"
     },
-    "parking": null,
-    "note": ""
+    "parking": {
+      "lat": 45.59767,
+      "lon": 10.83917,
+      "precision": "approx",
+      "source": "thetopo.com: start of the Tessari approach paths (dirt parking after the canal bridge)"
+    },
+    "note": "Post mentions the adjacent 'Pensieri' variant (OSM node nearby)."
   },
   "minuetto-a-ceniga": {
-    "name": "cima alle coste",
+    "name": "Cuore dell'Anglone",
     "wall": {
-      "lat": 45.9594472,
-      "lon": 10.8973975,
-      "precision": "guess",
-      "source": "nominatim: Coste dell'Anglone (parent zone!)"
+      "lat": 45.9575841,
+      "lon": 10.8963546,
+      "precision": "exact",
+      "source": "climbing.place minuetto-a-ceniga-coste-dell-anglone-115102: climb start"
     },
-    "parking": null,
+    "parking": {
+      "lat": 45.9534,
+      "lon": 10.8976,
+      "precision": "exact",
+      "source": "climbing.place minuetto-a-ceniga-coste-dell-anglone-115102: parking"
+    },
     "note": ""
   },
   "molla-tutto": {
-    "name": "Parete Centrale",
+    "name": "Mandrea, Parete Centrale",
     "wall": {
-      "lat": 45.9479279,
-      "lon": 10.8864469,
-      "precision": "guess",
-      "source": "nominatim: Mandrea (parent zone!)"
+      "lat": 45.944336,
+      "lon": 10.879979,
+      "precision": "approx",
+      "source": "thetopo.com: Mandrea (central wall)"
     },
-    "parking": null,
+    "parking": {
+      "lat": 45.93823,
+      "lon": 10.88082,
+      "precision": "approx",
+      "source": "OSM: 'Cave di Laghel (Fontane)' (gulliver: parking with the fountain)"
+    },
     "note": ""
   },
   "ne-vale-la-pena": {
@@ -521,10 +756,15 @@
     "wall": {
       "lat": 45.604077,
       "lon": 10.844842,
-      "precision": "guess",
-      "source": "old manual table: Ca' di Sopra"
+      "precision": "approx",
+      "source": "outdooractive.com: Cà di Sopra sector (OSM cliff and thetopo.com agree)"
     },
-    "parking": null,
+    "parking": {
+      "lat": 45.59767,
+      "lon": 10.83917,
+      "precision": "approx",
+      "source": "thetopo.com: start of the Tessari approach paths (dirt parking after the canal bridge)"
+    },
     "note": ""
   },
   "nonni-sprint": {
@@ -532,43 +772,63 @@
     "wall": {
       "lat": 45.9719715,
       "lon": 10.9121267,
-      "precision": "guess",
-      "source": "mymaps"
+      "precision": "approx",
+      "source": "author's My Maps pin"
     },
-    "parking": null,
+    "parking": {
+      "lat": 45.96864,
+      "lon": 10.91274,
+      "precision": "exact",
+      "source": "climbing.place: Dro sports field (loc. Oltra)"
+    },
     "note": ""
   },
   "passi-falsi": {
     "name": "Rupe Secca",
     "wall": {
-      "lat": 45.9309454,
-      "lon": 10.8888915,
-      "precision": "guess",
-      "source": "mymaps"
+      "lat": 45.92603,
+      "lon": 10.88905,
+      "precision": "approx",
+      "source": "OSM 'Block 11 - Passi falsi' (end of thetopo.com Rupe secca approach)"
     },
-    "parking": null,
+    "parking": {
+      "lat": 45.92692,
+      "lon": 10.89211,
+      "precision": "approx",
+      "source": "thetopo.com: start of 'Approach to Rupe secca'"
+    },
     "note": ""
   },
   "pirata-samu": {
-    "name": "Spalti dell'Orsa",
+    "name": "Spalti di Capitel d'Orsa",
     "wall": {
       "lat": 45.65282,
       "lon": 10.86266,
-      "precision": "guess",
-      "source": "old manual table: Spalti dell'Orsa"
+      "precision": "approx",
+      "source": "OSM cliff 'Parete Capitel D'Orsa'"
     },
-    "parking": null,
-    "note": ""
+    "parking": {
+      "lat": 45.64444,
+      "lon": 10.87687,
+      "precision": "approx",
+      "source": "OSM: Agriturismo 'Al Castel' (gulliver: park at agriturismo Castel)"
+    },
+    "note": "Faces S toward Madonna della Corona; approach ~40 min on CAI 74."
   },
   "plaisir": {
-    "name": "Cima Capi",
+    "name": "Regina del Lago",
     "wall": {
-      "lat": 45.8695438,
-      "lon": 10.8286087,
-      "precision": "guess",
-      "source": "nominatim: Cima Capi"
+      "lat": 45.8634586,
+      "lon": 10.8266464,
+      "precision": "exact",
+      "source": "climbing.place via-plaisir-val-di-ledro-114541: climb start"
     },
-    "parking": null,
+    "parking": {
+      "lat": 45.8652917,
+      "lon": 10.8203076,
+      "precision": "exact",
+      "source": "climbing.place via-plaisir-val-di-ledro-114541: parking"
+    },
     "note": ""
   },
   "poison-ivy": {
@@ -576,186 +836,271 @@
     "wall": {
       "lat": 45.604077,
       "lon": 10.844842,
-      "precision": "guess",
-      "source": "old manual table: Ca' di Sopra"
+      "precision": "approx",
+      "source": "outdooractive.com: Cà di Sopra sector (OSM cliff and thetopo.com agree)"
     },
-    "parking": null,
+    "parking": {
+      "lat": 45.59767,
+      "lon": 10.83917,
+      "precision": "approx",
+      "source": "thetopo.com: start of the Tessari approach paths (dirt parking after the canal bridge)"
+    },
     "note": ""
   },
   "porci-con-le-ali": {
-    "name": "Multipitch",
+    "name": "Parete San Paolo",
     "wall": {
-      "lat": 45.9370644,
-      "lon": 10.8927727,
-      "precision": "guess",
-      "source": "mymaps"
+      "lat": 45.9384816,
+      "lon": 10.8971244,
+      "precision": "exact",
+      "source": "climbing.place via-porci-con-le-ali-arco-san-paolo-114342: climb start"
     },
-    "parking": null,
+    "parking": {
+      "lat": 45.9447,
+      "lon": 10.9005,
+      "precision": "exact",
+      "source": "climbing.place via-porci-con-le-ali-arco-san-paolo-114342: parking"
+    },
     "note": ""
   },
   "premiata-forneria-pfitscher": {
     "name": "Antiscudo",
     "wall": {
-      "lat": 45.9594472,
-      "lon": 10.8973975,
-      "precision": "guess",
-      "source": "nominatim: Coste dell'Anglone (parent zone!)"
+      "lat": 45.981174,
+      "lon": 10.915711,
+      "precision": "approx",
+      "source": "thetopo.com: Antiscudo sector"
     },
-    "parking": null,
+    "parking": {
+      "lat": 45.98086,
+      "lon": 10.91874,
+      "precision": "approx",
+      "source": "thetopo.com: start of 'Approach to Antiscudo'"
+    },
     "note": ""
   },
   "rampa-centrale": {
     "name": "Parete Due Laghi",
     "wall": {
-      "lat": 46.026,
-      "lon": 10.916,
-      "precision": "guess",
-      "source": "old manual table: Parete Due Laghi"
+      "lat": 46.068175,
+      "lon": 10.978262,
+      "precision": "approx",
+      "source": "thetopo.com: Due Laghi sector (Santa Massenza)"
     },
-    "parking": null,
+    "parking": {
+      "lat": 46.0656,
+      "lon": 10.9804,
+      "precision": "exact",
+      "source": "climbing.place: Santa Massenza"
+    },
     "note": ""
   },
   "sguarauunda": {
     "name": "Cà del Liscio",
     "wall": {
-      "lat": 45.9693124,
-      "lon": 10.9083408,
-      "precision": "guess",
-      "source": "mymaps"
+      "lat": 45.9679475,
+      "lon": 10.9078433,
+      "precision": "exact",
+      "source": "climbing.place sguarauunda-coste-dell-anglone-115136: climb start"
     },
-    "parking": null,
+    "parking": {
+      "lat": 45.9686384,
+      "lon": 10.9127401,
+      "precision": "exact",
+      "source": "climbing.place sguarauunda-coste-dell-anglone-115136: parking"
+    },
     "note": ""
   },
   "sofia": {
     "name": "Piramide Lakshmi",
     "wall": {
-      "lat": 45.9594472,
-      "lon": 10.8973975,
-      "precision": "guess",
-      "source": "nominatim: Coste dell'Anglone (parent zone!)"
+      "lat": 45.9712,
+      "lon": 10.912,
+      "precision": "approx",
+      "source": "between the author's My Maps pins for Fiaba nel bosco / Nonni Sprint (Piramide Lakshmi)"
     },
-    "parking": null,
+    "parking": {
+      "lat": 45.96864,
+      "lon": 10.91274,
+      "precision": "exact",
+      "source": "climbing.place: Dro sports field (loc. Oltra)"
+    },
     "note": ""
   },
   "sol-minore": {
-    "name": "Cima Capi",
+    "name": "Regina del Lago",
     "wall": {
-      "lat": 45.8695438,
-      "lon": 10.8286087,
-      "precision": "guess",
-      "source": "nominatim: Cima Capi"
+      "lat": 45.8633944,
+      "lon": 10.8268685,
+      "precision": "exact",
+      "source": "climbing.place via-sol-minore-val-di-ledro-114550: climb start"
     },
-    "parking": null,
+    "parking": {
+      "lat": 45.8644361,
+      "lon": 10.8123936,
+      "precision": "exact",
+      "source": "climbing.place via-sol-minore-val-di-ledro-114550: parking"
+    },
     "note": ""
   },
   "spigolo-del-vento": {
-    "name": "Valle dei Laghi",
+    "name": "Parete Due Laghi",
     "wall": {
-      "lat": 46.0657422,
-      "lon": 10.9829992,
-      "precision": "guess",
-      "source": "nominatim: Valle dei Laghi"
+      "lat": 46.068175,
+      "lon": 10.978262,
+      "precision": "approx",
+      "source": "thetopo.com: Due Laghi sector (Santa Massenza)"
     },
-    "parking": null,
+    "parking": {
+      "lat": 46.0656,
+      "lon": 10.9804,
+      "precision": "exact",
+      "source": "climbing.place: Santa Massenza"
+    },
     "note": ""
   },
   "sulle-pance-del-pezol": {
     "name": "Parete di Pezol",
     "wall": {
-      "lat": 45.924515,
-      "lon": 10.913872,
-      "precision": "guess",
-      "source": "nominatim: Parete di Pezol"
+      "lat": 45.9243778,
+      "lon": 10.9132125,
+      "precision": "exact",
+      "source": "climbing.place sulle-pance-del-pezol-parete-pezol-115011: climb start"
     },
-    "parking": null,
+    "parking": {
+      "lat": 45.9166476,
+      "lon": 10.9227526,
+      "precision": "exact",
+      "source": "climbing.place sulle-pance-del-pezol-parete-pezol-115011: parking"
+    },
     "note": ""
   },
   "vecchi-disonesti-e-insoddisfatti": {
-    "name": "I Pilastri",
+    "name": "Parete Fabio Giacomelli",
     "wall": {
-      "lat": 45.9479279,
-      "lon": 10.8864469,
-      "precision": "guess",
-      "source": "nominatim: Mandrea (parent zone!)"
+      "lat": 45.9396,
+      "lon": 10.87733,
+      "precision": "approx",
+      "source": "author's My Maps pin for Karlovacko (Parete Fabio Giacomelli)"
     },
-    "parking": null,
+    "parking": {
+      "lat": 45.93823,
+      "lon": 10.88082,
+      "precision": "approx",
+      "source": "OSM: 'Cave di Laghel (Fontane)' (gulliver: parking with the fountain)"
+    },
     "note": ""
   },
   "via-dante-dassati": {
     "name": "Parete di Pezol",
     "wall": {
-      "lat": 45.924515,
-      "lon": 10.913872,
-      "precision": "guess",
-      "source": "nominatim: Parete di Pezol"
+      "lat": 45.9240113,
+      "lon": 10.914303,
+      "precision": "exact",
+      "source": "climbing.place via-dante-dassati-parete-pezol-115098: climb start"
     },
-    "parking": null,
+    "parking": {
+      "lat": 45.9166476,
+      "lon": 10.9227526,
+      "precision": "exact",
+      "source": "climbing.place via-dante-dassati-parete-pezol-115098: parking"
+    },
     "note": ""
   },
   "via-del-dottore": {
     "name": "Piramide Lakshmi",
     "wall": {
-      "lat": 45.9594472,
-      "lon": 10.8973975,
-      "precision": "guess",
-      "source": "nominatim: Coste dell'Anglone (parent zone!)"
+      "lat": 45.9712,
+      "lon": 10.912,
+      "precision": "approx",
+      "source": "between the author's My Maps pins for Fiaba nel bosco / Nonni Sprint (Piramide Lakshmi)"
     },
-    "parking": null,
+    "parking": {
+      "lat": 45.96864,
+      "lon": 10.91274,
+      "precision": "exact",
+      "source": "climbing.place: Dro sports field (loc. Oltra)"
+    },
     "note": ""
   },
   "via-del-missile": {
-    "name": "Monte Casale",
+    "name": "Monte Casale, 1° Pilastro",
     "wall": {
-      "lat": 46.0314941,
-      "lon": 10.9276627,
-      "precision": "guess",
-      "source": "nominatim: Monte Casale"
+      "lat": 46.036143,
+      "lon": 10.9406595,
+      "precision": "exact",
+      "source": "climbing.place via-del-missile-monte-casale-115391: climb start"
     },
-    "parking": null,
-    "note": ""
+    "parking": {
+      "lat": 46.02905,
+      "lon": 10.94702,
+      "precision": "exact",
+      "source": "OSM: Cooperativa Valli del Sarca, viale Daino (CAI Seregno: park at the fruit wholesaler)"
+    },
+    "note": "thetopo.com '1° Pilastro' agrees."
   },
   "via-della-rampa-2": {
     "name": "Parete di Padaro",
     "wall": {
-      "lat": 45.93731,
-      "lon": 10.86861,
-      "precision": "guess",
-      "source": "old manual table: Parete di Padaro"
+      "lat": 45.9379569,
+      "lon": 10.8687444,
+      "precision": "exact",
+      "source": "climbing.place via-della-rampa-padaro-115387: climb start"
     },
-    "parking": null,
+    "parking": {
+      "lat": 45.9368467,
+      "lon": 10.8709597,
+      "precision": "exact",
+      "source": "climbing.place via-della-rampa-padaro-115387: parking"
+    },
     "note": ""
   },
   "via-della-rondine": {
     "name": "Parete di Romagnano",
     "wall": {
-      "lat": 46.0095768,
-      "lon": 11.0997293,
-      "precision": "guess",
-      "source": "mymaps"
+      "lat": 46.00816,
+      "lon": 11.10449,
+      "precision": "exact",
+      "source": "OSM cliff node 'La Rondine'"
     },
-    "parking": null,
+    "parking": {
+      "lat": 46.00533,
+      "lon": 11.10723,
+      "precision": "approx",
+      "source": "OSM: nearest parking to the Rondine wall"
+    },
     "note": ""
   },
   "via-dellincontro": {
     "name": "Parete dell'Ir Inferiore",
     "wall": {
-      "lat": 45.9183768,
-      "lon": 10.9148437,
-      "precision": "guess",
-      "source": "nominatim: Parete dell'Ir Inferiore"
+      "lat": 45.9182657,
+      "lon": 10.9162499,
+      "precision": "exact",
+      "source": "climbing.place via-dell-incontro-parete-dell-ir-115090: climb start"
     },
-    "parking": null,
+    "parking": {
+      "lat": 45.9166476,
+      "lon": 10.9227526,
+      "precision": "exact",
+      "source": "climbing.place via-dell-incontro-parete-dell-ir-115090: parking"
+    },
     "note": ""
   },
   "via-dellincontro-superiore": {
     "name": "Parete dell'Ir Superiore",
     "wall": {
-      "lat": 45.9186104,
-      "lon": 10.9188874,
-      "precision": "guess",
-      "source": "nominatim: Parete dell'Ir Superiore"
+      "lat": 45.918719,
+      "lon": 10.918582,
+      "precision": "approx",
+      "source": "thetopo.com: Ir superiore sector"
     },
-    "parking": null,
+    "parking": {
+      "lat": 45.91665,
+      "lon": 10.92275,
+      "precision": "exact",
+      "source": "climbing.place / thetopo.com: Ir-Pezol parking"
+    },
     "note": ""
   }
 }
