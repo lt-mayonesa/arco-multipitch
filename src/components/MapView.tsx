@@ -172,12 +172,12 @@ function useLatest<T>(value: T) {
   return ref;
 }
 
-/** Leaflet only measures its container on init; keep it in sync (orientation, keyboard, etc). */
-function TapDragZoom() {
-  useTapDragZoom(useMap());
+function TapDragZoom({ bottomInset }: { bottomInset: number }) {
+  useTapDragZoom(useMap(), () => bottomInset);
   return null;
 }
 
+/** Leaflet only measures its container on init; keep it in sync (orientation, keyboard, etc). */
 function InvalidateOnResize() {
   const map = useMap();
   useEffect(() => {
@@ -415,7 +415,7 @@ export function MapView({ routes, matchSlugs, selectedRoute, onOpen, bottomInset
         {/* Bottom corners are under the sheet, so keep controls at the top. */}
         <AttributionControl position="topright" prefix={false} />
         <InvalidateOnResize />
-        <TapDragZoom />
+        <TapDragZoom bottomInset={bottomInset} />
         <Legend showFiltered={routes.some((r) => !matchSlugs.has(r.slug))} />
         <LabelZoomClass />
         <ClusteredPins routes={routes} matchSlugs={matchSlugs} selectedSlug={selectedRoute?.slug ?? null}

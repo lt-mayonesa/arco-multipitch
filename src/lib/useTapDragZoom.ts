@@ -1,9 +1,10 @@
-import { useEffect } from "react";
+import { useEffect, useRef } from "react";
 import L from "leaflet";
 
 /**
  * Google-Maps-style one-finger zoom: double-tap, keep the finger down and
- * slide. Down zooms in, up zooms out, anchored at the tap point, with
+ * slide. Down zooms in, up zooms out, anchored at the centre of the map area
+ * not covered by the bottom sheet (`getBottomInset`, px), with
  * fractional zoom while sliding and a snap to the nearest level on release.
  * A plain double-tap (no slide) still goes to Leaflet's doubleClickZoom.
  *
@@ -26,7 +27,12 @@ interface PrivateMap {
   _animatingZoom?: boolean;
 }
 
-export function useTapDragZoom(map: L.Map) {
+export function useTapDragZoom(map: L.Map, getBottomInset: () => number) {
+  const insetRef = useRef(getBottomInset);
+  useEffect(() => {
+    insetRef.current = getBottomInset;
+  });
+
   useEffect(() => {
     const el = map.getContainer();
     const pmap = map as unknown as PrivateMap;
@@ -45,8 +51,6 @@ export function useTapDragZoom(map: L.Map) {
     } | null = null;
     let reenableDblTimer = 0;
 
-    const containerPoint = (t: Touch) => map.mouseEventToContainerPoint(t as unknown as MouseEvent);
-
     const onStart = (e: TouchEvent) => {
       if (e.touches.length !== 1) {
         // Second finger: abandon (pinch takes over), but keep what we zoomed.
@@ -63,7 +67,8 @@ export function useTapDragZoom(map: L.Map) {
         Math.hypot(t.clientX - lastTap.x, t.clientY - lastTap.y) < DOUBLE_TAP_SLOP_PX;
       if (!isSecondTap || pmap._animatingZoom) return;
 
-      const p = containerPoint(t);
+      const size = map.getSize();
+      const p = L.point(size.x / 2, Math.max(0, size.y - insetRef.current()) / 2);
       gesture = {
         startY: t.clientY,
         startZoom: map.getZoom(),
