@@ -1,30 +1,28 @@
-import type { GearLevel } from "../types";
+import type { GearStyle } from "../types";
 
-export const GEAR_LABEL: Record<GearLevel, string> = {
+export type GearBadgeKind = GearStyle | "runout";
+
+export const GEAR_LABEL: Record<GearBadgeKind, string> = {
   bolted: "Bolted",
-  runout: "Runout",
   trad: "Trad",
+  runout: "Runout",
 };
 
-export const GEAR_DESCRIPTION: Record<GearLevel, string> = {
+export const GEAR_DESCRIPTION: Record<GearBadgeKind, string> = {
   bolted: "Fixed protection is enough: quickdraws + slings.",
-  runout: "Mostly fixed protection, but with big runouts.",
   trad: "Alpine style: you must place your own gear.",
+  runout: "Bolted, but with big runouts.",
 };
 
-export type GearFilter = "any" | "no-trad" | "bolted" | "trad";
+export type GearFilter = "any" | "bolted" | "trad";
 
 export const GEAR_FILTERS: { value: GearFilter; label: string }[] = [
   { value: "any", label: "Any" },
-  { value: "no-trad", label: "No trad" },
-  { value: "bolted", label: "Bolted only" },
-  { value: "trad", label: "Trad only" },
+  { value: "bolted", label: "Bolted" },
+  { value: "trad", label: "Trad" },
 ];
 
-/** Routes with unknown protection (level null) only match "any" and "no-trad". */
-export function matchesGearFilter(level: GearLevel | null, filter: GearFilter): boolean {
-  if (filter === "no-trad") return level !== "trad";
-  if (filter === "bolted") return level === "bolted";
-  if (filter === "trad") return level === "trad";
-  return true;
+/** "bolted" includes runout routes; routes with unknown style only match "any". */
+export function matchesGearFilter(style: GearStyle | null, filter: GearFilter): boolean {
+  return filter === "any" || style === filter;
 }

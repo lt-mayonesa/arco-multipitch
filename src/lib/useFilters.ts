@@ -30,6 +30,7 @@ export interface Filters {
   favoritesOnly: boolean;
   sun: "any" | "sunny" | "shaded";
   gear: GearFilter;
+  hideRunout: boolean;
   sortKey: string;
 }
 
@@ -42,6 +43,7 @@ export const DEFAULT_FILTERS: Filters = {
   favoritesOnly: false,
   sun: "any",
   gear: "any",
+  hideRunout: false,
   sortKey: DEFAULT_SORT_KEY,
 };
 
@@ -103,7 +105,8 @@ function passesHideFilters(r: Route, filters: Filters, search: string, isFavorit
 /** Filters whose misses can be greyed out on the map instead of hidden. */
 function passesGreyFilters(r: Route, filters: Filters) {
   if (filters.maxPitches != null && r.numPitches > filters.maxPitches) return false;
-  if (!matchesGearFilter(r.gear.level, filters.gear)) return false;
+  if (!matchesGearFilter(r.gear.style, filters.gear)) return false;
+  if (filters.hideRunout && r.gear.runout) return false;
 
   const idx = gradeIndex(r.overallGradeFrench);
   if (idx >= 0 && (idx < filters.minGradeIdx || idx > filters.maxGradeIdx)) return false;

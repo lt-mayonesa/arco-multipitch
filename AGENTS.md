@@ -78,7 +78,8 @@ and both must pass. Don't add new lint warnings (a few pre-existing ones in
   (`design/photo-pitch-mapping.noqa.md`).
 - ~7 routes have `approximateData: true` (unparseable pitch data); UI must keep
   showing the warning + source link.
-- Protection style (`gear`: bolted / runout / trad) is a hand-curated per-slug
+- Protection (`gear.style`: bolted / trad, plus a `runout` flag that only
+  decorates bolted routes; map colours show style only) is a hand-curated per-slug
   table in `scripts/lib/gearStyle.mjs` (see `design/gear-mentions.noqa.md`).
   New posts get a keyword guess and a warning from `02`; add them to the table.
 - Grade conversion (UIAA → French) is approximate; logic duplicated in

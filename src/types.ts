@@ -12,14 +12,16 @@ export interface SunHint {
 }
 
 /**
- * Protection style, curated per route in scripts/lib/gearStyle.mjs.
- * bolted = fixed gear is enough; runout = mostly fixed gear but with a big
- * runout; trad = you must place your own gear. null = write-up doesn't say.
+ * Protection, curated per route in scripts/lib/gearStyle.mjs.
+ * style: bolted = fixed gear is enough; trad = you must place your own gear;
+ * null = write-up doesn't say. runout: bolted route with a big runout
+ * (always false for trad).
  */
-export type GearLevel = "bolted" | "runout" | "trad";
+export type GearStyle = "bolted" | "trad";
 
 export interface Gear {
-  level: GearLevel | null;
+  style: GearStyle | null;
+  runout: boolean;
   /** Short English paraphrase of the author's protection notes. */
   note: string | null;
   /** "heuristic" = keyword guess for a post not yet curated. */

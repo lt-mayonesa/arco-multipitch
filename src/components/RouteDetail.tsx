@@ -95,11 +95,14 @@ export function RouteDetail({ route, isFavorite, onToggleFavorite, onClose }: Pr
           )}
 
           <div className="route-detail__gear">
-            {route.gear.level ? (
+            {route.gear.style ? (
               <>
-                <GearBadge level={route.gear.level} />
+                <div className="route-detail__gear-badges">
+                  <GearBadge kind={route.gear.style} />
+                  {route.gear.runout && <GearBadge kind="runout" />}
+                </div>
                 <p>
-                  {route.gear.note ?? GEAR_DESCRIPTION[route.gear.level]}
+                  {route.gear.note ?? GEAR_DESCRIPTION[route.gear.runout ? "runout" : route.gear.style]}
                   {route.gear.source === "heuristic" && " (Guessed from keywords; check the source.)"}
                 </p>
               </>

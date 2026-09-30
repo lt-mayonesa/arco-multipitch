@@ -1,15 +1,15 @@
-import type { GearLevel } from "../types";
-import { GEAR_DESCRIPTION, GEAR_LABEL } from "../lib/gear";
+import { GEAR_DESCRIPTION, GEAR_LABEL, type GearBadgeKind } from "../lib/gear";
 
 interface Props {
-  level: GearLevel;
+  kind: GearBadgeKind;
   size?: "sm" | "md";
 }
 
-export function GearBadge({ level, size = "md" }: Props) {
+export function GearBadge({ kind, size = "md" }: Props) {
   return (
-    <span className={`gear-badge gear-badge--${level} gear-badge--${size}`} title={GEAR_DESCRIPTION[level]}>
-      {GEAR_LABEL[level]}
+    <span className={`gear-badge gear-badge--${kind} gear-badge--${size}`} title={GEAR_DESCRIPTION[kind]}>
+      {kind === "runout" && "⚠ "}
+      {GEAR_LABEL[kind]}
     </span>
   );
 }

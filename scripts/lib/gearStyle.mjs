@@ -1,4 +1,5 @@
-// Protection style per route: "bolted" | "runout" | "trad" (null = write-up says nothing).
+// Protection per route: style "bolted" | "trad" (null = write-up says nothing),
+// plus a `runout` flag that only decorates bolted routes.
 //
 // The source posts never have a structured gear section (see
 // design/gear-mentions.noqa.md): protection style is scattered free text, and
@@ -7,13 +8,14 @@
 // sentences, with a short English note paraphrasing the author. A keyword
 // heuristic only covers posts added after this table was written, and warns.
 //
+// Table values:
 //   bolted  fixed protection (bolts, or pitons/threaded slings on older lines)
 //           is enough; quickdraws + slings. An optional cam may be mentioned.
-//   runout  mostly fixed protection, but the author flags a big runout: spaced
-//           or missing bolts, sometimes backed up with a cam, sometimes not
-//           protectable at all.
+//   runout  shorthand for bolted + runout: mostly fixed protection, but the
+//           author flags a big runout (spaced or missing bolts, sometimes backed
+//           up with a cam, sometimes not protectable at all).
 //   trad    alpine style: you must place your own gear (cams/nuts/slings) on
-//           several stretches or whole pitches. Takes priority over runout.
+//           several stretches or whole pitches. Never flagged runout.
 
 /** @type {Record<string, ["bolted" | "runout" | "trad" | null, string | null]>} */
 const CURATED = {
@@ -101,13 +103,19 @@ function heuristic(fullText) {
   return /chiodatura|spit|fix\b|protezion|chiodi|cordon/i.test(fullText) ? "bolted" : null;
 }
 
-/** @returns {{ level: "bolted" | "runout" | "trad" | null, note: string | null, source: "curated" | "heuristic" }} */
+/** "runout" table value -> bolted style + runout flag. */
+function toGear(level, note, source) {
+  const style = level === "runout" ? "bolted" : level;
+  return { style, runout: level === "runout", note, source };
+}
+
+/** @returns {{ style: "bolted" | "trad" | null, runout: boolean, note: string | null, source: "curated" | "heuristic" }} */
 export function classifyGear(slug, fullText) {
   if (slug in CURATED) {
     const [level, note] = CURATED[slug];
-    return { level, note, source: "curated" };
+    return toGear(level, note, "curated");
   }
   const level = heuristic(fullText);
   console.warn(`gear: ${slug} not curated, heuristic says ${level}; add it to scripts/lib/gearStyle.mjs`);
-  return { level, note: null, source: "heuristic" };
+  return toGear(level, null, "heuristic");
 }

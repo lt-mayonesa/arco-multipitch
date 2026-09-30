@@ -69,6 +69,11 @@ has a hand-reviewed table of all 69 slugs → `gear: { level, note, source }`:
 - `trad` (22): alpine style, you must place gear. Beats `runout`.
 - `null` (3): write-up doesn't say.
 
+Later reshaped to `gear: { style: "bolted" | "trad" | null, runout, note, source }`:
+runout is a flag on bolted routes, not a peer of trad. The map colours pins
+by style only (legend: Bolted / Trad / Unknown / Filtered out); runout shows
+in list/detail and has its own "Hide runout routes" filter.
+
 Each has a short English `note` paraphrasing the author. Posts not in the
 table fall back to a keyword heuristic (`source: "heuristic"`, ~2/3 agreement
 with the curated set) and 02 warns so they get curated. UI: Trad/Runout

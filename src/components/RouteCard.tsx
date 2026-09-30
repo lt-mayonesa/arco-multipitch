@@ -43,9 +43,8 @@ export function RouteCard({ route, isFavorite, onToggleFavorite, onOpen }: Props
           <span>{route.numPitches} pitches</span>
           <span>{route.totalLengthM}m</span>
           {/* Bolted is the default; only flag routes that need a rack or a steady head. */}
-          {(route.gear.level === "trad" || route.gear.level === "runout") && (
-            <GearBadge level={route.gear.level} size="sm" />
-          )}
+          {route.gear.style === "trad" && <GearBadge kind="trad" size="sm" />}
+          {route.gear.style === "bolted" && route.gear.runout && <GearBadge kind="runout" size="sm" />}
         </div>
       </div>
     </article>

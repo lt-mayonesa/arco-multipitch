@@ -34,6 +34,7 @@ export function FilterBar({
     (filters.favoritesOnly ? 1 : 0) +
     (filters.sun !== "any" ? 1 : 0) +
     (filters.gear !== "any" ? 1 : 0) +
+    (filters.hideRunout ? 1 : 0) +
     (filters.maxPitches != null ? 1 : 0) +
     (filters.minGradeIdx > 0 || filters.maxGradeIdx < FRENCH_GRADE_SCALE.length - 1 ? 1 : 0);
 
@@ -127,6 +128,14 @@ export function FilterBar({
                 </button>
               ))}
             </div>
+            <label className="filter-panel__sub">
+              <input
+                type="checkbox"
+                checked={filters.hideRunout}
+                onChange={(e) => set("hideRunout", e.target.checked)}
+              />{" "}
+              Hide runout routes
+            </label>
           </div>
 
           <div className="filter-panel__group">

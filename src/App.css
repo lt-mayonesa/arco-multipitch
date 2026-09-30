@@ -151,9 +151,6 @@
 .map-pin--trad {
   --pin: var(--trad);
 }
-.map-pin--runout {
-  --pin: var(--runout);
-}
 .map-pin--unknown {
   --pin: var(--text-dim);
 }
@@ -204,6 +201,47 @@
   opacity: 0.5;
   filter: grayscale(1);
 }
+/* Legend strip: colour key for pins. */
+.map-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 10px;
+  margin-top: 6px !important;
+  padding: 4px 8px;
+  border-radius: 8px;
+  background: rgba(20, 22, 27, 0.85);
+  border: 1px solid var(--border);
+  color: var(--text);
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 16px;
+}
+.map-legend__item {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  white-space: nowrap;
+}
+.map-legend__dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: 1px solid var(--bg);
+}
+.map-legend__dot--bolted {
+  background: var(--accent);
+}
+.map-legend__dot--trad {
+  background: var(--trad);
+}
+.map-legend__dot--unknown {
+  background: var(--text-dim);
+}
+.map-legend__dot--dim {
+  background: #4a4f59;
+  opacity: 0.7;
+}
+
 /* Cluster: conic-gradient ring (gear share, grey = filtered out) around the count. */
 .map-cluster {
   width: 42px;
@@ -358,6 +396,9 @@
   font-size: 0.8rem;
 }
 
+.filter-panel__group .filter-panel__sub {
+  margin: 8px 0 0;
+}
 .filter-panel__hint {
   display: block;
   margin-top: 2px;
@@ -530,6 +571,11 @@
   border-color: var(--trad-border);
   color: var(--trad);
 }
+.gear-badge--bolted {
+  background: var(--accent-dim);
+  border-color: var(--accent-border);
+  color: var(--accent);
+}
 .gear-badge--runout {
   background: var(--runout-dim);
   border-color: var(--runout-border);
@@ -623,6 +669,12 @@
   align-items: flex-start;
   gap: 8px;
   margin: 0 0 10px;
+}
+.route-detail__gear-badges {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4px;
 }
 .route-detail__gear p {
   margin: 1px 0 0;

@@ -3,7 +3,7 @@ import L from "leaflet";
 import { useEffect, useMemo, useRef, useState } from "react";
 import { createPortal } from "react-dom";
 import { AttributionControl, Circle, CircleMarker, MapContainer, Marker, TileLayer, useMap } from "react-leaflet";
-import type { GearLevel, Route } from "../types";
+import type { GearStyle, Route } from "../types";
 
 interface Props {
   /** Routes drawn on the map (matching + greyed-out). */
@@ -33,8 +33,10 @@ function chipText(r: Route) {
   return `${approx}${r.numPitches}p · ${len}`;
 }
 
-type GearKey = GearLevel | "unknown";
-const gearKey = (r: Route): GearKey => r.gear.level ?? "unknown";
+// Map colours only distinguish bolted vs trad; runout is a detail of bolted
+// routes, shown in the list/detail only.
+type GearKey = GearStyle | "unknown";
+const gearKey = (r: Route): GearKey => r.gear.style ?? "unknown";
 
 // The pin is a 30px rounded square rotated 45°; its tip sits ~21px below the
 // icon centre (30 * sqrt(2) / 2), ~28px when the active pin is scaled 1.3x.
@@ -54,10 +56,9 @@ function pinIcon(r: Route, { active = false, dim = false } = {}) {
 }
 
 // Cluster ring: one arc per gear level for matching routes, then grey for the rest.
-const RING_ORDER: GearKey[] = ["trad", "runout", "bolted", "unknown"];
+const RING_ORDER: GearKey[] = ["trad", "bolted", "unknown"];
 const RING_COLOR: Record<GearKey | "dim", string> = {
   trad: "var(--trad)",
-  runout: "var(--runout)",
   bolted: "var(--accent)",
   unknown: "var(--text-dim)",
   dim: "#4a4f59",
@@ -93,6 +94,43 @@ function clusterIcon(cluster: L.MarkerCluster) {
       `style="background: conic-gradient(${stops.join(", ")})"><span>${label}</span></div>`,
     iconSize: [42, 42],
   });
+}
+
+/** Always-on colour key, top-right under the attribution (bottom corners sit under the sheet). */
+function Legend({ showFiltered }: { showFiltered: boolean }) {
+  const map = useMap();
+  const [container] = useState(() => L.DomUtil.create("div", "leaflet-control map-legend"));
+  useEffect(() => {
+    const control = new (L.Control.extend({ onAdd: () => container }))({ position: "topright" });
+    control.addTo(map);
+    L.DomEvent.disableClickPropagation(container);
+    return () => {
+      control.remove();
+    };
+  }, [map, container]);
+  return createPortal(
+    <>
+      <span className="map-legend__item">
+        <i className="map-legend__dot map-legend__dot--bolted" />
+        Bolted
+      </span>
+      <span className="map-legend__item">
+        <i className="map-legend__dot map-legend__dot--trad" />
+        Trad
+      </span>
+      <span className="map-legend__item">
+        <i className="map-legend__dot map-legend__dot--unknown" />
+        Unknown
+      </span>
+      {showFiltered && (
+        <span className="map-legend__item">
+          <i className="map-legend__dot map-legend__dot--dim" />
+          Filtered out
+        </span>
+      )}
+    </>,
+    container,
+  );
 }
 
 /** Toggles the chip labels on the map container by zoom level. */
@@ -202,7 +240,8 @@ function ViewController({ routes, matchSlugs, selectedRoute, bottomInset }: Omit
     // Debounced so typing in the search box doesn't queue a zoom per keystroke.
     const id = window.setTimeout(() => {
       map.fitBounds(L.latLngBounds(pts), {
-        paddingTopLeft: [40, 40],
+        // Top padding clears the legend strip.
+        paddingTopLeft: [40, 80],
         paddingBottomRight: [40, insetRef.current + 30],
         maxZoom: SELECT_ZOOM,
       });
@@ -332,6 +371,7 @@ export function MapView({ routes, matchSlugs, selectedRoute, onOpen, bottomInset
         {/* Bottom corners are under the sheet, so keep controls at the top. */}
         <AttributionControl position="topright" prefix={false} />
         <InvalidateOnResize />
+        <Legend showFiltered={routes.some((r) => !matchSlugs.has(r.slug))} />
         <LabelZoomClass />
         <ClusteredPins routes={routes} matchSlugs={matchSlugs} selectedSlug={selectedRoute?.slug ?? null} onOpen={onOpen} />
         {selectedRoute?.location && (
