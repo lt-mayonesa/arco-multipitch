@@ -1,0 +1,761 @@
+{
+  "anche-le-donne-vogliono-arrampicare": {
+    "name": "Sass dela Vecia",
+    "wall": {
+      "lat": 45.9594472,
+      "lon": 10.8973975,
+      "precision": "guess",
+      "source": "nominatim: Coste dell'Anglone (parent zone!)"
+    },
+    "parking": null,
+    "note": ""
+  },
+  "apollo": {
+    "name": "Parete di Padaro",
+    "wall": {
+      "lat": 45.93731,
+      "lon": 10.86861,
+      "precision": "guess",
+      "source": "old manual table: Parete di Padaro"
+    },
+    "parking": null,
+    "note": ""
+  },
+  "aquarius": {
+    "name": "Ca' di Sopra",
+    "wall": {
+      "lat": 45.604077,
+      "lon": 10.844842,
+      "precision": "guess",
+      "source": "old manual table: Ca' di Sopra"
+    },
+    "parking": null,
+    "note": ""
+  },
+  "archai": {
+    "name": "Anglone Nord",
+    "wall": {
+      "lat": 45.9594472,
+      "lon": 10.8973975,
+      "precision": "guess",
+      "source": "nominatim: Coste dell'Anglone (parent zone!)"
+    },
+    "parking": null,
+    "note": ""
+  },
+  "attraversate": {
+    "name": "Covolo di Butistone",
+    "wall": {
+      "lat": 45.949119,
+      "lon": 11.7256405,
+      "precision": "guess",
+      "source": "nominatim: Covolo di Butistone, Valsugana, Italy"
+    },
+    "parking": null,
+    "note": ""
+  },
+  "babilonia": {
+    "name": "Cima Capi",
+    "wall": {
+      "lat": 45.8695438,
+      "lon": 10.8286087,
+      "precision": "guess",
+      "source": "nominatim: Cima Capi"
+    },
+    "parking": null,
+    "note": ""
+  },
+  "bella-e-cattiva": {
+    "name": "Cima Capi",
+    "wall": {
+      "lat": 45.8695438,
+      "lon": 10.8286087,
+      "precision": "guess",
+      "source": "nominatim: Cima Capi"
+    },
+    "parking": null,
+    "note": ""
+  },
+  "bella-gioia": {
+    "name": "Parete Rigata",
+    "wall": {
+      "lat": 45.60294,
+      "lon": 10.84111,
+      "precision": "guess",
+      "source": "old manual table: Parete Rigata"
+    },
+    "parking": null,
+    "note": ""
+  },
+  "cane-cico": {
+    "name": "Antiscudo",
+    "wall": {
+      "lat": 45.9594472,
+      "lon": 10.8973975,
+      "precision": "guess",
+      "source": "nominatim: Coste dell'Anglone (parent zone!)"
+    },
+    "parking": null,
+    "note": ""
+  },
+  "castagnarte": {
+    "name": "Parete di Pezol",
+    "wall": {
+      "lat": 45.924515,
+      "lon": 10.913872,
+      "precision": "guess",
+      "source": "nominatim: Parete di Pezol"
+    },
+    "parking": null,
+    "note": ""
+  },
+  "cercando-la-trincea": {
+    "name": "Parete di Pezol",
+    "wall": {
+      "lat": 45.924515,
+      "lon": 10.913872,
+      "precision": "guess",
+      "source": "nominatim: Parete di Pezol"
+    },
+    "parking": null,
+    "note": ""
+  },
+  "ciao-rita": {
+    "name": "Parete di Pezol",
+    "wall": {
+      "lat": 45.924515,
+      "lon": 10.913872,
+      "precision": "guess",
+      "source": "nominatim: Parete di Pezol"
+    },
+    "parking": null,
+    "note": ""
+  },
+  "cima-alle-coste-parete-di-sherwood-via-little-john": {
+    "name": "Multipitch",
+    "wall": {
+      "lat": 45.9793393,
+      "lon": 10.9129,
+      "precision": "guess",
+      "source": "mymaps"
+    },
+    "parking": null,
+    "note": ""
+  },
+  "claudia-22": {
+    "name": "Parete di Pezol",
+    "wall": {
+      "lat": 45.924515,
+      "lon": 10.913872,
+      "precision": "guess",
+      "source": "nominatim: Parete di Pezol"
+    },
+    "parking": null,
+    "note": ""
+  },
+  "cuore-doro": {
+    "name": "Anglone Sud",
+    "wall": {
+      "lat": 45.9594472,
+      "lon": 10.8973975,
+      "precision": "guess",
+      "source": "nominatim: Anglone Sud"
+    },
+    "parking": null,
+    "note": ""
+  },
+  "datti-una-mossa": {
+    "name": "Parete di Tessari",
+    "wall": {
+      "lat": 45.59449,
+      "lon": 10.8363,
+      "precision": "guess",
+      "source": "old manual table: Parete di Tessari"
+    },
+    "parking": null,
+    "note": ""
+  },
+  "davide-pinamonti": {
+    "name": "Mandrea",
+    "wall": {
+      "lat": 45.9479279,
+      "lon": 10.8864469,
+      "precision": "guess",
+      "source": "nominatim: Mandrea"
+    },
+    "parking": null,
+    "note": ""
+  },
+  "di-tutto-un-po": {
+    "name": "Cà del Liscio",
+    "wall": {
+      "lat": 45.9594472,
+      "lon": 10.8973975,
+      "precision": "guess",
+      "source": "nominatim: Coste dell'Anglone (parent zone!)"
+    },
+    "parking": null,
+    "note": ""
+  },
+  "diedro-baldessarini": {
+    "name": "Sass dela Vecia",
+    "wall": {
+      "lat": 45.9595074,
+      "lon": 10.8950632,
+      "precision": "guess",
+      "source": "mymaps"
+    },
+    "parking": null,
+    "note": ""
+  },
+  "diedro-rosso": {
+    "name": "Piramide Lakshmi",
+    "wall": {
+      "lat": 45.9744619,
+      "lon": 10.915002,
+      "precision": "guess",
+      "source": "mymaps"
+    },
+    "parking": null,
+    "note": ""
+  },
+  "ego-trip-mandrea": {
+    "name": "Mandrea Nord",
+    "wall": {
+      "lat": 45.9413919,
+      "lon": 10.880456,
+      "precision": "guess",
+      "source": "mymaps"
+    },
+    "parking": null,
+    "note": ""
+  },
+  "eliseo": {
+    "name": "Covolo di Butistone",
+    "wall": {
+      "lat": 45.949119,
+      "lon": 11.7256405,
+      "precision": "guess",
+      "source": "nominatim: Covolo di Butistone, Valsugana, Italy"
+    },
+    "parking": null,
+    "note": ""
+  },
+  "ernia": {
+    "name": "Cima Capi",
+    "wall": {
+      "lat": 45.8695438,
+      "lon": 10.8286087,
+      "precision": "guess",
+      "source": "nominatim: Cima Capi"
+    },
+    "parking": null,
+    "note": ""
+  },
+  "esclusivamente-per-tutti": {
+    "name": "Lo Scudo",
+    "wall": {
+      "lat": 45.979656,
+      "lon": 10.913951,
+      "precision": "guess",
+      "source": "old manual table: Lo Scudo"
+    },
+    "parking": null,
+    "note": ""
+  },
+  "esculapio": {
+    "name": "Parete di Padaro",
+    "wall": {
+      "lat": 45.93731,
+      "lon": 10.86861,
+      "precision": "guess",
+      "source": "old manual table: Parete di Padaro"
+    },
+    "parking": null,
+    "note": ""
+  },
+  "favola-ledrense": {
+    "name": "Cima Capi",
+    "wall": {
+      "lat": 45.8695438,
+      "lon": 10.8286087,
+      "precision": "guess",
+      "source": "nominatim: Cima Capi"
+    },
+    "parking": null,
+    "note": ""
+  },
+  "fiaba-nel-bosco": {
+    "name": "Piramide Lakshmi",
+    "wall": {
+      "lat": 45.9698026,
+      "lon": 10.9099066,
+      "precision": "guess",
+      "source": "mymaps"
+    },
+    "parking": null,
+    "note": ""
+  },
+  "fruit-vegetables": {
+    "name": "Il Transatlantico",
+    "wall": {
+      "lat": 46.01111,
+      "lon": 10.9301,
+      "precision": "guess",
+      "source": "old manual table: Il Transatlantico"
+    },
+    "parking": null,
+    "note": ""
+  },
+  "ghiro-in-tondo": {
+    "name": "Parete dell'Ir Inferiore",
+    "wall": {
+      "lat": 45.9183768,
+      "lon": 10.9148437,
+      "precision": "guess",
+      "source": "nominatim: Parete dell'Ir Inferiore"
+    },
+    "parking": null,
+    "note": ""
+  },
+  "giubileo": {
+    "name": "Parete Due Laghi",
+    "wall": {
+      "lat": 46.026,
+      "lon": 10.916,
+      "precision": "guess",
+      "source": "old manual table: Parete Due Laghi"
+    },
+    "parking": null,
+    "note": ""
+  },
+  "guide-alpine": {
+    "name": "monte baone",
+    "wall": {
+      "lat": 45.925,
+      "lon": 10.878,
+      "precision": "guess",
+      "source": "old manual table: monte baone"
+    },
+    "parking": null,
+    "note": ""
+  },
+  "il-cammino-dellarco": {
+    "name": "Parete dei Due Sassi",
+    "wall": {
+      "lat": 45.9808253,
+      "lon": 10.9249164,
+      "precision": "guess",
+      "source": "nominatim: Valle del Sarca (parent zone!)"
+    },
+    "parking": null,
+    "note": ""
+  },
+  "il-gran-diedro": {
+    "name": "Parete Due Laghi",
+    "wall": {
+      "lat": 46.026,
+      "lon": 10.916,
+      "precision": "guess",
+      "source": "old manual table: Parete Due Laghi"
+    },
+    "parking": null,
+    "note": ""
+  },
+  "il-profondo-risetto-dellindria": {
+    "name": "Anglone Nord",
+    "wall": {
+      "lat": 45.9594472,
+      "lon": 10.8973975,
+      "precision": "guess",
+      "source": "nominatim: Coste dell'Anglone (parent zone!)"
+    },
+    "parking": null,
+    "note": ""
+  },
+  "jean-jean": {
+    "name": "Antiscudo",
+    "wall": {
+      "lat": 45.9594472,
+      "lon": 10.8973975,
+      "precision": "guess",
+      "source": "nominatim: Coste dell'Anglone (parent zone!)"
+    },
+    "parking": null,
+    "note": ""
+  },
+  "karlovacko": {
+    "name": "I Pilastri",
+    "wall": {
+      "lat": 45.9396011,
+      "lon": 10.8773284,
+      "precision": "guess",
+      "source": "mymaps"
+    },
+    "parking": null,
+    "note": ""
+  },
+  "la-cengia-rossa": {
+    "name": "Multipitch",
+    "wall": {
+      "lat": 45.9353334,
+      "lon": 10.8919573,
+      "precision": "guess",
+      "source": "mymaps"
+    },
+    "parking": null,
+    "note": ""
+  },
+  "la-piccola-piramide": {
+    "name": "Anglone Nord",
+    "wall": {
+      "lat": 45.9594472,
+      "lon": 10.8973975,
+      "precision": "guess",
+      "source": "nominatim: Coste dell'Anglone (parent zone!)"
+    },
+    "parking": null,
+    "note": ""
+  },
+  "la-piccola-verticalita": {
+    "name": "Anglone Sud",
+    "wall": {
+      "lat": 45.9594472,
+      "lon": 10.8973975,
+      "precision": "guess",
+      "source": "nominatim: Anglone Sud"
+    },
+    "parking": null,
+    "note": ""
+  },
+  "le-scalette-dellindria": {
+    "name": "Anglone Nord",
+    "wall": {
+      "lat": 45.9594472,
+      "lon": 10.8973975,
+      "precision": "guess",
+      "source": "nominatim: Coste dell'Anglone (parent zone!)"
+    },
+    "parking": null,
+    "note": ""
+  },
+  "linquisitore": {
+    "name": "Parete dell'Ir Superiore",
+    "wall": {
+      "lat": 45.9186104,
+      "lon": 10.9188874,
+      "precision": "guess",
+      "source": "nominatim: Parete dell'Ir Superiore"
+    },
+    "parking": null,
+    "note": ""
+  },
+  "lombra-e-lapparizione-del-mondo": {
+    "name": "Anglone Nord",
+    "wall": {
+      "lat": 45.9594472,
+      "lon": 10.8973975,
+      "precision": "guess",
+      "source": "nominatim: Coste dell'Anglone (parent zone!)"
+    },
+    "parking": null,
+    "note": ""
+  },
+  "luce-e-colori": {
+    "name": "Anglone Sud",
+    "wall": {
+      "lat": 45.9594472,
+      "lon": 10.8973975,
+      "precision": "guess",
+      "source": "nominatim: Anglone Sud"
+    },
+    "parking": null,
+    "note": ""
+  },
+  "luna-85": {
+    "name": "Placche Zebrate",
+    "wall": {
+      "lat": 45.9998747,
+      "lon": 10.9184491,
+      "precision": "guess",
+      "source": "nominatim: Placche Zebrate"
+    },
+    "parking": null,
+    "note": ""
+  },
+  "lungo-il-fiume-e-sullacqua": {
+    "name": "Parete di Tessari",
+    "wall": {
+      "lat": 45.59449,
+      "lon": 10.8363,
+      "precision": "guess",
+      "source": "old manual table: Parete di Tessari"
+    },
+    "parking": null,
+    "note": ""
+  },
+  "minuetto-a-ceniga": {
+    "name": "cima alle coste",
+    "wall": {
+      "lat": 45.9594472,
+      "lon": 10.8973975,
+      "precision": "guess",
+      "source": "nominatim: Coste dell'Anglone (parent zone!)"
+    },
+    "parking": null,
+    "note": ""
+  },
+  "molla-tutto": {
+    "name": "Parete Centrale",
+    "wall": {
+      "lat": 45.9479279,
+      "lon": 10.8864469,
+      "precision": "guess",
+      "source": "nominatim: Mandrea (parent zone!)"
+    },
+    "parking": null,
+    "note": ""
+  },
+  "ne-vale-la-pena": {
+    "name": "Ca' di Sopra",
+    "wall": {
+      "lat": 45.604077,
+      "lon": 10.844842,
+      "precision": "guess",
+      "source": "old manual table: Ca' di Sopra"
+    },
+    "parking": null,
+    "note": ""
+  },
+  "nonni-sprint": {
+    "name": "Piramide Lakshmi",
+    "wall": {
+      "lat": 45.9719715,
+      "lon": 10.9121267,
+      "precision": "guess",
+      "source": "mymaps"
+    },
+    "parking": null,
+    "note": ""
+  },
+  "passi-falsi": {
+    "name": "Rupe Secca",
+    "wall": {
+      "lat": 45.9309454,
+      "lon": 10.8888915,
+      "precision": "guess",
+      "source": "mymaps"
+    },
+    "parking": null,
+    "note": ""
+  },
+  "pirata-samu": {
+    "name": "Spalti dell'Orsa",
+    "wall": {
+      "lat": 45.65282,
+      "lon": 10.86266,
+      "precision": "guess",
+      "source": "old manual table: Spalti dell'Orsa"
+    },
+    "parking": null,
+    "note": ""
+  },
+  "plaisir": {
+    "name": "Cima Capi",
+    "wall": {
+      "lat": 45.8695438,
+      "lon": 10.8286087,
+      "precision": "guess",
+      "source": "nominatim: Cima Capi"
+    },
+    "parking": null,
+    "note": ""
+  },
+  "poison-ivy": {
+    "name": "Ca' di Sopra",
+    "wall": {
+      "lat": 45.604077,
+      "lon": 10.844842,
+      "precision": "guess",
+      "source": "old manual table: Ca' di Sopra"
+    },
+    "parking": null,
+    "note": ""
+  },
+  "porci-con-le-ali": {
+    "name": "Multipitch",
+    "wall": {
+      "lat": 45.9370644,
+      "lon": 10.8927727,
+      "precision": "guess",
+      "source": "mymaps"
+    },
+    "parking": null,
+    "note": ""
+  },
+  "premiata-forneria-pfitscher": {
+    "name": "Antiscudo",
+    "wall": {
+      "lat": 45.9594472,
+      "lon": 10.8973975,
+      "precision": "guess",
+      "source": "nominatim: Coste dell'Anglone (parent zone!)"
+    },
+    "parking": null,
+    "note": ""
+  },
+  "rampa-centrale": {
+    "name": "Parete Due Laghi",
+    "wall": {
+      "lat": 46.026,
+      "lon": 10.916,
+      "precision": "guess",
+      "source": "old manual table: Parete Due Laghi"
+    },
+    "parking": null,
+    "note": ""
+  },
+  "sguarauunda": {
+    "name": "Cà del Liscio",
+    "wall": {
+      "lat": 45.9693124,
+      "lon": 10.9083408,
+      "precision": "guess",
+      "source": "mymaps"
+    },
+    "parking": null,
+    "note": ""
+  },
+  "sofia": {
+    "name": "Piramide Lakshmi",
+    "wall": {
+      "lat": 45.9594472,
+      "lon": 10.8973975,
+      "precision": "guess",
+      "source": "nominatim: Coste dell'Anglone (parent zone!)"
+    },
+    "parking": null,
+    "note": ""
+  },
+  "sol-minore": {
+    "name": "Cima Capi",
+    "wall": {
+      "lat": 45.8695438,
+      "lon": 10.8286087,
+      "precision": "guess",
+      "source": "nominatim: Cima Capi"
+    },
+    "parking": null,
+    "note": ""
+  },
+  "spigolo-del-vento": {
+    "name": "Valle dei Laghi",
+    "wall": {
+      "lat": 46.0657422,
+      "lon": 10.9829992,
+      "precision": "guess",
+      "source": "nominatim: Valle dei Laghi"
+    },
+    "parking": null,
+    "note": ""
+  },
+  "sulle-pance-del-pezol": {
+    "name": "Parete di Pezol",
+    "wall": {
+      "lat": 45.924515,
+      "lon": 10.913872,
+      "precision": "guess",
+      "source": "nominatim: Parete di Pezol"
+    },
+    "parking": null,
+    "note": ""
+  },
+  "vecchi-disonesti-e-insoddisfatti": {
+    "name": "I Pilastri",
+    "wall": {
+      "lat": 45.9479279,
+      "lon": 10.8864469,
+      "precision": "guess",
+      "source": "nominatim: Mandrea (parent zone!)"
+    },
+    "parking": null,
+    "note": ""
+  },
+  "via-dante-dassati": {
+    "name": "Parete di Pezol",
+    "wall": {
+      "lat": 45.924515,
+      "lon": 10.913872,
+      "precision": "guess",
+      "source": "nominatim: Parete di Pezol"
+    },
+    "parking": null,
+    "note": ""
+  },
+  "via-del-dottore": {
+    "name": "Piramide Lakshmi",
+    "wall": {
+      "lat": 45.9594472,
+      "lon": 10.8973975,
+      "precision": "guess",
+      "source": "nominatim: Coste dell'Anglone (parent zone!)"
+    },
+    "parking": null,
+    "note": ""
+  },
+  "via-del-missile": {
+    "name": "Monte Casale",
+    "wall": {
+      "lat": 46.0314941,
+      "lon": 10.9276627,
+      "precision": "guess",
+      "source": "nominatim: Monte Casale"
+    },
+    "parking": null,
+    "note": ""
+  },
+  "via-della-rampa-2": {
+    "name": "Parete di Padaro",
+    "wall": {
+      "lat": 45.93731,
+      "lon": 10.86861,
+      "precision": "guess",
+      "source": "old manual table: Parete di Padaro"
+    },
+    "parking": null,
+    "note": ""
+  },
+  "via-della-rondine": {
+    "name": "Parete di Romagnano",
+    "wall": {
+      "lat": 46.0095768,
+      "lon": 11.0997293,
+      "precision": "guess",
+      "source": "mymaps"
+    },
+    "parking": null,
+    "note": ""
+  },
+  "via-dellincontro": {
+    "name": "Parete dell'Ir Inferiore",
+    "wall": {
+      "lat": 45.9183768,
+      "lon": 10.9148437,
+      "precision": "guess",
+      "source": "nominatim: Parete dell'Ir Inferiore"
+    },
+    "parking": null,
+    "note": ""
+  },
+  "via-dellincontro-superiore": {
+    "name": "Parete dell'Ir Superiore",
+    "wall": {
+      "lat": 45.9186104,
+      "lon": 10.9188874,
+      "precision": "guess",
+      "source": "nominatim: Parete dell'Ir Superiore"
+    },
+    "parking": null,
+    "note": ""
+  }
+}

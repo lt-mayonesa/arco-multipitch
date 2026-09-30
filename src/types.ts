@@ -28,12 +28,24 @@ export interface Gear {
   source: "curated" | "heuristic";
 }
 
+/**
+ * "exact": pinned from a named map feature / published coordinates;
+ * "approx": estimated from descriptions; "guess": unreviewed automatic guess.
+ */
+export type LocationPrecision = "exact" | "approx" | "guess";
+
+/** Curated per route in data/locations.json (see scripts/03b-apply-locations.mjs). */
 export interface Location {
+  /** Base of the route (or the wall when the start isn't pinned). */
   lat: number;
   lon: number;
-  source: "mymaps" | "nominatim" | "nominatim-fallback" | "manual";
-  matchedName?: string | null;
-  query?: string;
+  /** Provenance of the wall point, free text. */
+  source: string;
+  /** Wall / sector the point refers to. */
+  matchedName: string | null;
+  precision: LocationPrecision;
+  /** Where the approach starts. */
+  parking: { lat: number; lon: number; precision: LocationPrecision } | null;
 }
 
 /**

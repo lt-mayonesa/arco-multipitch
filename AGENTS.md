@@ -33,8 +33,9 @@ and both must pass. Don't add new lint warnings (a few pre-existing ones in
 - `src/types.ts` — `Route` / `Pitch` / `Location` schema. Source of truth for data shape.
 - `src/data/routes.json` — shipped dataset (copy of `data/routes.json`).
 - `scripts/` — one-off Node scraping pipeline (`01`–`05`, run in order; see README).
-- `data/` — pipeline inputs/outputs. Only `routes.json` and `translation-*.md`
-  are committed; the rest is gitignored intermediate state.
+- `data/` — pipeline inputs/outputs. Only `routes.json`, `locations.json`
+  (curated wall + parking per slug) and `translation-*.md` are committed; the
+  rest is gitignored intermediate state.
 - `public/photos/<slug>/NN.webp` — route photos (~110MB, lazily cached by SW).
 - `design/` — static mockups and issue write-ups (`*.noqa.md`). Not part of the build.
 
@@ -82,6 +83,9 @@ and both must pass. Don't add new lint warnings (a few pre-existing ones in
   decorates bolted routes; map colours show style only) is a hand-curated per-slug
   table in `scripts/lib/gearStyle.mjs` (see `design/gear-mentions.noqa.md`).
   New posts get a keyword guess and a warning from `02`; add them to the table.
+- Route coordinates live in `data/locations.json` (hand-researched once per
+  slug; `precision: "guess"` = unreviewed). Edit that file, not the geocoding
+  heuristics in `03-seed-locations.mjs`, to fix a pin.
 - Grade conversion (UIAA → French) is approximate; logic duplicated in
   `scripts/lib/gradeConvert.mjs` and `src/lib/grades.ts` — keep them in sync.
 - Route text/photos are © howtoreachthesky.com; every route detail must keep

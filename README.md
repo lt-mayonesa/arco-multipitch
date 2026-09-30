@@ -66,10 +66,14 @@ the pipeline in `scripts/`, run in order:
    (length + grade), overall grade, crag/zone breadcrumb, photos with their
    caption and the section they belong to (approach / pitch N / after the
    climb — see `scripts/lib/photoContext.mjs`), and a best-effort sun/shade hint.
-3. `03-geocode.mjs` — resolve coordinates per route: first from the author's
-   own [Google My Maps](https://www.google.com/maps/d/viewer?mid=1GiPSPBfJ3fAEv9aDSrHRLjdJZsBSdjT3)
-   KML export (matched by source URL), then OpenStreetMap Nominatim by
-   crag/zone name, with a few manual overrides for crags Nominatim doesn't know.
+3. `03b-apply-locations.mjs` — attach each route's wall + parking coordinates
+   from the committed, hand-curated `data/locations.json` (keyed by slug, with
+   precision `exact` / `approx` / `guess` and a source per point). No network.
+   Fails on routes without an entry: for new posts run
+   `03-seed-locations.mjs` first, which adds guesses (author's
+   [Google My Maps](https://www.google.com/maps/d/viewer?mid=1GiPSPBfJ3fAEv9aDSrHRLjdJZsBSdjT3)
+   KML by post URL — only covers posts up to ~2021 — then a curated entry for
+   the same wall, then Nominatim), and review them by hand.
 4. `04-export-for-translation.mjs` — dump every route's Italian intro/outro
    blurb and photo caption into `data/translation-source.md`, keyed by
    `<slug>::intro` / `<slug>::outro` / `<slug>::photo-NN` (NN = photo file).
@@ -89,7 +93,8 @@ the pipeline in `scripts/`, run in order:
 ```bash
 node scripts/01-fetch-posts.mjs
 node scripts/02-parse-routes.mjs
-node scripts/03-geocode.mjs
+node scripts/03-seed-locations.mjs   # only if new posts; review data/locations.json
+node scripts/03b-apply-locations.mjs
 node scripts/04-export-for-translation.mjs
 # translate data/translation-source.md -> data/translation-en.md here
 node scripts/04b-merge-translations.mjs
