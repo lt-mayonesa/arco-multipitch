@@ -26,7 +26,8 @@ and both must pass. Don't add new lint warnings (a few pre-existing ones in
   `RouteCard`, `RouteDetail`, `PhotoModal`, `GradeBadge`.
 - `src/lib/` — hooks and helpers: `useFilters` (filter/sort state + logic),
   `useFavorites` (localStorage trip list), `useHashRoute` (`#/route/<slug>`
-  router), bottom-sheet hook, `grades.ts` (French grade scale),
+  selection), `useBackStack` (back button: collapse sheet / close detail),
+  `useBottomSheet` (overlay sheet gestures + snaps), `grades.ts` (French grade scale),
   `photoGroups.ts`, `leafletIconFix.ts`.
 - `src/types.ts` — `Route` / `Pitch` / `Location` schema. Source of truth for data shape.
 - `src/data/routes.json` — shipped dataset (copy of `data/routes.json`).
@@ -60,7 +61,14 @@ and both must pass. Don't add new lint warnings (a few pre-existing ones in
 - **Leaflet must be told when its container resizes** (`map.invalidateSize()`),
   otherwise tiles render only in the old area (grey band). Prefer layouts where
   the map container size is constant and UI slides *over* it.
-- Leaflet default marker images need `src/lib/leafletIconFix.ts` under Vite.
+- Leaflet default marker images need `src/lib/leafletIconFix.ts` under Vite;
+  it also sets `window.L` for the `leaflet.markercluster` UMD plugin. Import
+  Leaflet plugins via `src/lib/leafletPlugins.ts` only.
+- The sheet is `transform`ed, which traps `position: fixed` descendants: render
+  full-screen overlays (e.g. `PhotoModal`) through `createPortal(…, document.body)`.
+- Sheet gestures: mark scrollable regions inside the sheet with
+  `data-sheet-scroll`; they only scroll at the `full` snap. Map controls must
+  live at the top (bottom corners sit under the sheet).
 - Photo → pitch grouping in `photoGroups.ts` is a positional guess, not real
   data. See `design/photo-pitch-mapping.noqa.md` before touching it.
 - ~9 routes have `approximateData: true` (unparseable pitch data); UI must keep

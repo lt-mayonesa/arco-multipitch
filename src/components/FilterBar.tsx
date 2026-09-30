@@ -10,9 +10,11 @@ interface Props {
   toggleCrag: (crag: string) => void;
   reset: () => void;
   resultCount: number;
+  /** Called when the user starts searching/filtering, so the sheet can expand. */
+  onExpandRequest: () => void;
 }
 
-export function FilterBar({ filters, set, toggleCrag, reset, resultCount }: Props) {
+export function FilterBar({ filters, set, toggleCrag, reset, resultCount, onExpandRequest }: Props) {
   const [open, setOpen] = useState(false);
   const activeCount =
     filters.crags.size +
@@ -30,15 +32,24 @@ export function FilterBar({ filters, set, toggleCrag, reset, resultCount }: Prop
           placeholder="Search route or crag…"
           value={filters.search}
           onChange={(e) => set("search", e.target.value)}
+          onFocus={onExpandRequest}
+          enterKeyHint="search"
         />
         <SortMenu sortKey={filters.sortKey} onChange={(key) => set("sortKey", key)} />
-        <button className="filter-bar__toggle" onClick={() => setOpen((o) => !o)}>
+        <button
+          className="filter-bar__toggle"
+          aria-expanded={open}
+          onClick={() => {
+            if (!open) onExpandRequest();
+            setOpen(!open);
+          }}
+        >
           Filters{activeCount > 0 ? ` (${activeCount})` : ""}
         </button>
       </div>
 
       {open && (
-        <div className="filter-panel">
+        <div className="filter-panel" data-sheet-scroll>
           <div className="filter-panel__group">
             <label>Grade range</label>
             <div className="filter-panel__grade-range">

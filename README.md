@@ -4,10 +4,13 @@ A small offline-capable PWA crib sheet for multipitch climbing routes around
 Arco / Valle del Sarca (and a few further-flung Trentino/Veneto zones), built
 from trip reports on **[howtoreachthesky.com](https://howtoreachthesky.com/)**.
 
-The map is pinned to the top of the screen at all times (drag the handle
-below it to resize, Google-Maps-Android style: peek / half / full-list), with
-a sortable, filterable, searchable list below. Tapping a route replaces the
-list with details — the map stays visible and pans to the route's pin. Every
+The map fills the screen with a Google-Maps-style bottom sheet over it
+(drag or flick anywhere on the sheet's header, or pull down on the list when
+it's scrolled to the top: peek / half / full). Pins are clustered; tap a
+cluster to zoom/spread it, tap a pin or list card to open the route's details
+in the sheet while the map centres its pin above the sheet. The locate button
+shows where you are, and the phone's back button collapses the sheet / closes
+details before leaving the app. Every
 route shows overall + per-pitch grades (converted to the French scale,
 original grade kept alongside), length, pitch count, crag/zone, a short
 English trip-notes summary, and photos grouped by approximate pitch (tap any
@@ -22,8 +25,8 @@ detail links back to its source.
 ## Stack
 
 - Vite + React + TypeScript
-- `react-leaflet` + OpenStreetMap tiles for the map (tiles need a connection;
-  everything else works offline)
+- `react-leaflet` + `leaflet.markercluster` + OpenStreetMap tiles for the map
+  (tiles need a connection; everything else works offline)
 - `vite-plugin-pwa` for the offline service worker + installable manifest
 - A one-off Node scraping pipeline (`scripts/`) that produced `src/data/routes.json`
 

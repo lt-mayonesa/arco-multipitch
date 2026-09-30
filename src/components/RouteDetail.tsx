@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { createPortal } from "react-dom";
 import type { Route } from "../types";
 import { GradeBadge } from "./GradeBadge";
 import { PhotoModal } from "./PhotoModal";
@@ -40,7 +41,7 @@ export function RouteDetail({ route, isFavorite, onToggleFavorite, onClose }: Pr
         </button>
       </div>
 
-      <div className="route-detail__scroll">
+      <div className="route-detail__scroll" data-sheet-scroll>
         {route.photos[0] && (
           <img
             className="route-detail__cover"
@@ -154,14 +155,17 @@ export function RouteDetail({ route, isFavorite, onToggleFavorite, onClose }: Pr
         </div>
       </div>
 
-      {modalIndex != null && (
-        <PhotoModal
-          photos={route.photos}
-          index={modalIndex}
-          onClose={() => setModalIndex(null)}
-          onIndexChange={setModalIndex}
-        />
-      )}
+      {/* Portal: the sheet is transformed, which would trap position:fixed children. */}
+      {modalIndex != null &&
+        createPortal(
+          <PhotoModal
+            photos={route.photos}
+            index={modalIndex}
+            onClose={() => setModalIndex(null)}
+            onIndexChange={setModalIndex}
+          />,
+          document.body,
+        )}
     </div>
   );
 }
