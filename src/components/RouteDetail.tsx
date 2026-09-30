@@ -20,6 +20,39 @@ const SUN_LABEL: Record<string, string> = {
   "mixed-mentioned": "🌤️ Both sun & shade mentioned",
 };
 
+function PinIcon() {
+  return (
+    <svg className="maps-btn__icon" viewBox="0 0 24 24" aria-hidden="true">
+      <path
+        d="M12 22s7-6.2 7-12a7 7 0 1 0-14 0c0 5.8 7 12 7 12z"
+        fill="none"
+        stroke="currentColor"
+        strokeWidth="2"
+        strokeLinejoin="round"
+      />
+      <circle cx="12" cy="10" r="2.5" fill="currentColor" />
+    </svg>
+  );
+}
+
+function CarIcon() {
+  return (
+    <svg className="maps-btn__icon" viewBox="0 0 24 24" aria-hidden="true">
+      <path
+        d="M5 16v2.5M19 16v2.5M3.5 16h17v-4.2L18.3 7a2 2 0 0 0-1.8-1.1H7.5A2 2 0 0 0 5.7 7L3.5 11.8z"
+        fill="none"
+        stroke="currentColor"
+        strokeWidth="2"
+        strokeLinejoin="round"
+        strokeLinecap="round"
+      />
+      <path d="M3.5 12h17" stroke="currentColor" strokeWidth="2" />
+      <circle cx="7.5" cy="14" r="1.2" fill="currentColor" />
+      <circle cx="16.5" cy="14" r="1.2" fill="currentColor" />
+    </svg>
+  );
+}
+
 export function RouteDetail({ route, isFavorite, onToggleFavorite, onClose }: Props) {
   const mapsUrl = route.location
     ? `https://www.google.com/maps?q=${route.location.lat},${route.location.lon}`
@@ -118,15 +151,35 @@ export function RouteDetail({ route, isFavorite, onToggleFavorite, onClose }: Pr
           {route.sunHint.note && <p className="route-detail__sun">{SUN_LABEL[route.sunHint.note]}</p>}
 
           {(mapsUrl || parkingUrl) && (
-            <div className="route-detail__maps-links">
+            <div className="route-detail__maps">
               {mapsUrl && (
-                <a className="route-detail__maps-link" href={mapsUrl} target="_blank" rel="noreferrer">
-                  📍 Open location in Maps
+                <a
+                  className="maps-btn"
+                  href={mapsUrl}
+                  target="_blank"
+                  rel="noreferrer"
+                  aria-label="Open wall location in Google Maps"
+                >
+                  <PinIcon />
+                  <span className="maps-btn__text">
+                    <span className="maps-btn__label">Wall</span>
+                    {route.location!.precision !== "exact" && <span className="maps-btn__sub">approx.</span>}
+                  </span>
                 </a>
               )}
               {parkingUrl && (
-                <a className="route-detail__maps-link" href={parkingUrl} target="_blank" rel="noreferrer">
-                  🚗 Directions to parking{parking!.precision !== "exact" && " (approx.)"}
+                <a
+                  className="maps-btn"
+                  href={parkingUrl}
+                  target="_blank"
+                  rel="noreferrer"
+                  aria-label="Directions to parking in Google Maps"
+                >
+                  <CarIcon />
+                  <span className="maps-btn__text">
+                    <span className="maps-btn__label">Parking</span>
+                    {parking!.precision !== "exact" && <span className="maps-btn__sub">approx.</span>}
+                  </span>
                 </a>
               )}
             </div>
