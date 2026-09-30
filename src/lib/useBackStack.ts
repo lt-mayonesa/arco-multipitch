@@ -10,13 +10,13 @@ import { useEffect, useRef, useState } from "react";
  * guard is pushed. When the app leaves the non-root state through the UI,
  * the guard is consumed with `history.back()`.
  */
-export function useBackStack(active: boolean, hash: string, onBack: () => void) {
+export function useBackStack(active: boolean, hash: string, onBack: () => void, search = window.location.search) {
   const onBackRef = useRef(onBack);
   useEffect(() => {
     onBackRef.current = onBack;
   });
 
-  const baseUrl = useRef(window.location.pathname + window.location.search);
+  const baseUrl = useRef(window.location.pathname + search);
   const pushed = useRef(false);
   const ignorePops = useRef(0);
   const [tick, setTick] = useState(0);
@@ -26,6 +26,15 @@ export function useBackStack(active: boolean, hash: string, onBack: () => void) 
   useEffect(() => {
     history.replaceState({ arcoBase: true }, "", baseUrl.current);
   }, []);
+
+  // Query string changes (e.g. the trip code) rewrite the current entry; the
+  // base entry below a guard is fixed up when we pop back onto it.
+  useEffect(() => {
+    const base = window.location.pathname + search;
+    if (base === baseUrl.current) return;
+    baseUrl.current = base;
+    history.replaceState(history.state, "", base + (pushed.current ? window.location.hash : ""));
+  }, [search]);
 
   useEffect(() => {
     const url = baseUrl.current + hash;
@@ -52,6 +61,9 @@ export function useBackStack(active: boolean, hash: string, onBack: () => void) 
         pushed.current = true;
       } else {
         pushed.current = false;
+        if (window.location.pathname + window.location.search !== baseUrl.current) {
+          history.replaceState(e.state, "", baseUrl.current);
+        }
         onBackRef.current();
       }
       setTick((t) => t + 1);

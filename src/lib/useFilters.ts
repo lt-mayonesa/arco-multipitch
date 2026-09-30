@@ -47,8 +47,8 @@ export const DEFAULT_FILTERS: Filters = {
   sortKey: DEFAULT_SORT_KEY,
 };
 
-export function useFilters() {
-  const [filters, setFilters] = useState<Filters>(DEFAULT_FILTERS);
+export function useFilters(initial?: Partial<Filters>) {
+  const [filters, setFilters] = useState<Filters>(() => ({ ...DEFAULT_FILTERS, ...initial }));
 
   const set = <K extends keyof Filters>(key: K, value: Filters[K]) =>
     setFilters((f) => ({ ...f, [key]: value }));

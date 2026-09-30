@@ -25,10 +25,11 @@ and both must pass. Don't add new lint warnings (a few pre-existing ones in
 - `src/components/` — `MapView` (Leaflet), `FilterBar`, `SortMenu`,
   `RouteCard`, `RouteDetail`, `PhotoModal`, `GradeBadge`.
 - `src/lib/` — hooks and helpers: `useFilters` (filter/sort state + logic),
-  `useFavorites` (localStorage trip list), `useMapGreyOut` (persisted map
+  `useTripList` (trip list: personal in localStorage, or a shared `?trip=<code>`),
+  `tripCode.ts` (trip bitset code), `useToast` + `components/Toast`, `useMapGreyOut` (persisted map
   pref: grey out vs hide filtered pins), `gear.ts` (protection labels/filter), `useHashRoute` (`#/route/<slug>`
   selection), `useBackStack` (back button: collapse sheet / close detail),
-  `useBottomSheet` (overlay sheet gestures + snaps), `useTapDragZoom` (double-tap-and-slide map zoom), `share.ts` (route deep link: share sheet or copy), `grades.ts` (French grade scale),
+  `useBottomSheet` (overlay sheet gestures + snaps), `useTapDragZoom` (double-tap-and-slide map zoom), `share.ts` (route / trip sharing: share sheet or copy), `grades.ts` (French grade scale),
   `photoGroups.ts`, `leafletIconFix.ts`.
 - `src/types.ts` — `Route` / `Pitch` / `Location` schema. Source of truth for data shape.
 - `src/data/routes.json` — shipped dataset (copy of `data/routes.json`).
@@ -89,6 +90,9 @@ and both must pass. Don't add new lint warnings (a few pre-existing ones in
   heuristics in `03-seed-locations.mjs`, to fix a pin.
 - Grade conversion (UIAA → French) is approximate; logic duplicated in
   `scripts/lib/gradeConvert.mjs` and `src/lib/grades.ts` — keep them in sync.
+- Shared trip links encode routes as a bitset in post-id order
+  (`src/lib/tripCode.ts`). Adding routes is safe; **removing a route from the
+  dataset breaks existing trip links**.
 - Route text/photos are © howtoreachthesky.com; every route detail must keep
   its link back to `sourceUrl`.
 

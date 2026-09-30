@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useState } from "react";
+import { useMemo, useState } from "react";
 import { createPortal } from "react-dom";
 import type { Route } from "../types";
 import { GradeBadge } from "./GradeBadge";
@@ -7,6 +7,8 @@ import { GEAR_DESCRIPTION } from "../lib/gear";
 import { PhotoModal } from "./PhotoModal";
 import { groupPhotosByPitch, photoCaption } from "../lib/photoGroups";
 import { shareRoute } from "../lib/share";
+import { useToast } from "../lib/useToast";
+import { Toast } from "./Toast";
 
 interface Props {
   route: Route;
@@ -80,16 +82,11 @@ export function RouteDetail({ route, isFavorite, onToggleFavorite, onClose }: Pr
   }, [photoGroups]);
   const [modalIndex, setModalIndex] = useState<number | null>(null);
   const cover = route.photos[0];
-  const [toast, setToast] = useState<string | null>(null);
-  useEffect(() => {
-    if (!toast) return;
-    const t = window.setTimeout(() => setToast(null), 2200);
-    return () => window.clearTimeout(t);
-  }, [toast]);
+  const toast = useToast();
   const onShare = async () => {
     const result = await shareRoute(route);
-    if (result === "copied") setToast("Link copied");
-    else if (result === "failed") setToast("Couldn't share the link");
+    if (result === "copied") toast.show("Link copied");
+    else if (result === "failed") toast.show("Couldn't share the link");
   };
 
   return (
@@ -295,13 +292,7 @@ export function RouteDetail({ route, isFavorite, onToggleFavorite, onClose }: Pr
       </div>
 
       {/* Portals: the sheet is transformed, which would trap position:fixed children. */}
-      {toast &&
-        createPortal(
-          <div className="toast" role="status">
-            {toast}
-          </div>,
-          document.body,
-        )}
+      <Toast message={toast.message} />
       {modalIndex != null &&
         createPortal(
           <PhotoModal

@@ -1,30 +1,50 @@
 import type { Route } from "../types";
 import { routeHash } from "./useHashRoute";
+import { tripSearch } from "./tripCode";
 
 export type ShareResult = "shared" | "copied" | "cancelled" | "failed";
 
+function appUrl(suffix: string): string {
+  return new URL(`${import.meta.env.BASE_URL}${suffix}`, window.location.origin).href;
+}
+
 /** Deep link that opens the app on this route. */
 export function routeUrl(route: Route): string {
-  return new URL(`${import.meta.env.BASE_URL}${routeHash(route.slug)}`, window.location.origin).href;
+  return appUrl(routeHash(route.slug));
+}
+
+/** "6b+ · 8 pitches"-style summary parts, without empty values. */
+function details(route: Route, short: boolean): string[] {
+  return [
+    route.overallGradeFrench ?? route.overallGradeRaw,
+    short ? `${route.numPitches}p` : `${route.numPitches} pitches`,
+    short && route.totalLengthM ? `${route.totalLengthM}m` : null,
+  ].filter((s): s is string => !!s);
+}
+
+export function shareRoute(route: Route): Promise<ShareResult> {
+  const crag = route.zoneChain.filter((z) => z !== "Multipitch").at(-1);
+  const text = [route.title, ...details(route, false), crag].filter(Boolean).join(" · ");
+  return share({ title: route.title, text, url: routeUrl(route) }, false);
 }
 
 /**
- * Native share sheet when available (phones), otherwise copy the deep link
- * to the clipboard. The caller shows feedback for "copied" / "failed".
+ * Share a trip list: one line per route plus a link that opens the app on
+ * the trip (`?trip=<code>`). The clipboard fallback copies text + link.
  */
-export async function shareRoute(route: Route): Promise<ShareResult> {
-  const url = routeUrl(route);
-  const crag = route.zoneChain.filter((z) => z !== "Multipitch").at(-1);
-  const summary = [
-    route.title,
-    route.overallGradeFrench,
-    `${route.numPitches} pitches`,
-    crag,
-  ]
-    .filter(Boolean)
-    .join(" · ");
-  const data: ShareData = { title: route.title, text: summary, url };
+export function shareTrip(trip: Route[]): Promise<ShareResult> {
+  const title = `Arco trip · ${trip.length} route${trip.length === 1 ? "" : "s"}`;
+  const lines = trip.map((r) => `• ${r.title} — ${[...details(r, true), r.crag].join(" · ")}`);
+  const url = appUrl(tripSearch(trip.map((r) => r.slug)));
+  return share({ title, text: [title, ...lines].join("\n"), url }, true);
+}
 
+/**
+ * Native share sheet when available (phones), otherwise copy to the
+ * clipboard (the URL, or text + URL with `copyWithText`). The caller shows
+ * feedback for "copied" / "failed".
+ */
+async function share(data: { title: string; text: string; url: string }, copyWithText: boolean): Promise<ShareResult> {
   if (navigator.share && (!navigator.canShare || navigator.canShare(data))) {
     try {
       await navigator.share(data);
@@ -34,7 +54,8 @@ export async function shareRoute(route: Route): Promise<ShareResult> {
       // Other errors (e.g. NotAllowedError): fall back to copying.
     }
   }
-  return (await copyText(url)) ? "copied" : "failed";
+  const copy = copyWithText ? `${data.text}\n\n${data.url}` : data.url;
+  return (await copyText(copy)) ? "copied" : "failed";
 }
 
 async function copyText(text: string): Promise<boolean> {

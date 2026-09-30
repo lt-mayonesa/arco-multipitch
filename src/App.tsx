@@ -7,18 +7,29 @@ import { RouteDetail } from "./components/RouteDetail";
 import { routeBySlug, routes } from "./data/routes";
 import { useBackStack } from "./lib/useBackStack";
 import { useBottomSheet, type SnapKey } from "./lib/useBottomSheet";
-import { useFavorites } from "./lib/useFavorites";
 import { useFilteredRoutes, useFilters, useMapRoutes } from "./lib/useFilters";
 import { useMapGreyOut } from "./lib/useMapGreyOut";
 import { routeHash, useHashRoute } from "./lib/useHashRoute";
+import { shareTrip } from "./lib/share";
+import { useTripList } from "./lib/useTripList";
+import { useToast } from "./lib/useToast";
+import { Toast } from "./components/Toast";
 
 // Map fills the screen; the sheet slides over it (Google Maps style).
 const PEEK_PX = 112; // grip + search row / detail title bar
 const HALF_FRACTION = 0.55; // sheet share of the screen at "half"
 
 function App() {
-  const { filters, set, toggleCrag, reset } = useFilters();
-  const { isFavorite, toggle, favorites } = useFavorites();
+  const trip = useTripList();
+  const { isFavorite, toggle, favorites } = trip;
+  // A shared trip link opens straight onto the trip's routes.
+  const { filters, set, toggleCrag, reset } = useFilters(trip.isShared ? { favoritesOnly: true } : undefined);
+  const toast = useToast();
+  const onShareTrip = async () => {
+    const result = await shareTrip(trip.list.map(routeBySlug).filter((r) => r != null));
+    if (result === "copied") toast.show("Trip copied");
+    else if (result === "failed") toast.show("Couldn't share the trip");
+  };
   const filtered = useFilteredRoutes(routes, filters, isFavorite);
   const [greyOut, setGreyOut] = useMapGreyOut();
   const { mapRoutes, matchSlugs } = useMapRoutes(routes, filtered, filters, isFavorite, greyOut);
@@ -43,7 +54,7 @@ function App() {
   useBackStack(!!selectedRoute || snap === "full", routeHash(selectedRoute?.slug ?? null), () => {
     if (snap === "full") setSnap("half");
     else closeRoute();
-  });
+  }, trip.search);
 
   // Frame pins above the sheet, but never assume more than "half" coverage so
   // the view still makes sense when the user collapses a full sheet.
@@ -57,7 +68,7 @@ function App() {
           className={`app__trip-btn ${filters.favoritesOnly ? "app__trip-btn--active" : ""}`}
           onClick={() => set("favoritesOnly", !filters.favoritesOnly)}
         >
-          ★ Trip list · {favorites.size}
+          ★ {trip.isShared ? "Shared trip" : "Trip list"} · {favorites.size}
         </button>
       </header>
 
@@ -112,6 +123,33 @@ function App() {
                 onRevealRequest={reveal}
               />
               <div className="app__sheet-content" data-sheet-scroll>
+                {trip.isShared && (
+                  <div className="trip-bar trip-bar--shared">
+                    <span className="trip-bar__label">
+                      Shared trip · {favorites.size} route{favorites.size === 1 ? "" : "s"}
+                    </span>
+                    <button className="trip-bar__btn" onClick={trip.leaveShared}>
+                      Back to my list
+                    </button>
+                  </div>
+                )}
+                {filters.favoritesOnly && favorites.size > 0 && (
+                  <div className="trip-bar">
+                    <button className="trip-bar__share" onClick={onShareTrip}>
+                      <svg viewBox="0 0 24 24" aria-hidden="true">
+                        <path
+                          d="M12 3v12M7.5 7.5 12 3l4.5 4.5M6 11H5v10h14V11h-1"
+                          fill="none"
+                          stroke="currentColor"
+                          strokeWidth="2"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                        />
+                      </svg>
+                      Share trip list ({favorites.size})
+                    </button>
+                  </div>
+                )}
                 <div className="route-list">
                   {filtered.map((r) => (
                     <RouteCard
@@ -129,6 +167,7 @@ function App() {
           )}
         </div>
       </div>
+      <Toast message={toast.message} />
     </div>
   );
 }
