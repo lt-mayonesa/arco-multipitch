@@ -23,6 +23,17 @@ const SELECT_ZOOM = 14;
 // Crag-level zoom from which pins show their "pitches · length" chip.
 const LABEL_ZOOM = 13;
 
+const CLUSTER_RADIUS = 45;
+
+/**
+ * Padding that keeps framed pins in the visible part of the map: left clears
+ * the zoom/locate column, top the legend plus the pin body (drawn above its
+ * tip), right the pin's chip, bottom the sheet.
+ */
+function framePadding(inset: number) {
+  return { paddingTopLeft: L.point(60, 100), paddingBottomRight: L.point(90, inset + 20) };
+}
+
 const escapeHtml = (t: string) =>
   t.replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" })[c]!);
 
@@ -171,34 +182,66 @@ function InvalidateOnResize() {
   return null;
 }
 
+/**
+ * Cluster click: zoom so all its children land in the visible area (the
+ * default handler fits the whole container, putting pins under the sheet and
+ * controls). Clusters that stay merged even at max zoom (same/near-same
+ * coords) are spiderfied in place instead.
+ */
+function onClusterClick(map: L.Map, cluster: L.MarkerCluster, inset: number) {
+  const bounds = cluster.getBounds();
+  const maxZoom = map.getMaxZoom();
+  const spanAtMax = map.project(bounds.getNorthEast(), maxZoom).distanceTo(map.project(bounds.getSouthWest(), maxZoom));
+  if (spanAtMax < CLUSTER_RADIUS) {
+    map.panTo(centerAbove(map, cluster.getLatLng(), map.getZoom(), inset));
+    cluster.spiderfy();
+    return;
+  }
+  const { paddingTopLeft: tl, paddingBottomRight: br } = framePadding(inset);
+  // Always zoom in at least one level so the cluster splits.
+  const zoom = Math.min(maxZoom, Math.max(map.getZoom() + 1, map.getBoundsZoom(bounds, false, tl.add(br))));
+  const mid = map.project(bounds.getSouthWest(), zoom).add(map.project(bounds.getNorthEast(), zoom)).divideBy(2);
+  map.setView(map.unproject(mid.add(br.subtract(tl).divideBy(2)), zoom), zoom);
+}
+
 function ClusteredPins({
   routes,
   matchSlugs,
   selectedSlug,
   onOpen,
+  bottomInset,
 }: {
   routes: Route[];
   matchSlugs: Set<string>;
   selectedSlug: string | null;
   onOpen: (slug: string) => void;
+  bottomInset: number;
 }) {
   const map = useMap();
   const onOpenRef = useLatest(onOpen);
+  const insetRef = useLatest(bottomInset);
   const [group] = useState(() =>
     L.markerClusterGroup({
       showCoverageOnHover: false,
-      maxClusterRadius: 45,
+      maxClusterRadius: CLUSTER_RADIUS,
       spiderfyDistanceMultiplier: 1.8,
+      // Handled in onClusterClick.
+      zoomToBoundsOnClick: false,
+      spiderfyOnMaxZoom: false,
       iconCreateFunction: clusterIcon,
     }),
   );
 
   useEffect(() => {
     map.addLayer(group);
+    const onClick = (e: L.LeafletEvent) =>
+      onClusterClick(map, (e as L.LeafletEvent & { layer: L.MarkerCluster }).layer, insetRef.current);
+    group.on("clusterclick", onClick);
     return () => {
+      group.off("clusterclick", onClick);
       map.removeLayer(group);
     };
-  }, [map, group]);
+  }, [map, group, insetRef]);
 
   useEffect(() => {
     group.clearLayers();
@@ -239,12 +282,7 @@ function ViewController({ routes, matchSlugs, selectedRoute, bottomInset }: Omit
     if (pts.length === 0) return;
     // Debounced so typing in the search box doesn't queue a zoom per keystroke.
     const id = window.setTimeout(() => {
-      map.fitBounds(L.latLngBounds(pts), {
-        // Top padding clears the legend strip.
-        paddingTopLeft: [40, 80],
-        paddingBottomRight: [40, insetRef.current + 30],
-        maxZoom: SELECT_ZOOM,
-      });
+      map.fitBounds(L.latLngBounds(pts), { ...framePadding(insetRef.current), maxZoom: SELECT_ZOOM });
     }, 250);
     return () => window.clearTimeout(id);
     // eslint-disable-next-line react-hooks/exhaustive-deps
@@ -373,7 +411,10 @@ export function MapView({ routes, matchSlugs, selectedRoute, onOpen, bottomInset
         <InvalidateOnResize />
         <Legend showFiltered={routes.some((r) => !matchSlugs.has(r.slug))} />
         <LabelZoomClass />
-        <ClusteredPins routes={routes} matchSlugs={matchSlugs} selectedSlug={selectedRoute?.slug ?? null} onOpen={onOpen} />
+        <ClusteredPins routes={routes} matchSlugs={matchSlugs} selectedSlug={selectedRoute?.slug ?? null}
+          onOpen={onOpen}
+          bottomInset={bottomInset}
+        />
         {selectedRoute?.location && (
           <Marker
             position={[selectedRoute.location.lat, selectedRoute.location.lon]}
