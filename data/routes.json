@@ -67,6 +67,11 @@
       "orientation": null,
       "note": null
     },
+    "gear": {
+      "level": "runout",
+      "note": "Well protected overall, but bolts are sometimes spaced; easy to back up with gear if you want.",
+      "source": "curated"
+    },
     "location": {
       "lat": 45.924515,
       "lon": 10.913872,
@@ -195,6 +200,11 @@
     "sunHint": {
       "orientation": null,
       "note": "sunny-mentioned"
+    },
+    "gear": {
+      "level": "bolted",
+      "note": "Generous, close protection. A cam can back up one exit move.",
+      "source": "curated"
     },
     "location": {
       "lat": 45.924515,
@@ -338,6 +348,11 @@
       "orientation": null,
       "note": "sunny-mentioned"
     },
+    "gear": {
+      "level": "runout",
+      "note": "Good bolting but spaced in places; place a cam in the crack on one pitch to protect the second.",
+      "source": "curated"
+    },
     "location": {
       "lat": 45.949119,
       "lon": 11.7256405,
@@ -472,6 +487,11 @@
     "sunHint": {
       "orientation": null,
       "note": "sunny-mentioned"
+    },
+    "gear": {
+      "level": "runout",
+      "note": "Dated, sometimes spaced bolting. The last 8 m of one pitch and a slab are unprotected: bring cams.",
+      "source": "curated"
     },
     "location": {
       "lat": 45.949119,
@@ -608,6 +628,11 @@
       "orientation": null,
       "note": null
     },
+    "gear": {
+      "level": "trad",
+      "note": "Alpine-style line: fixed gear exists but you must place cams in many spots.",
+      "source": "curated"
+    },
     "location": {
       "lat": 45.9594472,
       "lon": 10.8973975,
@@ -734,6 +759,11 @@
     "sunHint": {
       "orientation": null,
       "note": null
+    },
+    "gear": {
+      "level": "trad",
+      "note": "Decent bolting, but the cracks (esp. the last pitch) have no fixed gear and need cams.",
+      "source": "curated"
     },
     "location": {
       "lat": 45.9479279,
@@ -904,6 +934,11 @@
     "sunHint": {
       "orientation": null,
       "note": "mixed-mentioned"
+    },
+    "gear": {
+      "level": "runout",
+      "note": "Friction slab with very spaced bolts throughout. Even the easy grades are serious.",
+      "source": "curated"
     },
     "location": {
       "lat": 45.9998747,
@@ -1110,6 +1145,11 @@
       "orientation": null,
       "note": "sunny-mentioned"
     },
+    "gear": {
+      "level": "trad",
+      "note": "Spaced fixed gear, often needs cams and nuts. Some sections can't be protected at all.",
+      "source": "curated"
+    },
     "location": {
       "lat": 45.9594472,
       "lon": 10.8973975,
@@ -1251,6 +1291,11 @@
       "orientation": null,
       "note": null
     },
+    "gear": {
+      "level": "trad",
+      "note": "Alpine-style, spaced protection: you need to place gear.",
+      "source": "curated"
+    },
     "location": {
       "lat": 45.604077,
       "lon": 10.844842,
@@ -1364,6 +1409,11 @@
     "sunHint": {
       "orientation": null,
       "note": "sunny-mentioned"
+    },
+    "gear": {
+      "level": "runout",
+      "note": "Spaced slings/bolts on poor rock. A pair of cams helps aid the crux; one belay is built on a tree or threads.",
+      "source": "curated"
     },
     "location": {
       "lat": 45.924515,
@@ -1493,6 +1543,11 @@
       "orientation": null,
       "note": "mixed-mentioned"
     },
+    "gear": {
+      "level": "trad",
+      "note": "Protection only just adequate, often needs backing up. The chimney is sparse and hard to protect.",
+      "source": "curated"
+    },
     "location": {
       "lat": 45.9594472,
       "lon": 10.8973975,
@@ -1606,6 +1661,11 @@
       "orientation": null,
       "note": null
     },
+    "gear": {
+      "level": "bolted",
+      "note": "Bolted; a bit spaced in places.",
+      "source": "curated"
+    },
     "location": {
       "lat": 45.8695438,
       "lon": 10.8286087,
@@ -1704,6 +1764,11 @@
     "sunHint": {
       "orientation": null,
       "note": "shaded-mentioned"
+    },
+    "gear": {
+      "level": "bolted",
+      "note": "Generally safe bolting, a few spots need commitment.",
+      "source": "curated"
     },
     "location": {
       "lat": 45.8695438,
@@ -1805,6 +1870,11 @@
     "sunHint": {
       "orientation": null,
       "note": null
+    },
+    "gear": {
+      "level": "runout",
+      "note": "One vegetated section with spaced protection is dangerous; otherwise well bolted.",
+      "source": "curated"
     },
     "location": {
       "lat": 45.9594472,
@@ -1933,6 +2003,11 @@
     "sunHint": {
       "orientation": null,
       "note": "mixed-mentioned"
+    },
+    "gear": {
+      "level": "trad",
+      "note": "Alpine style: fixed gear is often far apart and needs constant backing up.",
+      "source": "curated"
     },
     "location": {
       "lat": 45.9594472,
@@ -2089,6 +2164,11 @@
       "orientation": null,
       "note": "sunny-mentioned"
     },
+    "gear": {
+      "level": "trad",
+      "note": "Alpine style: sections with only slings; protect cracks and the chimney with cams.",
+      "source": "curated"
+    },
     "location": {
       "lat": 45.93731,
       "lon": 10.86861,
@@ -2215,6 +2295,11 @@
       "orientation": null,
       "note": null
     },
+    "gear": {
+      "level": "trad",
+      "note": "Spaced fixed gear; place nuts and cams in the cracks.",
+      "source": "curated"
+    },
     "location": {
       "lat": 46.0657422,
       "lon": 10.9829992,
@@ -2313,6 +2398,11 @@
     "sunHint": {
       "orientation": null,
       "note": "sunny-mentioned"
+    },
+    "gear": {
+      "level": "trad",
+      "note": "Half alpine: easy pitches have pitons or nothing (one fully unprotected), bolts only on the hard moves. Bring nuts, cams, slings.",
+      "source": "curated"
     },
     "location": {
       "lat": 45.604077,
@@ -2419,6 +2509,11 @@
       "orientation": null,
       "note": null
     },
+    "gear": {
+      "level": "runout",
+      "note": "Mostly threads and bolts; on the first pitch protection thins out and you sling boulders/trees.",
+      "source": "curated"
+    },
     "location": {
       "lat": 45.604,
       "lon": 10.845,
@@ -2523,6 +2618,11 @@
     "sunHint": {
       "orientation": null,
       "note": null
+    },
+    "gear": {
+      "level": "trad",
+      "note": "Alpine style with pitons and slings; some sections unprotected, take cams.",
+      "source": "curated"
     },
     "location": {
       "lat": 45.604077,
@@ -2643,6 +2743,11 @@
       "orientation": null,
       "note": "shaded-mentioned"
     },
+    "gear": {
+      "level": "runout",
+      "note": "Some bolting is dicey; a few cams help (e.g. first bolt high above a ledge).",
+      "source": "curated"
+    },
     "location": {
       "lat": 45.62,
       "lon": 10.83,
@@ -2755,6 +2860,11 @@
       "orientation": null,
       "note": null
     },
+    "gear": {
+      "level": "runout",
+      "note": "Very good bolting on the hard part, then spaced on broken rock: a cam is advisable.",
+      "source": "curated"
+    },
     "location": {
       "lat": 45.604,
       "lon": 10.845,
@@ -2852,6 +2962,11 @@
     "sunHint": {
       "orientation": null,
       "note": null
+    },
+    "gear": {
+      "level": "runout",
+      "note": "Abundant threads and bolts, but one ramp is completely unprotected: bring cams.",
+      "source": "curated"
     },
     "location": {
       "lat": 45.925,
@@ -3002,6 +3117,11 @@
       "orientation": null,
       "note": "sunny-mentioned"
     },
+    "gear": {
+      "level": "runout",
+      "note": "Abundant protection; only pitch 2 is spaced, where a pair of small-medium cams helps.",
+      "source": "curated"
+    },
     "location": {
       "lat": 45.924515,
       "lon": 10.913872,
@@ -3138,6 +3258,11 @@
       "orientation": null,
       "note": null
     },
+    "gear": {
+      "level": null,
+      "note": null,
+      "source": "curated"
+    },
     "location": {
       "lat": 45.9594472,
       "lon": 10.8973975,
@@ -3265,6 +3390,11 @@
     "sunHint": {
       "orientation": null,
       "note": null
+    },
+    "gear": {
+      "level": "trad",
+      "note": "Crux pitches are well protected; the rest needs nuts and cams.",
+      "source": "curated"
     },
     "location": {
       "lat": 45.9594472,
@@ -3400,6 +3530,11 @@
       "orientation": null,
       "note": "sunny-mentioned"
     },
+    "gear": {
+      "level": null,
+      "note": null,
+      "source": "curated"
+    },
     "location": {
       "lat": 45.8695438,
       "lon": 10.8286087,
@@ -3484,6 +3619,11 @@
     "sunHint": {
       "orientation": null,
       "note": null
+    },
+    "gear": {
+      "level": "bolted",
+      "note": "Good, close bolting.",
+      "source": "curated"
     },
     "location": {
       "lat": 45.8695438,
@@ -3627,6 +3767,11 @@
     "sunHint": {
       "orientation": null,
       "note": "sunny-mentioned"
+    },
+    "gear": {
+      "level": "runout",
+      "note": "Abundant slings on threads, but some sit high on the traverse and a slab has none; cams help protect the second.",
+      "source": "curated"
     },
     "location": {
       "lat": 45.924515,
@@ -3819,6 +3964,11 @@
       "orientation": null,
       "note": "sunny-mentioned"
     },
+    "gear": {
+      "level": "runout",
+      "note": "Mostly slings on threads; one section is scarce. Bring a few small-medium cams.",
+      "source": "curated"
+    },
     "location": {
       "lat": 45.9594472,
       "lon": 10.8973975,
@@ -3988,6 +4138,11 @@
       "orientation": null,
       "note": "sunny-mentioned"
     },
+    "gear": {
+      "level": "trad",
+      "note": "Fixed gear is never enough; whole pitches need cams. Bring 2 sets of medium-large cams plus nuts.",
+      "source": "curated"
+    },
     "location": {
       "lat": 46.026,
       "lon": 10.916,
@@ -4122,6 +4277,11 @@
       "orientation": null,
       "note": "sunny-mentioned"
     },
+    "gear": {
+      "level": "bolted",
+      "note": "Bolted; bolts are dated, check them (and the belays).",
+      "source": "curated"
+    },
     "location": {
       "lat": 46.01111,
       "lon": 10.9301,
@@ -4212,6 +4372,11 @@
     "sunHint": {
       "orientation": null,
       "note": null
+    },
+    "gear": {
+      "level": "bolted",
+      "note": "Well bolted slab.",
+      "source": "curated"
     },
     "location": {
       "lat": 45.8695438,
@@ -4354,6 +4519,11 @@
     "sunHint": {
       "orientation": null,
       "note": "shaded-mentioned"
+    },
+    "gear": {
+      "level": "runout",
+      "note": "Plenty of pitons and slings, but one corner has no fixed gear: protect it with cams (small cam useful).",
+      "source": "curated"
     },
     "location": {
       "lat": 45.9594472,
@@ -4524,6 +4694,11 @@
       "orientation": null,
       "note": null
     },
+    "gear": {
+      "level": "trad",
+      "note": "Fixed gear is rare and spaced: nuts and cams are essential. Double the medium cams.",
+      "source": "curated"
+    },
     "location": {
       "lat": 46.026,
       "lon": 10.916,
@@ -4635,6 +4810,11 @@
     "sunHint": {
       "orientation": null,
       "note": null
+    },
+    "gear": {
+      "level": "runout",
+      "note": "Good bolting but long in places; back it up with slings on threads.",
+      "source": "curated"
     },
     "location": {
       "lat": 45.8695438,
@@ -4755,6 +4935,11 @@
     "sunHint": {
       "orientation": null,
       "note": "mixed-mentioned"
+    },
+    "gear": {
+      "level": "trad",
+      "note": "Alpine style: some pitches have to be protected entirely; runout slab not always protectable.",
+      "source": "curated"
     },
     "location": {
       "lat": 46.026,
@@ -4939,6 +5124,11 @@
       "orientation": null,
       "note": null
     },
+    "gear": {
+      "level": "runout",
+      "note": "Spaced bolts that can't be backed up on pitch 1; a chimney with no gear. Sling bushes and threads.",
+      "source": "curated"
+    },
     "location": {
       "lat": 45.9594472,
       "lon": 10.8973975,
@@ -5110,6 +5300,11 @@
       "orientation": null,
       "note": "shaded-mentioned"
     },
+    "gear": {
+      "level": "runout",
+      "note": "Some stretches have no visible protection; the rest is well protected. For experienced climbers.",
+      "source": "curated"
+    },
     "location": {
       "lat": 45.9808253,
       "lon": 10.9249164,
@@ -5218,6 +5413,11 @@
       "orientation": null,
       "note": "sunny-mentioned"
     },
+    "gear": {
+      "level": "trad",
+      "note": "Hard sections are well protected; the rest needs gear that isn't always easy to place. Unprotected traverse.",
+      "source": "curated"
+    },
     "location": {
       "lat": 45.9186104,
       "lon": 10.9188874,
@@ -5311,6 +5511,11 @@
     "sunHint": {
       "orientation": null,
       "note": "mixed-mentioned"
+    },
+    "gear": {
+      "level": "bolted",
+      "note": "Good protection; the authors rarely felt the need to add gear.",
+      "source": "curated"
     },
     "location": {
       "lat": 45.9183768,
@@ -5413,6 +5618,11 @@
       "orientation": null,
       "note": "mixed-mentioned"
     },
+    "gear": {
+      "level": "runout",
+      "note": "Sparse on easy sections (easy to back up), very good on the hard ones.",
+      "source": "curated"
+    },
     "location": {
       "lat": 45.9186104,
       "lon": 10.9188874,
@@ -5513,6 +5723,11 @@
     "sunHint": {
       "orientation": null,
       "note": "sunny-mentioned"
+    },
+    "gear": {
+      "level": "trad",
+      "note": "Clearly alpine style: rare, distant protection; place cams in flakes and cracks.",
+      "source": "curated"
     },
     "location": {
       "lat": 45.9183768,
@@ -5636,6 +5851,11 @@
       "orientation": null,
       "note": "sunny-mentioned"
     },
+    "gear": {
+      "level": "runout",
+      "note": "Good bolting, spaced in a few spots where you need to add gear.",
+      "source": "curated"
+    },
     "location": {
       "lat": 45.924515,
       "lon": 10.913872,
@@ -5749,6 +5969,11 @@
     "sunHint": {
       "orientation": null,
       "note": "sunny-mentioned"
+    },
+    "gear": {
+      "level": "bolted",
+      "note": "Very close bolting.",
+      "source": "curated"
     },
     "location": {
       "lat": 45.9479279,
@@ -5876,6 +6101,11 @@
     "sunHint": {
       "orientation": null,
       "note": null
+    },
+    "gear": {
+      "level": "trad",
+      "note": "Bolts only where nothing else goes; corners and cracks are left clean on purpose. Bring medium-large cams.",
+      "source": "curated"
     },
     "location": {
       "lat": 45.93731,
@@ -6046,6 +6276,11 @@
       "orientation": null,
       "note": "sunny-mentioned"
     },
+    "gear": {
+      "level": "bolted",
+      "note": "Excellent, close bolting.",
+      "source": "curated"
+    },
     "location": {
       "lat": 45.9479279,
       "lon": 10.8864469,
@@ -6200,6 +6435,11 @@
     "sunHint": {
       "orientation": null,
       "note": null
+    },
+    "gear": {
+      "level": "trad",
+      "note": "Needs alpine experience: unprotected slab and corners to protect with cams.",
+      "source": "curated"
     },
     "location": {
       "lat": 45.93731,
@@ -6369,6 +6609,11 @@
     "sunHint": {
       "orientation": null,
       "note": "shaded-mentioned"
+    },
+    "gear": {
+      "level": "runout",
+      "note": "Easy pitches are lightly protected; back up with slings on threads and trees.",
+      "source": "curated"
     },
     "location": {
       "lat": 45.9594472,
@@ -6567,6 +6812,11 @@
     "sunHint": {
       "orientation": null,
       "note": null
+    },
+    "gear": {
+      "level": "trad",
+      "note": "Clearly alpine style: sparse protection, whole sections to protect with medium cams.",
+      "source": "curated"
     },
     "location": {
       "lat": 45.9594472,
@@ -6773,6 +7023,11 @@
       "orientation": null,
       "note": "mixed-mentioned"
     },
+    "gear": {
+      "level": "bolted",
+      "note": "Very close, safe bolting; hard sections can be aided.",
+      "source": "curated"
+    },
     "location": {
       "lat": 45.979656,
       "lon": 10.913951,
@@ -6927,6 +7182,11 @@
     "sunHint": {
       "orientation": null,
       "note": null
+    },
+    "gear": {
+      "level": "trad",
+      "note": "Alpine route with sport sections. Spaced in places; a pair of medium-large cams is essential for an unprotected flake.",
+      "source": "curated"
     },
     "location": {
       "lat": 45.9594472,
@@ -7098,6 +7358,11 @@
       "orientation": null,
       "note": null
     },
+    "gear": {
+      "level": "runout",
+      "note": "Plenty of slings on threads; one delicate move is unprotected (only huge cams fit).",
+      "source": "curated"
+    },
     "location": {
       "lat": 45.9594472,
       "lon": 10.8973975,
@@ -7239,6 +7504,11 @@
       "orientation": null,
       "note": null
     },
+    "gear": {
+      "level": "bolted",
+      "note": "Recently re-bolted; no extra gear needed beyond a few slings.",
+      "source": "curated"
+    },
     "location": {
       "lat": 46.0095768,
       "lon": 11.0997293,
@@ -7364,6 +7634,11 @@
     "sunHint": {
       "orientation": null,
       "note": null
+    },
+    "gear": {
+      "level": "runout",
+      "note": "Mix of bolts and threads with alpine sections; one easy pitch is sparse.",
+      "source": "curated"
     },
     "location": {
       "lat": 45.9744619,
@@ -7498,6 +7773,11 @@
       "orientation": null,
       "note": "sunny-mentioned"
     },
+    "gear": {
+      "level": "bolted",
+      "note": "Pitch 1 is alpine-style scrambling; after that, many bolts on the slabs.",
+      "source": "curated"
+    },
     "location": {
       "lat": 45.9309454,
       "lon": 10.8888915,
@@ -7595,6 +7875,11 @@
     "sunHint": {
       "orientation": null,
       "note": null
+    },
+    "gear": {
+      "level": "bolted",
+      "note": "Excellent, close bolting.",
+      "source": "curated"
     },
     "location": {
       "lat": 45.9396011,
@@ -7707,6 +7992,11 @@
     "sunHint": {
       "orientation": null,
       "note": null
+    },
+    "gear": {
+      "level": "bolted",
+      "note": "Old pitons and slings, often hard to spot.",
+      "source": "curated"
     },
     "location": {
       "lat": 45.9719715,
@@ -7854,6 +8144,11 @@
       "orientation": null,
       "note": "mixed-mentioned"
     },
+    "gear": {
+      "level": "trad",
+      "note": "Clearly alpine: very few pitons, first pitch has no protection. Two sets of medium cams, plus huge ones.",
+      "source": "curated"
+    },
     "location": {
       "lat": 46.0314941,
       "lon": 10.9276627,
@@ -7954,6 +8249,11 @@
     "sunHint": {
       "orientation": null,
       "note": null
+    },
+    "gear": {
+      "level": "runout",
+      "note": "Bolts 7-8 m apart on poor rock and gear can't be placed. Steady head needed.",
+      "source": "curated"
     },
     "location": {
       "lat": 45.9594472,
@@ -8069,6 +8369,11 @@
       "orientation": null,
       "note": null
     },
+    "gear": {
+      "level": "trad",
+      "note": "Old pitons and threads; some sections need backing up, but gear placements are few and poor.",
+      "source": "curated"
+    },
     "location": {
       "lat": 45.9595074,
       "lon": 10.8950632,
@@ -8151,6 +8456,11 @@
     "sunHint": {
       "orientation": null,
       "note": null
+    },
+    "gear": {
+      "level": "runout",
+      "note": "Advertised as well bolted, but first bolts are 8-10 m up and some are 7 m apart.",
+      "source": "curated"
     },
     "location": {
       "lat": 45.604,
@@ -8285,6 +8595,11 @@
     "sunHint": {
       "orientation": null,
       "note": "sunny-mentioned"
+    },
+    "gear": {
+      "level": "bolted",
+      "note": "Bolted; one 35 m slab traverse has bolts 4-5 m apart.",
+      "source": "curated"
     },
     "location": {
       "lat": 45.9693124,
@@ -8440,6 +8755,11 @@
       "orientation": null,
       "note": null
     },
+    "gear": {
+      "level": null,
+      "note": null,
+      "source": "curated"
+    },
     "location": {
       "lat": 45.9594472,
       "lon": 10.8973975,
@@ -8575,6 +8895,11 @@
       "orientation": null,
       "note": null
     },
+    "gear": {
+      "level": "runout",
+      "note": "Close bolting, except at the top of one pitch where it's very spaced (a small-medium cam fits).",
+      "source": "curated"
+    },
     "location": {
       "lat": 45.9698026,
       "lon": 10.9099066,
@@ -8708,6 +9033,11 @@
       "orientation": null,
       "note": null
     },
+    "gear": {
+      "level": "bolted",
+      "note": "Bolts close enough to aid if needed.",
+      "source": "curated"
+    },
     "location": {
       "lat": 45.9413919,
       "lon": 10.880456,
@@ -8803,6 +9133,11 @@
     "sunHint": {
       "orientation": null,
       "note": "sunny-mentioned"
+    },
+    "gear": {
+      "level": "bolted",
+      "note": "Bolted; one traverse under the roof is quite spaced.",
+      "source": "curated"
     },
     "location": {
       "lat": 45.9370644,
@@ -8921,6 +9256,11 @@
       "orientation": null,
       "note": "sunny-mentioned"
     },
+    "gear": {
+      "level": "bolted",
+      "note": "Bolted; one bolt is further than elsewhere on the route.",
+      "source": "curated"
+    },
     "location": {
       "lat": 45.9353334,
       "lon": 10.8919573,
@@ -8980,6 +9320,11 @@
     "sunHint": {
       "orientation": null,
       "note": null
+    },
+    "gear": {
+      "level": "bolted",
+      "note": "Very good bolting, extra gear almost useless. Belays are two bolts: bring slings.",
+      "source": "curated"
     },
     "location": {
       "lat": 45.9793393,

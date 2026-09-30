@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { allCrags } from "../data/routes";
 import { FRENCH_GRADE_SCALE } from "../lib/grades";
+import { GEAR_FILTERS } from "../lib/gear";
 import type { Filters } from "../lib/useFilters";
 import { SortMenu } from "./SortMenu";
 
@@ -20,6 +21,7 @@ export function FilterBar({ filters, set, toggleCrag, reset, resultCount, onExpa
     filters.crags.size +
     (filters.favoritesOnly ? 1 : 0) +
     (filters.sun !== "any" ? 1 : 0) +
+    (filters.gear !== "any" ? 1 : 0) +
     (filters.maxPitches != null ? 1 : 0) +
     (filters.minGradeIdx > 0 || filters.maxGradeIdx < FRENCH_GRADE_SCALE.length - 1 ? 1 : 0);
 
@@ -90,6 +92,21 @@ export function FilterBar({ filters, set, toggleCrag, reset, resultCount, onExpa
                 </option>
               ))}
             </select>
+          </div>
+
+          <div className="filter-panel__group">
+            <label>Protection</label>
+            <div className="filter-panel__pills">
+              {GEAR_FILTERS.map(({ value, label }) => (
+                <button
+                  key={value}
+                  className={`pill ${filters.gear === value ? "pill--active" : ""}`}
+                  onClick={() => set("gear", value)}
+                >
+                  {label}
+                </button>
+              ))}
+            </div>
           </div>
 
           <div className="filter-panel__group">

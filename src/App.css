@@ -437,6 +437,33 @@
   border-color: var(--border);
 }
 
+.gear-badge {
+  display: inline-flex;
+  align-items: center;
+  border: 1px solid var(--border);
+  background: var(--bg-elev-2);
+  color: var(--text-dim);
+  border-radius: 8px;
+  padding: 2px 8px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  white-space: nowrap;
+}
+.gear-badge--sm {
+  padding: 1px 6px;
+  font-size: 0.72rem;
+}
+.gear-badge--trad {
+  background: var(--trad-dim);
+  border-color: var(--trad-border);
+  color: var(--trad);
+}
+.gear-badge--runout {
+  background: var(--runout-dim);
+  border-color: var(--runout-border);
+  color: var(--runout);
+}
+
 /* ---------- Route detail (inline, replaces list in the sheet) ---------- */
 .route-detail {
   display: flex;
@@ -518,6 +545,17 @@
   font-size: 0.82rem;
   color: var(--text-dim);
   margin-bottom: 12px;
+}
+.route-detail__gear {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  margin: 0 0 10px;
+}
+.route-detail__gear p {
+  margin: 1px 0 0;
+  font-size: 0.85rem;
+  color: var(--text-dim);
 }
 .route-detail__sun {
   font-size: 0.85rem;

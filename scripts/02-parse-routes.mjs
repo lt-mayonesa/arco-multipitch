@@ -6,6 +6,7 @@ import he from "he";
 const { decode } = he;
 import { toFrenchGrade, frenchGradeToScore, originalGradeSystem } from "./lib/gradeConvert.mjs";
 import { extractImagesWithContext } from "./lib/photoContext.mjs";
+import { classifyGear } from "./lib/gearStyle.mjs";
 
 const IN = new URL("../data/raw-posts.json", import.meta.url);
 const OUT = new URL("../data/routes.parsed.json", import.meta.url);
@@ -147,6 +148,7 @@ function parsePost(post) {
   const totalLengthM = syntheticTotalLengthM ?? (pitchLengthSum || statedTotalM);
 
   const sunHint = extractSunHint(paragraphs.join(" "));
+  const gear = classifyGear(post.slug, paragraphs.join(" "));
   const scored = pitches
     .map((p) => ({ ...p, score: frenchGradeToScore(p.gradeFrench) }))
     .filter((p) => p.score != null);
@@ -179,6 +181,7 @@ function parsePost(post) {
     images,
     approximateData: usedFallback,
     sunHint,
+    gear,
   };
 }
 

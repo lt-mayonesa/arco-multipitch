@@ -2,6 +2,8 @@ import { useMemo, useState } from "react";
 import { createPortal } from "react-dom";
 import type { Route } from "../types";
 import { GradeBadge } from "./GradeBadge";
+import { GearBadge } from "./GearBadge";
+import { GEAR_DESCRIPTION } from "../lib/gear";
 import { PhotoModal } from "./PhotoModal";
 import { groupPhotosByPitch, photoCaption } from "../lib/photoGroups";
 
@@ -91,6 +93,20 @@ export function RouteDetail({ route, isFavorite, onToggleFavorite, onClose }: Pr
               write-up — grade/length may be approximate. See the source link below.
             </p>
           )}
+
+          <div className="route-detail__gear">
+            {route.gear.level ? (
+              <>
+                <GearBadge level={route.gear.level} />
+                <p>
+                  {route.gear.note ?? GEAR_DESCRIPTION[route.gear.level]}
+                  {route.gear.source === "heuristic" && " (Guessed from keywords; check the source.)"}
+                </p>
+              </>
+            ) : (
+              <p>Protection isn't described in the write-up.</p>
+            )}
+          </div>
 
           {route.sunHint.note && <p className="route-detail__sun">{SUN_LABEL[route.sunHint.note]}</p>}
 

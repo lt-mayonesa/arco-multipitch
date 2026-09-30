@@ -1,5 +1,6 @@
 import type { Route } from "../types";
 import { GradeBadge } from "./GradeBadge";
+import { GearBadge } from "./GearBadge";
 
 interface Props {
   route: Route;
@@ -41,6 +42,10 @@ export function RouteCard({ route, isFavorite, onToggleFavorite, onOpen }: Props
           <GradeBadge french={route.overallGradeFrench} raw={route.overallGradeRaw} size="sm" />
           <span>{route.numPitches} pitches</span>
           <span>{route.totalLengthM}m</span>
+          {/* Bolted is the default; only flag routes that need a rack or a steady head. */}
+          {(route.gear.level === "trad" || route.gear.level === "runout") && (
+            <GearBadge level={route.gear.level} size="sm" />
+          )}
         </div>
       </div>
     </article>

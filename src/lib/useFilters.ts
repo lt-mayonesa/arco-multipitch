@@ -1,6 +1,7 @@
 import { useMemo, useState } from "react";
 import type { Route } from "../types";
 import { FRENCH_GRADE_SCALE, frenchGradeToScore, gradeIndex } from "./grades";
+import { matchesGearFilter, type GearFilter } from "./gear";
 
 export type SortField = "grade" | "length" | "pitches";
 export type SortDir = "asc" | "desc";
@@ -28,6 +29,7 @@ export interface Filters {
   maxPitches: number | null;
   favoritesOnly: boolean;
   sun: "any" | "sunny" | "shaded";
+  gear: GearFilter;
   sortKey: string;
 }
 
@@ -39,6 +41,7 @@ export const DEFAULT_FILTERS: Filters = {
   maxPitches: null,
   favoritesOnly: false,
   sun: "any",
+  gear: "any",
   sortKey: DEFAULT_SORT_KEY,
 };
 
@@ -96,6 +99,7 @@ export function applyFilters(
     if (filters.favoritesOnly && !isFavorite(r.slug)) return false;
     if (filters.crags.size > 0 && !filters.crags.has(r.crag)) return false;
     if (filters.maxPitches != null && r.numPitches > filters.maxPitches) return false;
+    if (!matchesGearFilter(r.gear.level, filters.gear)) return false;
 
     if (search) {
       const haystack = `${r.title} ${r.crag} ${r.zoneChain.join(" ")}`.toLowerCase();

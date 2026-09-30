@@ -11,6 +11,21 @@ export interface SunHint {
   note: "sunny-mentioned" | "shaded-mentioned" | "mixed-mentioned" | null;
 }
 
+/**
+ * Protection style, curated per route in scripts/lib/gearStyle.mjs.
+ * bolted = fixed gear is enough; runout = mostly fixed gear but with a big
+ * runout; trad = you must place your own gear. null = write-up doesn't say.
+ */
+export type GearLevel = "bolted" | "runout" | "trad";
+
+export interface Gear {
+  level: GearLevel | null;
+  /** Short English paraphrase of the author's protection notes. */
+  note: string | null;
+  /** "heuristic" = keyword guess for a post not yet curated. */
+  source: "curated" | "heuristic";
+}
+
 export interface Location {
   lat: number;
   lon: number;
@@ -55,6 +70,7 @@ export interface Route {
   overallGradeRaw: string | null;
   approximateData: boolean;
   sunHint: SunHint;
+  gear: Gear;
   location: Location | null;
   photos: Photo[];
 }

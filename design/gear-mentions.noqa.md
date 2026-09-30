@@ -57,3 +57,20 @@ have that data. Realistic options:
 3. **Quickdraws**: default to "pitch length ÷ ~3 m + 2" as a rule of thumb.
    That would be our guess, not the author's, and would have to be labelled
    that way. Not recommended.
+
+## Outcome
+
+Went with option 1, curated rather than regex. `scripts/lib/gearStyle.mjs`
+has a hand-reviewed table of all 69 slugs → `gear: { level, note, source }`:
+
+- `bolted` (19): fixed protection is enough (bolts, or pitons/slings on old lines).
+- `runout` (25): mostly fixed protection, but the author flags a big runout;
+  an optional cam or none possible.
+- `trad` (22): alpine style, you must place gear. Beats `runout`.
+- `null` (3): write-up doesn't say.
+
+Each has a short English `note` paraphrasing the author. Posts not in the
+table fall back to a keyword heuristic (`source: "heuristic"`, ~2/3 agreement
+with the curated set) and 02 warns so they get curated. UI: Trad/Runout
+badge on cards, badge + note in detail, "Protection" filter
+(Any / No trad / Bolted only / Trad only).
