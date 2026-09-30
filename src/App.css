@@ -849,33 +849,30 @@
 }
 .photo-group__row {
   display: flex;
-  gap: 8px;
-  overflow-x: auto;
-  padding-bottom: 2px;
+  flex-direction: column;
+  gap: 12px;
 }
 .photo-group__item {
   margin: 0;
-  width: 120px;
-  flex-shrink: 0;
   cursor: zoom-in;
 }
 .photo-group__thumb {
   display: block;
-  width: 120px;
-  height: 90px;
-  object-fit: cover;
+  width: 100%;
+  height: auto;
+  /* Natural shape once loaded (3:2 placeholder before); tall portraits are
+     capped and letterboxed rather than cropped. */
+  aspect-ratio: auto 3 / 2;
+  max-height: 70dvh;
+  object-fit: contain;
   border-radius: 10px;
   background: var(--bg-elev-2);
 }
 .photo-group__caption {
-  margin-top: 4px;
-  font-size: 0.7rem;
-  line-height: 1.3;
+  margin-top: 6px;
+  font-size: 0.8rem;
+  line-height: 1.35;
   color: var(--text-dim);
-  display: -webkit-box;
-  -webkit-line-clamp: 2;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
 }
 
 .route-detail__source {
