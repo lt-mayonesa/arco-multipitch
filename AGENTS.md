@@ -28,7 +28,7 @@ and both must pass. Don't add new lint warnings (a few pre-existing ones in
   `useFavorites` (localStorage trip list), `useMapGreyOut` (persisted map
   pref: grey out vs hide filtered pins), `gear.ts` (protection labels/filter), `useHashRoute` (`#/route/<slug>`
   selection), `useBackStack` (back button: collapse sheet / close detail),
-  `useBottomSheet` (overlay sheet gestures + snaps), `grades.ts` (French grade scale),
+  `useBottomSheet` (overlay sheet gestures + snaps), `useTapDragZoom` (double-tap-and-slide map zoom), `grades.ts` (French grade scale),
   `photoGroups.ts`, `leafletIconFix.ts`.
 - `src/types.ts` — `Route` / `Pitch` / `Location` schema. Source of truth for data shape.
 - `src/data/routes.json` — shipped dataset (copy of `data/routes.json`).

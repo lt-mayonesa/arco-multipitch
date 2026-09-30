@@ -1,4 +1,5 @@
 import "../lib/leafletPlugins";
+import { useTapDragZoom } from "../lib/useTapDragZoom";
 import L from "leaflet";
 import { useEffect, useMemo, useRef, useState } from "react";
 import { createPortal } from "react-dom";
@@ -172,6 +173,11 @@ function useLatest<T>(value: T) {
 }
 
 /** Leaflet only measures its container on init; keep it in sync (orientation, keyboard, etc). */
+function TapDragZoom() {
+  useTapDragZoom(useMap());
+  return null;
+}
+
 function InvalidateOnResize() {
   const map = useMap();
   useEffect(() => {
@@ -409,6 +415,7 @@ export function MapView({ routes, matchSlugs, selectedRoute, onOpen, bottomInset
         {/* Bottom corners are under the sheet, so keep controls at the top. */}
         <AttributionControl position="topright" prefix={false} />
         <InvalidateOnResize />
+        <TapDragZoom />
         <Legend showFiltered={routes.some((r) => !matchSlugs.has(r.slug))} />
         <LabelZoomClass />
         <ClusteredPins routes={routes} matchSlugs={matchSlugs} selectedSlug={selectedRoute?.slug ?? null}
