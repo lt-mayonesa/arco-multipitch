@@ -8,7 +8,8 @@ import { routeBySlug, routes } from "./data/routes";
 import { useBackStack } from "./lib/useBackStack";
 import { useBottomSheet, type SnapKey } from "./lib/useBottomSheet";
 import { useFavorites } from "./lib/useFavorites";
-import { useFilteredRoutes, useFilters } from "./lib/useFilters";
+import { useFilteredRoutes, useFilters, useMapRoutes } from "./lib/useFilters";
+import { useMapGreyOut } from "./lib/useMapGreyOut";
 import { routeHash, useHashRoute } from "./lib/useHashRoute";
 
 // Map fills the screen; the sheet slides over it (Google Maps style).
@@ -19,6 +20,8 @@ function App() {
   const { filters, set, toggleCrag, reset } = useFilters();
   const { isFavorite, toggle, favorites } = useFavorites();
   const filtered = useFilteredRoutes(routes, filters, isFavorite);
+  const [greyOut, setGreyOut] = useMapGreyOut();
+  const { mapRoutes, matchSlugs } = useMapRoutes(routes, filtered, filters, isFavorite, greyOut);
   const { selectedSlug, openRoute, closeRoute } = useHashRoute();
   const selectedRoute = (selectedSlug && routeBySlug(selectedSlug)) || null;
 
@@ -59,7 +62,10 @@ function App() {
 
       <div className="app__body" ref={containerRef}>
         <div className="app__map">
-          <MapView routes={filtered} selectedRoute={selectedRoute} onOpen={open} bottomInset={bottomInset} />
+          <MapView
+            routes={mapRoutes}
+            matchSlugs={matchSlugs}
+            selectedRoute={selectedRoute} onOpen={open} bottomInset={bottomInset} />
         </div>
 
         <div
@@ -98,6 +104,8 @@ function App() {
                 set={set}
                 toggleCrag={toggleCrag}
                 reset={reset}
+                greyOut={greyOut}
+                onGreyOutChange={setGreyOut}
                 resultCount={filtered.length}
                 onExpandRequest={expand}
               />

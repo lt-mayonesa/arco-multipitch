@@ -25,7 +25,8 @@ and both must pass. Don't add new lint warnings (a few pre-existing ones in
 - `src/components/` — `MapView` (Leaflet), `FilterBar`, `SortMenu`,
   `RouteCard`, `RouteDetail`, `PhotoModal`, `GradeBadge`.
 - `src/lib/` — hooks and helpers: `useFilters` (filter/sort state + logic),
-  `useFavorites` (localStorage trip list), `useHashRoute` (`#/route/<slug>`
+  `useFavorites` (localStorage trip list), `useMapGreyOut` (persisted map
+  pref: grey out vs hide filtered pins), `gear.ts` (protection labels/filter), `useHashRoute` (`#/route/<slug>`
   selection), `useBackStack` (back button: collapse sheet / close detail),
   `useBottomSheet` (overlay sheet gestures + snaps), `grades.ts` (French grade scale),
   `photoGroups.ts`, `leafletIconFix.ts`.

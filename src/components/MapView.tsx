@@ -1,12 +1,15 @@
 import "../lib/leafletPlugins";
 import L from "leaflet";
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import { createPortal } from "react-dom";
 import { AttributionControl, Circle, CircleMarker, MapContainer, Marker, TileLayer, useMap } from "react-leaflet";
-import type { Route } from "../types";
+import type { GearLevel, Route } from "../types";
 
 interface Props {
+  /** Routes drawn on the map (matching + greyed-out). */
   routes: Route[];
+  /** Slugs that pass every filter; other routes in `routes` are drawn greyed out. */
+  matchSlugs: Set<string>;
   selectedRoute: Route | null;
   onOpen: (slug: string) => void;
   /** Px at the bottom of the map covered by the sheet; used to frame pins in the visible area. */
@@ -17,17 +20,94 @@ interface Props {
 const DEFAULT_CENTER: [number, number] = [45.93, 10.93];
 const SELECT_ZOOM = 14;
 
-// The pin is a rotated rounded square; its tip sits ~18px below the icon
-// centre (26 * sqrt(2) / 2), scaled 1.3x when active.
-const pinIcon = (active: boolean) =>
-  L.divIcon({
+// Crag-level zoom from which pins show their "pitches · length" chip.
+const LABEL_ZOOM = 13;
+
+const escapeHtml = (t: string) =>
+  t.replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" })[c]!);
+
+/** e.g. "7p · 250m"; "~" marks approximate data, "?m" an unknown length. */
+function chipText(r: Route) {
+  const approx = r.approximateData ? "~" : "";
+  const len = r.totalLengthM > 0 ? `${approx}${r.totalLengthM}m` : "?m";
+  return `${approx}${r.numPitches}p · ${len}`;
+}
+
+type GearKey = GearLevel | "unknown";
+const gearKey = (r: Route): GearKey => r.gear.level ?? "unknown";
+
+// The pin is a 30px rounded square rotated 45°; its tip sits ~21px below the
+// icon centre (30 * sqrt(2) / 2), ~28px when the active pin is scaled 1.3x.
+function pinIcon(r: Route, { active = false, dim = false } = {}) {
+  const cls = ["map-pin", `map-pin--${gearKey(r)}`, active && "map-pin--active", dim && "map-pin--dim"]
+    .filter(Boolean)
+    .join(" ");
+  return L.divIcon({
     className: "",
-    html: `<div class="map-pin ${active ? "map-pin--active" : ""}"></div>`,
-    iconSize: [26, 26],
-    iconAnchor: active ? [13, 37] : [13, 31],
+    html:
+      `<div class="${cls}"><div class="map-pin__shape"></div>` +
+      `<span class="map-pin__grade">${escapeHtml(r.overallGradeFrench ?? r.overallGradeRaw ?? "?")}</span>` +
+      `<span class="map-pin__chip">${escapeHtml(chipText(r))}</span></div>`,
+    iconSize: [30, 30],
+    iconAnchor: active ? [15, 43] : [15, 36],
   });
-const PIN = pinIcon(false);
-const PIN_ACTIVE = pinIcon(true);
+}
+
+// Cluster ring: one arc per gear level for matching routes, then grey for the rest.
+const RING_ORDER: GearKey[] = ["trad", "runout", "bolted", "unknown"];
+const RING_COLOR: Record<GearKey | "dim", string> = {
+  trad: "var(--trad)",
+  runout: "var(--runout)",
+  bolted: "var(--accent)",
+  unknown: "var(--text-dim)",
+  dim: "#4a4f59",
+};
+
+interface PinMeta {
+  gear: GearKey;
+  match: boolean;
+}
+
+function clusterIcon(cluster: L.MarkerCluster) {
+  const metas = cluster.getAllChildMarkers().map((m) => (m.options as { meta: PinMeta }).meta);
+  const total = metas.length;
+  const counts = new Map<GearKey | "dim", number>();
+  for (const { gear, match } of metas) {
+    const k = match ? gear : "dim";
+    counts.set(k, (counts.get(k) ?? 0) + 1);
+  }
+  const matches = total - (counts.get("dim") ?? 0);
+  let acc = 0;
+  const stops = [...RING_ORDER, "dim" as const]
+    .filter((k) => counts.get(k))
+    .map((k) => {
+      const from = (acc / total) * 360;
+      acc += counts.get(k)!;
+      return `${RING_COLOR[k]} ${from}deg ${(acc / total) * 360}deg`;
+    });
+  const label = matches === total ? `${total}` : `${matches}/${total}`;
+  return L.divIcon({
+    className: "",
+    html:
+      `<div class="map-cluster ${matches === 0 ? "map-cluster--dim" : ""}" ` +
+      `style="background: conic-gradient(${stops.join(", ")})"><span>${label}</span></div>`,
+    iconSize: [42, 42],
+  });
+}
+
+/** Toggles the chip labels on the map container by zoom level. */
+function LabelZoomClass() {
+  const map = useMap();
+  useEffect(() => {
+    const update = () => map.getContainer().classList.toggle("map-view--labels", map.getZoom() >= LABEL_ZOOM);
+    update();
+    map.on("zoomend", update);
+    return () => {
+      map.off("zoomend", update);
+    };
+  }, [map]);
+  return null;
+}
 
 /** Map centre that puts `latlng` in the middle of the part of the map not covered by the sheet. */
 function centerAbove(map: L.Map, latlng: L.LatLngExpression, zoom: number, inset: number) {
@@ -53,7 +133,17 @@ function InvalidateOnResize() {
   return null;
 }
 
-function ClusteredPins({ routes, selectedSlug, onOpen }: { routes: Route[]; selectedSlug: string | null; onOpen: (slug: string) => void }) {
+function ClusteredPins({
+  routes,
+  matchSlugs,
+  selectedSlug,
+  onOpen,
+}: {
+  routes: Route[];
+  matchSlugs: Set<string>;
+  selectedSlug: string | null;
+  onOpen: (slug: string) => void;
+}) {
   const map = useMap();
   const onOpenRef = useLatest(onOpen);
   const [group] = useState(() =>
@@ -61,12 +151,7 @@ function ClusteredPins({ routes, selectedSlug, onOpen }: { routes: Route[]; sele
       showCoverageOnHover: false,
       maxClusterRadius: 45,
       spiderfyDistanceMultiplier: 1.8,
-      iconCreateFunction: (cluster) =>
-        L.divIcon({
-          className: "",
-          html: `<div class="map-cluster">${cluster.getChildCount()}</div>`,
-          iconSize: [36, 36],
-        }),
+      iconCreateFunction: clusterIcon,
     }),
   );
 
@@ -82,29 +167,37 @@ function ClusteredPins({ routes, selectedSlug, onOpen }: { routes: Route[]; sele
     group.addLayers(
       routes
         .filter((r) => r.location && r.slug !== selectedSlug)
-        .map((r) =>
-          L.marker([r.location!.lat, r.location!.lon], { icon: PIN, title: r.title, riseOnHover: true }).on(
-            "click",
-            () => onOpenRef.current(r.slug),
-          ),
-        ),
+        .map((r) => {
+          const match = matchSlugs.has(r.slug);
+          const meta: PinMeta = { gear: gearKey(r), match };
+          return L.marker([r.location!.lat, r.location!.lon], {
+            icon: pinIcon(r, { dim: !match }),
+            title: r.title,
+            riseOnHover: true,
+            // Greyed-out pins stay below matching ones.
+            zIndexOffset: match ? 0 : -1000,
+            meta,
+          } as L.MarkerOptions).on("click", () => onOpenRef.current(r.slug));
+        }),
     );
-  }, [group, routes, selectedSlug, onOpenRef]);
+  }, [group, routes, matchSlugs, selectedSlug, onOpenRef]);
 
   return null;
 }
 
 /** Fit to the filtered routes when the filter result changes, fly to the selected route. */
-function ViewController({ routes, selectedRoute, bottomInset }: Omit<Props, "onOpen">) {
+function ViewController({ routes, matchSlugs, selectedRoute, bottomInset }: Omit<Props, "onOpen">) {
   const map = useMap();
+  // Frame only matching routes; greyed-out ones may end up off-screen.
+  const matching = routes.filter((r) => matchSlugs.has(r.slug));
   const insetRef = useLatest(bottomInset);
   const selectedRef = useLatest(selectedRoute);
   const ready = bottomInset > 0;
-  const routesKey = routes.map((r) => r.slug).join("|");
+  const routesKey = matching.map((r) => r.slug).join("|");
 
   useEffect(() => {
     if (!ready || selectedRef.current) return;
-    const pts = routes.filter((r) => r.location).map((r) => L.latLng(r.location!.lat, r.location!.lon));
+    const pts = matching.filter((r) => r.location).map((r) => L.latLng(r.location!.lat, r.location!.lon));
     if (pts.length === 0) return;
     // Debounced so typing in the search box doesn't queue a zoom per keystroke.
     const id = window.setTimeout(() => {
@@ -221,7 +314,8 @@ function LocateControl({ bottomInset }: { bottomInset: number }) {
   );
 }
 
-export function MapView({ routes, selectedRoute, onOpen, bottomInset }: Props) {
+export function MapView({ routes, matchSlugs, selectedRoute, onOpen, bottomInset }: Props) {
+  const activeIcon = useMemo(() => (selectedRoute ? pinIcon(selectedRoute, { active: true }) : null), [selectedRoute]);
   return (
     <div className="map-view">
       <MapContainer
@@ -238,16 +332,17 @@ export function MapView({ routes, selectedRoute, onOpen, bottomInset }: Props) {
         {/* Bottom corners are under the sheet, so keep controls at the top. */}
         <AttributionControl position="topright" prefix={false} />
         <InvalidateOnResize />
-        <ClusteredPins routes={routes} selectedSlug={selectedRoute?.slug ?? null} onOpen={onOpen} />
+        <LabelZoomClass />
+        <ClusteredPins routes={routes} matchSlugs={matchSlugs} selectedSlug={selectedRoute?.slug ?? null} onOpen={onOpen} />
         {selectedRoute?.location && (
           <Marker
             position={[selectedRoute.location.lat, selectedRoute.location.lon]}
-            icon={PIN_ACTIVE}
+            icon={activeIcon!}
             zIndexOffset={1000}
             title={selectedRoute.title}
           />
         )}
-        <ViewController routes={routes} selectedRoute={selectedRoute} bottomInset={bottomInset} />
+        <ViewController routes={routes} matchSlugs={matchSlugs} selectedRoute={selectedRoute} bottomInset={bottomInset} />
         <LocateControl bottomInset={bottomInset} />
       </MapContainer>
     </div>

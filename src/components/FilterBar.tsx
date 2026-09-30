@@ -10,12 +10,24 @@ interface Props {
   set: <K extends keyof Filters>(key: K, value: Filters[K]) => void;
   toggleCrag: (crag: string) => void;
   reset: () => void;
+  /** Map display preference (persisted, not counted as a filter). */
+  greyOut: boolean;
+  onGreyOutChange: (greyOut: boolean) => void;
   resultCount: number;
   /** Called when the user starts searching/filtering, so the sheet can expand. */
   onExpandRequest: () => void;
 }
 
-export function FilterBar({ filters, set, toggleCrag, reset, resultCount, onExpandRequest }: Props) {
+export function FilterBar({
+  filters,
+  set,
+  toggleCrag,
+  reset,
+  greyOut,
+  onGreyOutChange,
+  resultCount,
+  onExpandRequest,
+}: Props) {
   const [open, setOpen] = useState(false);
   const activeCount =
     filters.crags.size +
@@ -52,6 +64,14 @@ export function FilterBar({ filters, set, toggleCrag, reset, resultCount, onExpa
 
       {open && (
         <div className="filter-panel" data-sheet-scroll>
+          <div className="filter-panel__group">
+            <label>
+              <input type="checkbox" checked={greyOut} onChange={(e) => onGreyOutChange(e.target.checked)} />{" "}
+              Grey out filtered routes on map
+            </label>
+            <span className="filter-panel__hint">Search, sector and trip list still hide routes.</span>
+          </div>
+
           <div className="filter-panel__group">
             <label>Grade range</label>
             <div className="filter-panel__grade-range">

@@ -89,34 +89,42 @@ function sortRoutes(routes: Route[], sortKey: string): Route[] {
   });
 }
 
+/** Filters that always remove a route, from the list and the map. */
+function passesHideFilters(r: Route, filters: Filters, search: string, isFavorite: (slug: string) => boolean) {
+  if (filters.favoritesOnly && !isFavorite(r.slug)) return false;
+  if (filters.crags.size > 0 && !filters.crags.has(r.crag)) return false;
+  if (search) {
+    const haystack = `${r.title} ${r.crag} ${r.zoneChain.join(" ")}`.toLowerCase();
+    if (!haystack.includes(search)) return false;
+  }
+  return true;
+}
+
+/** Filters whose misses can be greyed out on the map instead of hidden. */
+function passesGreyFilters(r: Route, filters: Filters) {
+  if (filters.maxPitches != null && r.numPitches > filters.maxPitches) return false;
+  if (!matchesGearFilter(r.gear.level, filters.gear)) return false;
+
+  const idx = gradeIndex(r.overallGradeFrench);
+  if (idx >= 0 && (idx < filters.minGradeIdx || idx > filters.maxGradeIdx)) return false;
+
+  if (filters.sun === "sunny" && r.sunHint.note !== "sunny-mentioned" && r.sunHint.note !== "mixed-mentioned")
+    return false;
+  if (filters.sun === "shaded" && r.sunHint.note !== "shaded-mentioned" && r.sunHint.note !== "mixed-mentioned")
+    return false;
+
+  return true;
+}
+
 export function applyFilters(
   routes: Route[],
   filters: Filters,
   isFavorite: (slug: string) => boolean,
 ): Route[] {
   const search = filters.search.trim().toLowerCase();
-  const filtered = routes.filter((r) => {
-    if (filters.favoritesOnly && !isFavorite(r.slug)) return false;
-    if (filters.crags.size > 0 && !filters.crags.has(r.crag)) return false;
-    if (filters.maxPitches != null && r.numPitches > filters.maxPitches) return false;
-    if (!matchesGearFilter(r.gear.level, filters.gear)) return false;
-
-    if (search) {
-      const haystack = `${r.title} ${r.crag} ${r.zoneChain.join(" ")}`.toLowerCase();
-      if (!haystack.includes(search)) return false;
-    }
-
-    const idx = gradeIndex(r.overallGradeFrench);
-    if (idx >= 0 && (idx < filters.minGradeIdx || idx > filters.maxGradeIdx)) return false;
-
-    if (filters.sun === "sunny" && r.sunHint.note !== "sunny-mentioned" && r.sunHint.note !== "mixed-mentioned")
-      return false;
-    if (filters.sun === "shaded" && r.sunHint.note !== "shaded-mentioned" && r.sunHint.note !== "mixed-mentioned")
-      return false;
-
-    return true;
-  });
-
+  const filtered = routes.filter(
+    (r) => passesHideFilters(r, filters, search, isFavorite) && passesGreyFilters(r, filters),
+  );
   return sortRoutes(filtered, filters.sortKey);
 }
 
@@ -126,6 +134,27 @@ export function useFilteredRoutes(
   isFavorite: (slug: string) => boolean,
 ) {
   return useMemo(() => applyFilters(routes, filters, isFavorite), [routes, filters, isFavorite]);
+}
+
+/**
+ * Routes to draw on the map. With `greyOut`, routes that only fail the "grey"
+ * filters stay on the map (their slug is missing from `matchSlugs`); otherwise
+ * the map shows exactly the list.
+ */
+export function useMapRoutes(
+  routes: Route[],
+  filtered: Route[],
+  filters: Filters,
+  isFavorite: (slug: string) => boolean,
+  greyOut: boolean,
+) {
+  return useMemo(() => {
+    const matchSlugs = new Set(filtered.map((r) => r.slug));
+    if (!greyOut) return { mapRoutes: filtered, matchSlugs };
+    const search = filters.search.trim().toLowerCase();
+    const mapRoutes = routes.filter((r) => passesHideFilters(r, filters, search, isFavorite));
+    return { mapRoutes, matchSlugs };
+  }, [routes, filtered, filters, isFavorite, greyOut]);
 }
 
 // re-exported for components that only need score comparisons elsewhere
