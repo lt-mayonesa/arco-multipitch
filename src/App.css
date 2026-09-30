@@ -125,7 +125,7 @@
 }
 
 /* Only a fully expanded sheet scrolls; otherwise vertical drags move the sheet. */
-.app__sheet:not(.app__sheet--full) [data-sheet-scroll] {
+.app__sheet:not(.app__sheet--full) [data-sheet-scroll]:not([data-sheet-scroll="always"]) {
   overflow-y: hidden;
 }
 
@@ -337,7 +337,8 @@
 
 .filter-panel {
   margin-top: 10px;
-  max-height: 45dvh;
+  /* Fit above the fold at any snap (--sheet-visible is set by App). */
+  max-height: min(45dvh, max(0px, calc(var(--sheet-visible, 100dvh) - 150px)));
   overflow-y: auto;
   overscroll-behavior: contain;
   padding: 10px;

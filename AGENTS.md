@@ -69,7 +69,8 @@ and both must pass. Don't add new lint warnings (a few pre-existing ones in
 - The sheet is `transform`ed, which traps `position: fixed` descendants: render
   full-screen overlays (e.g. `PhotoModal`) through `createPortal(…, document.body)`.
 - Sheet gestures: mark scrollable regions inside the sheet with
-  `data-sheet-scroll`; they only scroll at the `full` snap. Map controls must
+  `data-sheet-scroll`; they only scroll at the `full` snap (`data-sheet-scroll="always"`
+  scrolls at every snap, e.g. the filter panel). Map controls must
   live at the top (bottom corners sit under the sheet).
 - Each photo carries `section`/`pitch`/captions, recovered at scrape time by
   `scripts/lib/photoContext.mjs` (pitch paragraph it follows, cross-checked

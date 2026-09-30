@@ -14,8 +14,8 @@ interface Props {
   greyOut: boolean;
   onGreyOutChange: (greyOut: boolean) => void;
   resultCount: number;
-  /** Called when the user starts searching/filtering, so the sheet can expand. */
-  onExpandRequest: () => void;
+  /** Called when the user starts searching/filtering, so a collapsed sheet can make room. */
+  onRevealRequest: () => void;
 }
 
 export function FilterBar({
@@ -26,7 +26,7 @@ export function FilterBar({
   greyOut,
   onGreyOutChange,
   resultCount,
-  onExpandRequest,
+  onRevealRequest,
 }: Props) {
   const [open, setOpen] = useState(false);
   const activeCount =
@@ -47,7 +47,7 @@ export function FilterBar({
           placeholder="Search route or crag…"
           value={filters.search}
           onChange={(e) => set("search", e.target.value)}
-          onFocus={onExpandRequest}
+          onFocus={onRevealRequest}
           enterKeyHint="search"
         />
         <SortMenu sortKey={filters.sortKey} onChange={(key) => set("sortKey", key)} />
@@ -55,7 +55,7 @@ export function FilterBar({
           className="filter-bar__toggle"
           aria-expanded={open}
           onClick={() => {
-            if (!open) onExpandRequest();
+            if (!open) onRevealRequest();
             setOpen(!open);
           }}
         >
@@ -64,7 +64,7 @@ export function FilterBar({
       </div>
 
       {open && (
-        <div className="filter-panel" data-sheet-scroll>
+        <div className="filter-panel" data-sheet-scroll="always">
           <div className="filter-panel__group">
             <label>
               <input type="checkbox" checked={greyOut} onChange={(e) => onGreyOutChange(e.target.checked)} />{" "}

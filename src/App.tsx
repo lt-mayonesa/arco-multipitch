@@ -36,7 +36,8 @@ function App() {
     },
     [openRoute],
   );
-  const expand = useCallback(() => setSnap("full"), []);
+  // Searching/filtering keeps the map in view: only lift a collapsed sheet.
+  const reveal = useCallback(() => setSnap((s) => (s === "peek" ? "half" : s)), []);
 
   // Back button: collapse a fully expanded sheet first, then close the detail.
   useBackStack(!!selectedRoute || snap === "full", routeHash(selectedRoute?.slug ?? null), () => {
@@ -73,6 +74,7 @@ function App() {
           className={`app__sheet app__sheet--${snap} ${isDragging ? "app__sheet--dragging" : ""}`}
           style={{
             transform: `translate3d(0, ${offsetPx}px, 0)`,
+            ["--sheet-visible" as string]: `${visibleHeightAt(snap)}px`,
             visibility: containerHeight ? "visible" : "hidden",
           }}
           {...sheetProps}
@@ -107,7 +109,7 @@ function App() {
                 greyOut={greyOut}
                 onGreyOutChange={setGreyOut}
                 resultCount={filtered.length}
-                onExpandRequest={expand}
+                onRevealRequest={reveal}
               />
               <div className="app__sheet-content" data-sheet-scroll>
                 <div className="route-list">

@@ -8,7 +8,9 @@ import { useCallback, useEffect, useLayoutEffect, useRef, useState } from "react
  * Gestures:
  * - Touch drag anywhere on the sheet outside a `[data-sheet-scroll]` area
  *   (grip, filter bar, detail top bar) moves the sheet.
- * - Inside a `[data-sheet-scroll]` area: when the sheet is not fully expanded
+ * - `[data-sheet-scroll="always"]` areas (e.g. the filter panel) scroll at
+ *   every snap; a drag they can't scroll any further moves the sheet.
+ * - Inside other `[data-sheet-scroll]` areas: when the sheet is not fully expanded
  *   the area doesn't scroll (CSS) and vertical drags move the sheet instead;
  *   when fully expanded it scrolls natively, and pulling down while scrolled
  *   to the top hands the gesture over to the sheet (collapse).
@@ -165,7 +167,14 @@ export function useBottomSheet({ snap, onSnapChange, peekPx, halfFraction }: Opt
           return;
         }
         const expanded = live.current.snap === "full";
-        if (scrollEl && expanded && !(dy > 0 && scrollEl.scrollTop <= 0)) {
+        if (scrollEl?.dataset.sheetScroll === "always") {
+          const canScroll =
+            dy > 0 ? scrollEl.scrollTop > 0 : scrollEl.scrollTop + scrollEl.clientHeight < scrollEl.scrollHeight - 1;
+          if (canScroll) {
+            mode = "ignore"; // native scroll
+            return;
+          }
+        } else if (scrollEl && expanded && !(dy > 0 && scrollEl.scrollTop <= 0)) {
           mode = "ignore"; // native scroll
           return;
         }
@@ -232,7 +241,8 @@ export function useBottomSheet({ snap, onSnapChange, peekPx, halfFraction }: Opt
   const onWheel = useCallback(
     (e: React.WheelEvent) => {
       if (snap === "full" || e.deltaY <= 0) return;
-      if ((e.target as Element).closest("[data-sheet-scroll]")) onSnapChange("full");
+      const area = (e.target as Element).closest<HTMLElement>("[data-sheet-scroll]");
+      if (area && area.dataset.sheetScroll !== "always") onSnapChange("full");
     },
     [snap, onSnapChange],
   );
