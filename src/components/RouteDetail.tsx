@@ -1,4 +1,4 @@
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { createPortal } from "react-dom";
 import type { Route } from "../types";
 import { GradeBadge } from "./GradeBadge";
@@ -6,6 +6,7 @@ import { GearBadge } from "./GearBadge";
 import { GEAR_DESCRIPTION } from "../lib/gear";
 import { PhotoModal } from "./PhotoModal";
 import { groupPhotosByPitch, photoCaption } from "../lib/photoGroups";
+import { shareRoute } from "../lib/share";
 
 interface Props {
   route: Route;
@@ -79,6 +80,17 @@ export function RouteDetail({ route, isFavorite, onToggleFavorite, onClose }: Pr
   }, [photoGroups]);
   const [modalIndex, setModalIndex] = useState<number | null>(null);
   const cover = route.photos[0];
+  const [toast, setToast] = useState<string | null>(null);
+  useEffect(() => {
+    if (!toast) return;
+    const t = window.setTimeout(() => setToast(null), 2200);
+    return () => window.clearTimeout(t);
+  }, [toast]);
+  const onShare = async () => {
+    const result = await shareRoute(route);
+    if (result === "copied") setToast("Link copied");
+    else if (result === "failed") setToast("Couldn't share the link");
+  };
 
   return (
     <div className="route-detail">
@@ -87,6 +99,18 @@ export function RouteDetail({ route, isFavorite, onToggleFavorite, onClose }: Pr
           ←
         </button>
         <h2 className="route-detail__title">{route.title}</h2>
+        <button className="share-btn" onClick={onShare} aria-label="Share route">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path
+              d="M12 3v12M7.5 7.5 12 3l4.5 4.5M6 11H5v10h14V11h-1"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            />
+          </svg>
+        </button>
         <button
           className={`fav-btn ${isFavorite ? "fav-btn--active" : ""}`}
           onClick={onToggleFavorite}
@@ -270,7 +294,14 @@ export function RouteDetail({ route, isFavorite, onToggleFavorite, onClose }: Pr
         </div>
       </div>
 
-      {/* Portal: the sheet is transformed, which would trap position:fixed children. */}
+      {/* Portals: the sheet is transformed, which would trap position:fixed children. */}
+      {toast &&
+        createPortal(
+          <div className="toast" role="status">
+            {toast}
+          </div>,
+          document.body,
+        )}
       {modalIndex != null &&
         createPortal(
           <PhotoModal
