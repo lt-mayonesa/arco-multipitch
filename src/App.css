@@ -686,9 +686,13 @@
   color: var(--text-dim);
   margin: 0 0 8px;
 }
-.route-detail__maps-link {
-  display: inline-block;
+.route-detail__maps-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px 18px;
   margin: 0 0 14px;
+}
+.route-detail__maps-link {
   font-size: 0.9rem;
 }
 

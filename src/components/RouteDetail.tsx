@@ -24,6 +24,10 @@ export function RouteDetail({ route, isFavorite, onToggleFavorite, onClose }: Pr
   const mapsUrl = route.location
     ? `https://www.google.com/maps?q=${route.location.lat},${route.location.lon}`
     : null;
+  const parking = route.location?.parking;
+  const parkingUrl = parking
+    ? `https://www.google.com/maps/dir/?api=1&destination=${parking.lat},${parking.lon}&travelmode=driving`
+    : null;
   const photoGroups = useMemo(() => groupPhotosByPitch(route), [route]);
   // Viewer swipes through photos in group order, labelled with their group.
   const viewerItems = useMemo(
@@ -113,10 +117,19 @@ export function RouteDetail({ route, isFavorite, onToggleFavorite, onClose }: Pr
 
           {route.sunHint.note && <p className="route-detail__sun">{SUN_LABEL[route.sunHint.note]}</p>}
 
-          {mapsUrl && (
-            <a className="route-detail__maps-link" href={mapsUrl} target="_blank" rel="noreferrer">
-              📍 Open location in Maps
-            </a>
+          {(mapsUrl || parkingUrl) && (
+            <div className="route-detail__maps-links">
+              {mapsUrl && (
+                <a className="route-detail__maps-link" href={mapsUrl} target="_blank" rel="noreferrer">
+                  📍 Open location in Maps
+                </a>
+              )}
+              {parkingUrl && (
+                <a className="route-detail__maps-link" href={parkingUrl} target="_blank" rel="noreferrer">
+                  🚗 Directions to parking{parking!.precision !== "exact" && " (approx.)"}
+                </a>
+              )}
+            </div>
           )}
 
           {route.pitches.length > 0 && (
